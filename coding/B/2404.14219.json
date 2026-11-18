@@ -1,0 +1,138 @@
+{
+ "arxiv": "2404.14219",
+ "model": "phi3",
+ "coding": {
+  "note": "Claims are restricted to contributions in the abstract/introduction; the novel blocksparse module is described only in Section 2 and is therefore outside C1's specified scope. No controlled ablations of the abstract's architecture claims are reported. Comparator names cover the main language-model results on pages 6 and 9. Rerun and copied-score coding incorporates the vision results: most baselines were evaluated by the authors, but MM1 scores were copied. Microsoft's independent internal red team is not treated as third-party evaluation. Training seed counts and training compute are not reported; inference hardware/speed does not constitute training compute disclosure. Data categories are disclosed, but not a reconstructible mixture. No explicit renaming of a known technique was identified.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "We just\ncopied and pasted their published numbers since the model is not publicly available.",
+   "page": 12
+  },
+  "claims": [
+   {
+    "quote": "We introduce phi-3-mini, a 3.8 billion parameter language model trained on 3.3 trillion tokens,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce phi-3-mini, a small language model with performance rivaling substantially larger models and suitable for local phone deployment.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Our training dataset\n  is a scaled-up version of the one used for phi-2, composed of heavily filtered publicly available web\n  data and synthetic data.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Scale up the phi-2 training-data recipe using heavily filtered public web data and synthetic data.",
+    "page": 1,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "The model is also further aligned for robustness, safety, and chat format.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Further align the model for robustness, safety, and chat use.",
+    "page": 1,
+    "category": "POST",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We also provide parameter-scaling results with a 7B, 14B models trained for 4.8T tokens,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Provide parameter-scaling results for the more capable 7B phi-3-small and 14B phi-3-medium models.",
+    "page": 1,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "To enhance multilingual, multimodal, and long-context\n  capabilities, we introduce three models in the phi-3.5 series:",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce the phi-3.5 series to enhance multilingual, multimodal, and long-context capabilities.",
+    "page": 1,
+    "category": "CTX",
+    "ablation_page": 0
+   },
+   {
+    "quote": "The phi-3.5-MoE, a 16 x 3.8B MoE model with 6.6 billion active parameters, achieves",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Introduce phi-3.5-MoE with 16 experts and 6.6B active parameters, claiming superior reasoning, math, and code performance relative to similarly scaled open models.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Meanwhile, phi-3.5-Vision, a 4.2 billion parameter model derived from phi-3.5-\n  mini, excels in reasoning tasks",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Introduce phi-3.5-Vision, derived from phi-3.5-mini, supporting reasoning over single-image and multi-image text prompts.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "phase-1 comprises mostly of web sources aimed at teaching the model general knowledge and language\nunderstanding.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We trained using bfloat16 for a total of 3.3T tokens.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Our performance quality assessment setup used the same evaluation\npipeline for all the baselines to ensure a fair comparison, with the exception of MM1-3B-Chat.",
+   "page": 12
+  },
+  "renames": [],
+  "comparators": [
+   "Phi-2",
+   "Mistral-7b-v0.1",
+   "Gemma 7B",
+   "Llama-3-instruct-8b",
+   "Mixtral-8x7b",
+   "GPT-3.5 (version 1106)",
+   "Mistral-Nemo-12B",
+   "Llama-3.1-8B-Instruct",
+   "Gemma-2-9B",
+   "Gemini-1.5 Flash",
+   "GPT-4o-mini"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "d4b0cb4257b1e7dbb7e08a47b1db1dd7a949e495dada5e40d9c0b16a4188fe3c",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1539,
+   "totalTokens": 21754,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 20083
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:08+00:00"
+ }
+}

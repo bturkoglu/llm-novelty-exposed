@@ -1,0 +1,48 @@
+{
+ "arxiv": "2510.26692",
+ "resolution": {
+  "fields": [
+   {
+    "field": "scores_copied",
+    "value": "NO",
+    "quote": "All evaluations are conducted using our internal framework derived from LM-Harness-Evaluation [10], ensuring consistent settings across all models.",
+    "page": 10,
+    "reason": "Main tables compare MLA and GDN-H that the authors trained and scored themselves under one internal harness with consistent settings, so comparator scores are not taken from other reports."
+   },
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "processing a shared total of 1.4 trillion tokens sampled from the K2 pretraining corpus [50].",
+    "page": 10,
+    "reason": "The pretraining source is named (K2 corpus) but no categories, proportions, or mixture are given, which is partial rather than none or full. SFT/RL data are likewise only described as subsets of the K2 recipe."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+    "page": 8,
+    "reason": "Authors list the 3:1 KDA-to-MLA hybrid as their own architecture contribution. Table 1 compares ratios including 0:1 at fixed 16-head/16-layer scale, but matching is stated as the same FLOPs budget, not the same token count; KDA vs MLA changes FLOPs per token, so the comparison is confounded and not YES."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9339,
+   "outputTokens": 4534,
+   "totalTokens": 13873,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

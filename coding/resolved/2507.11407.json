@@ -1,0 +1,27 @@
+{
+ "arxiv": "2507.11407",
+ "resolution": {
+  "fields": [
+   {
+    "field": "data_disclosure",
+    "value": "NONE",
+    "quote": "",
+    "page": 0,
+    "reason": "The only data-related sentence says STEM curation 'plays important role' on downstream tasks. It does not name sources, categories of the mixture, or proportions sufficient to count as PARTIAL disclosure. Be conservative and code NONE."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 2141,
+   "outputTokens": 1420,
+   "totalTokens": 4666,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

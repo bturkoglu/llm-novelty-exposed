@@ -1,0 +1,84 @@
+{
+ "arxiv": "2001.08210",
+ "model": "mbart",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "mBART is the first method to pre-train a complete sequence-to-sequence model by denoising full texts in multiple languages",
+    "category": "TRAIN",
+    "quote": "mBART is the first method for pre-training a complete sequence-to-sequence model by",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Table 2: Low/Medium Resource Machine Translation Pre-training consistently improves over a randomly ini-",
+    "ablation_page": 4
+   },
+   {
+    "claim": "mBART initialization yields significant gains (up to 12 BLEU) on low/medium-resource MT",
+    "category": "OTHER",
+    "quote": "significant gains (up to 12 BLEU points) across low/medium-resource pairs (<10M bi-text pairs),",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Random init",
+   "XLM",
+   "MASS",
+   "BART",
+   "XLM-R",
+   "BART-En",
+   "BART-Ro",
+   "HAN"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "d-BLEU is recomputed from the provided system output.",
+   "page": 8
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "XLM (2019)  34.3  26.4  31.8  33.3  0.5  0.1  0.1  0.1",
+   "page": 10
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Table 1: Languages and Statistics of the CC25 Cor-",
+   "page": 2
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "guages) is trained on 256 Nvidia V100 GPUs",
+   "page": 3
+  },
+  "renames": [],
+  "note": "Two-column extraction mixes lines from both columns, so several intro claims (document-level gains, first non-degenerate unsupervised results, transfer to unseen languages) could not be quoted as unbroken spans of 8+ words and were left out. The pre-training ablation is PARTIAL because the random baseline's architecture was grid-searched separately and Table 4 compares methods trained on different data. Data disclosure is PARTIAL: per-language sizes and the sampling alpha are given, but the CC extraction cannot be rebuilt. Training tokens could be derived from steps and batch size but are not stated."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "e846afc2d40efd02cea73c3fee8aa23cbd64bd272b815afc08145726bcce2a8d",
+  "session_id": "51ba3399-8935-472e-8f33-fb0317d96b0c",
+  "cost_usd": 0.4178622,
+  "timestamp": "2026-11-14T12:09:37+00:00"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "arxiv": "2412.19437",
+ "model": "deepseek_v3",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Pioneers an auxiliary-loss-free load balancing strategy for MoE that minimizes performance degradation from load balancing",
+    "category": "ARCH",
+    "quote": "we pioneer an auxiliary-loss-free strategy for load balancing, which minimizes the performance degradation that arises from encouraging load balancing.",
+    "page": 5,
+    "ablation": "YES",
+    "ablation_quote": "On top of these two baseline models, keeping the training data and the other architectures the same, we remove all auxiliary losses and introduce the auxiliary-loss-free balancing strategy for comparison.",
+    "ablation_page": 27
+   },
+   {
+    "claim": "Multi-Token Prediction training objective improves model performance and enables speculative decoding",
+    "category": "TRAIN",
+    "quote": "We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model performance. It can also be used for speculative decoding for inference acceleration.",
+    "page": 5,
+    "ablation": "YES",
+    "ablation_quote": "On top of them, keeping the training data and the other architectures the same, we append a 1-depth MTP module onto them and train two models with the MTP strategy for comparison.",
+    "ablation_page": 26
+   },
+   {
+    "claim": "FP8 mixed precision training framework validated for the first time on an extremely large-scale model",
+    "category": "EFF",
+    "quote": "We design an FP8 mixed precision training framework and, for the first time, validate the feasibility and effectiveness of FP8 training on an extremely large-scale model.",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Co-design of algorithms, frameworks and hardware (DualPipe, all-to-all kernels) achieving near-full computation-communication overlap in cross-node MoE training",
+    "category": "EFF",
+    "quote": "Through the co-design of algorithms, frameworks, and hardware, we overcome the communication bottleneck in cross-node MoE training, achieving near-full computation- communication overlap.",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Economical pre-training on 14.8T tokens at 2.664M H800 GPU hours producing the strongest open-source base model",
+    "category": "SCALE",
+    "quote": "At an economical cost of only 2.664M H800 GPU hours, we complete the pre-training of DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model.",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Innovative methodology to distill reasoning capability from long-CoT DeepSeek-R1 models into standard LLMs",
+    "category": "POST",
+    "quote": "We introduce an innovative methodology to distill reasoning capabilities from the long- Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models, into standard LLMs",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Remarkably stable training with no irrecoverable loss spikes or rollbacks",
+    "category": "TRAIN",
+    "quote": "In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "DeepSeek-V2-Base",
+   "Qwen2.5 72B Base",
+   "LLaMA-3.1 405B Base",
+   "DeepSeek-V2-0506",
+   "DeepSeek-V2.5-0905",
+   "Qwen2.5 72B Instruct",
+   "LLaMA-3.1 405B Instruct",
+   "Claude-Sonnet-3.5-1022",
+   "GPT-4o-0513"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "We evaluate all these models with our internal evaluation framework, and ensure that they share the same evaluation setting.",
+   "page": 24
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "For closed-source models, evaluations are performed through their respective APIs.",
+   "page": 30
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "we optimize the pre-training corpus by enhancing the ratio of mathematical and programming samples, while expanding multilingual coverage beyond",
+   "page": 21
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We set the maximum sequence length to 4K during pre-training, and pre-train DeepSeek-V3 on 14.8T tokens.",
+   "page": 22
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "During the pre-training stage, training DeepSeek-V3 on each trillion tokens requires only 180K H800 GPU hours, i.e., 3.7 days on our cluster with 2048 H800 GPUs.",
+   "page": 5
+  },
+  "renames": [],
+  "note": "FP8 framework coded EFF (systems efficiency contribution); if coded TRAIN, ablation would be PARTIAL (loss curves only, App. B.1, p47). Aux-loss-free strategy cites the authors' own prior work (Wang et al. 2024a) but keeps the same name, so it is not counted as a rename. Seeds NR: the 16-run averaging on AIME/CNMO is evaluation sampling, not training runs. Closed-source comparators were evaluated by the authors via API, so they count as rerun, not copied."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "6cdba7cd745cc847f17ba7da7b7729438d2d54ee9fa1b0f29f7872c907347be7",
+  "session_id": "441d7760-bb88-4daa-b7c6-9cda6372c4c6",
+  "cost_usd": 0.6643661999999999,
+  "timestamp": "2026-11-14T12:14:04+00:00"
+ }
+}

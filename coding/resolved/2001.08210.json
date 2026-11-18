@@ -1,0 +1,41 @@
+{
+ "arxiv": "2001.08210",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "NO",
+    "quote": "d-BLEU is recomputed from the provided system output.",
+    "page": 8,
+    "reason": "The only explicit comparator-evaluation statement says HAN d-BLEU was recomputed from provided system output, so that model was not run under the authors' harness. XLM/MASS appear only as cited 2019 numbers (with dashes where those papers did not report pairs). Nothing says any published comparator was re-evaluated in the same harness, so MIXED (which needs some true re-runs) is not supported, and the procedure is reported so this is not NR."
+   },
+   {
+    "field": "scores_copied",
+    "value": "MIXED",
+    "quote": "XLM (2019) 34.3 26.4 31.8 33.3 0.5 0.1 0.1 0.1",
+    "page": 10,
+    "reason": "Table 10 labels comparators as XLM (2019) and MASS (2019) and leaves MASS cells blank on pairs those papers did not report, which is how copied published scores are presented. Separately, p.8 states HAN d-BLEU was recomputed from provided system output rather than taken from that report. Some comparator scores are copied and at least one was recomputed, so MIXED rather than YES or NR."
+   },
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "CC25 includes languages from different families and with varied amounts of text (Table 1).",
+    "page": 2,
+    "reason": "They name the source (CC25 subset of Common Crawl), list 25 languages with token/size statistics in Table 1, and give the α=0.7 up/down-sampling formula. That is more than NONE. It is not FULL: the underlying crawl is only via external citations, zh/ja counts are sentence counts, and final post-sampling token proportions are not stated as a reconstructable mixture."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 11372,
+   "outputTokens": 12323,
+   "totalTokens": 23695,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

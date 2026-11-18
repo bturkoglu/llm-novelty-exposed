@@ -1,0 +1,214 @@
+{
+ "arxiv": "2405.21060",
+ "model": "mamba2",
+ "coding": {
+  "note": "Release report: page 3 states that model code and pre-trained checkpoints are open-sourced. Page markers, not printed page numbers, are used. Data disclosure is PARTIAL: the Pile is named, but its source proportions are not reproduced. Training compute is not disclosed; algorithmic FLOP bounds and kernel timing benchmarks are not treated as training compute. Seeds are unreported. Comparator rerunning and score provenance are NR: use of the EleutherAI harness does not explicitly establish how comparator scores were obtained. The core architecture comparison is PARTIAL because multiple design choices change together; parallel-projection ablations also change parameter counts. Theory contributions are OTHER; the generalized attention design is ARCH. Analogies and extensions to attention head patterns are not automatically treated as renames.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "claim": "Establish equivalence between state space models and semiseparable matrices.",
+    "category": "OTHER",
+    "quote": "We show an equivalence between state space models and a",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide a tensor-contraction proof of the recurrent form of linear attention.",
+    "category": "OTHER",
+    "quote": "cisive proof of its recurrent form through the language of",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Generalize linear attention to structured masked attention.",
+    "category": "ARCH",
+    "quote": "tensor contractions, and then generalize it to a new family\n  of structured masked attention (SMA) (Section 4).",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Connect SSMs and structured masked attention through dual linear and quadratic forms.",
+    "category": "OTHER",
+    "quote": "We connect SSMs and SMA, showing that they have a large",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Prove that kernel attention with a fast recurrent form must be an SSM.",
+    "category": "OTHER",
+    "quote": "We also prove that any kernel attention method\n  possessing a fast recurrent form must be an SSM.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce a hardware-efficient SSD algorithm using block decompositions, combining linear recurrence and quadratic computation.",
+    "category": "EFF",
+    "quote": "We introduce a new SSD algorithm, based on block decompositions of semisepa-",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce Mamba-2, combining a modified parallel Mamba block with an SSD inner layer.",
+    "category": "ARCH",
+    "quote": "The combination of the modified parallel Mamba block, together with using SSD as the inner SSM layer, results in the",
+    "page": 2,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Sur-\nprisingly, it is significantly better than Mamba-1 even when the state sizes are controlled (N = 16).",
+    "ablation_page": 33
+   },
+   {
+    "claim": "Introduce attention-like heads and a vocabulary of alternative head structures for SSMs.",
+    "category": "ARCH",
+    "quote": "For example, we introduce the analog of heads from multi-head attention",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "Multi-input (MIS)  Multi-value (MVA)  24  1  1  24  24  126.5M  11.66\n  Multi-contract (MCS)  Multi-query (MQA)  24  1  24  1  24  126.5M  12.62",
+    "ablation_page": 36
+   },
+   {
+    "claim": "Move data-dependent parameter projections to the beginning of the block in parallel.",
+    "category": "ARCH",
+    "quote": "moving all data-dependent projections to occur in parallel at the beginning of the block.",
+    "page": 2,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Sequential  ✓  129.3M  11.54\n  Parallel  ✗  126.5M  11.66\n  Mamba-2  Parallel  ✓  126.5M  11.49",
+    "ablation_page": 35
+   },
+   {
+    "claim": "Introduce grouped-value attention head structure.",
+    "category": "ARCH",
+    "quote": "The main ideas include introducing grouped-value attention",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Train a Mamba-2 model family competitive with Mamba and open-source Transformers.",
+    "category": "OTHER",
+    "quote": "For example, Mamba-2 with 2.7B parameters trained on 300B tokens on",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Design Mamba-2 to support tensor parallelism with half as many synchronization points per block.",
+    "category": "EFF",
+    "quote": "We design Mamba-2 to be TP-friendly, reducing the number of\n  synchronization point per block by half.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Describe sequence-parallel training for SSMs and Mamba-2 by passing recurrent states between devices.",
+    "category": "EFF",
+    "quote": "We describe how to train SSMs in general and Mamba-2 in particular with sequence parallelism, by\n  passing the recurrent states between devices.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Enable efficient variable-length Mamba-2 training without padding tokens.",
+    "category": "EFF",
+    "quote": "We show how Mamba-2 can be trained\n  with variable sequence lengths efficiently, requiring no padding tokens.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "All models were trained on the Pile. For the scaling law experiments, we use the GPT2 tokenizer.",
+   "page": 53
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "To evaluate downstream performance of fully trained, we train Mamba-2 on 300B tokens on the Pile, using the GPT-",
+   "page": 54
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [
+   {
+    "new_name": "cumprodsum",
+    "existing_technique": "scalar SSM recurrence / multiplication by a 1-semiseparable matrix",
+    "quote": "We thus also refer to matrix multiplication by 1-SS matrices as the scalar SSM recurrence or the cumprodsum",
+    "page": 9
+   },
+   {
+    "new_name": "state-passing mode",
+    "existing_technique": "chunkwise recurrent-state computation",
+    "quote": "While we call this “state-passing” to refer to how states are passed from one local segment to another, this is\nrelated to the “chunkwise” algorithms proposed by related models",
+    "page": 47
+   }
+  ],
+  "comparators": [
+   "Pythia-1B",
+   "Mamba-790M",
+   "Hybrid H3-1.3B",
+   "Pythia-1.4B",
+   "RWKV4-1.5B",
+   "Mamba-1.4B",
+   "Hybrid H3-2.7B",
+   "Pythia-2.8B",
+   "RWKV4-3B",
+   "Mamba-2.8B",
+   "Transformer++"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "d75316d4cc8c635041e6edaae3284b7d664d234277afe8c82835749ee4ae211e",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1909,
+   "totalTokens": 65679,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 63638
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:57+00:00"
+ }
+}

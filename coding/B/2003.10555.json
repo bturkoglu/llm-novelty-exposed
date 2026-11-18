@@ -1,0 +1,122 @@
+{
+ "arxiv": "2003.10555",
+ "model": "electra",
+ "coding": {
+  "note": "Claims are restricted to the abstract/introduction; Section 3.2 extensions are not separately coded as introductory novelty claims. The identical ELECTRA 15% ablation isolates learning from all positions (Table 5). MULTI refers to repeated fine-tuning, not independent pre-training runs. Comparator provenance is mixed: author-trained BERT baselines and borrowed published results. Token disclosure gives corpus token counts, not an explicit cumulative processed-token total. Data sources are named but mixture proportions are absent. Third-party evaluation is the reported GLUE leaderboard evaluation. Similarities to NCE/CBOW do not explicitly rename those existing techniques.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "MULTI",
+   "quote": "We\ntherefore report the median of 10 fine-tuning runs from the same pre-trained checkpoint for each\nresult.",
+   "page": 4
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "BERT dev results are\nfrom Clark et al. (2019).",
+   "page": 7
+  },
+  "claims": [
+   {
+    "quote": "As an alternative, we propose replaced token detection, a pre-training task in which the model learns\nto distinguish real input tokens from plausible but synthetically generated replacements.",
+    "ablation": "YES",
+    "ablation_quote": "This model is identical to ELECTRA except the discriminator loss only\n  comes from the 15% of the tokens that were masked out of the input.",
+    "claim": "Introduce replaced token detection: discriminate original tokens from generator replacements, learning over all input positions.",
+    "page": 1,
+    "category": "TRAIN",
+    "ablation_page": 8
+   },
+   {
+    "quote": "Through a series of ablations, we\n  show that learning from all input positions causes ELECTRA to train much faster than BERT.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Learning from all positions improves compute efficiency over masked language modeling.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "For example, we build an ELECTRA-Small\n  model that can be trained on 1 GPU in 4 days.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Develop a small, accessible model trainable on one GPU in four days that outperforms comparable BERT and larger GPT.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Our approach also works well at large scale, where we train an ELECTRA-Large\n  model that performs comparably to RoBERTa (Liu et al., 2019) and XLNet (Yang et al., 2019), de-\n  spite having fewer parameters",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Scale ELECTRA to large models, matching RoBERTa/XLNet with fewer parameters and one-quarter the compute, and surpassing them with comparable compute.",
+    "page": 2,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Training ELECTRA-Large\n  further results in an even stronger model that outperforms ALBERT (Lan et al., 2019) on GLUE\n  and sets a new state-of-the-art for SQuAD 2.0.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Further-trained ELECTRA-Large surpasses ALBERT on GLUE and establishes a new SQuAD 2.0 state of the art.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "ELECTRA-Small  1.4e18 / 3.7e9  45x / 8x  14M  4d on 1 V100 GPU  79.9",
+   "page": 6
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "dataset to 33B tokens by including data from ClueWeb (Callan et al., 2009), CommonCrawl, and\nGigaword (Parker et al., 2011).",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "For most experiments we pre-train on the same data as BERT, which consists\nof 3.3 Billion tokens from Wikipedia and BooksCorpus (Zhu et al., 2015).",
+   "page": 4
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "we report the average score excluding QNLI\n(Avg.*) in addition to the GLUE leaderboard score (Score).",
+   "page": 7
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "BERT-Small/Base are our implemen-\ntation and use the same hyperparameters as ELECTRA-Small/Base.",
+   "page": 6
+  },
+  "renames": [],
+  "comparators": [
+   "ELMo",
+   "GPT",
+   "BERT-Small",
+   "BERT-Base",
+   "BERT",
+   "BERT (ours)",
+   "RoBERTa-100K",
+   "RoBERTa-500K",
+   "RoBERTa",
+   "XLNet",
+   "XLNet-Base",
+   "ALBERT",
+   "SpanBERT"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "5bd6a3686ebd4e0672ead5f062309cfcf7f14665fa0d5c9467224a93dabc3929",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1501,
+   "totalTokens": 21680,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 20047
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:22+00:00"
+ }
+}

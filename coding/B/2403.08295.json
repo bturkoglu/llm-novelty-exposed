@@ -1,0 +1,95 @@
+{
+ "arxiv": "2403.08295",
+ "model": "gemma",
+ "coding": {
+  "note": "Contribution coding is limited to the abstract/introduction: model-family and checkpoint release are consolidated, with benchmark performance and comprehensive safety evaluation recorded separately. Architectural elements are explicitly prior techniques, not claimed innovations. The novel RL algorithm is mentioned only in the body, outside C1 scope. Training seeds are not reported; human-evaluation confidence intervals are not across training runs. Data categories are given without reconstructable sources/proportions. TPU counts and carbon emissions do not disclose compute in the required units or hardware × duration. Comparator results mix author-run evaluations with previously reported and external scores.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "∗ evaluations run by us. Note that due to restrictive licensing, we were\nunable to run evals on LLaMA-2; all values above were previously reported in Touvron et al. (2023b).",
+   "page": 6
+  },
+  "claims": [
+   {
+    "quote": "This work introduces Gemma, a family of lightweight, state-of-the art open models built from the research\n  and technology used to create Gemini models.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduces and releases Gemma, an open lightweight language-model family with 2B and 7B pretrained and fine-tuned checkpoints.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Gemma\n  outperforms similarly sized open models on 11 out of 18 text-based tasks",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Gemma advances comparable-scale open-model performance, outperforming similarly sized models on 11 of 18 text tasks.",
+    "page": 1,
+    "category": "EVAL",
+    "ablation_page": 0
+   },
+   {
+    "quote": "we present comprehensive\n  evaluations of safety and responsibility aspects of the models, alongside a detailed description of model\n  development.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Provides comprehensive safety and responsibility evaluations and a detailed account of model development.",
+    "page": 1,
+    "category": "EVAL",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Gemma 2B and 7B are trained on 3T and 6T\n  tokens respectively of primarily-English data from\n  web documents, mathematics, and code.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Gemma 2B and 7B are trained on 3T and 6T\n  tokens respectively of primarily-English data from\n  web documents, mathematics, and code.",
+   "page": 3
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "the quality of our models on an independent im-\n  plementation of multiple known benchmarks. All\n  evaluations were run by HuggingFace.",
+   "page": 7
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "∗ evaluations run by us. Note that due to restrictive licensing, we were\nunable to run evals on LLaMA-2; all values above were previously reported in Touvron et al. (2023b).",
+   "page": 6
+  },
+  "renames": [],
+  "comparators": [
+   "LLaMA-2 7B",
+   "LLaMA-2 13B",
+   "Mistral 7B",
+   "Mistral 7B v0.2 Instruct"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "fdfed1270b51a631430b2b6cdd2d814ac0362828d9977aca45fa849390868b64",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1516,
+   "totalTokens": 19722,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 18074
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:22+00:00"
+ }
+}

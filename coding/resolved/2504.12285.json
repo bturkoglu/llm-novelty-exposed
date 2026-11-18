@@ -1,0 +1,45 @@
+{
+ "arxiv": "2504.12285",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "The core contribution of this work is to demonstrate that a native 1-bit LLM, when trained effectively at scale, can achieve performance comparable to leading open-weight, full-precision models of similar size",
+    "page": 2,
+    "reason": "Intro states the core contribution as scaled 1-bit parity, not new layers. Architecture is “derived” from and “based on the BitNet framework”; BitLinear is “the foundation of the BitNet approach,” while subln (Wang et al., 2022) and ReLU2 (Wang et al., 2024) are cited as existing techniques. The Table 2 INT4 vs Qwen comparison is a different model/training setup, not a matched with-vs-without test of BitLinear, subln, or ReLU2, so it is not an ablation."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "We adapted general training strategies from established LLM practices (Dubey et al., 2024), with specific adjustments tailored for the 1-bit architecture.",
+    "page": 3,
+    "reason": "Two-stage LR and weight decay are presented as adjustments of established LLM practice, not as a stated novel/first/key contribution in the abstract or introduction. The core contribution sentence is the scaled-model demonstration. No with-vs-without comparison of the schedule, weight decay, or SFT loss appears; summed SFT loss is not described as a novelty on the provided pages."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7231,
+   "outputTokens": 5009,
+   "totalTokens": 12240,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "The novelty exposed: data, coding and scripts (40 LLM technical reports)",
+  "upload_type": "dataset",
+  "description": "Supplementary data, coding protocol, coder outputs and scripts for: B. Türkoğlu, The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs), arXiv:2611.20003.",
+  "creators": [{"name": "Türkoğlu, Bahaeddin", "affiliation": "Ankara University", "orcid": "0000-0003-0255-8422"}],
+  "license": "cc-by-4.0",
+  "keywords": ["large language models", "technical reports", "ablation", "reproducibility", "transparency", "meta-research"],
+  "related_identifiers": [{"identifier": "arXiv:2611.20003", "relation": "isSupplementTo", "scheme": "arxiv"}]
+}

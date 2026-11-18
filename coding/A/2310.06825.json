@@ -1,0 +1,107 @@
+{
+ "arxiv": "2310.06825",
+ "model": "mistral",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Mistral 7B outperforms the best open 13B model (Llama 2) on all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics and code",
+    "category": "OTHER",
+    "quote": "Mistral 7B outperforms the best open 13B model (Llama 2) across all evaluated benchmarks, and the best released 34B model (Llama 1) in reasoning, mathematics, and code generation.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Uses grouped-query attention (GQA) for faster inference and lower decoding memory",
+    "category": "ARCH",
+    "quote": "GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Uses sliding window attention (SWA) to handle sequences of arbitrary length at reduced inference cost",
+    "category": "ARCH",
+    "quote": "coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Instruction-tuned model Mistral 7B – Instruct surpasses Llama 2 13B – Chat on human and automated benchmarks",
+    "category": "POST",
+    "quote": "We also provide a model fine-tuned to follow instructions, Mistral 7B – Instruct, that surpasses Llama 2 13B – chat model both on human and automated benchmarks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Models released under Apache 2.0 with reference implementation for easy deployment",
+    "category": "OTHER",
+    "quote": "Mistral 7B is released under the Apache 2.0 license. This release is accompanied by a reference implementation1 facilitating easy deployment either locally or on cloud platforms",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Llama 2 7B",
+   "Llama 2 13B",
+   "Code-Llama 7B",
+   "Llama 1 34B"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "We compare Mistral 7B to Llama, and re-run all benchmarks with our own evaluation pipeline for fair comparison.",
+   "page": 3
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison.",
+   "page": 4
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "independent human evaluation was conducted on",
+   "page": 4
+  },
+  "data_disclosure": {
+   "value": "NONE",
+   "quote": "",
+   "page": 0
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "I coded the SWA ablation as NO. The paper does report a 2x speed gain over a vanilla attention baseline (p.2), but that only measures the kernel's speed. It is not a with/without comparison of trained models, so I took the lower level over PARTIAL. GQA has no comparison at all. Seeds are NR: the MT Bench ± std is over 10 evaluation iterations (p.5), not over independent training runs. I treated the 'Mistral system prompt' and 'self-reflection' prompting as uses of the model, not renames. The rolling buffer cache and pre-fill chunking appear in Section 2 but not in the abstract or introduction, so I left them out of the claims. The chat-model scores in Table 3 (ELO and MT Bench) have no stated source. The main base-model table was re-evaluated by the authors."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "185d1880005469f58b2c11efb3792d0b098836065cba46022d65be666b66a9a3",
+  "session_id": "08335b49-07f8-4c6a-838e-057d79000eba",
+  "cost_usd": 0.160568,
+  "timestamp": "2026-11-14T12:08:05+00:00"
+ }
+}

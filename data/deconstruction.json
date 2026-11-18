@@ -1,0 +1,188 @@
+{
+ "olmo2": {
+  "classes": {
+   "LlamaRMSNorm": {
+    "llama_lines": 13,
+    "changed": [
+     "-    def forward(self, hidden_states: torch.Tensor) -> torch.Tensor:",
+     "+    def forward(self, hidden_states) -> torch.Tensor:",
+     "-        return self.weight * hidden_states.to(input_dtype)",
+     "+        return (self.weight * hidden_states).to(input_dtype)"
+    ]
+   },
+   "LlamaRotaryEmbedding": {
+    "llama_lines": 28,
+    "changed": [
+     "-        return (cos.to(dtype=x.dtype), sin.to(dtype=x.dtype))",
+     "+        return (cos, sin)"
+    ]
+   },
+   "LlamaAttention": {
+    "llama_lines": 30,
+    "changed": [
+     "-    def __init__(self, config: LlamaConfig, layer_idx: int):",
+     "+    def __init__(self, config: LlamaConfig, layer_idx: int | None=None):",
+     "+        self.q_norm = LlamaRMSNorm(config.num_attention_heads * self.head_dim, config.rms_norm_eps)",
+     "+        self.k_norm = LlamaRMSNorm(config.num_key_value_heads * self.head_dim, config.rms_norm_eps)",
+     "-    def forward(self, hidden_states: torch.Tensor, position_embeddings: tuple[torch.Tensor, torch.Tensor] | None=None, attention_mask: torch.Tensor | None=None, cache: Cache | None=None, **kwargs: Unpack[TransformersKwargs]) -> tuple[torch.Tensor, torch.Tensor]:",
+     "+    def forward(self, hidden_states: torch.Tensor, position_embeddings: tuple[torch.Tensor, torch.Tensor], attention_mask: torch.Tensor | None, cache: Cache | None=None, **kwargs: Unpack[TransformersKwargs]) -> tuple[torch.Tensor, torch.Tensor | None]:",
+     "-        query_states = self.q_proj(hidden_states).view(hidden_shape).transpose(1, 2)",
+     "-        key_states = self.k_proj(hidden_states).view(hidden_shape).transpose(1, 2)",
+     "-        value_states = self.v_proj(hidden_states).view(hidden_shape).transpose(1, 2)",
+     "+        query_states = self.q_norm(self.q_proj(hidden_states))",
+     "+        key_states = self.k_norm(self.k_proj(hidden_states))",
+     "+        value_states = self.v_proj(hidden_states)",
+     "+        query_states = query_states.view(hidden_shape).transpose(1, 2)",
+     "+        key_states = key_states.view(hidden_shape).transpose(1, 2)",
+     "+        value_states = value_states.view(hidden_shape).transpose(1, 2)"
+    ]
+   },
+   "LlamaMLP": {
+    "llama_lines": 13,
+    "changed": [
+     "-        self.gate_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=config.mlp_bias)",
+     "-        self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=config.mlp_bias)",
+     "-        self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=config.mlp_bias)",
+     "+        self.gate_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)",
+     "+        self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)",
+     "+        self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=False)"
+    ]
+   },
+   "LlamaDecoderLayer": {
+    "llama_lines": 19,
+    "changed": [
+     "-        self.input_layernorm = LlamaRMSNorm(config.hidden_size, eps=config.rms_norm_eps)",
+     "+        self.post_feedforward_layernorm = LlamaRMSNorm(config.hidden_size, eps=config.rms_norm_eps)",
+     "-        hidden_states = self.input_layernorm(hidden_states)",
+     "+        hidden_states = self.post_attention_layernorm(hidden_states)",
+     "-        hidden_states = self.post_attention_layernorm(hidden_states)",
+     "+        hidden_states = self.post_feedforward_layernorm(hidden_states)"
+    ]
+   },
+   "LlamaForSequenceClassification": {
+    "llama_lines": 2,
+    "changed": [
+     "-    ...",
+     "+    pass"
+    ]
+   }
+  },
+  "only_in_x": [],
+  "only_in_llama": [
+   "LlamaForQuestionAnswering",
+   "LlamaForTokenClassification"
+  ],
+  "llama_total_lines": 177,
+  "x_total_lines": 178,
+  "diff_lines": 35
+ },
+ "gemma": {
+  "classes": {
+   "LlamaRMSNorm": {
+    "llama_lines": 13,
+    "changed": [
+     "-    def __init__(self, hidden_size, eps: float=1e-06) -> None:",
+     "+    def __init__(self, dim: int, eps: float=1e-06):",
+     "-        self.weight = nn.Parameter(torch.ones(hidden_size))",
+     "-        self.variance_epsilon = eps",
+     "-    def forward(self, hidden_states: torch.Tensor) -> torch.Tensor:",
+     "-        input_dtype = hidden_states.dtype",
+     "-        hidden_states = hidden_states.to(torch.float32)",
+     "-        variance = hidden_states.pow(2).mean(-1, keepdim=True)",
+     "-        hidden_states = hidden_states * torch.rsqrt(variance + self.variance_epsilon)",
+     "-        return self.weight * hidden_states.to(input_dtype)",
+     "+        self.eps = eps",
+     "+        self.weight = nn.Parameter(torch.zeros(dim))",
+     "+    def _norm(self, x):",
+     "+        return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps)",
+     "+    def forward(self, x):",
+     "+        output = self._norm(x.float())",
+     "+        output = output * (1.0 + self.weight.float())",
+     "+        return output.type_as(x)",
+     "-        return f'{tuple(self.weight.shape)}, eps={self.variance_epsilon}'",
+     "+        return f'{tuple(self.weight.shape)}, eps={self.eps}'"
+    ]
+   },
+   "LlamaMLP": {
+    "llama_lines": 13,
+    "changed": [
+     "-        self.gate_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=config.mlp_bias)",
+     "-        self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=config.mlp_bias)",
+     "-        self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=config.mlp_bias)",
+     "+        self.gate_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)",
+     "+        self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)",
+     "+        self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=False)"
+    ]
+   },
+   "LlamaAttention": {
+    "llama_lines": 30,
+    "changed": [
+     "-        self.is_causal = True",
+     "+        self.is_causal = not getattr(config, 'use_bidirectional_attention', False)"
+    ]
+   },
+   "LlamaPreTrainedModel": {
+    "llama_lines": 12,
+    "changed": [
+     "+    @torch.no_grad()",
+     "+    def _init_weights(self, module):",
+     "+        super()._init_weights(module)",
+     "+        if 'RMSNorm' in module.__class__.__name__:",
+     "+            init.zeros_(module.weight)",
+     "+        elif isinstance(module, LlamaTextScaledWordEmbedding):",
+     "+            init.constant_(module.embed_scale, module.scalar_embed_scale)"
+    ]
+   },
+   "LlamaModel": {
+    "llama_lines": 33,
+    "changed": [
+     "-        self.embed_tokens = nn.Embedding(config.vocab_size, config.hidden_size, self.padding_idx)",
+     "+        self.embed_tokens = LlamaTextScaledWordEmbedding(config.vocab_size, config.hidden_size, self.padding_idx, embed_scale=self.config.hidden_size ** 0.5)",
+     "-    @deprecate_kwarg('past_key_values', '5.40.0', new_name='cache')",
+     "+    @deprecate_kwarg('past_key_values', '5.40.0', new_name='cache')",
+     "-            inputs_embeds: torch.Tensor = self.embed_tokens(input_ids)",
+     "+            inputs_embeds = self.embed_tokens(input_ids)",
+     "-            hidden_states = decoder_layer(hidden_states, attention_mask=causal_mask, position_embeddings=position_embeddings, position_ids=position_ids, cache=cache, use_cache=use_cache, **kwargs)",
+     "+            hidden_states = decoder_layer(hidden_states, attention_mask=causal_mask, position_ids=position_ids, cache=cache, use_cache=use_cache, position_embeddings=position_embeddings, **kwargs)",
+     "-        return BaseModelOutputWithPast(last_hidden_state=hidden_states, cache=cache)",
+     "+        return BaseModelOutputWithPast(last_hidden_state=hidden_states, cache=cache if use_cache else None)"
+    ]
+   },
+   "LlamaForSequenceClassification": {
+    "llama_lines": 2,
+    "changed": [
+     "-    ...",
+     "+    pass"
+    ]
+   },
+   "LlamaForTokenClassification": {
+    "llama_lines": 2,
+    "changed": [
+     "-    ...",
+     "+    pass"
+    ]
+   }
+  },
+  "only_in_x": [
+   {
+    "class": "LlamaTextScaledWordEmbedding",
+    "lines": 7,
+    "code": [
+     "class LlamaTextScaledWordEmbedding(nn.Embedding):",
+     "    def __init__(self, num_embeddings: int, embedding_dim: int, padding_idx: int, embed_scale: float=1.0):",
+     "        super().__init__(num_embeddings, embedding_dim, padding_idx)",
+     "        self.scalar_embed_scale = embed_scale",
+     "        self.embed_scale = nn.Buffer(torch.tensor(embed_scale), persistent=False)",
+     "    def forward(self, input_ids: torch.Tensor):",
+     "        return super().forward(input_ids) * self.embed_scale.to(self.weight.dtype)"
+    ]
+   }
+  ],
+  "only_in_llama": [
+   "LlamaForQuestionAnswering"
+  ],
+  "llama_total_lines": 177,
+  "x_total_lines": 189,
+  "diff_lines": 56
+ }
+}

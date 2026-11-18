@@ -1,0 +1,27 @@
+{
+ "arxiv": "2306.11644",
+ "resolution": {
+  "fields": [
+   {
+    "field": "scores_copied",
+    "value": "YES",
+    "quote": "We use self-reported scores whenever available. Despite being trained at vastly smaller scale, phi-1 outperforms competing models",
+    "page": 2,
+    "reason": "Table 1 caption states comparator scores are self-reported (taken from the cited papers) whenever those papers report them; dashes mark unavailable scores, not author re-runs. 'Whenever available' does not indicate a mix of copied and self-evaluated scores."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 4249,
+   "outputTokens": 1248,
+   "totalTokens": 5497,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

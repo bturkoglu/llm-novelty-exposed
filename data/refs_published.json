@@ -1,0 +1,77 @@
+{
+ "ainslie2023": {
+  "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "pages": "4895-4901",
+  "year": 2023,
+  "doi": "10.18653/v1/2023.emnlp-main.298",
+  "type": "proceedings-article"
+ },
+ "devlin2019": {
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+  "pages": "4171-4186",
+  "year": 2019,
+  "doi": "10.18653/v1/n19-1423",
+  "type": "proceedings-article"
+ },
+ "dodge2019": {
+  "title": "Show Your Work: Improved Reporting of Experimental Results",
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "pages": "2185-2194",
+  "year": 2019,
+  "doi": "10.18653/v1/d19-1224",
+  "type": "proceedings-article"
+ },
+ "narang2021": {
+  "title": "Do Transformer Modifications Transfer Across Implementations and Applications?",
+  "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+  "pages": "5758-5773",
+  "year": 2021,
+  "doi": "10.18653/v1/2021.emnlp-main.465",
+  "type": "proceedings-article"
+ },
+ "ouyang2022": {
+  "title": "InstructPatentGPT: training patent language models to follow instructions with human feedback",
+  "venue": "Artificial Intelligence and Law",
+  "pages": "739-782",
+  "year": 2024,
+  "doi": "10.1007/s10506-024-09401-1",
+  "type": "journal-article"
+ },
+ "hugginggraph2025": {
+  "title": "HuggingGraph: Understanding the Supply Chain of LLM Ecosystem",
+  "venue": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+  "pages": "5997-6005",
+  "year": 2025,
+  "doi": "10.1145/3746252.3761510",
+  "type": "proceedings-article"
+ },
+ "camacho2023": {
+  "title": "Exposing the grey wolf, moth‐flame, whale, firefly, bat, and antlion algorithms: six misleading optimization techniques inspired by bestial metaphors",
+  "venue": "International Transactions in Operational Research",
+  "pages": "2945-2971",
+  "year": 2022,
+  "doi": "10.1111/itor.13176",
+  "volume": "30",
+  "issue": "6"
+ },
+ "weyland2010": {
+  "title": "A Rigorous Analysis of the Harmony Search Algorithm",
+  "venue": "Modeling, Analysis, and Applications in Metaheuristic Computing",
+  "pages": "72-83",
+  "year": 2012,
+  "doi": "10.4018/978-1-4666-0270-0.ch005",
+  "volume": null,
+  "issue": null
+ },
+ "mitchell2019": {
+  "title": "Model Cards for Model Reporting",
+  "venue": "Proceedings of the Conference on Fairness, Accountability, and Transparency",
+  "pages": "220-229",
+  "year": 2019,
+  "doi": "10.1145/3287560.3287596",
+  "volume": null,
+  "issue": null
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "arxiv": "2501.08313",
+ "model": "minimax",
+ "coding": {
+  "note": "Claims are restricted to the abstract, introduction and contribution list; repeated model/performance claims are consolidated. The hybrid-attention ablation is matched (28B total/5B active, 1T tokens; Table 5), whereas MoE versus dense is size-confounded. Different random seeds are mentioned on p23, but no numerical across-run variance is reported, so MULTI rather than VAR. Hardware counts without duration do not meet compute disclosure. External LongBench scores concern comparators, not an independent evaluation of MiniMax. Named modifications (global router, Varlen Ring Attention, LASP+) are not coded as renames of unchanged prior techniques. Data proportions for context-length buckets do not reconstruct the source mixture.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "MULTI",
+   "quote": "where Δobvious represents the obvious difference in performance between models and 𝜎seed denotes\nthe standard deviation across different random seeds.",
+   "page": 23
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "We compare with other leading and open-source LLMs, which we\nevaluate under the same setting, if not reported.",
+   "page": 29
+  },
+  "claims": [
+   {
+    "claim": "Introduce MiniMax-Text-01 and MiniMax-VL-01 with top-tier benchmark performance.",
+    "category": "OTHER",
+    "quote": "We introduce MiniMax-01 series, including MiniMax-Text-01 and MiniMax-VL-01, which are comparable\nto top-tier models while offering superior capabilities in processing longer contexts.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Support one-million-token training contexts and extrapolate to four million tokens during inference.",
+    "category": "CTX",
+    "quote": "million tokens during training and extrapolate to 4 million tokens during inference at an affordable\n  cost.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Use a novel hybrid lightning/softmax attention architecture.",
+    "category": "ARCH",
+    "quote": "However, our novel architecture, which integrates lightning attention, softmax attention, and\nMoE, necessitates a complete redesign of both our training and inference frameworks.",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "Both the base model and\nthe modified model are trained on 1 trillion tokens. As shown in Table 5, the results reveal that",
+    "ablation_page": 12
+   },
+   {
+    "claim": "Integrate lightning attention with MoE to maximize parameter and computational capacity.",
+    "category": "ARCH",
+    "quote": "To maximize computational capacity, we integrate it\n  with Mixture of Experts (MoE), creating a model with 32 experts and 456 billion total parameters, of",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters\nout of a total of 24 billion parameters.",
+    "ablation_page": 5
+   },
+   {
+    "claim": "First successful large-scale deployment of linear attention.",
+    "category": "SCALE",
+    "quote": "We demonstrate the first successful large-scale implementation of linear attention. While\n  linear attention has been studied before, it has never been deployed at this scale.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Develop optimized parallel strategies and computation-communication overlap for MoE and lightning attention.",
+    "category": "EFF",
+    "quote": "We develop an optimized parallel strategy and highly\n  efficient computation-communication overlap techniques for MoE and lightning attention.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Design variable-length ring attention to reduce redundant long-context computation.",
+    "category": "EFF",
+    "quote": "we design varlen ring attention to reduce the\nredundancy in computation and the improved version of Linear Attention Sequence Parallelism (LASP)",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Improve Linear Attention Sequence Parallelism to exploit device parallelism.",
+    "category": "EFF",
+    "quote": "the improved version of Linear Attention Sequence Parallelism (LASP)\n(Sun et al., 2024) to fully utilize the device’s parallel capabilities.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Implement lightning-attention inference CUDA kernels achieving over 75% end-to-end MFU on H20.",
+    "category": "EFF",
+    "quote": "a comprehensive set of CUDA kernels tailored for lightning attention inference, achieving over 75%\n  Model Flops Utilization (MFU) (Chowdhery et al., 2023) end-to-end on the Nvidia H20.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide a practical experimental methodology for exploring models, data, evaluations and algorithms.",
+    "category": "OTHER",
+    "quote": "We outline a practical approach and experimental methodology for the exploration of various\n  models, datasets, evaluations, and algorithms, which may serve as a valuable reference.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Publicly release model weights and offer a cost-effective API.",
+    "category": "OTHER",
+    "quote": "We publicly release the weights and offer a cost-effective API, aiming to help others develop",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Build the vision-language model by continued training on 512 billion vision-language tokens.",
+    "category": "TRAIN",
+    "quote": "Our vision-language model, MiniMax-VL-01 is built through continued training with 512 billion\n  vision-language tokens.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Propose a three-stage pretraining procedure to extend the context window to one million tokens.",
+    "category": "CTX",
+    "quote": "parameters and propose a three-stage training\n  600,000  procedure, successfully extending the context",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "The pre-training corpus for MiniMax-Text-01 encompasses a comprehensive and meticulously cu-\nrated dataset, incorporating diverse sources including academic literature, books, web content, and",
+   "page": 21
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "constant learning rate for 7.2T tokens. In the",
+   "page": 24
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We compare with other leading and open-source LLMs, which we\nevaluate under the same setting, if not reported.",
+   "page": 29
+  },
+  "renames": [],
+  "comparators": [
+   "GPT-4o (11-20)",
+   "Claude-3.5-Sonnet (10-22)",
+   "Gemini-1.5-Pro (002)",
+   "Gemini-2.0-Flash (exp)",
+   "Qwen2.5-72B-Inst.",
+   "DeepSeek-V3",
+   "Llama-3.1-405B-Inst.",
+   "Qwen2-VL-72B-Inst.",
+   "InternVL2.5-78B",
+   "Llama-3.2-90B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "f8444bef6f878adf7396b4f322c6d5b9abe7d3dcb9346dbaf1dd508fddfb85c5",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1818,
+   "totalTokens": 78105,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 76155
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:00+00:00"
+ }
+}

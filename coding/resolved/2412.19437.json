@@ -1,0 +1,45 @@
+{
+ "arxiv": "2412.19437",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The abstract and introduction only report that training happened to be stable (no spikes or rollbacks). They never frame stability as a new/novel/first method, and it is absent from the main-contribution list. Not an ARCH/TRAIN novelty claim, so drop it."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "We validate our FP8 mixed precision framework with a comparison to BF16 training on top of two baseline models across different scales.",
+    "page": 47,
+    "reason": "Page 5 lists this as their own contribution (\"for the first time, validate\" FP8 on an extremely large-scale model), which is a TRAIN precision method. Appendix B compares FP8 vs BF16, but only via loss curves (Figure 10) on smaller proxy MoEs, with no matched benchmark table, so ablation is PARTIAL not YES."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7124,
+   "outputTokens": 4311,
+   "totalTokens": 11435,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

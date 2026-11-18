@@ -1,0 +1,155 @@
+{
+ "arxiv": "2512.24618",
+ "model": "youtu",
+ "coding": {
+  "note": "Claims are deduplicated across the abstract and introduction; compact MLA architecture, tokenizer and long-context support are separated by category. Agentic mid-training has a with/without comparison, but matched pre-training token budgets are not established, so it is PARTIAL; the complete curriculum has no controlled ablation. Training seeds are not reported: repeated inference trials and sampling confidence intervals do not establish independent training runs. Data categories and quantities are disclosed, but underlying sources are insufficient to reconstruct the corpus. Comparator evaluations are described as author-run; no copied scores or independent third-party evaluation is reported. No explicit renaming of an unchanged existing technique is established.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "We evaluate the models in Table 6 based on the open-source evaluation framework lm-evaluation-harness2 ,\nand using the version of Transformers recommended in their own configurations.",
+   "page": 23
+  },
+  "claims": [
+   {
+    "quote": "Lightweight Agentic LLM. We introduce Youtu-LLM, a lightweight open-source language model that\n  significantly outperforms state-of-the-art models of similar or even larger size in agent benchmarks.",
+    "claim": "Release of a lightweight open-source agentic language model with leading performance at similar or larger scales.",
+    "category": "OTHER",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Long-Context Support: Built on a dense Multi-Latent Attention (MLA) architecture with a novel\n  STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+    "claim": "Compact dense MLA architecture for a lightweight agentic model.",
+    "category": "ARCH",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "We compared GQA and MLA by pre-training 1B-parameter models from scratch on 500B tokens.",
+    "ablation_page": 16
+   },
+   {
+    "quote": "Long-Context Support: Built on a dense Multi-Latent Attention (MLA) architecture with a novel\n  STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+    "claim": "Novel STEM-oriented tokenizer vocabulary.",
+    "category": "TOK",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "STEM-oriented vocabulary, Youtu-LLM supports a 128k context window. This design enables robust\n  long-context reasoning and state tracking within a minimal memory footprint, making it ideal for\n  long-horizon agent and reasoning tasks.",
+    "claim": "128k context support enabling long-horizon reasoning and state tracking with a small memory footprint.",
+    "category": "CTX",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We curated a massive corpus of approximately 11T tokens and implemented a multi-stage training\n  strategy.",
+    "claim": "Curation of an approximately 11T-token pre-training corpus.",
+    "category": "DATA",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "By progressively shifting the pre-training data distribution from general commonsense to\n  complex STEM and agentic tasks, we ensure the model acquires deep cognitive abilities rather than\n  superficial alignment.",
+    "claim": "Principled Commonsense-STEM-Agent multi-stage curriculum shifting the data distribution toward STEM and agentic tasks.",
+    "category": "TRAIN",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "In this work, we claim that strong agentic performance in lightweight LLMs is achievable when agent-\noriented signals are injected early and systematically through an agentic pre-training process.",
+    "claim": "Induction of native agentic capabilities by systematically injecting agent-oriented signals during pre-training.",
+    "category": "TRAIN",
+    "page": 3,
+    "ablation": "PARTIAL",
+    "ablation_quote": "We evaluate models with and\nwithout agentic mid-training under aligned post-training settings, as described in Section 4, and compare\ntheir performance across multiple agent-specific evaluation benchmarks, which are widely adopted in",
+    "ablation_page": 29
+   },
+   {
+    "quote": "Scalable Agentic Trajectory Construction. We present a series of scalable frameworks for constructing\n  high-quality agentic trajectory data, spanning reasoning, reflection and planning abilities, across\n  multiple domains such as mathematics, coding, deep research and general tool use.",
+    "claim": "Scalable frameworks synthesizing diverse high-quality agentic trajectories across mathematics, coding, deep research and tool use.",
+    "category": "DATA",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Empirical Insights. We provide the first systematic analysis of agentic pre-training in lightweight\n  LLMs, revealing the scalable growth of agentic abilities.",
+    "claim": "First systematic analysis of agentic pre-training in lightweight models, including scalable growth of agent capabilities.",
+    "category": "OTHER",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "tokens. The high-quality Chinese and English web pages and encyclopedic knowledge totaled 6.1T tokens,\naccounting for over 70% of the raw corpus.",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Considering the training scale of 2B parameters and 10.84T tokens of data, we\nadopt an optimal global batch size of 12M tokens and a learning rate of 4e-4.",
+   "page": 16
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "YES",
+   "quote": "We evaluate the models in Table 6 based on the open-source evaluation framework lm-evaluation-harness2 ,\nand using the version of Transformers recommended in their own configurations.",
+   "page": 23
+  },
+  "renames": [],
+  "comparators": [
+   "Qwen3 1.7B Base",
+   "SmolLM3 3B Base",
+   "Gemma3 4B Base",
+   "Qwen3 4B Base",
+   "Llama3.1 8B Base",
+   "DeepSeek-R1-Distill-Qwen 1.5B",
+   "Qwen3 1.7B",
+   "SmolLM3 3B",
+   "Qwen3 4B",
+   "DeepSeek-R1-Distill-Llama 8B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "38d7ed4ce185f21b0a9730f5eb4a834475b0774bba661f47fabc0bb8500f8492",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1557,
+   "totalTokens": 46045,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 44356
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:02+00:00"
+ }
+}

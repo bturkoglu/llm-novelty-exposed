@@ -1,0 +1,125 @@
+{
+ "arxiv": "2506.21734",
+ "model": "hrm_text",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Hierarchical Reasoning Model: a new recurrent architecture with two coupled modules, a slow high-level module and a fast low-level module",
+    "category": "ARCH",
+    "quote": "we propose the Hierarchical Reasoning Model (HRM), a novel recurrent architecture that attains significant computational depth",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "retains the exact training setup of HRM but swaps in a Transformer architecture",
+    "ablation_page": 12
+   },
+   {
+    "claim": "Hierarchical convergence avoids the premature convergence of standard recurrent models",
+    "category": "ARCH",
+    "quote": "avoids the rapid convergence of standard recurrent models through a process we term",
+    "page": 3,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Standard architectures saturates, failing to benefit from increased depth. HRM overcomes this fundamental limitation",
+    "ablation_page": 3
+   },
+   {
+    "claim": "One-step gradient approximation removes the need for BPTT and uses O(1) memory",
+    "category": "TRAIN",
+    "quote": "we propose a one-step gradient approximation for training HRM, which offers",
+    "page": 3,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Deep supervision across segments, with the hidden state detached between segments",
+    "category": "TRAIN",
+    "quote": "we incorporate a deep supervision mechanism into HRM, as detailed next.",
+    "page": 7,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Adaptive computation time (halting learned with Q-learning), which also gives inference-time scaling",
+    "category": "TRAIN",
+    "quote": "Inspired by the above mechanism, we incorporate an adaptive halting strategy into HRM that",
+    "page": 7,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Figure 5 presents a performance comparison between two HRM variants: one incorporating ACT and another employing a fixed computational step count",
+    "ablation_page": 8
+   },
+   {
+    "claim": "With 27M parameters and about 1000 training samples, and no pre-training, HRM achieves strong results on Sudoku, Maze and ARC",
+    "category": "OTHER",
+    "quote": "With only 27 million parameters, HRM achieves exceptional performance on complex reasoning tasks using only 1000 training samples.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduces the Sudoku-Extreme benchmark dataset",
+    "category": "EVAL",
+    "quote": "We introduce Sudoku-Extreme, a more challenging dataset that is compiled from the",
+    "page": 11,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "o3-mini-high",
+   "Claude 3.7 8K",
+   "Deepseek R1",
+   "Direct pred (Transformer)"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "while for Sudoku and Maze, the scores are obtained by evaluating through the corresponding API.",
+   "page": 12
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "the scores of the CoT models are taken from the official leaderboard",
+   "page": 12
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Easy puzzles compiled from Kaggle, 17-clue, plus unbiased samples from the Sudoku puzzle",
+   "page": 11
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "This is a small task-specific model (27M parameters) trained from scratch, with no pre-training. The code is released, so I coded it as a release report. Architecture ablations are PARTIAL: the 'Direct pred' Transformer baseline is the same size and uses the same training setup, but the HRM side also adds ACT, so the comparison is confounded. The depth comparison in Figure 2 is a plot, not a table. The ACT vs fixed-step comparison (Fig. 5) is controlled but appears only as a figure, so I chose the lower level, PARTIAL. Data disclosure is PARTIAL rather than FULL, to be conservative: the Sudoku sources and counts are given, but the ARC augmentation mixture is not quantified. Comparator scores are MIXED: ARC scores come from the official leaderboard, while the authors evaluated Sudoku and Maze themselves through the APIs. The leaderboard is used only for comparator scores, not for an independent evaluation of HRM, so third_party is NO."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "830ee5654da19fbe84eb9812db140240f89e7dd40ddb33b29d46e46df01b105e",
+  "session_id": "eb624b18-0a5e-42cb-a811-7df6afe3a2ed",
+  "cost_usd": 0.3405902,
+  "timestamp": "2026-11-14T12:15:21+00:00"
+ }
+}

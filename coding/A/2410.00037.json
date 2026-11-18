@@ -1,0 +1,144 @@
+{
+ "arxiv": "2410.00037",
+ "model": "moshi",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Helium, a 7B text LLM pretrained on 2.1T tokens of public English data",
+    "category": "SCALE",
+    "quote": "We present Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mimi neural audio codec distilling semantic information into first level of acoustic tokens with improved training tricks",
+    "category": "TOK",
+    "quote": "We rather extend the approach of Zhang et al. (2024b) by distilling semantic information into the first level of acoustic tokens and introduce improved training tricks.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "New hierarchical streaming architecture (Helium + small Depth Transformer, RQ-Transformer) for audio tokens",
+    "category": "ARCH",
+    "quote": "a new architecture for audio language modeling, which combines Helium with a smaller Transformer (Vaswani et al., 2017) model to predict audio",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "In that context, modeling RVQ tokens with an RQ-Transformer significantly improves perplexity over using separate classification heads.",
+    "ablation_page": 26
+   },
+   {
+    "claim": "First multi-stream audio language model for full-duplex dialogue",
+    "category": "ARCH",
+    "quote": "We furthermore introduce the first multi-stream audio language model, i.e. a model that explicitly processes the input and output audio streams jointly into two autoregressive token streams.",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Inner Monologue: predicting time-aligned text tokens as prefix to audio tokens",
+    "category": "TRAIN",
+    "quote": "we introduce Inner Monologue, a new training and inference setup for audio language models that significantly improves the factuality and linguistic quality of generated speech",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "Finally, the most drastic improvement to the quality and length of generated speech comes from enabling Inner Monologue.",
+    "ablation_page": 26
+   },
+   {
+    "claim": "Delay between text and audio tokens yields streaming ASR and TTS",
+    "category": "OTHER",
+    "quote": "forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from a Moshi model.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "First real-time full-duplex spoken LLM with 160ms theoretical latency",
+    "category": "EFF",
+    "quote": "model is the first real-time full-duplex spoken large language model, with a",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State of the art among speech-text models for speech modeling and spoken QA",
+    "category": "OTHER",
+    "quote": "show that our model is state of the art among existing speech-text models for speech modeling and spoken question answering",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "MPT",
+   "Falcon",
+   "Llama 2",
+   "OLMo",
+   "Mistral",
+   "Gemma 1",
+   "GSLM",
+   "AudioLM",
+   "TWIST",
+   "VoxtLM",
+   "Spirit-LM",
+   "SpeechGPT",
+   "Spectron",
+   "dGSLM"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We keep its first 3 RVQ levels to obtain a 1.5kbps bitrate.",
+   "page": 23
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "For the first two, we use the number reported by (Nachmani et al., 2024).",
+   "page": 29
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "More specifically, 12.5% of our dataset is from the following curated sources",
+   "page": 17
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "compared to the 2.1T tokens that are used to train Helium",
+   "page": 22
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Text data mixture is well specified, but the 7M-hour audio corpus sources are undisclosed, so data is PARTIAL. H100 use is mentioned without hours, so compute is N. Mimi is coded as TOK (ablation NA) even though Table 3 ablates its parts. Multi-stream has no with-vs-without ablation. The RQ-Transformer and Inner Monologue ablations are matched (same Helium init and audio pretraining). Baseline scores are partly copied (Tables 7, 8, 9) and partly rerun (codec baselines), so both are MIXED. There is no single main table, so comparators are combined across Tables 2, 7, 8 and 9. MUSHRA ± values are rater CIs, not seed variance, so seeds is NR."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "a39235c0d969af85d275992bda04f8fd18d169fd4b1175ec53741ba1ffec7656",
+  "session_id": "ac231593-e15d-4f75-853d-e7356452a870",
+  "cost_usd": 0.7643342,
+  "timestamp": "2026-11-14T12:13:38+00:00"
+ }
+}

@@ -1,0 +1,172 @@
+architecture,added_to_library,first_arxiv_id_in_docs,doc_page,status,reason,stratum_year,in_sample
+bart,2020-11-16,1910.13461,True,NOT_ELIGIBLE,report before 2020,2019,False
+blenderbot,2020-11-16,2004.13637,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2020,False
+camembert,2020-11-16,1911.03894,True,NOT_ELIGIBLE,report before 2020,2019,False
+electra,2020-11-16,2003.10555,True,ELIGIBLE,,2020,True
+marian,2020-11-16,1804.00344,True,NOT_ELIGIBLE,report before 2020,2018,False
+mbart,2020-11-16,2001.08210,True,ELIGIBLE,,2020,True
+pegasus,2020-11-16,1912.08777,True,NOT_ELIGIBLE,report before 2020,2019,False
+prophetnet,2020-11-16,2001.04063,True,ELIGIBLE,,2020,True
+roberta,2020-11-16,1907.11692,True,NOT_ELIGIBLE,report before 2020,2019,False
+big_bird,2021-03-30,2007.14062,True,ELIGIBLE,,2020,True
+gpt_neo,2021-03-30,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+bigbird_pegasus,2021-05-07,2007.14062,True,DUPLICATE,report shared with big_bird,2020,False
+roformer,2021-05-20,2104.09864,True,ELIGIBLE,,2021,False
+rembert,2021-07-24,2010.12821,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2020,False
+gptj,2021-08-31,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+trocr,2021-10-13,2109.10282,True,ELIGIBLE,,2021,False
+xglm,2022-01-28,2112.10668,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2021,False
+plbart,2022-02-18,2103.06333,True,ELIGIBLE,,2021,False
+opt,2022-05-12,2205.01068,True,ELIGIBLE,,2022,True
+gpt_neox,2022-05-24,2204.06745,True,ELIGIBLE,title names GPT-NeoX-20B; auto match missed it because of the hyphen,2022,True
+bloom,2022-06-09,2211.05100,True,ELIGIBLE,,2022,False
+codegen,2022-06-24,2203.13474,True,ELIGIBLE,,2022,True
+mvp,2022-06-29,2206.12131,True,ELIGIBLE,,2022,True
+ernie,2022-09-09,1904.09223,True,NOT_ELIGIBLE,report before 2020,2019,False
+gpt_neox_japanese,2022-09-14,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+whisper,2022-10-05,2212.04356,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2022,False
+roc_bert,2022-11-08,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+biogpt,2022-12-05,2210.10341,True,ELIGIBLE,,2022,False
+git,2023-01-03,2205.14100,True,ELIGIBLE,,2022,False
+xmod,2023-02-10,2205.06266,True,ELIGIBLE,,2022,True
+llama,2023-03-16,2302.13971,True,ELIGIBLE,,2023,False
+gpt_bigcode,2023-04-10,2301.03988,True,ELIGIBLE,,2023,False
+cpmant,2023-04-12,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+rwkv,2023-05-09,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+musicgen,2023-06-29,2306.05284,True,ELIGIBLE,,2023,False
+falcon,2023-07-11,2311.16867,True,ELIGIBLE,,2023,True
+mpt,2023-07-25,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+persimmon,2023-09-12,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+mistral,2023-09-27,2310.06825,True,ELIGIBLE,,2023,True
+fuyu,2023-10-19,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+clvp,2023-11-10,2305.07243,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2023,False
+phi,2023-11-10,2306.11644,True,ELIGIBLE,,2023,True
+mixtral,2023-12-11,2401.04088,True,ELIGIBLE,,2024,False
+qwen2,2024-01-17,2407.10671,True,ELIGIBLE,,2024,False
+stablelm,2024-02-14,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+gemma,2024-02-21,2403.08295,True,ELIGIBLE,,2024,True
+starcoder2,2024-02-28,2402.19173,True,ELIGIBLE,,2024,False
+mamba,2024-03-05,2312.00752,True,ELIGIBLE,,2023,True
+cohere,2024-03-15,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+musicgen_melody,2024-03-18,2306.05284,True,DUPLICATE,report shared with musicgen,2023,False
+qwen2_moe,2024-03-27,2407.10671,True,DUPLICATE,report shared with qwen2,2024,False
+recurrent_gemma,2024-04-10,2404.07839,True,ELIGIBLE,,2024,True
+olmo,2024-04-17,2402.00838,True,ELIGIBLE,,2024,True
+dbrx,2024-04-18,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+jamba,2024-04-18,2403.19887,True,ELIGIBLE,,2024,False
+phi3,2024-04-24,2404.14219,True,ELIGIBLE,,2024,True
+jetmoe,2024-05-14,2306.04640,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2023,False
+gemma2,2024-06-27,2408.00118,True,ELIGIBLE,,2024,True
+mamba2,2024-08-06,2405.21060,True,ELIGIBLE,,2024,True
+nemotron,2024-08-06,2402.16819,True,ELIGIBLE,,2024,True
+falcon_mamba,2024-08-12,2410.05355,True,ELIGIBLE,,2024,True
+granite,2024-08-27,2408.13359,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2024,False
+olmoe,2024-09-03,2409.02060,True,ELIGIBLE,,2024,True
+granitemoe,2024-09-20,2408.13359,True,DUPLICATE,report shared with granite,2024,False
+mllama,2024-09-25,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+phimoe,2024-10-04,2404.14219,True,DUPLICATE,report shared with phi3,2024,False
+zamba,2024-10-04,2405.16712,True,ELIGIBLE,,2024,False
+moshi,2024-10-16,2410.00037,True,ELIGIBLE,,2024,True
+glm,2024-10-18,2406.12793,True,ELIGIBLE,,2024,False
+olmo2,2024-11-25,2501.00656,True,ELIGIBLE,,2025,False
+aria,2024-12-06,2410.05993,True,ELIGIBLE,,2024,True
+cohere2,2024-12-13,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+bamba,2024-12-19,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+diffllama,2025-01-07,2410.05258,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2024,False
+emu3,2025-01-10,2409.18869,True,ELIGIBLE,,2024,True
+helium,2025-01-13,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+zamba2,2025-01-27,2411.15242,True,ELIGIBLE,,2024,True
+granitemoeshared,2025-02-14,2408.13359,True,DUPLICATE,report shared with granite,2024,False
+gemma3,2025-03-12,2503.19786,True,ELIGIBLE,,2025,False
+phi4_multimodal,2025-03-25,2503.01743,True,ELIGIBLE,,2025,True
+deepseek_v3,2025-03-28,2412.19437,True,ELIGIBLE,,2024,True
+qwen3,2025-03-31,2505.09388,True,ELIGIBLE,,2025,False
+qwen3_moe,2025-03-31,2505.09388,True,DUPLICATE,report shared with qwen3,2025,False
+llama4,2025-04-05,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+glm4,2025-04-09,2406.12793,True,DUPLICATE,report shared with glm,2024,False
+bitnet,2025-04-28,2504.12285,True,ELIGIBLE,,2025,True
+granitemoehybrid,2025-05-05,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+csm,2025-05-07,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+falcon_h1,2025-05-21,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+minimax,2025-06-04,2501.08313,True,ELIGIBLE,,2025,True
+arcee,2025-06-24,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+dots1,2025-06-25,2506.05767,True,ELIGIBLE,,2025,True
+smollm3,2025-06-25,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+gemma3n,2025-06-26,2411.07501,True,NOT_ELIGIBLE,component paper (LAuReL residual layer); auto hit was the letter 'n',2024,False
+doge,2025-07-08,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+deepseek_v2,2025-07-09,2405.04434,True,ELIGIBLE,,2024,False
+lfm2,2025-07-10,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+ernie4_5,2025-07-21,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+ernie4_5_moe,2025-07-21,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+glm4_moe,2025-07-21,2508.06471,True,ELIGIBLE,,2025,True
+xlstm,2025-07-25,2405.04517,True,ELIGIBLE,,2024,False
+exaone4,2025-07-26,2507.11407,True,ELIGIBLE,,2025,True
+gpt_oss,2025-08-05,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+kosmos2_5,2025-08-19,2309.11419,True,ELIGIBLE,,2023,True
+hunyuan_v1_dense,2025-08-22,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+hunyuan_v1_moe,2025-08-22,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+seed_oss,2025-08-22,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+apertus,2025-08-28,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+qwen3_next,2025-09-10,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+ministral,2025-09-11,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+vaultgemma,2025-09-12,1607.00133,True,NOT_ELIGIBLE,report before 2020,2016,False
+olmo3,2025-09-16,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+longcat_flash,2025-09-17,2509.01322,True,ELIGIBLE,,2025,True
+flex_olmo,2025-09-18,2507.07024,True,ELIGIBLE,,2025,False
+blt,2025-09-19,2412.09871,True,ELIGIBLE,,2024,False
+lfm2_moe,2025-10-07,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+cwm,2025-10-09,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+nanochat,2025-11-27,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+afmoe,2025-11-29,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+ministral3,2025-12-01,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+jais2,2025-12-17,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+minimax_m2,2026-01-09,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+glm4_moe_lite,2026-01-13,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+solar_open,2026-01-22,2601.07022,True,ELIGIBLE,,2026,True
+youtu,2026-01-28,2512.24618,True,ELIGIBLE,,2025,True
+exaone_moe,2026-02-04,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+glm_moe_dsa,2026-02-09,2603.12201,True,NOT_ELIGIBLE,"component paper (IndexCache sparse-attention reuse), not a release report",2026,False
+qwen3_5,2026-02-09,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+qwen3_5_moe,2026-02-09,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+olmo_hybrid,2026-02-26,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+nemotron_h,2026-03-03,2504.03624,True,ELIGIBLE,,2025,False
+mistral4,2026-03-16,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+gemma4,2026-04-02,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+hy_v3,2026-04-22,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+laguna,2026-04-28,2408.15664,True,NOT_ELIGIBLE,arXiv title/abstract does not name the model or family,2024,False
+deepseek_v4,2026-05-02,2606.19348,True,ELIGIBLE,,2026,True
+gemma4_assistant,2026-05-05,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+hyperclovax,2026-05-08,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+hrm_text,2026-05-18,2506.21734,True,ELIGIBLE,,2025,True
+cohere2_moe,2026-05-20,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+mellum,2026-05-28,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+gemma4_unified,2026-06-03,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+gemma4_unified_assistant,2026-06-03,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+deepseek_v32,2026-06-10,2512.02556,True,ELIGIBLE,,2025,False
+minimax_m3_vl,2026-06-12,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+minicpm3,2026-06-22,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+mimo_v2_flash,2026-06-30,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+zaya,2026-07-01,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+inkling,2026-07-15,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+axk1,2026-07-23,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+axk2,2026-07-24,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+granite_swa,2026-07-29,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+granitemoe_swa,2026-07-29,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+cohere_compass,2026-08-10,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+qwen4_exp,2026-08-26,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+kimi_linear,2026-09-04,2510.26692,True,ELIGIBLE,,2025,True
+hy_v4,2026-09-07,2603.12201,True,DUPLICATE,report shared with glm_moe_dsa,2026,False
+kolibri1,2026-10-12,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+bailing_hybrid,2026-10-13,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+beam,2026-10-16,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+flint,2026-10-21,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+lfm3,2026-11-05,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+inkling2,2026-11-11,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+dots3_note,2026-11-12,,True,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+blenderbot_small,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+kosmos2,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+megatron_bert,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+modernbert_decoder,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+roberta_prelayernorm,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+xlm_roberta,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False
+xlm_roberta_xl,,,False,NOT_ELIGIBLE,no arXiv link in model_doc,,False

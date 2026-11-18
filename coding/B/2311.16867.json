@@ -1,0 +1,141 @@
+{
+ "arxiv": "2311.16867",
+ "model": "falcon",
+ "coding": {
+  "note": "C1 is restricted to contributions and priority claims in the abstract/introduction; later technical recipe decisions are not automatically treated as novelty claims. Repeated claims are consolidated. Data disclosure is conservatively PARTIAL: Table 15 gives category fractions and named sources, but not the within-category source proportions needed to reconstruct the mixture. Comparator names summarize the principal results tables by model family (maximum 15). Third-party YES refers to the explicitly reported BigScience evaluation of comparator GPT-3, not an independent evaluation of Falcon. VAR refers to small-scale reference/ablation experiments, not repeated training of the released large models. No clear renaming of an existing technique is established; monolayer names a custom implementation rather than unambiguously renaming selective recomputation.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "VAR",
+   "quote": "We independently quantified variance and average performance on over 50 tasks across 5 runs with\na different seed",
+   "page": 7
+  },
+  "scores_copied": {
+   "value": "YES",
+   "quote": "For all these tasks we take results for other models from the papers outlined above.",
+   "page": 34
+  },
+  "claims": [
+   {
+    "quote": "we openly release Falcon-7/40/180B, and a 600 billion",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce and openly release the Falcon-7B, Falcon-40B, and Falcon-180B model family.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Falcon-180B is the first publicly documented GPT-3-\nsized model to follow the updated scaling law recommendations of Hoffmann et al. (2022),",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "First publicly documented GPT-3-sized model following updated Chinchilla scaling recommendations; largest openly documented pretraining run, at 3.5 trillion tokens.",
+    "page": 2,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "a 5 trillion\ntokens high-quality filtered and deduplicated web dataset–the largest publicly documented.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Develop RefinedWeb, claimed to be the largest publicly documented high-quality filtered and deduplicated web dataset.",
+    "page": 2,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We release a 600B tokens extract of our web dataset, as well",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Release a 600-billion-token extract of the web dataset to support open research.",
+    "page": 1,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "we report on our custom distributed training codebase, allowing us to efficiently\n  pretrain these models on up to 4,096 A100s on cloud AWS infrastructure with\n  limited interconnect.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Custom distributed training tooling enables efficient pretraining on up to 4,096 A100 GPUs on cost-efficient AWS infrastructure with limited interconnect.",
+    "page": 1,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "At variance with these works, we extensively document the pretraining of the Falcon series.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Provide extensive public documentation of large-scale Falcon pretraining and its methods.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Falcon-180B nears the performance\nof PaLM-2 Large, positioning it as the best open model and in the top-3 of the best language models.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Falcon-180B nearly matches PaLM-2 Large, claimed to be the best open model and among the top three language models.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "Compute [PF-days]  730  2,800  43,500\n  Training [A100s]  384  384  4,096",
+   "page": 2
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "we include 8% multilingual\ndata and 3% code.",
+   "page": 19
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "with a total pretraining length of 3,500 billion tokens, without any upsampling.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "We report results for GPT-3 evaluated through the API by the BigScience group,",
+   "page": 36
+  },
+  "rerun": {
+   "value": "NO",
+   "quote": "For all these tasks we take results for other models from the papers outlined above.",
+   "page": 34
+  },
+  "renames": [],
+  "comparators": [
+   "GPT-3",
+   "GPT-3.5",
+   "GPT-4",
+   "Gopher",
+   "Chinchilla",
+   "MT-NLG",
+   "PaLM",
+   "PaLM-2",
+   "LLaMA-2",
+   "Inflection-1",
+   "Codex",
+   "StarCoder",
+   "PaLM-Coder",
+   "Code LLaMA"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "505be5fc6aa6c5c0d668bd148a313d71fa16d3ab4754edb5744c657e46e17222",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1361,
+   "totalTokens": 59303,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 57810
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:42+00:00"
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "arxiv": "2311.16867",
+ "model": "falcon",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Falcon-180B trained on over 3.5T tokens, the largest openly documented pretraining run",
+    "category": "SCALE",
+    "quote": "The largest model, Falcon-180B, has been trained on over 3.5 trillion tokens of text–the largest openly documented pretraining run.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Falcon-180B nears PaLM-2-Large performance at reduced cost, one of the three best LMs",
+    "category": "OTHER",
+    "quote": "It nears the performance of PaLM-2-Large at a reduced pretraining and inference cost, making it, to our knowledge, one of the three best language models in the world",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Custom distributed training codebase enabling efficient pretraining on up to 4,096 A100s on AWS with limited interconnect",
+    "category": "EFF",
+    "quote": "we report on our custom distributed training codebase, allowing us to efficiently pretrain these models on up to 4,096 A100s on cloud AWS infrastructure with limited interconnect.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open release of 600B token RefinedWeb extract and Falcon-7/40/180B models",
+    "category": "DATA",
+    "quote": "We release a 600B tokens extract of our web dataset, as well as the Falcon-7/40/180B models under a permissive license",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "First publicly documented GPT-3-sized model following Chinchilla scaling recommendations",
+    "category": "SCALE",
+    "quote": "Falcon-180B is the first publicly documented GPT-3-sized model to follow the updated scaling law recommendations of Hoffmann et al. (2022),",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "RefinedWeb: 5T-token filtered and deduplicated web dataset, largest publicly documented",
+    "category": "DATA",
+    "quote": "we developed RefinedWeb (Penedo et al., 2023), a 5 trillion tokens high-quality filtered and deduplicated web dataset–the largest publicly documented.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "PaLM-based architecture with independently validated decisions resulting in minor tweaks (multigroup, no GLU, no biases, etc.)",
+    "category": "ARCH",
+    "quote": "The architecture of the models is based on PaLM (Chowdhery et al., 2022), although we independently validated each decision, ultimately resulting in some minor tweaks",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "In Table 11, training 1B models on 30B tokens of The Pile, we find no clear benefits from adopting SwiGLU for zero-shot performance",
+    "ablation_page": 15
+   },
+   {
+    "claim": "Extensive public documentation of pretraining of a large-scale model",
+    "category": "OTHER",
+    "quote": "At variance with these works, we extensively document the pretraining of the Falcon series.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "VAR",
+   "quote": "We independently quantified variance and average performance on over 50 tasks across 5 runs with a different seed (we use this σ for architecture experiments)",
+   "page": 7
+  },
+  "comparators": [
+   "PaLM",
+   "PaLM-2 Small",
+   "PaLM-2 Medium",
+   "PaLM-2 Large",
+   "GPT-3.5",
+   "GPT-4",
+   "GPT-3",
+   "Gopher",
+   "Chinchilla",
+   "MT-NLG",
+   "LLaMA-2",
+   "Inflection-1",
+   "Codex",
+   "StarCoder",
+   "Code LLaMA"
+  ],
+  "rerun": {
+   "value": "NO",
+   "quote": "For all these tasks we take results for other models from the papers outlined above.",
+   "page": 34
+  },
+  "scores_copied": {
+   "value": "YES",
+   "quote": "For all these tasks we take results for other models from the papers outlined above.",
+   "page": 34
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "The final Falcon mixture is presented in Table 15. We designed the mixture based on a 3,500B tokens pretraining dataset",
+   "page": 19
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "with a total pretraining length of 3,500 billion tokens, without any upsampling.",
+   "page": 2
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "which we attribute to smaller pretraining compute: 2,800PF-days for Falcon-40B against 4,700PF-days for LLaMA-2 34B",
+   "page": 34
+  },
+  "renames": [
+   {
+    "new_name": "monolayer",
+    "existing_technique": "selective activation recomputation (Li et al., 2021)",
+    "quote": "we create a single custom autograd function for the entire decoder block–we dub this idea the monolayer.",
+    "page": 28
+   },
+   {
+    "new_name": "multigroup",
+    "existing_technique": "grouped query attention (Ainslie et al., 2023)",
+    "quote": "Ainslie et al. (2023) also proposed this modification; we refer to this variant of attention as grouped query attention or multigroup.",
+    "page": 13
+   }
+  ],
+  "note": "Data disclosure coded PARTIAL (not FULL) conservatively: Table 15 gives sources and fractions but reconstruction depends on the separate RefinedWeb pipeline paper. ARCH claim ablation YES based on matched 1B/30B Pile comparisons (Table 10/11); multigroup alone would be PARTIAL since parameter reduction not controlled. Third-party: dagger-marked independent EAI evaluations concern comparator models, not Falcon. Multigroup rename is concurrent with GQA; included because the text names it alongside the existing technique."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "505be5fc6aa6c5c0d668bd148a313d71fa16d3ab4754edb5744c657e46e17222",
+  "session_id": "0f703d46-0cbd-473a-8609-792dfa7503a2",
+  "cost_usd": 0.7707702,
+  "timestamp": "2026-11-14T12:11:15+00:00"
+ }
+}

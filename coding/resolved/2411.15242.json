@@ -1,0 +1,33 @@
+{
+ "arxiv": "2411.15242",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "We switched from a Mamba1 (Gu & Dao, 2023) to a Mamba2 (Dao & Gu, 2024) backbone. We found that Mamba2 has significantly higher throughput than an equivalently sized Mamba1, with approximately the same performance.",
+    "page": 2,
+    "reason": "Authors list the Mamba1→Mamba2 backbone switch, and the larger state-size tradeoff, as one of the architecture improvements from their ablations (ARCH contribution), not merely a citation of Dao & Gu. Ablation=NO: the report only asserts higher throughput at equal size in prose; it does not present a with-vs-without comparison at matched size, data, and tokens (no table or curves), so the lower level applies."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 3424,
+   "outputTokens": 6249,
+   "totalTokens": 10778,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

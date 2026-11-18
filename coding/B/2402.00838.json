@@ -1,0 +1,118 @@
+{
+ "arxiv": "2402.00838",
+ "model": "olmo",
+ "coding": {
+  "is_release_report": true,
+  "note": "Claims are release/framework contributions stated in the abstract and introduction, not architectural novelty: the architectural choices in Section 2.1 are explicitly adopted from prior work. Framework components are separated where distinct resources are introduced. MULTI refers to the two hardware-cluster training runs, not repeated matched-seed experiments; no across-run uncertainty is reported. FULL data disclosure is supported by released artifacts reconstructing exact batch composition and order. Hardware and energy are disclosed, but no GPU-hours, FLOPs, or hardware-times-duration total is given, so compute is N. Comparator scores are treated as author-evaluated under the fixed pipeline; use of external benchmark software or GPT judges is not an independent third-party evaluation. Quotes retain extraction line breaks and, where necessary, interleaved column text.",
+  "claims": [
+   {
+    "claim": "Introduce OLMo as a competitive, truly open language model and release its full training-to-evaluation framework.",
+    "category": "OTHER",
+    "quote": "To this end, we have built OLMo, a competi-",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release multiple model variants and hundreds of intermediate training checkpoints for research.",
+    "category": "OTHER",
+    "quote": "also release hundreds of intermediate checkpoints  as follows:\navailable as revisions on HuggingFace.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release the full Dolma pretraining data, data-production code, and analysis tools.",
+    "category": "DATA",
+    "quote": "building and analysis, the full training data used for  1. No biases. Following LLaMA, PaLM, and oth-\nthese models is openly available",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide downstream and perplexity evaluation resources based on Catwalk and Paloma.",
+    "category": "EVAL",
+    "quote": "(Elazar et al., 2024). For evaluation, we build on",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Include instruction- and feedback-based model adaptation in the open framework.",
+    "category": "POST",
+    "quote": "use Open Instruct (Ivison et al., 2023; Wang et al.,",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "MULTI",
+   "quote": "for training throughput, both runs resulted in nearly\nidentical performance on our evaluation suite by\n2T tokens.",
+   "page": 5
+  },
+  "comparators": [
+   "StableLM 1.6B",
+   "Pythia 1B",
+   "TinyLlama 1.1B",
+   "Falcon-7B",
+   "LLaMA 7B",
+   "Llama 2 7B",
+   "MPT-7B",
+   "Pythia 6.9B",
+   "RPJ-INCITE-7B"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "we use our fixed evaluation pipeline to compare",
+   "page": 4
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "we use our fixed evaluation pipeline to compare",
+   "page": 4
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "order and exact composition of each training batch\ncan be reconstructed from the artifacts we release.",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "For OLMo-7B, we\nreport results for the 2.46T token checkpoint.",
+   "page": 6
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": []
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "598df7f5ba21e122eaba983852046b6c06bd7f84afa105dd3232340b09deb994",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1713,
+   "totalTokens": 28585,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 26740
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:52+00:00"
+ }
+}

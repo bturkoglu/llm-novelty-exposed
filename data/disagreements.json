@@ -1,0 +1,1040 @@
+{
+ "2312.00752": {
+  "seeds": {
+   "A": "NR",
+   "B": "ONE"
+  },
+  "data_disclosure": {
+   "A": "FULL",
+   "B": "PARTIAL"
+  }
+ },
+ "2501.08313": {
+  "seeds": {
+   "A": "NR",
+   "B": "MULTI"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "MoE with 32 experts, 456B total / 45.9B activated parameters",
+     "page": 1,
+     "quote": "creating a model with 32 experts and 456 billion total parameters, of which 45.9 billion are activated for each token",
+     "ablation_quote": "a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters out of a total of 24 billion parameters",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Novel global router load-balancing strategy for MoE training stability",
+     "page": 4,
+     "quote": "To ensure load balancing in the MoE blocks, we propose a novel load balancing strategy inspired by GShard (Lepikhin et al., 2021), which we refer to the global router.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Integrate lightning attention with MoE to maximize parameter and computational capacity.",
+     "page": 1,
+     "quote": "To maximize computational capacity, we integrate it\n  with Mixture of Experts (MoE), creating a model with 32 experts and 456 billion total parameters, of",
+     "ablation_quote": "a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters\nout of a total of 24 billion parameters.",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Build the vision-language model by continued training on 512 billion vision-language tokens.",
+     "page": 1,
+     "quote": "Our vision-language model, MiniMax-VL-01 is built through continued training with 512 billion\n  vision-language tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2001.08210": {
+  "rerun": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "scores_copied": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "data_disclosure": {
+   "A": "PARTIAL",
+   "B": "NONE"
+  }
+ },
+ "2205.06266": {
+  "rerun": {
+   "A": "YES",
+   "B": "NR"
+  },
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Language-specific modular components pre-trained from the start (X-MOD) mitigate negative interference between languages and achieve positive transfer",
+     "page": 2,
+     "quote": "that our modular architecture not only is effective at mitigating interference between languages, but also",
+     "ablation_quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60",
+     "ablation_page": 7
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Introduce language-specific modular capacity, maintaining constant trainable parameters per language, to mitigate interference and enable positive transfer.",
+     "page": 1,
+     "quote": "which allows us to grow the total capacity of\n  the model, while keeping the total number of\n  trainable parameters per language constant.",
+     "ablation_quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60\nlanguages for 265k update steps.",
+     "ablation_page": 7
+    }
+   }
+  ]
+ },
+ "2206.12131": {
+  "rerun": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "scores_copied": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "ablation": [
+   {
+    "A": {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Pre-train task-specific soft (prefix) prompts per task to stimulate task capacity and mitigate multi-task neutralization",
+     "page": 2,
+     "quote": "To mitigate this potential issue, we propose to learn",
+     "ablation_quote": "\u2022 Randomly initialized prompts (MVP+R): The  task prompt (MVP+S) consistently surpasses the",
+     "ablation_page": 6
+    },
+    "B": {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Pre-train task-specific soft prompts to retain specialized knowledge and stimulate task-specific generation capacity.",
+     "page": 1,
+     "quote": "For each task, we further pre-train specific soft",
+     "ablation_quote": "MVP+R  44.14  21.45  40.72  67.61  47.65  76.70  25.71  27.03  53.09  85.95  77.22",
+     "ablation_page": 5
+    }
+   }
+  ],
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Supervised pre-training (with labeled data) for NLG-oriented PLMs, rather than unsupervised pre-training",
+     "page": 2,
+     "quote": "To fill this gap, we explore supervised\npre-training and multi-task learning for deriving",
+     "ablation_quote": "\u2022 BARTLARGE (Lewis et al., 2020): BART is a  First, supervised pre-training models (i.e., MVP,",
+     "ablation_page": 6
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2402.00838": {
+  "rerun": {
+   "A": "NR",
+   "B": "YES"
+  },
+  "scores_copied": {
+   "A": "NR",
+   "B": "NO"
+  },
+  "data_disclosure": {
+   "A": "NONE",
+   "B": "FULL"
+  },
+  "tokens_disclosed": {
+   "A": "N",
+   "B": "Y"
+  }
+ },
+ "2404.14219": {
+  "rerun": {
+   "A": "YES",
+   "B": "MIXED"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "phi-3.5-MoE (16x3.8B, 6.6B active) outperforms similar-scale open models",
+     "page": 1,
+     "quote": "The phi-3.5-MoE, a 16 x 3.8B MoE model with 6.6 billion active parameters, achieves superior performance in language reasoning, math, and code tasks",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Introduce phi-3.5-MoE with 16 experts and 6.6B active parameters, claiming superior reasoning, math, and code performance relative to similarly scaled open models.",
+     "page": 1,
+     "quote": "The phi-3.5-MoE, a 16 x 3.8B MoE model with 6.6 billion active parameters, achieves",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Introduce phi-3.5-Vision, derived from phi-3.5-mini, supporting reasoning over single-image and multi-image text prompts.",
+     "page": 1,
+     "quote": "Meanwhile, phi-3.5-Vision, a 4.2 billion parameter model derived from phi-3.5-\n  mini, excels in reasoning tasks",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2606.19348": {
+  "rerun": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Hybrid attention architecture combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) for long-context efficiency",
+     "page": 1,
+     "quote": "a hybrid attention architecture that combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to improve long-context efficiency",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Hybrid attention combining Compressed Sparse Attention and Heavily Compressed Attention.",
+     "page": 4,
+     "quote": "context efficiency, we design a hybrid attention mechanism combining Compressed Sparse\nAttention (CSA) and Heavily Compressed Attention (HCA).",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2205.01068": {
+  "scores_copied": {
+   "A": "MIXED",
+   "B": "NR"
+  },
+  "compute_disclosed": {
+   "A": "Y",
+   "B": "N"
+  }
+ },
+ "2306.11644": {
+  "scores_copied": {
+   "A": "YES",
+   "B": "MIXED"
+  }
+ },
+ "2402.16819": {
+  "scores_copied": {
+   "A": "YES",
+   "B": "MIXED"
+  }
+ },
+ "2510.26692": {
+  "scores_copied": {
+   "A": "NR",
+   "B": "NO"
+  },
+  "data_disclosure": {
+   "A": "NONE",
+   "B": "PARTIAL"
+  },
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Kimi Linear hybrid architecture with 3:1 KDA-to-global attention ratio",
+     "page": 2,
+     "quote": "The Kimi Linear architecture: a hybrid design adopting a 3:1 KDA-to-global attention ratio, reducing memory",
+     "ablation_quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+     "ablation_page": 8
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Kimi Linear interleaves KDA and global attention at a 3:1 ratio to improve quality while reducing memory and KV-cache usage.",
+     "page": 2,
+     "quote": "The Kimi Linear architecture: a hybrid design adopting a 3:1 KDA-to-global attention ratio, reducing memory\n  footprint while surpassing full-attention quality.",
+     "ablation_quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+     "ablation_page": 8
+    }
+   }
+  ]
+ },
+ "2311.16867": {
+  "third_party": {
+   "A": "NO",
+   "B": "YES"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "PaLM-based architecture with independently validated decisions resulting in minor tweaks (multigroup, no GLU, no biases, etc.)",
+     "page": 2,
+     "quote": "The architecture of the models is based on PaLM (Chowdhery et al., 2022), although we independently validated each decision, ultimately resulting in some minor tweaks",
+     "ablation_quote": "In Table 11, training 1B models on 30B tokens of The Pile, we find no clear benefits from adopting SwiGLU for zero-shot performance",
+     "ablation_page": 15
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2403.08295": {
+  "third_party": {
+   "A": "YES",
+   "B": "NO"
+  },
+  "data_disclosure": {
+   "A": "PARTIAL",
+   "B": "NONE"
+  },
+  "tokens_disclosed": {
+   "A": "Y",
+   "B": "N"
+  }
+ },
+ "2506.21734": {
+  "third_party": {
+   "A": "NO",
+   "B": "YES"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Hierarchical convergence avoids the premature convergence of standard recurrent models",
+     "page": 3,
+     "quote": "avoids the rapid convergence of standard recurrent models through a process we term",
+     "ablation_quote": "Standard architectures saturates, failing to benefit from increased depth. HRM overcomes this fundamental limitation",
+     "ablation_page": 3
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Deep supervision across segments, with the hidden state detached between segments",
+     "page": 7,
+     "quote": "we incorporate a deep supervision mechanism into HRM, as detailed next.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Adaptive computation time (halting learned with Q-learning), which also gives inference-time scaling",
+     "page": 7,
+     "quote": "Inspired by the above mechanism, we incorporate an adaptive halting strategy into HRM that",
+     "ablation_quote": "Figure 5 presents a performance comparison between two HRM variants: one incorporating ACT and another employing a fixed computational step count",
+     "ablation_page": 8
+    }
+   ],
+   "B_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Hierarchical convergence preserves computational activity by repeatedly restarting low-level convergence under high-level updates.",
+     "page": 5,
+     "quote": "HRM is explicitly designed to counteract this premature convergence through a process we term\nhierarchical convergence.",
+     "ablation_quote": "HRM shows hierarchical conver-\ngence: the H-module steadily converges, while the L-module repeatedly converges within cycles\nbefore being reset by H, resulting in residual spikes.",
+     "ablation_page": 5
+    }
+   ]
+  }
+ },
+ "2204.06745": {
+  "data_disclosure": {
+   "A": "PARTIAL",
+   "B": "NONE"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Uses rotary positional embeddings, applied to 25% of dimensions, instead of learned positional embeddings",
+     "page": 2,
+     "quote": "We use rotary embeddings (Su et al., 2021) instead",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Computes attention and feed-forward layers in parallel",
+     "page": 3,
+     "quote": "layers in parallel4 and sum the results, rather than",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Uses a different initialization scheme (Wang init for FF outputs, small init elsewhere)",
+     "page": 3,
+     "quote": "fact that the parallel and feed-forward layers are",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2309.11419": {
+  "data_disclosure": {
+   "A": "PARTIAL",
+   "B": "NONE"
+  },
+  "tokens_disclosed": {
+   "A": "Y",
+   "B": "N"
+  },
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Two complementary pre-training tasks: document-level text recognition (spatially-aware text with bounding boxes) and image-to-markdown generation, unified via task prompts",
+     "page": 2,
+     "quote": "KOSMOS -2.5 is a multimodal document foundation model that takes text images as input and generates spatially-aware",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Shared decoder-only Transformer architecture combining ViT-based vision encoder and language decoder via resampler, unified for both tasks",
+     "page": 3,
+     "quote": "The model architecture of KOSMOS -2.5 leverages a shared Transformer architecture that combines a ViT-based vision",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2310.06825": {
+  "data_disclosure": {
+   "A": "NONE",
+   "B": "PARTIAL"
+  }
+ },
+ "2405.21060": {
+  "data_disclosure": {
+   "A": "FULL",
+   "B": "PARTIAL"
+  },
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Introduce heads from multi-head attention to SSMs (head structure design, MVA/MIS pattern)",
+     "page": 2,
+     "quote": "For example, we introduce the analog of heads from multi-head attention (MHA) to SSMs.",
+     "ablation_quote": "Table 5 ablates choices of the multi-head structure for the Mamba-2 architecture.",
+     "ablation_page": 35
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Introduce grouped-value attention head structure.",
+     "page": 2,
+     "quote": "The main ideas include introducing grouped-value attention",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   },
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Modified Mamba block with grouped-value head structure and parallel data-dependent projections at block start",
+     "page": 2,
+     "quote": "The main ideas include introducing grouped-value attention (GVA) head structure, and moving all data-dependent projections to occur in parallel at the beginning of the block.",
+     "ablation_quote": "Table 4 ablates these architecture changes to the block, which occur outside of the core SSM layer.",
+     "ablation_page": 35
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Move data-dependent parameter projections to the beginning of the block in parallel.",
+     "page": 2,
+     "quote": "moving all data-dependent projections to occur in parallel at the beginning of the block.",
+     "ablation_quote": "Sequential  \u2713  129.3M  11.54\n  Parallel  \u2717  126.5M  11.66\n  Mamba-2  Parallel  \u2713  126.5M  11.49",
+     "ablation_page": 35
+    }
+   }
+  ],
+  "unaligned_arch_train": {
+   "A_only": [],
+   "B_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Generalize linear attention to structured masked attention.",
+     "page": 2,
+     "quote": "tensor contractions, and then generalize it to a new family\n  of structured masked attention (SMA) (Section 4).",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Introduce attention-like heads and a vocabulary of alternative head structures for SSMs.",
+     "page": 2,
+     "quote": "For example, we introduce the analog of heads from multi-head attention",
+     "ablation_quote": "Multi-input (MIS)  Multi-value (MVA)  24  1  1  24  24  126.5M  11.66\n  Multi-contract (MCS)  Multi-query (MQA)  24  1  24  1  24  126.5M  12.62",
+     "ablation_page": 36
+    }
+   ]
+  }
+ },
+ "2507.11407": {
+  "data_disclosure": {
+   "A": "NONE",
+   "B": "PARTIAL"
+  }
+ },
+ "2509.01322": {
+  "compute_disclosed": {
+   "A": "N",
+   "B": "Y"
+  },
+  "ablation": [
+   {
+    "A": {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Multi-pronged stability suite: router-gradient balancing, hidden z-loss, optimizer configuration",
+     "page": 4,
+     "quote": "A multi-pronged stability suite incorporates principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer configurations",
+     "ablation_quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+     "ablation_page": 15
+    },
+    "B": {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Principled router-gradient balancing improves training stability.",
+     "page": 4,
+     "quote": "A multi-pronged stability suite incorporates\n  principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   }
+  ],
+  "unaligned_arch_train": {
+   "A_only": [],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "PID-controlled expert bias maintains the average computation budget.",
+     "page": 4,
+     "quote": "To ensure consistent computation load, we employ expert\n  bias adjusted by a PID-controller, maintaining an average of \u223c27 billion activated parameters per token.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Hidden z-loss suppresses massive activations for training stability.",
+     "page": 4,
+     "quote": "a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+     "ablation_quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+     "ablation_page": 15
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Fine-tuned optimizer configurations improve large-scale training stability.",
+     "page": 4,
+     "quote": "A multi-pronged stability suite incorporates\n  principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+     "ablation_quote": "Exploring the impact of the Root Mean Square (RMS) norm of gradients and epsilon on loss across different\nmodel sizes.",
+     "ablation_page": 16
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Deterministic computation ensures exact reproducibility and enables silent-data-corruption detection.",
+     "page": 4,
+     "quote": "To enhance the reliability of large-scale cluster training, we introduce deterministic computation.\n  This guarantees the exact reproducibility of experiments and enables the detection of SDC (Silent Data Corruption)\n  during the training process.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2001.04063": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Novel self-supervised objective: future n-gram prediction, i.e. predicting the next n tokens at once at each time step",
+     "page": 3,
+     "quote": "For simplicity, we take bigram (n = 2) as an example to introduce ProphetNet, whose modeling target is",
+     "ablation_quote": "ProphetNetbase -2gram 42.52 19.78 39.59 ProphetNetbase -3gram 42.61 19.83 39.67",
+     "ablation_page": 8
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Proposed n-stream self-attention in the decoder (extends XLNet two-stream attention), with main and predicting streams that can be switched off at inference",
+     "page": 4,
+     "quote": "N-stream self-attention mechanism which contains a main stream self-attention and n predicting stream self-attention.",
+     "ablation_quote": "Transformer (Raffel et al., 2019) 39.19 17.60 36.69 ProphetNetw/o pre-train 40.66 18.05 37.79",
+     "ablation_page": 7
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Mask-based auto-encoder denoising (token span masking) for Seq2Seq pre-training",
+     "page": 4,
+     "quote": "This paper uses token span masking as our de-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Novel future n-gram prediction objective predicts multiple future tokens simultaneously to encourage future planning and reduce local-correlation overfitting.",
+     "page": 2,
+     "quote": "fications: (a) The novel self-supervised objective\npredict the future n-gram at each time step in an  called future n-gram prediction as described in",
+     "ablation_quote": "",
+     "ablation_page": 8
+    }
+   ]
+  }
+ },
+ "2003.10555": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Replaced token detection: a new, more sample-efficient pre-training task in which a discriminator predicts, for every input token, whether a small generator replaced it",
+     "page": 1,
+     "quote": "As an alternative, we propose a more sample-efficient pre-training task called replaced token detection.",
+     "ablation_quote": "To provide a fair comparison, we also train a BERT-Small model using the same hyperparameters.",
+     "ablation_page": 6
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Learning from all input tokens rather than the masked subset makes the task more compute-efficient than MLM",
+     "page": 1,
+     "quote": "A key advantage of our discriminative task is that the model learns from all input tokens instead of just the small masked-out subset, making it more computationally efficient.",
+     "ablation_quote": "First, we find that ELECTRA is greatly benefiting from having a loss defined over all input tokens rather than just a subset: ELECTRA 15% performs much worse than ELECTRA.",
+     "ablation_page": 8
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Sharing embeddings between the generator and discriminator (proposed model extension)",
+     "page": 4,
+     "quote": "We propose improving the efficiency of the pre-training by sharing weights be- tween the generator and discriminator.",
+     "ablation_quote": "GLUE scores are 83.6 for no weight tying, 84.3 for tying token embeddings, and 84.4 for tying all weights.",
+     "ablation_page": 4
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Using a smaller generator (1/4 to 1/2 the size of the discriminator) works best",
+     "page": 5,
+     "quote": "Nevertheless, we find that models work best with generators 1/4-1/2 the size of the discriminator.",
+     "ablation_quote": "GLUE scores for differently-sized generators and discriminators are shown in the left of Figure 3. All models are trained for 500k steps,",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Joint maximum-likelihood training of the generator works better than two-stage or adversarial training",
+     "page": 5,
+     "quote": "Although still outperforming BERT, we found adversarial training to underperform maximum-likelihood training.",
+     "ablation_quote": "During two-stage training, downstream task performance notably improves after the switch from the generative to the discriminative objective, but does not end up outscoring joint training.",
+     "ablation_page": 5
+    }
+   ],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Introduce replaced token detection: discriminate original tokens from generator replacements, learning over all input positions.",
+     "page": 1,
+     "quote": "As an alternative, we propose replaced token detection, a pre-training task in which the model learns\nto distinguish real input tokens from plausible but synthetically generated replacements.",
+     "ablation_quote": "This model is identical to ELECTRA except the discriminator loss only\n  comes from the 15% of the tokens that were masked out of the input.",
+     "ablation_page": 8
+    }
+   ]
+  }
+ },
+ "2007.14062": {
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "BigBird sparse attention mechanism (random + window + global tokens) whose complexity is linear in sequence length",
+     "page": 1,
+     "quote": "To remedy this, we propose, B IG B IRD, a sparse attention mechanism that reduces this quadratic dependency to linear.",
+     "ablation_quote": "We found that random blocks and local window were insufficient in capturing all the context necessary to compete with the performance of BERT.",
+     "ablation_page": 4
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "A linear-complexity sparse attention architecture combining random, local-window, and global attention.",
+     "page": 1,
+     "quote": "To remedy this, we propose, B IG B IRD, a sparse\n  attention mechanism that reduces this quadratic dependency to linear.",
+     "ablation_quote": "",
+     "ablation_page": 4
+    }
+   },
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Global tokens (ITC/ETC) attending to the entire sequence are critical for expressivity and performance",
+     "page": 1,
+     "quote": "our theoretical analysis reveals some of the benefits of having O(1) global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Identifies globally attending tokens, including additional global tokens, as important for sparse attention's expressivity and performance.",
+     "page": 1,
+     "quote": "our theoretical analysis reveals some of the benefits of having\n  O(1) global tokens (such as CLS), that attend to the entire sequence as part of the\n  sparse attention mechanism.",
+     "ablation_quote": "B IG B IRD-ITC  75.7  86.8  67.7  70.8  53.3  79.5  75.9\n  B IG B IRD-ETC  75.5  87.1  67.8  73.9  54.9  78.7  75.9",
+     "ablation_page": 7
+    }
+   }
+  ]
+ },
+ "2408.00118": {
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Grouped-query attention (known technique applied)",
+     "page": 1,
+     "quote": "attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023). We also train the 2B",
+     "ablation_quote": "GQA versus MHA. In Table 8, we compare two instances of our 9B with MHA or GQA.",
+     "ablation_page": 5
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Apply grouped-query attention in Gemma 2.",
+     "page": 1,
+     "quote": "several known technical modifications to the Transformer architecture, such as interleaving local-global\n  attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023).",
+     "ablation_quote": "",
+     "ablation_page": 5
+    }
+   }
+  ]
+ },
+ "2409.02060": {
+  "ablation": [
+   {
+    "A": {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Sparse upcycling from a dense model has limited benefits except at small compute budgets",
+     "page": 3,
+     "quote": "challenge prior work, such as the ineffectiveness of shared experts [42] and the limited benefits of sparsely",
+     "ablation_quote": "We find that after 500B tokens, an otherwise equivalent MoE trained from scratch already catches up with the upcycled model",
+     "ablation_page": 12
+    },
+    "B": {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Sparse upcycling has limited benefits except under small compute budgets.",
+     "page": 3,
+     "quote": "cycling a pretrained dense LM into an MoE [85] unless under small compute budgets.",
+     "ablation_quote": "We upcycle OLMo-1B (0724) at 2T tokens into an MoE",
+     "ablation_page": 12
+    }
+   }
+  ],
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "MoEs train ~2x faster than dense LMs with equivalent active parameters",
+     "page": 3,
+     "quote": "Our experiments show that MoEs train \u223c2\u00d7 faster than dense LMs",
+     "ablation_quote": "Apart from MoE-related changes, we train both with the same configuration for 130B tokens.",
+     "ablation_page": 9
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2409.18869": {
+  "unaligned_arch_train": {
+   "A_only": [],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "State-of-the-art multimodal models trained solely with next-token prediction.",
+     "page": 1,
+     "quote": "a new suite of state-of-the-art multimodal models trained solely with next-token\n  prediction.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2410.00037": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "New hierarchical streaming architecture (Helium + small Depth Transformer, RQ-Transformer) for audio tokens",
+     "page": 3,
+     "quote": "a new architecture for audio language modeling, which combines Helium with a smaller Transformer (Vaswani et al., 2017) model to predict audio",
+     "ablation_quote": "In that context, modeling RVQ tokens with an RQ-Transformer significantly improves perplexity over using separate classification heads.",
+     "ablation_page": 26
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "First multi-stream audio language model for full-duplex dialogue",
+     "page": 2,
+     "quote": "We furthermore introduce the first multi-stream audio language model, i.e. a model that explicitly processes the input and output audio streams jointly into two autoregressive token streams.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Introduce improved training tricks for Mimi's semantic-acoustic codec.",
+     "page": 3,
+     "quote": "first level of acoustic tokens and introduce improved training tricks.",
+     "ablation_quote": "This human evaluation shows a significant improve-\nment from using adversarial losses only, with a MUSHRA score of 81.0 against 58.8 when\nusing the mix of loss functions used in Encodec.",
+     "ablation_page": 24
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Introduce a hierarchical, streaming Moshi audio-language-model architecture supporting real-time generation.",
+     "page": 3,
+     "quote": "We propose Moshi, a new architecture for audio language modeling, which combines\n  Helium with a smaller Transformer (Vaswani et al., 2017) model to predict audio to-\n  kens in a hierarchical and streaming fashion.",
+     "ablation_quote": "All models are initialized\nwith Helium and pretrained on audio. When not using RQ-Transformer, we predict the 8\nlevels of tokens with independent classification heads, following Copet et al. (2023).",
+     "ablation_page": 25
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Introduce joint multi-stream input/output audio modeling, removing explicit speaker turns and enabling full-duplex overlap and interruptions.",
+     "page": 3,
+     "quote": "We furthermore extend this ar-\n  chitecture to model several audio streams in parallel, allowing for a conceptually and\n  practically simple handling of full-duplex dialogues with arbitrary dynamics.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ]
+  }
+ },
+ "2410.05355": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "A pure Mamba design can match or beat Transformer and hybrid designs",
+     "page": 1,
+     "quote": "we demonstrate that even the pure Mamba design can achieve similar, even superior results compared to the Transformer and hybrid designs.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2410.05993": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Fine-grained MoE decoder gives faster training and inference than dense decoders through expert specialization",
+     "page": 1,
+     "quote": "The core of our model is a fine-grained mixture-of-experts decoder, which enables faster training and inference speed over dense decoders, due to more efficient parameter utilization through expert specialization.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2411.15242": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Switched from a Mamba1 to a Mamba2 backbone, which allows a larger state size at the same throughput",
+     "page": 2,
+     "quote": "for a larger state-size than is possible in Mamba1, which",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2412.19437": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Remarkably stable training with no irrecoverable loss spikes or rollbacks",
+     "page": 1,
+     "quote": "In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "FP8 mixed-precision framework, with first validation on an extremely large-scale model.",
+     "page": 5,
+     "quote": "We design an FP8 mixed precision training framework and, for the first time, validate the\n  feasibility and effectiveness of FP8 training on an extremely large-scale model.",
+     "ablation_quote": "We validate our FP8 mixed precision framework with a comparison to BF16 training on top of\ntwo baseline models across different scales.",
+     "ablation_page": 47
+    }
+   ]
+  }
+ },
+ "2503.01743": {
+  "ablation": [
+   {
+    "A": {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Novel mixture-of-LoRAs modality extension with modality-specific LoRAs and routers on a frozen base LM, unifying text, vision and speech in one model",
+     "page": 1,
+     "quote": "Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow multiple inference modes combining various modalities without interference.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    "B": {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Unified multimodal model using modality-specific mixture-of-LoRAs and routers with a frozen language backbone, minimizing interference and preserving text capabilities.",
+     "page": 1,
+     "quote": "Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow",
+     "ablation_quote": "maintaining language capabilities while achieving minimal performance loss on multimodal bench-\n  marks compared to fully fine-tuned baselines.",
+     "ablation_page": 11
+    }
+   }
+  ]
+ },
+ "2504.12285": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Architectural innovations specific to the 1-bit paradigm (BitLinear layers with ternary absmean weights, 8-bit activations, subln, ReLU2)",
+     "page": 2,
+     "quote": "trained from scratch on a substantial dataset of 4 trillion tokens, leveraging architectural and training innovations specific to the 1-bit paradigm.",
+     "ablation_quote": "BitNet b1.58 2B4T maintains stronger overall performance than the INT4 quantized versions of Qwen2.5-1.5B on the evaluated benchmarks.",
+     "ablation_page": 6
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Training innovations specific to 1-bit training (two-stage high-LR/cooldown schedule, two-stage weight decay, summed SFT loss)",
+     "page": 2,
+     "quote": "trained from scratch on a substantial dataset of 4 trillion tokens, leveraging architectural and training innovations specific to the 1-bit paradigm.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2512.24618": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Pre-trained from scratch rather than relying on distillation",
+     "page": 1,
+     "quote": "Unlike typical small models that rely on distillation, Youtu-LLM (1.96B) is pre-trained from scratch to systematically cultivate reasoning and planning capabilities.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "B_only": []
+  }
+ },
+ "2601.07022": {
+  "unaligned_arch_train": {
+   "A_only": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Solar Open: 102B total / 12B active MoE model trained on 20T tokens",
+     "page": 2,
+     "quote": "Solar Open is built on a Mixture-of-Experts (MoE) architecture with 102 billion total parameters and 12 billion active parameters per token",
+     "ablation_quote": "Training stability guides our remaining architectural decisions through comparative experi- ments between our 10B-A1B MoE prototype and a 3B dense baseline across 50B\u2013100B training tokens.",
+     "ablation_page": 7
+    }
+   ],
+   "B_only": [
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Progressive bilingual and reasoning-targeted curriculum jointly coordinates data composition, language-aware quality thresholds and domain coverage.",
+     "page": 3,
+     "quote": "We implement a multi-phase curriculum (Section 3) with general quality",
+     "ablation_quote": "We compare Solar Open\u2019s training trajectory against GLM-4.5-Base (Zeng et al.,\n2025), a comparable-scale model (106B) trained on 23 trillion tokens.",
+     "ablation_page": 13
+    }
+   ]
+  }
+ }
+}

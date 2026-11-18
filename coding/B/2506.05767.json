@@ -1,0 +1,120 @@
+{
+ "arxiv": "2506.05767",
+ "model": "dots1",
+ "coding": {
+  "note": "Claims are deduplicated across the abstract, introduction, and contribution list; the infrastructure contribution contains two distinct systems techniques. The model contribution is coded EFF because its stated contribution is performance/cost efficiency, not a novel architectural element. Previously attributed DeepSeekMoE, QK normalization, and auxiliary-loss-free balancing are adopted techniques rather than claimed author innovations. No novel ARCH or TRAIN contribution is identified, so C2 is NA throughout. Multiple-run averaging on page 9 concerns evaluation sampling, not independent training runs, so seeds is NR. Data processing details and a Chinese/English ratio are disclosed, but corpus sources and a reconstructable source mixture are not. Comparators include both main base-model and instruction-model tables. External benchmark names do not establish independent third-party evaluation.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "models were evaluated within our internal framework under identical conditions. Regarding the Qwen3",
+   "page": 10
+  },
+  "claims": [
+   {
+    "quote": "We propose a scalable and fine-grained three-stage data processing",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "A scalable, fine-grained three-stage processing framework produces high-quality, diverse pretraining data, with the process openly documented.",
+    "page": 2,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We introduce dots.llm1, an open-source model that activates\n  only 14B parameters during inference while delivering comprehensive and computationally\n  efficient performance.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Release dots.llm1, a 142B-total/14B-active MoE model delivering competitive performance at reduced training and inference cost, pretrained without synthetic data or model distillation.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "we introduce an innovative MoE all-to-all communication and computation",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "An innovative MoE all-to-all communication/computation overlap recipe based on interleaved 1F1B pipeline scheduling.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "overlapping recipe based on 1F1B pipeline scheduling and an efficient grouped GEMM implementation",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "An efficient grouped GEMM implementation boosts MoE computational efficiency.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "By releasing intermediate training checkpoints as\n  open-source, we aim to empower the research community with transparency into the training",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Open-source intermediate checkpoints at every trillion tokens to enable transparency and research into model learning dynamics.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "only 1.46 million GPU hours, whereas Qwen2.5 72B consumes 6.12 million GPU hours, representing a",
+   "page": 7
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "During pre-training, we maintain a balanced 1:1 ratio of Chinese to English data, and no synthetic data is",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We set the maximum sequence length to 8K during pre-training and train dots.llm1 on 11.2T tokens.",
+   "page": 5
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "YES",
+   "quote": "models were evaluated within our internal framework under identical conditions. Regarding the Qwen3",
+   "page": 10
+  },
+  "renames": [],
+  "comparators": [
+   "Qwen2.5 32B Base",
+   "Qwen2.5 72B Base",
+   "DeepSeek V2 Base",
+   "DeepSeek V3 Base",
+   "Qwen-2.5 32B Inst",
+   "Qwen-2.5 72B Inst",
+   "Qwen-3 32B",
+   "Qwen-3 235B-A22B",
+   "DeepSeek V2 Chat",
+   "DeepSeek V3",
+   "gpt4o 0806"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "4811d3010cecf506d1ed025af6a1daa1d01ede61526507fc801274dc191ed2ba",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1280,
+   "totalTokens": 25631,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 24219
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:38+00:00"
+ }
+}

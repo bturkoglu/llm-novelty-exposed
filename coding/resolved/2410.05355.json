@@ -1,0 +1,33 @@
+{
+ "arxiv": "2410.05355",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "As a pure Mamba-based model, Falcon Mamba 7B surpasses leading open-weight models based on Transformers, such as Mistral 7B, Llama3.1 8B, and Falcon2 11B.",
+    "page": 1,
+    "reason": "Authors state as their own key result that pure Mamba matches or beats Transformer and hybrid designs (abstract and intro). That is an ARCH claim. Evidence is only cross-model leaderboard comparisons at different sizes and training setups, not a matched with-vs-without ablation, so PARTIAL rather than YES or NO."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 3181,
+   "outputTokens": 3044,
+   "totalTokens": 6225,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

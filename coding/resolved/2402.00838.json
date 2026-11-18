@@ -1,0 +1,48 @@
+{
+ "arxiv": "2402.00838",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "YES",
+    "quote": "For both downstream and perplexity evaluation, we use our fixed evaluation pipeline to compare results against publicly available models.",
+    "page": 4,
+    "reason": "They state they run their fixed Catwalk/Paloma pipeline to compare against other models, and Paloma scores for those models cannot come from prior reports."
+   },
+   {
+    "field": "scores_copied",
+    "value": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Comparator numbers in the main table are produced by the authors' own evaluation pipeline rather than taken from other reports."
+   },
+   {
+    "field": "data_disclosure",
+    "value": "FULL",
+    "quote": "The data order and exact composition of each training batch can be reconstructed from the artifacts we release.",
+    "page": 5,
+    "reason": "Table 2 gives Dolma sources with token counts, and the text says each training batch's exact composition is reconstructable from released artifacts."
+   },
+   {
+    "field": "tokens_disclosed",
+    "value": "Y",
+    "quote": "For OLMo-7B, we report results for the 2.46T token checkpoint.",
+    "page": 6,
+    "reason": "Pretraining token counts are stated (2T / 2.46T in Table 1 and the 2.46T OLMo-7B checkpoint)."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7551,
+   "outputTokens": 5178,
+   "totalTokens": 12729,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

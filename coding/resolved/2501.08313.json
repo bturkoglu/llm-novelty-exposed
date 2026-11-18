@@ -1,0 +1,77 @@
+{
+ "arxiv": "2501.08313",
+ "resolution": {
+  "fields": [
+   {
+    "field": "seeds",
+    "value": "NR",
+    "quote": "",
+    "page": 0,
+    "reason": "The p.23 sentence only defines the ratio Δobvious/σseed (σseed = std across random seeds) as a way to quantify metric discriminative power in the data-experiment paradigm. It does not state that any ablation or main result was trained with ≥2 seeds, nor does it report a seed count, variance, or CI on those results. Lower level NR."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "32 experts / 456B total / 45.9B activated is a final model specification (abstract and §2), not a contribution the authors state as new, novel, or first. MoE itself is cited as prior (Fedus, GShard). The p.5 dense-vs-MoE study is a much smaller isoflop proxy (7B vs 2B/24B), not an ablation of this configuration."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Authors explicitly claim a new TRAIN element: p.4 'we propose a novel load balancing strategy inspired by GShard ... which we refer to the global router' for MoE training stability. No with-vs-without comparison at matched settings is shown; p.5 only asserts the mechanism can reduce token drop rate, so ablation=NO."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "we conduct a comparative study between a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters out of a total of 24 billion parameters",
+    "page": 5,
+    "reason": "Abstract and p.2 state the integrated design as theirs ('novel architecture, which integrates lightning attention, softmax attention, and MoE'). The only related comparison is MoE vs dense (Fig. 4), both on 1T tokens but different sizes under an isoflop budget, so the element is not matched-setting with/without and ablation=PARTIAL not YES."
+   },
+   {
+    "item_id": "B_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Continued training of MiniMax-VL-01 on 512B vision-language tokens (abstract, p.1 and p.3) is a scale/recipe description, not a TRAIN method the authors call new, novel, or first. No ablation is claimed or shown."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ],
+  [
+   "B_only1",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9732,
+   "outputTokens": 6286,
+   "totalTokens": 16018,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

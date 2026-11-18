@@ -1,0 +1,27 @@
+{
+ "arxiv": "2402.16819",
+ "resolution": {
+  "fields": [
+   {
+    "field": "scores_copied",
+    "value": "YES",
+    "quote": "we compare against a number of external decoder-only transformer language models and unless otherwise stated we use the numbers published in the reports of the corresponding models",
+    "page": 6,
+    "reason": "The stated policy is to use numbers published in other models' reports. The visible exceptions (Table 3 asterisks read from Gemma Team 2024; Mistral BBH read from Jiang et al. 2023; Table 5 GSM8K/MBPP taken from Gemma Team 2024) are still copied from other reports, not recomputed by the authors, so this is YES rather than MIXED."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 3505,
+   "outputTokens": 3342,
+   "totalTokens": 6847,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

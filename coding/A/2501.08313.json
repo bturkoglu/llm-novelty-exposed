@@ -1,0 +1,164 @@
+{
+ "arxiv": "2501.08313",
+ "model": "minimax",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Hybrid architecture: one softmax-attention block after every seven lightning-attention (transnormer) blocks",
+    "category": "ARCH",
+    "quote": "In the architecture, one transformer block with softmax attention follows every seven transnormer blocks (Qin et al., 2022a) with lightning attention.",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "For every 8 consecutive layers in the base model, we systematically replace softmax attention with lightning attention in the first 7 layers.",
+    "ablation_page": 12
+   },
+   {
+    "claim": "MoE with 32 experts, 456B total / 45.9B activated parameters",
+    "category": "ARCH",
+    "quote": "creating a model with 32 experts and 456 billion total parameters, of which 45.9 billion are activated for each token",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters out of a total of 24 billion parameters",
+    "ablation_page": 5
+   },
+   {
+    "claim": "Novel global router load-balancing strategy for MoE training stability",
+    "category": "TRAIN",
+    "quote": "To ensure load balancing in the MoE blocks, we propose a novel load balancing strategy inspired by GShard (Lepikhin et al., 2021), which we refer to the global router.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "First successful large-scale implementation of linear attention",
+    "category": "SCALE",
+    "quote": "We demonstrate the first successful large-scale implementation of linear attention.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Context window of 1M tokens in training, extrapolating to 4M at inference",
+    "category": "CTX",
+    "quote": "The context window of MiniMax-Text-01 can reach up to 1 million tokens during training and extrapolate to 4 million tokens during inference",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Distributed training framework: EP/ETP, varlen ring attention, improved LASP (LASP+)",
+    "category": "EFF",
+    "quote": "we design varlen ring attention to reduce the redundancy in computation and the improved version of Linear Attention Sequence Parallelism (LASP)",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "CUDA kernels for lightning attention inference reaching over 75% MFU on H20",
+    "category": "EFF",
+    "quote": "a comprehensive set of CUDA kernels tailored for lightning attention inference, achieving over 75%",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pre-training corpus curation with reward-based quality enhancement and mixture balancing",
+    "category": "DATA",
+    "quote": "rigorous data cleaning, reward-based quality enhancement, and better data mixture balancing",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Practical experimental methodology for exploring models, datasets, evaluations, algorithms",
+    "category": "OTHER",
+    "quote": "We outline a practical approach and experimental methodology for the exploration of various models, datasets, evaluations, and algorithms",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Vision-language model MiniMax-VL-01 via continued training on 512B VL tokens",
+    "category": "OTHER",
+    "quote": "Our vision-language model, MiniMax-VL-01 is built through continued training with 512 billion vision-language tokens.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Public release of weights and cost-effective API",
+    "category": "OTHER",
+    "quote": "We publicly release the weights and offer a cost-effective API, aiming to help others develop",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "GPT-4o (11-20)",
+   "Claude-3.5-Sonnet (10-22)",
+   "Gemini-1.5-Pro (002)",
+   "Gemini-2.0-Flash (exp)",
+   "Qwen2.5-72B-Inst.",
+   "DeepSeek-V3",
+   "Llama-3.1-405B-Inst."
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We compare with other leading and open-source LLMs, which we evaluate under the same setting, if not reported.",
+   "page": 29
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "We compare with other leading and open-source LLMs, which we evaluate under the same setting, if not reported.",
+   "page": 29
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "incorporating diverse sources including academic literature, books, web content, and",
+   "page": 21
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "The training sequence length is 8192, and the batch size is progressively scaled from an initial size of 16M to 32M at 69B",
+   "page": 24
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Seeds: sigma_seed (std across random seeds) is used to define the data-experiment metric (p.23), but no run counts or variances are reported for results, so I coded NR conservatively. Tokens: the total is not stated as one number; it can only be summed from the LR schedule (7.2T + 3.2T + 1T, about 11.4T). Those page-24 lines are interleaved with figure text, so the quote gives the batch-size schedule instead. Compute: 1500-2500 H800 GPUs are stated but no duration, so N. MoE vs dense is an isoflop comparison at different model sizes shown only as curves, so PARTIAL. PostNorm (DeepNorm) vs PreNorm has a matched ablation in Table 5 but is not claimed as novel in the abstract or introduction. The global router is claimed as novel in Section 2 only, so it is borderline for claim scope. The three-stage long-context procedure and the alignment claims are left out because page 3 is interleaved with figure text and no clean quote exists. Rerun/copied are MIXED: the authors evaluate comparators only 'if not reported'. LongBench v2 comparator scores are copied from the leaderboard site, which does not count as third-party evaluation of MiniMax."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "f8444bef6f878adf7396b4f322c6d5b9abe7d3dcb9346dbaf1dd508fddfb85c5",
+  "session_id": "f7149dd5-56ba-4761-bf67-03f2b8db529d",
+  "cost_usd": 1.0734982,
+  "timestamp": "2026-11-14T12:15:21+00:00"
+ }
+}

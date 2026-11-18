@@ -1,0 +1,194 @@
+{
+ "arxiv": "2405.21060",
+ "model": "mamba2",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Theoretical state space duality (SSD) framework connecting SSMs and attention variants via semiseparable matrices",
+    "category": "OTHER",
+    "quote": "develop a rich framework of theoretical connections between SSMs and variants of attention, connected through various decompositions of a well-studied class of structured semiseparable matrices",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Generalization of linear attention to structured masked attention (SMA)",
+    "category": "OTHER",
+    "quote": "and then generalize it to a new family of structured masked attention (SMA)",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Proof that any kernel attention with a fast recurrent form must be an SSM",
+    "category": "OTHER",
+    "quote": "We also prove that any kernel attention method possessing a fast recurrent form must be an SSM.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "New hardware-efficient SSD algorithm, faster than Mamba scan and competitive with FlashAttention-2",
+    "category": "EFF",
+    "quote": "SSD is highly competitive with optimized implementations of softmax attention (FlashAttention-2 (Dao 2024)), crossing over at sequence length 2K and 6× faster at sequence length 16K.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce heads from multi-head attention to SSMs (head structure design, MVA/MIS pattern)",
+    "category": "ARCH",
+    "quote": "For example, we introduce the analog of heads from multi-head attention (MHA) to SSMs.",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "Table 5 ablates choices of the multi-head structure for the Mamba-2 architecture.",
+    "ablation_page": 35
+   },
+   {
+    "claim": "Modified Mamba block with grouped-value head structure and parallel data-dependent projections at block start",
+    "category": "ARCH",
+    "quote": "The main ideas include introducing grouped-value attention (GVA) head structure, and moving all data-dependent projections to occur in parallel at the beginning of the block.",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "Table 4 ablates these architecture changes to the block, which occur outside of the core SSM layer.",
+    "ablation_page": 35
+   },
+   {
+    "claim": "Mamba-2 architecture combining parallel block with SSD as inner SSM layer",
+    "category": "ARCH",
+    "quote": "The combination of the modified parallel Mamba block, together with using SSD as the inner SSM layer, results in the Mamba-2 architecture.",
+    "page": 2,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Surprisingly, it is significantly better than Mamba-1 even when the state sizes are controlled (N = 16).",
+    "ablation_page": 33
+   },
+   {
+    "claim": "Mamba-2 Pareto dominates Mamba and Transformer++ in Chinchilla scaling laws",
+    "category": "SCALE",
+    "quote": "finding that it Pareto dominates Mamba and Transformer++ in both perplexity and wall-clock time",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba-2 2.7B outperforms Mamba-2.8B, Pythia-2.8B and Pythia-6.9B on downstream evaluations",
+    "category": "OTHER",
+    "quote": "Mamba-2 with 2.7B parameters trained on 300B tokens on the Pile outperforms Mamba-2.8B, Pythia-2.8B and even Pythia-6.9B trained on the same dataset.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Tensor-parallel-friendly design halving synchronization points per block",
+    "category": "EFF",
+    "quote": "We design Mamba-2 to be TP-friendly, reducing the number of synchronization point per block by half.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Sequence parallelism for SSMs by passing recurrent states between devices",
+    "category": "EFF",
+    "quote": "We describe how to train SSMs in general and Mamba-2 in particular with sequence parallelism, by passing the recurrent states between devices.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Efficient variable-length training without padding tokens",
+    "category": "EFF",
+    "quote": "We show how Mamba-2 can be trained with variable sequence lengths efficiently, requiring no padding tokens.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Pythia-1B",
+   "Pythia-1.4B",
+   "Pythia-2.8B",
+   "Pythia-6.9B",
+   "Mamba-790M",
+   "Mamba-1.4B",
+   "Mamba-2.8B",
+   "Hybrid H3-1.3B",
+   "Hybrid H3-2.7B",
+   "RWKV4-1.5B",
+   "RWKV4-3B",
+   "GPT-Neo 2.7B",
+   "OPT-2.7B",
+   "GPT-J-6B",
+   "Transformer++"
+  ],
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "we train Mamba-2 on 300B tokens on the Pile, using the GPT-NeoX (Black et al. 2022) tokenizer.",
+   "page": 54
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "we train Mamba-2 on 300B tokens on the Pile, using the GPT-NeoX (Black et al. 2022) tokenizer.",
+   "page": 54
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [
+   {
+    "new_name": "multi-contract SSM (MCS)",
+    "existing_technique": "multi-query attention (MQA, Shazeer 2019)",
+    "quote": "Using the state space duality, we can define an equivalent SSM version of MQA as equation (18).",
+    "page": 24
+   },
+   {
+    "new_name": "state-passing mode",
+    "existing_technique": "chunkwise algorithms (RetNet, GLA)",
+    "quote": "While we call this “state-passing” to refer to how states are passed from one local segment to another, this is related to the “chunkwise” algorithms proposed by related models",
+    "page": 44
+   }
+  ],
+  "note": "Mainly an architecture and theory paper, but it trains Mamba-2 models and releases the checkpoints, so I coded it as a release report. Ablation calls: Table 4 compares parallel vs sequential projections and Table 5 compares head patterns. Both use a similar parameter count and token budget, so both are coded YES. For the SSD layer replacing S6, the only comparison is Mamba-1 vs Mamba-2 on MQAR with matched state size, and the whole block differs, so it is coded PARTIAL. The paper never says whether comparator scores were re-run or copied (they likely come from the Mamba paper), so both fields are NR. Data is coded FULL because all pre-training is on the Pile alone, a single public dataset. A stricter reading would make this PARTIAL. Comparators are drawn from Table 1, which is extended by Table 10, plus Transformer++ from the scaling and hybrid comparisons. No compute (GPU-hours or FLOPs) is reported."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "d75316d4cc8c635041e6edaae3284b7d664d234277afe8c82835749ee4ae211e",
+  "session_id": "0b72e095-b418-4598-86aa-5b2fff5b222c",
+  "cost_usd": 0.8183822000000001,
+  "timestamp": "2026-11-14T12:13:40+00:00"
+ }
+}

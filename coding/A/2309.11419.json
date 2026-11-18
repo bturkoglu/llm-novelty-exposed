@@ -1,0 +1,118 @@
+{
+ "arxiv": "2309.11419",
+ "model": "kosmos2_5",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Two complementary pre-training tasks: document-level text recognition (spatially-aware text with bounding boxes) and image-to-markdown generation, unified via task prompts",
+    "category": "TRAIN",
+    "quote": "KOSMOS -2.5 is a multimodal document foundation model that takes text images as input and generates spatially-aware",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Shared decoder-only Transformer architecture combining ViT-based vision encoder and language decoder via resampler, unified for both tasks",
+    "category": "ARCH",
+    "quote": "The model architecture of KOSMOS -2.5 leverages a shared Transformer architecture that combines a ViT-based vision",
+    "page": 3,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Curated large diverse pre-training corpus of 357.4M document pages with automated curation pipeline",
+    "category": "DATA",
+    "quote": "We curated a large and diverse corpus consisting of 357.4",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "New benchmarks OCREval and MarkdownEval for document-level reading",
+    "category": "EVAL",
+    "quote": "trast, our proposed OCREval is the first benchmark specif-",
+    "page": 7,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "KOSMOS-2.5-CHAT fine-tuned document understanding generalist competitive with 7B models at 1.3B",
+    "category": "POST",
+    "quote": "document understanding generalist that can answer user-provided questions about text-rich images from various domains.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "DocPedia",
+   "DocOwl",
+   "Qwen-VL",
+   "UReader",
+   "Monkey",
+   "HRVDA",
+   "DocOwl-1.5",
+   "CogAgent",
+   "Donut",
+   "Dessurt",
+   "Pix2Struct-Large",
+   "Vary-toy",
+   "MiniCPM-V 2.0",
+   "GPT-4o",
+   "Nougat"
+  ],
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Summary of data used to pre-train KOSMOS -2.5, including descriptions of each document category, the number of",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "involved approximately 260 billion tokens.",
+   "page": 5
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Two-column text extraction interleaves lines; quotes chosen from captions/single-column spans where possible. Tokens quote (260B tokens) is short because the sentence is split across interleaved columns. Rerun/copied coded NR: OCREval/MarkdownEval are new benchmarks so comparators were likely run by authors, but this is not stated; Table 8 sources not stated. Data coded PARTIAL: sources, page counts and sampling ratios given, but crawled sources are not reconstructable. No ablations of architecture or pre-training tasks reported."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "da222ed4ee2018abe464629f6a8e4c0598c6178a507da26850c0bc05d1a8b2f1",
+  "session_id": "adc91a95-6fdf-4f40-94cb-5a6e794cadf2",
+  "cost_usd": 0.3916982,
+  "timestamp": "2026-11-14T12:11:59+00:00"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "arxiv": "2203.13474",
+ "model": "codegen",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Train and release a family of LLMs up to 16.1B parameters (CodeGen) on natural language and programming language data",
+    "category": "OTHER",
+    "quote": "To democratize this, we train and release a family of large language models up to 16.1B parameters, called C ODE G EN, on natural language",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open source the custom training library JAXFORMER for TPU-v4",
+    "category": "EFF",
+    "quote": "We will open source model checkpoints2 and the custom training library: JAX FORMER.3",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Model is competitive with previous state of the art on zero-shot Python code generation on HumanEval",
+    "category": "EVAL",
+    "quote": "We show the utility of the trained model by demonstrating that it is competitive with the previous state-of-the-art on zero-shot Python code generation on HumanEval.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Study multi-turn program synthesis emerging in autoregressive models under scaling laws",
+    "category": "SCALE",
+    "quote": "We study multi-turn program synthesis emerging in autoregressive models under scaling laws.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce a multi-turn program synthesis paradigm; multi-turn specification improves synthesis over single-turn",
+    "category": "OTHER",
+    "quote": "Our analysis on MTPB shows that the same intent provided to C ODE G EN in multi- turn fashion significantly improves program synthesis over that provided as a single turn.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Novel open Multi-Turn Programming Benchmark (MTPB) with 115 problems, first multi-turn program synthesis benchmark",
+    "category": "EVAL",
+    "quote": "To the best of our knowledge, this is the first multi-turn program synthesis benchmark, which allows quantitative analysis of multi-turn program synthesis.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "GPT-Neo 350M",
+   "GPT-Neo 2.7B",
+   "GPT-J 6B",
+   "Codex 300M",
+   "Codex 2.5B",
+   "Codex 12B",
+   "code-cushman-001",
+   "code-davinci-001",
+   "code-davinci-002"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "All models are evaluated with temperature t ∈ {0.2, 0.6, 0.8}, and we compute pass@k where k ∈ {1, 10, 100} for each model.",
+   "page": 4
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Results for the model marked with ∗ are from Chen et al. (2022).",
+   "page": 4
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "For the multi- lingual training, the following 6 programming languages are chosen: C, C++, Go, Java, JavaScript, and Python.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Table 5: Approximate statistics for training corpora along the pre-processing steps.",
+   "page": 14
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "No ARCH/TRAIN novelty claims; the parallel attn/MLP and RoPE are adopted from prior work without ablation. Table 2 standard errors are over problems rather than training runs, so seeds = NR. Comparator scores are mixed: Codex HumanEval numbers follow Chen et al. 2021, starred models are copied from Chen et al. 2022, and the MTPB Codex API results were run by the authors. Data disclosure is PARTIAL: Table 5 gives per-language tokens, but BigPython/BigQuery are not reconstructable. Tokens = Y on the basis of corpus token counts in Table 5; batch size and steps are in Table 6. Hardware is TPU-v4, with no duration, so compute = N."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "199bb846daaf06e56d5465d9a1b1d2633b63855f053f0124794b7909f81a5314",
+  "session_id": "f7eab775-7394-4259-8472-711892fed1e8",
+  "cost_usd": 0.31693819999999995,
+  "timestamp": "2026-11-14T12:09:57+00:00"
+ }
+}

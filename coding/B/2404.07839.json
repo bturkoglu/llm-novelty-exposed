@@ -1,0 +1,111 @@
+{
+ "arxiv": "2404.07839",
+ "model": "recurrent_gemma",
+ "coding": {
+  "note": "Griffin is described as novel but attributed to a prior paper; the Gemma comparison is only partial architecture evidence because training-token budgets differ. Claims are restricted to the abstract and introduction; the later novel-RLHF statement is outside that scope. Academic comparator evaluation provenance is not specified: the explicit Gemma inference rerun does not establish rerunning Table 2. Human-evaluation confidence intervals are not across independent training runs. The independent safety team is not identified as an external third party. No pre-training compute budget is disclosed.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "quote": "We introduce RecurrentGemma, a family of open language models which uses Google’s novel Griffin\n  architecture.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce an open RecurrentGemma language-model family, with pretrained and instruction-tuned releases.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Griffin combines linear recurrences with local attention to achieve excellent performance\n  on language.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "Gemma-2B was trained on 3T\n tokens and Gemma-7B was trained on 6T tokens, while both RecurrentGemma-2B and RecurrentGemma-9B were trained\n on 2T tokens.",
+    "claim": "Use the novel Griffin architecture combining linear recurrence and local attention.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 2
+   },
+   {
+    "quote": "It has a fixed-sized state, which reduces memory use and enables efficient inference on long\n  sequences.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Fixed-size recurrent state reduces memory requirements and enables efficient long-sequence inference.",
+    "page": 1,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Our models achieve comparable performance to similarly-sized\n  Gemma baselines despite being trained on fewer tokens.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Achieve comparable performance to similarly sized Gemma models despite using fewer training tokens.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "including a specialized Pallas kernel\n  to perform the linear recurrence on TPUs. We provide a\n  reference PyTorch implementation as well.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Release efficient JAX evaluation and fine-tuning code with a specialized TPU recurrence kernel and a reference PyTorch implementation.",
+    "page": 1,
+    "category": "EFF",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "pre-training data as the Gemma models, which comprises\n  primarily English data from web documents, mathematics\n  and code.",
+   "page": 1
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "and 9B parameters, both trained on 2T tokens. Our models",
+   "page": 1
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "Gemma-2B",
+   "Gemma-7B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "dc19a2b4a9d285b3469a85b3d8a1848f9bd65147bcd03672d20a0500313820ee",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1035,
+   "totalTokens": 7677,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 6510
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:37+00:00"
+ }
+}

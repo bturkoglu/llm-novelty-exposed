@@ -1,0 +1,45 @@
+{
+ "arxiv": "2409.02060",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "We find that after 500B tokens, an otherwise equivalent MoE trained from scratch already catches up with the upcycled model",
+    "page": 12,
+    "reason": "Authors state this as their finding that challenges prior upcycling results. The ablation is controlled: Fig. 8 and the body compare upcycling vs an otherwise equivalent from-scratch MoE under the same config for the same additional token budget (610B; catch-up by 500B), with downstream metrics (HellaSwag, MMLU Var), not only loss. The 2T dense checkpoint is the upcycling intervention itself, not an unmatched size/data confound, so this is YES rather than PARTIAL."
+   },
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Not a novelty claim. The intro only says their experiments show a ~2× training-time speedup; §4.1.1 explicitly attributes similar 2–4× / 2.6× / 2–7× MoE speed-ups to prior work (Artetxe, MoMa, Arctic, Switch). It is a confirmatory measurement, not an ARCH/TRAIN contribution they state as new, first, or key. Drop it."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ],
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9621,
+   "outputTokens": 8701,
+   "totalTokens": 19427,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "arxiv": "2206.12131",
+ "model": "mvp",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Collect MVPCorpus, a large-scale labeled NLG corpus of 77 datasets over 11 NLG tasks (claimed largest NLG dataset collection)",
+    "category": "DATA",
+    "quote": "In this paper, we collect a large-scale labeled",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Supervised pre-training (with labeled data) for NLG-oriented PLMs, rather than unsupervised pre-training",
+    "category": "TRAIN",
+    "quote": "To fill this gap, we explore supervised\npre-training and multi-task learning for deriving",
+    "page": 2,
+    "ablation": "PARTIAL",
+    "ablation_quote": "• BARTLARGE (Lewis et al., 2020): BART is a  First, supervised pre-training models (i.e., MVP,",
+    "ablation_page": 6
+   },
+   {
+    "claim": "Multi-task pre-training combining labeled datasets across tasks improves over single-task pre-training",
+    "category": "TRAIN",
+    "quote": "key to generalizing to new tasks for large PLMs,  we combine these labeled datasets for multi-task",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "• Single-task pre-training (Single): We individ-  pre-training (MVP) and single-task (Single), our",
+    "ablation_page": 6
+   },
+   {
+    "claim": "Pre-train task-specific soft (prefix) prompts per task to stimulate task capacity and mitigate multi-task neutralization",
+    "category": "TRAIN",
+    "quote": "To mitigate this potential issue, we propose to learn",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "• Randomly initialized prompts (MVP+R): The  task prompt (MVP+S) consistently surpasses the",
+    "ablation_page": 6
+   },
+   {
+    "claim": "MVP achieves state-of-the-art on 13 of 17 datasets, outperforming BART by 9.3% and Flan-T5 by 5.8%",
+    "category": "OTHER",
+    "quote": "of NLG tasks, which achieves state-of-the-art\n  performance on 13 out of 17 datasets, outper-",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "BART-large",
+   "Flan-T5-large"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "task supervised pre-training, and we compare it  best-reported results from original papers in the",
+   "page": 6
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "We utilize the large versions of T5.1.1 and\nExT5, and all the results of them are from Aribandi et al. (2022).",
+   "page": 26
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "Table 9: The statistics and licenses of datasets for pre-training our MVP model.",
+   "page": 23
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "The page text mixes two columns line by line, so several quotes are exact copies of these mixed lines. Main table comparators are BART and Flan-T5. BART and SOTA scores are cited from earlier papers (superscripts), while Flan-T5 appears to have been run by the authors, so rerun and copied scores are both MIXED. The supervised-vs-unsupervised claim is PARTIAL because MVP is initialised from BART and trained further, which confounds the comparison. Multi-task vs single-task and the prompt variants (S/R/M) are compared at matched settings. GLUE test scores come from the official server, but I did not count that as third-party evaluation. The paper gives 25GB, 32M examples and about 20k steps but no token count. It names 32 V100 GPUs but gives no training duration, so compute is N."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "2053ef87066c8d57b4542ad30f6a143ed1a47f37d0d0038d38419ae03bdd10c4",
+  "session_id": "4ef5891d-473b-4b46-8219-6f8692049a2e",
+  "cost_usd": 0.6813262,
+  "timestamp": "2026-11-14T12:11:01+00:00"
+ }
+}

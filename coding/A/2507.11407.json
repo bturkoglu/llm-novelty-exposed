@@ -1,0 +1,154 @@
+{
+ "arxiv": "2507.11407",
+ "model": "exaone4",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Unifies non-reasoning and reasoning modes in a single model",
+    "category": "POST",
+    "quote": "into a single model, allowing users to experience both modes within one model.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduces agentic tool use capability",
+    "category": "POST",
+    "quote": "With the upcoming era of agentic AI in mind, EXAONE 4.0 introduces agentic tool use—a core capability for this paradigm—and further advances reasoning abilities.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Adds Spanish language support alongside English and Korean",
+    "category": "DATA",
+    "quote": "the EXAONE 4.0 officially add Spanish to its supported languages, expanding beyond its previous bilingual support for English and Korean.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Significantly more pretraining tokens to bolster world knowledge",
+    "category": "SCALE",
+    "quote": "Compared to previous versions of EXAONE, the number of tokens used during pretraining is significantly increased to bolster world knowledge.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Curation of specialized STEM-domain training data",
+    "category": "DATA",
+    "quote": "curating training data from specialized domains such as STEM (Science, Technology, Engineering, and Mathematics) fields plays important role on downstream tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Context length extended to 128K tokens",
+    "category": "CTX",
+    "quote": "the extension of maximum context length of the model to 128K tokens enables handling of various tasks based on significantly longer contexts",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Hybrid global/local (sliding window) attention to reduce compute with minimal degradation",
+    "category": "ARCH",
+    "quote": "a hybrid architecture combining global attention and local attention is adopted. This approach minimizes performance degradation while reducing computational costs",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two model sizes: 32B and on-device 1.2B",
+    "category": "SCALE",
+    "quote": "two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Superior performance vs open-weight models in class, competitive with frontier models",
+    "category": "OTHER",
+    "quote": "demonstrates superior performance compared to open-weight models in its class and remains competitive even against frontier-class models.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Phi 4 reasoning-plus",
+   "Magistral Small-2506",
+   "Qwen 3 32B",
+   "Qwen 3 235B",
+   "DeepSeek R1-0528",
+   "Phi 4",
+   "Mistral Small-2506",
+   "Gemma 3 27B",
+   "Llama 4 Maverick",
+   "DeepSeek V3-0324",
+   "EXAONE Deep 2.4B",
+   "Qwen 3 0.6B",
+   "Qwen 3 1.7B",
+   "SmolLM 3 3B",
+   "Gemma 3 1B"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "If not, we reproduce the results in our evaluation environment, following the recommended settings when they are explicitly stated7",
+   "page": 10
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "For baseline models, we borrow scores reported in each model’s official technical report, blog, or leaderboard6 if available.",
+   "page": 10
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "NONE",
+   "quote": "",
+   "page": 0
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "In comparison, the EXAONE 4.0 32B model doubles this amount, utilizing 14 trillion tokens for pretraining.",
+   "page": 4
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "Table 2: Pretraining data size and computational resources used for EXAONE 4.0 language models.",
+   "page": 4
+  },
+  "renames": [],
+  "note": "Claims restricted to abstract/intro; AGAPO (new RL algorithm) and QK-Reorder-LN appear only in Sec. 2 so not coded as claims (QK-Reorder-LN has only a textual 'we find' statement, no table). Data disclosure coded NONE (conservative): pretraining sources/mixture not given, only SFT domain categories; could arguably be PARTIAL. Seeds NR: n samples are evaluation samples, not training runs. Comparator scores partly copied (asterisked) and partly reproduced in-house, hence MIXED."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "0503b7b4e5027445589d68ea1f32cf3a11495869e620518bbd92c5ce77a381f5",
+  "session_id": "f9b622f8-a913-4d2c-ba24-f9dfa6c00068",
+  "cost_usd": 0.44256619999999997,
+  "timestamp": "2026-11-14T12:15:54+00:00"
+ }
+}

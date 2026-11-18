@@ -1,0 +1,160 @@
+{
+ "arxiv": "2503.01743",
+ "model": "phi4_multimodal",
+ "coding": {
+  "note": "Codes cover the model family described in the report, including the explicitly experimental reasoning extension. Contribution-list performance claims are coded OTHER; reasoning enhancement is POST. Mixture-of-LoRAs has only confounded comparisons against differently trained baseline models, so its ablation is PARTIAL, not YES. No matched ablation of GQA is reported. The dynamic crop strategy and detailed reasoning-training novelty appear outside the abstract/introduction/contribution list and are not separate C1 entries. Data categories and some quantities are disclosed, but no reconstructible mixture. Comparator list is capped at 15, prioritizing multimodal results. External OpenASR leaderboard placement is reported; internal Microsoft red teams alone are not treated as external evaluation. No explicit renaming of a known technique is established.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The results of canary and WhisperV3 are from the official report while others are obtained through internal\n  evaluation on the same test data version.",
+   "page": 13
+  },
+  "claims": [
+   {
+    "quote": "Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow",
+    "ablation": "PARTIAL",
+    "ablation_quote": "maintaining language capabilities while achieving minimal performance loss on multimodal bench-\n  marks compared to fully fine-tuned baselines.",
+    "claim": "Unified multimodal model using modality-specific mixture-of-LoRAs and routers with a frozen language backbone, minimizing interference and preserving text capabilities.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 11
+   },
+   {
+    "quote": "This achievement is driven by a carefully curated synthetic data recipe emphasizing high-",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Curated synthetic data recipe emphasizing high-quality math and coding data enables strong compact-model reasoning performance.",
+    "page": 1,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "features an expanded vocabulary size of 200K tokens to better support multilingual applications, as",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Expanded 200K-token vocabulary for multilingual support relative to Phi-3.5-Mini.",
+    "page": 1,
+    "category": "TOK",
+    "ablation_page": 0
+   },
+   {
+    "quote": "well as group query attention for more efficient long-sequence generation. Phi-4-Multimodal is a",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Group query attention enables more efficient long-sequence generation.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 0
+   },
+   {
+    "quote": "the-art performance in natural language understanding and generation for its size category. It",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "State-of-the-art language understanding and generation performance for the model's size, including reasoning and mathematics.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "achieve state-of-the-art performance on code-related tasks within its size category. The model",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "State-of-the-art code understanding and generation performance for the model's size.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "mance across multi-modal tasks for its size category, demonstrating robust integration of diverse",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "State-of-the-art multimodal performance for the model's size, integrating images, text, and speech.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "cially on multilingual speech recognition and translation tasks, and is the first open-sourced model\n  with speech summarization capability.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Strong multilingual speech recognition and translation performance and first open-source model with speech summarization capability.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "strates superior reasoning abilities for a model in its size category.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Further reasoning optimization of Phi-4-Mini yields superior reasoning performance for its size, comparable to larger reasoning models.",
+    "page": 2,
+    "category": "POST",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "interleaved image-text documents, image-text pairs, image grounding data, synthetic datasets from\nOCR of PDFs and realistic images, and synthesized datasets for chart comprehension.",
+   "page": 7
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "0.5T tokens, combining both visual and textual elements. Additionally, the maximum image resolution",
+   "page": 7
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "OpenASR leaderboard8 and now ranks No.1 on the leaderboard as of 1/14/2025.",
+   "page": 12
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "The results of canary and WhisperV3 are from the official report while others are obtained through internal\n  evaluation on the same test data version.",
+   "page": 13
+  },
+  "renames": [],
+  "comparators": [
+   "Phi-3.5-Vision",
+   "Qwen2.5-VL-3B",
+   "InternVL2.5-4B",
+   "Qwen2.5-VL-7B",
+   "InternVL2.5-8B",
+   "Gemini-2.0-Flash-Lite-prv-02-05",
+   "Gemini-2.0-Flash",
+   "Claude-3.5-Sonnet",
+   "GPT-4o-mini",
+   "GPT-4o",
+   "InternOmni",
+   "WhisperV3",
+   "SeamlessM4T-V2",
+   "Qwen2-audio",
+   "nvidia/canary-1B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "df56ab135c7134ef93cf0deb3fe76179ae320414cde437abbcc41a80d366cb18",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1555,
+   "totalTokens": 38181,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 36494
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:19+00:00"
+ }
+}

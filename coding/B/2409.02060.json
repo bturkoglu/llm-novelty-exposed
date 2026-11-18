@@ -1,0 +1,196 @@
+{
+ "arxiv": "2409.02060",
+ "model": "olmoe",
+ "coding": {
+  "note": "Codes the September 2024 release described in the abstract/introduction; Appendix I also describes the January 2025 update. Claims are deduplicated across those sections. Matched architecture comparisons include downstream performance curves, not only loss curves, so are YES; sparse upcycling is PARTIAL because it includes an additional 2T-token dense pretraining history. No independent same-setting seed replications are stated. FULL data disclosure is supported by Table 2 source-level token counts, filtering and epoch/shuffling details, and Table 3 adaptation sample counts. Comparator list is capped at 15, omitting Mistral-7B and DCLM-7B from Table 4. Rerun/scores_copied refer to the main results tables, whose captions explicitly say all evaluations were run by the authors. The comparison to other models on the AlpacaEval leaderboard does not establish an independent evaluation of OLMoE itself, so third_party is conservatively NO. Prior techniques retain their prior names; no renames identified.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "We run all evaluations ourselves with 5 few-shots,",
+   "page": 7
+  },
+  "claims": [
+   {
+    "claim": "Introduce a fully open, state-of-the-art MoE language model and release weights, data, code and logs.",
+    "category": "OTHER",
+    "quote": "We introduce OLM O E, a fully open, state-of-the-art language model leveraging",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pretrain the sparse 1B-active/7B-total model on approximately five trillion tokens.",
+    "category": "SCALE",
+    "quote": "We pretrain it on 5 trillion tokens and",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Create an instruction- and preference-tuned model that exceeds larger instruction models.",
+    "category": "POST",
+    "quote": "Via instruction- and preference tuning, we create OLM O E-1B-7B-I NSTRUCT, which we",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "MoEs train approximately twice as fast as dense language models with equivalent active parameters.",
+    "category": "EFF",
+    "quote": "Our experiments show that MoEs train ∼2× faster than dense LMs with equiv-",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide controlled experiments identifying key MoE and general language-model design choices.",
+    "category": "OTHER",
+    "quote": "Our comprehensive set of controlled experiments highlights key design choices for MoEs",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Fine-grained routing with many small experts is a critical performant MoE design choice.",
+    "category": "ARCH",
+    "quote": "fine-grained routing with granular experts [42]: we employ 64 small experts in each layer with 8 be-",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "to ensure that active and total parameters and thus compute cost remain the same.",
+    "ablation_page": 10
+   },
+   {
+    "claim": "Dropless token-based routing outperforms expert-based routing.",
+    "category": "ARCH",
+    "quote": "routing [154] outperforms expert-based routing [219]. Our findings also include those that challenge",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "both models use the same number of active parameters.",
+    "ablation_page": 11
+   },
+   {
+    "claim": "Shared experts are ineffective in the tested MoE setup.",
+    "category": "ARCH",
+    "quote": "prior work, such as the ineffectiveness of shared experts [42] and the limited benefits of sparsely up-",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "eters and use the same number of FLOPs. 4 of the 32 routed experts are activated, while",
+    "ablation_page": 10
+   },
+   {
+    "claim": "Sparse upcycling has limited benefits except under small compute budgets.",
+    "category": "TRAIN",
+    "quote": "cycling a pretrained dense LM into an MoE [85] unless under small compute budgets.",
+    "page": 3,
+    "ablation": "PARTIAL",
+    "ablation_quote": "We upcycle OLMo-1B (0724) at 2T tokens into an MoE",
+    "ablation_page": 12
+   },
+   {
+    "claim": "Analyze routing and find that routing saturates early in pretraining.",
+    "category": "OTHER",
+    "quote": "analyze the routing behavior in OLM O E-1B-7B, finding that routing saturates early in pretraining,",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Find that experts are rarely co-activated.",
+    "category": "OTHER",
+    "quote": "experts are rarely co-activated, and experts exhibit domain and vocabulary specialization.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Find expert specialization by data domain.",
+    "category": "OTHER",
+    "quote": "experts are rarely co-activated, and experts exhibit domain and vocabulary specialization.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Find expert specialization by vocabulary.",
+    "category": "OTHER",
+    "quote": "experts are rarely co-activated, and experts exhibit domain and vocabulary specialization.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "We pretrain OLM O E-1B-7B on 256 H100 GPUs for approximately 10 days with NV-",
+   "page": 45
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "Composition of the pretraining data for OLM O E-1B-7B. StarCoder, peS2o, and",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We shuffle all samples randomly at the beginning of each epoch and train for a total of 5.133T tokens",
+   "page": 6
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "YES",
+   "quote": "We run all evaluations ourselves with 5 few-shots,",
+   "page": 7
+  },
+  "renames": [],
+  "comparators": [
+   "Llama2-7B",
+   "OLMo-7B (0724)",
+   "Llama3.1-8B",
+   "Gemma2-9B",
+   "OpenMoE-3B-9B",
+   "StableLM-2B",
+   "DeepSeek-3B-16B",
+   "JetMoE-2B-9B",
+   "Gemma2-3B",
+   "Qwen1.5-3B-14B",
+   "Pythia-1B",
+   "OLMo-1B (0724)",
+   "TinyLlama-1B",
+   "Llama3.2-1B",
+   "DCLM-1B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "c2c8368d373cabfca297b1fad9d3247d45c8f8f9b6a506c4799b685f82919e44",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1945,
+   "totalTokens": 68485,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 66408
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:06+00:00"
+ }
+}

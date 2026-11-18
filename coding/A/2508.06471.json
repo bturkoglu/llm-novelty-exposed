@@ -1,0 +1,141 @@
+{
+ "arxiv": "2508.06471",
+ "model": "glm4_moe",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "GLM-4.5 is an open-source MoE LLM with 355B total parameters and 32B activated parameters",
+    "category": "ARCH",
+    "quote": "We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language model with 355B total parameters and 32B activated parameters",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Hybrid reasoning method supporting both thinking and direct response modes",
+    "category": "POST",
+    "quote": "GLM-4.5 and GLM- 4.5-Air both feature hybrid reasoning modes: thinking mode for complex reasoning and agentic tasks, and non-thinking mode for instant responses.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Multi-stage pre-/mid-training on 23T tokens",
+    "category": "TRAIN",
+    "quote": "Through multi-stage training on 23T tokens and comprehensive post-training with expert model iteration and reinforcement learning",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Comprehensive post-training with expert model iteration and reinforcement learning",
+    "category": "POST",
+    "quote": "comprehensive post-training with expert model iteration and reinforcement learning, GLM-4.5 achieves strong performance across agentic, reasoning, and coding (ARC) tasks",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Strong ARC performance; ranks 3rd overall and 2nd on agentic benchmarks with fewer parameters than competitors",
+    "category": "OTHER",
+    "quote": "With much fewer parameters than several competitors, GLM-4.5 ranks 3rd overall among all evaluated models and 2nd on agentic benchmarks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release of a compact GLM-4.5-Air (106B) model",
+    "category": "OTHER",
+    "quote": "We release both GLM-4.5 (355B parameters) and a compact version, GLM-4.5-Air (106B parameters), to advance research in reasoning and agentic AI systems.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Parameter efficiency: lies on Pareto frontier of SWE-bench Verified vs parameters",
+    "category": "OTHER",
+    "quote": "where GLM-4.5 and GLM-4.5-Air lie on the Pareto Frontier",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-sourced evaluation toolkit for reproducibility",
+    "category": "EVAL",
+    "quote": "We also open-sourced an evaluation toolkit at https://github.com/zai-org/glm-simple-evals to ensure the reproducibility of our benchmark results.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "o3",
+   "o4-mini",
+   "GPT-4.1",
+   "Claude Opus 4",
+   "Claude Sonnet 4",
+   "Gemini 2.5 Pro",
+   "Grok 4",
+   "Kimi K2",
+   "DeepSeek-R1-0528",
+   "DeepSeek-V3-0324",
+   "Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Our pre-training corpus includes documents from webpages, social media, books, papers, and code repositories.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Through multi-stage training on 23T tokens and comprehensive post-training with expert model iteration and reinforcement learning",
+   "page": 1
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Main post-trained results tables (3-5) do not say whether comparator scores were rerun or copied, so both are NR. AA-Index is a figure the authors estimated using Artificial Analysis's formula, not an evaluation run by a third party. The RL ablations (curriculum, single-stage 64K, token-weighted loss) and the attention-head observation were not stated as headline contributions in the abstract/intro, so they are not coded as claims. Mid-training/data proportions are given only partially (15T+7T stage sizes, categories), so the data disclosure is coded PARTIAL."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "64d0577a14ba939fedb9ea7161eefb9aca5e1944a01738a1fec65249b7ba1063",
+  "session_id": "d69e2fdd-7f4d-42c8-a045-33a3d622a22d",
+  "cost_usd": 0.3507062,
+  "timestamp": "2026-11-14T12:16:08+00:00"
+ }
+}

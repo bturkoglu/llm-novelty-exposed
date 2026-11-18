@@ -1,0 +1,34 @@
+{
+ "arxiv": "2312.00752",
+ "resolution": {
+  "fields": [
+   {
+    "field": "seeds",
+    "value": "NR",
+    "quote": "",
+    "page": 0,
+    "reason": "The page-56 sentence is about skipping a learning-rate sweep at sequence length 2^20 (one hyperparameter trial because cost scales with length), not the number of random seeds or independent replications of an ablation or main result. No seed count, std, or CI is stated for the language-modeling, scaling, or downstream results, so the seed protocol is not reported."
+   },
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "We use the Pile dataset (L. Gao, Biderman, et al. 2020), and follow the training recipe described in Brown et al. (2020).",
+    "page": 17,
+    "reason": "The language-model data is named as the Pile (a specific public source) plus a pointer to the Brown et al. training recipe, but this paper does not list component sources or mixture proportions sufficient to reconstruct the mix. Naming a source without proportions is PARTIAL, not FULL; the lower level is chosen because the mixture is only defined externally."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 6812,
+   "outputTokens": 4434,
+   "totalTokens": 11246,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

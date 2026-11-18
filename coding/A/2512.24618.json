@@ -1,0 +1,155 @@
+{
+ "arxiv": "2512.24618",
+ "model": "youtu",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Dense Multi-Latent Attention (MLA) architecture for a lightweight 1.96B model",
+    "category": "ARCH",
+    "quote": "Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "We compared GQA and MLA by pre-training 1B-parameter models from scratch on 500B tokens.",
+    "ablation_page": 16
+   },
+   {
+    "claim": "Novel STEM-oriented vocabulary / multi-stage tokenizer",
+    "category": "TOK",
+    "quote": "Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "128k context window support for long-horizon agent tasks",
+    "category": "CTX",
+    "quote": "This design enables robust long-context reasoning and state tracking within a minimal memory footprint, making it ideal for long-horizon agent and reasoning tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Commonsense-STEM-Agent multi-stage curriculum progressively shifting data distribution",
+    "category": "TRAIN",
+    "quote": "By progressively shifting the pre-training data distribution from general commonsense to complex STEM and agentic tasks, we ensure the model acquires deep cognitive abilities",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pre-trained from scratch rather than relying on distillation",
+    "category": "TRAIN",
+    "quote": "Unlike typical small models that rely on distillation, Youtu-LLM (1.96B) is pre-trained from scratch to systematically cultivate reasoning and planning capabilities.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Curated ~11T token pre-training corpus",
+    "category": "DATA",
+    "quote": "We curated a massive corpus of approximately 11T tokens and implemented a multi-stage training strategy.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Principled agent-centric training paradigm (agentic mid-training) inducing native agentic capabilities",
+    "category": "TRAIN",
+    "quote": "We propose a principled training paradigm that enhances native agentic capabilities through innovations in tokenizer design, data allocation, and multi-stage learning, guided by an agent-centric philosophy.",
+    "page": 3,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Table 14. Performance of post-trained models with and without agentic mid-training (AMT).",
+    "ablation_page": 29
+   },
+   {
+    "claim": "Scalable frameworks for constructing agentic trajectory data (200B tokens) across math, code, deep research, tool use",
+    "category": "DATA",
+    "quote": "We present a series of scalable frameworks for constructing high-quality agentic trajectory data, spanning reasoning, reflection and planning abilities",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Lightweight open-source agentic LLM outperforming SOTA models of similar or larger size on agent benchmarks",
+    "category": "OTHER",
+    "quote": "We introduce Youtu-LLM, a lightweight open-source language model that significantly outperforms state-of-the-art models of similar or even larger size in agent benchmarks.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "First systematic analysis of agentic pre-training in lightweight LLMs, revealing scalable growth",
+    "category": "OTHER",
+    "quote": "We provide the first systematic analysis of agentic pre-training in lightweight LLMs, revealing the scalable growth of agentic abilities.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Qwen3 1.7B",
+   "SmolLM3 3B",
+   "Gemma3 4B",
+   "Qwen3 4B",
+   "Llama3.1 8B",
+   "DeepSeek-R1-Distill-Qwen 1.5B",
+   "DeepSeek-R1-Distill-Llama 8B"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "For all listed models, they are evaluated in a thinking mode (generating explicit thought processes).",
+   "page": 25
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "We utilized a sampling temperature of 1.0, a top-p value of 0.95, a top-k value of 20, and a presence penalty of 1.5.",
+   "page": 25
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "we compiled 700B tokens of Chinese and English STEM corpora, covering key disciplines such as mathematics, physics, chemistry, biology, and medicine",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Considering the training scale of 2B parameters and 10.84T tokens of data, we adopt an optimal global batch size of 12M tokens and a learning rate of 4e-4.",
+   "page": 16
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Seeds coded NR: the 4x GAIA runs, 8 SWE-bench trials and 95% CIs (Fig. 15) are repeated evaluation sampling, not independent training runs. The agentic mid-training ablation (Table 14) is coded PARTIAL rather than YES because the w/o-AMT model sees fewer tokens. Curriculum ordering is coded NO: its benefit is only asserted in prose, with no table. Third-party is NO because APTBench is authored by the same team. Data is PARTIAL: category token counts and stage shares are given but not a reconstructable mixture. The tokenizer comparison (Table 3) exists but is NA for the TOK category."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "38d7ed4ce185f21b0a9730f5eb4a834475b0774bba661f47fabc0bb8500f8492",
+  "session_id": "6dc37a34-ea5a-4c0b-b36c-7ab9e0f640f7",
+  "cost_usd": 0.6754782,
+  "timestamp": "2026-11-14T12:15:20+00:00"
+ }
+}

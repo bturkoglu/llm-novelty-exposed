@@ -1,0 +1,127 @@
+{
+ "arxiv": "2203.13474",
+ "model": "codegen",
+ "coding": {
+  "note": "CodeGen is a released model family. Claims consolidate repeated abstract/introduction statements; no new architecture or training-method contribution is claimed there, so C2 is NA throughout. Sampling temperatures, generated samples, and standard errors over problems do not establish independent training seeds. Comparator evaluation is mixed: MTPB comparators were evaluated by the authors, while starred HumanEval and MBPP comparator results were copied. Third-party is coded NO because no independent evaluation of CodeGen itself is reported; copied comparator evaluations are recorded separately. Data disclosure is PARTIAL: sources, language-level sizes, and preprocessing are given, but the exact GitHub selection/mixture is not reconstructible. Corpus token counts and training batch sizes/steps are disclosed; hardware is described without duration or total compute. Prior techniques retain their existing names, so no clear renames are coded.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Results for the model marked with ∗ are from Chen et al. (2022).",
+   "page": 4
+  },
+  "claims": [
+   {
+    "quote": "To democratize this, we train and release a family of large\n  language models up to 16.1B parameters, called C ODE G EN, on natural language\n  and programming language data",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Train and openly release the CodeGen family, up to 16.1B parameters, for program synthesis.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We study multi-turn program synthesis emerging in autoregressive models under scaling laws.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Study the emergence of multi-turn program synthesis as model and data scale.",
+    "page": 2,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We leverage this capacity to introduce a multi-turn program synthesis paradigm.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce multi-turn program synthesis by progressively specifying subproblems in natural language; demonstrate improved synthesis over single-turn specifications.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We investigate its properties quantitatively with a novel multi-turn programming benchmark.1",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce MTPB, a novel benchmark of 115 problems for quantitative multi-turn program synthesis evaluation.",
+    "page": 2,
+    "category": "EVAL",
+    "ablation_page": 0
+   },
+   {
+    "quote": "For scaling the training, a custom library JAX FORMER for TPU-v4 hardware was developed\nand will be released as open-source, including the trained model weights.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Develop and open-source the custom JAXFORMER training library for scaling models on TPU-v4.",
+    "page": 3,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We show the utility of the trained model by demonstrating that it is competitive with\n  the previous state-of-the-art on zero-shot Python code generation on HumanEval.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Demonstrate competitive zero-shot Python code generation against the previous state of the art on HumanEval.",
+    "page": 1,
+    "category": "EVAL",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "The multi-lingual dataset B IG Q UERY is a subset of Google’s publicly available BigQuery dataset,\nwhich consists of code (under open-source license) in multiple programming languages.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Dataset  Language  Raw Size  Final Size  Final Tokens\n  Natural Language  825.18 GiB  1159.04 GiB  354.7B",
+   "page": 14
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "In the MTPB, each problem has 5 test cases and we sample 40 samples\nfor each test case with each model, based on which the pass rate is computed for each problem.",
+   "page": 7
+  },
+  "renames": [],
+  "comparators": [
+   "GPT-Neo 350M",
+   "GPT-Neo 2.7B",
+   "GPT-J 6B",
+   "Codex 300M",
+   "Codex 2.5B",
+   "Codex 12B",
+   "code-cushman-001",
+   "code-davinci-001",
+   "code-davinci-002"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "199bb846daaf06e56d5465d9a1b1d2633b63855f053f0124794b7909f81a5314",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1372,
+   "totalTokens": 24554,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 23050
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:00+00:00"
+ }
+}

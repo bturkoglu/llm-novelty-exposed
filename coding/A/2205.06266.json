@@ -1,0 +1,85 @@
+{
+ "arxiv": "2205.06266",
+ "model": "xmod",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Language-specific modular components pre-trained from the start (X-MOD) mitigate negative interference between languages and achieve positive transfer",
+    "category": "ARCH",
+    "quote": "that our modular architecture not only is effective at mitigating interference between languages, but also",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60",
+    "ablation_page": 7
+   },
+   {
+    "claim": "X-MOD can be extended to unseen languages post-hoc with no measurable drop in performance",
+    "category": "OTHER",
+    "quote": "we show that X-M OD can be extended to unseen languages, with no measurable drop in",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "MULTI",
+   "quote": "All results are averaged across 5 random seed runs.",
+   "page": 5
+  },
+  "comparators": [
+   "SHARED (non-modular baseline)",
+   "Adapters (MAD-X style on shared_nm)"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60",
+   "page": 7
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "guages with α = 0.7 and train our models with",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [
+   {
+    "new_name": "modules",
+    "existing_technique": "adapters (bottleneck adapter layers, Pfeiffer et al. 2021a)",
+    "quote": "Inspired by the adapter3 architecture of Pfeiffer et al. (2021a) we",
+    "page": 3
+   }
+  ],
+  "note": "Release report: code and pre-trained models are released. C1 ablation is coded YES because SHARED matches FLOPs and trainable parameters, differing only in having one shared module. Seeds coded MULTI because 5 fine-tuning seeds are averaged with no variance reported; pre-training is one run per setting. Compute coded N: 64 V100 GPUs are stated but not the duration. Tokens coded N: batch size and update steps are given but no token count. The rename is the authors calling adapter-style bottleneck layers 'modules' because they are trained jointly with the transformer weights. Its quote is the page 3 'inspired by the adapter architecture' sentence, because the clearer footnote is mixed with the other column. Several pages mix two columns, which limited quote choice. The data quote (9 words) and the C2 quote may fail the verbatim check."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "15ba51a278515d3f03ac232c006db323b55711d2fb3171cc8973ff88ab853237",
+  "session_id": "d1b79ef6-5cb4-4fc2-8e08-7e44991428e8",
+  "cost_usd": 0.3390102,
+  "timestamp": "2026-11-14T12:10:33+00:00"
+ }
+}

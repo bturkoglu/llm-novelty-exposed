@@ -1,0 +1,160 @@
+{
+ "arxiv": "2507.11407",
+ "model": "exaone4",
+ "coding": {
+  "note": "C1 is restricted to abstract/introduction contributions; QK-Reorder-LN and AGAPO are described only later and are not added as C1 claims. No controlled hybrid-attention ablation is reported. Response resampling is not independent training replication. Data categories are disclosed, but no reconstructable pretraining mixture. External leaderboard scores concern baselines, not an independently evaluated EXAONE 4.0 release, so third_party is conservatively NO. AGAPO combines modifications to prior methods rather than explicitly renaming an unchanged existing technique.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "For baseline models, we borrow scores reported in each model’s official technical report,\nblog, or leaderboard6 if available. If not, we reproduce the results in our evaluation environment, following the\nrecommended settings when they are explicitly stated7 .",
+   "page": 10
+  },
+  "claims": [
+   {
+    "claim": "Unify non-reasoning and reasoning modes in one model.",
+    "category": "POST",
+    "quote": "This technical report introduces EXAONE 4.0, which integrates a N ON - REASONING mode and",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce agentic tool-use capabilities.",
+    "category": "POST",
+    "quote": "With the upcoming era of agentic AI in mind, EXAONE 4.0 introduces agentic tool use—a core capability for this",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Increase pretraining token scale to strengthen world knowledge.",
+    "category": "SCALE",
+    "quote": "Compared to previous versions of EXAONE, the number of tokens used during pretraining is significantly increased to",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Curate specialized-domain training data to enhance expert knowledge.",
+    "category": "DATA",
+    "quote": "curating training data from specialized domains\n  such as STEM (Science, Technology, Engineering, and Mathematics) fields plays important role on downstream tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Extend maximum context length to 128K tokens.",
+    "category": "CTX",
+    "quote": "the extension of maximum context length of the model to 128K tokens enables handling of various tasks",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Adopt hybrid global/local attention to reduce training and inference computational costs while limiting performance degradation.",
+    "category": "ARCH",
+    "quote": "a hybrid architecture combining global attention\n  and local attention is adopted. This approach minimizes performance degradation while reducing computational costs",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Add Spanish support while retaining the existing tokenizer and vocabulary.",
+    "category": "OTHER",
+    "quote": "Moreover, the EXAONE 4.0 officially add Spanish to its supported languages, expanding beyond its previous bilingual",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide a high-performance 32B model and a small 1.2B model for on-device applications.",
+    "category": "SCALE",
+    "quote": "two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Achieve superior performance against same-class open-weight models and competitive performance against frontier models.",
+    "category": "OTHER",
+    "quote": "to open-weight models in its class and remains competitive even against frontier-class models.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "Size of pretraining data (tokens)  14T  12T\n  Amount of computation (FLOPs)  2.69 × 1024  8.65 × 1022",
+   "page": 4
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "curating training data from specialized domains\n  such as STEM (Science, Technology, Engineering, and Mathematics) fields plays important role on downstream tasks.",
+   "page": 1
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "32B model doubles this amount, utilizing 14 trillion tokens for pretraining. This increase in data is specifically aimed at",
+   "page": 4
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "For baseline models, we borrow scores reported in each model’s official technical report,\nblog, or leaderboard6 if available. If not, we reproduce the results in our evaluation environment, following the\nrecommended settings when they are explicitly stated7 .",
+   "page": 10
+  },
+  "renames": [],
+  "comparators": [
+   "Phi 4 reasoning-plus",
+   "Magistral Small-2506",
+   "Qwen 3 32B",
+   "Qwen 3 235B",
+   "DeepSeek R1-0528",
+   "Phi 4",
+   "Mistral-Small-3.2-24B-Instruct-2506",
+   "Gemma 3 27B",
+   "Llama 4 Maverick",
+   "DeepSeek V3-0324",
+   "EXAONE Deep 2.4B",
+   "Qwen 3 0.6B",
+   "Qwen 3 1.7B",
+   "SmolLM 3 3B",
+   "Gemma 3 1B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "0503b7b4e5027445589d68ea1f32cf3a11495869e620518bbd92c5ce77a381f5",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1674,
+   "totalTokens": 32563,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 30757
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:22+00:00"
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "arxiv": "2312.00752",
+ "model": "mamba",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Selection mechanism: making SSM parameters (Δ, B, C) input-dependent (selective SSM / S6)",
+    "category": "ARCH",
+    "quote": "simply letting the SSM parameters be functions of the input addresses their weakness with discrete modalities",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "Replacing any of these with a selective SSM (S6) significantly improves performance, validating the motivation of Section 3.",
+    "ablation_page": 32
+   },
+   {
+    "claim": "Hardware-aware parallel scan algorithm (kernel fusion, recomputation) for selective SSMs",
+    "category": "EFF",
+    "quote": "we design a hardware-aware parallel algorithm in recurrent mode",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Simplified homogeneous Mamba block architecture without attention or MLP blocks",
+    "category": "ARCH",
+    "quote": "We integrate these selective SSMs into a simplified end-to-end neural network architecture without attention or even MLP blocks (Mamba)",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "The Mamba architecture performs similarly to the H3 architecture (and seems slightly better when using a selective layer).",
+    "ablation_page": 33
+   },
+   {
+    "claim": "Fast inference (5x throughput) and linear scaling in sequence length",
+    "category": "EFF",
+    "quote": "Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Performance improves with context up to million-length sequences",
+    "category": "CTX",
+    "quote": "its performance improves on real data up to million-length sequences",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "First linear-time sequence model achieving Transformer-quality language modeling performance",
+    "category": "OTHER",
+    "quote": "Mamba is the first linear-time sequence model that truly achieves Transformer-quality performance",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba-3B outperforms same-size Transformers and matches Transformers twice its size",
+    "category": "OTHER",
+    "quote": "our Mamba-3B model outperforms Transformers of the same size and matches Transformers twice its size",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State of the art on audio and genomics modeling",
+    "category": "OTHER",
+    "quote": "Mamba out-performs prior state-of-the-art models such as SaShiMi, Hyena, and Transformers",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Hybrid H3",
+   "Pythia",
+   "GPT-Neo",
+   "OPT",
+   "RWKV",
+   "GPT-J"
+  ],
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "We use the Pile dataset (L. Gao, Biderman, et al. 2020), and follow the training recipe described in Brown et al. (2020).",
+   "page": 17
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "which were trained with the same tokenizer, dataset, and training length (300B tokens) as our models",
+   "page": 18
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [
+   {
+    "new_name": "selection",
+    "existing_technique": "RNN gating",
+    "quote": "We also eschew the term “gating” in favor of selection to clarify the overloaded use of former.",
+    "page": 41
+   }
+  ],
+  "note": "Seeds NR: the only '3 times' is repeated inference-throughput timing, not repeated training runs. rerun/scores_copied NR: the paper says it used the EleutherAI LM evaluation harness but does not say whether Table 3 comparators were re-evaluated or their scores copied; the audio Table 4 takes baselines from Goel et al. (2022), but it is not the main table. Data coded FULL because the LMs were trained on one public dataset (the Pile); this is borderline. Compute N: hardware is named only for benchmarks. Architecture ablations (Tables 6-10) use matched 350M models at Chinchilla token counts. The 'selection' rename is borderline: the authors argue selection is broader than gating."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "ad69fb56d67b87e5e3fa04c8a3a1aa144198ebb25536c6ef73102e90d38155f8",
+  "session_id": "c68e243a-0397-48fe-aec7-36156cab9ecb",
+  "cost_usd": 0.5609262,
+  "timestamp": "2026-11-14T12:11:34+00:00"
+ }
+}

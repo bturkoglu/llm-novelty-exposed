@@ -1,0 +1,77 @@
+{
+ "arxiv": "2405.21060",
+ "resolution": {
+  "fields": [
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "All models were trained on the Pile. For the scaling law experiments, we use the GPT2 tokenizer.",
+    "page": 53,
+    "reason": "The paper names a single public corpus (the Pile) but never gives component sources, proportions, or a mixture recipe sufficient to reconstruct the blend from this text. Tokenizer also changes between scaling (GPT-2) and downstream (NeoX) runs. That is PARTIAL, not FULL; lower level chosen because proportions are absent."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "When parameter matched, these multi-head patterns perform similarly to each other, in between the MVA and MQA/MKA patterns.",
+    "page": 35,
+    "reason": "Authors claim as their own ARCH contribution the introduction of attention-style heads and alternative SSM head patterns (MVA/MIS vs MQA/MKA/MHA). Table 5 compares those patterns; the text states the comparison is parameter matched, and the 125M rows share 126.5M params, 24 layers, and the same Chinchilla token budget. That is a controlled with-vs-without of the head structure, so YES rather than NO."
+   },
+   {
+    "item_id": "pair1",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "The ablations validate that parallel projections to create (𝐴, 𝐵, 𝐶, 𝑋 ) saves parameters and performs slightly better than Mamba’s sequential projections.",
+    "page": 35,
+    "reason": "ARCH block claim (parallel data-dependent projections, plus the grouped-value block changes in Sec 7.1). Table 4 does compare sequential vs parallel and extra norm, but parallel cuts size from 129.3M to 126.5M, which the authors explicitly call saving parameters. Size is not matched, so the comparison is confounded: PARTIAL, not YES."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Distinct ARCH/theory-of-attention novelty the authors state themselves: they generalize linear attention to a new family of structured masked attention (SMA) in the contribution list. It is not the same claim as the head-structure or block modifications. No controlled with-vs-without SMA experiment appears (kernel and head tables ablate other elements), so ablation NO."
+   },
+   {
+    "item_id": "B_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Not a distinct claim. The cited sentence is the same Architecture Design contribution already kept as pair0 (introducing MHA-style heads and comparing SSM head structures, including MVA/MIS). One entry per distinct claim; do not double-count. Ablation of that element is already coded YES on pair0."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ],
+  [
+   "pair1",
+   "pair"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ],
+  [
+   "B_only1",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 64,
+   "outputTokens": 13638,
+   "totalTokens": 28119,
+   "cacheReadInputTokens": 14417,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

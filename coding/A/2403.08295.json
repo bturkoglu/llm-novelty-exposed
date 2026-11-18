@@ -1,0 +1,97 @@
+{
+ "arxiv": "2403.08295",
+ "model": "gemma",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Release of a family of open models in two sizes (2B and 7B), with both pretrained and fine-tuned checkpoints",
+    "category": "OTHER",
+    "quote": "(2 billion and 7 billion parameters), and provide both pretrained and fine-tuned checkpoints.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Gemma outperforms similarly sized open models on 11 of 18 text-based tasks",
+    "category": "EVAL",
+    "quote": "outperforms similarly sized open models on 11 out of 18 text-based tasks, and we present comprehensive",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Comprehensive safety and responsibility evaluations of the models",
+    "category": "EVAL",
+    "quote": "evaluations of safety and responsibility aspects of the models, alongside a detailed description of model",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Models trained on up to 6T tokens of text",
+    "category": "SCALE",
+    "quote": "We trained Gemma models on up to 6T tokens",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "LLaMA-2 7B",
+   "LLaMA-2 13B",
+   "Mistral 7B"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "our 7B model achieves 54.5. ∗ evaluations run by us. Note that due to restrictive licensing, we were",
+   "page": 6
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Note that due to restrictive licensing, we were unable to run evals on LLaMA-2; all values above were previously reported",
+   "page": 6
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "evaluations were run by HuggingFace.  orized, hence it is omitted from the figure.",
+   "page": 7
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "tokens respectively of primarily-English data from web documents, mathematics, and code.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Gemma 2B and 7B are trained on 3T and 6T",
+   "page": 3
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "I only coded claims from the abstract and introduction. The 'novel reinforcement learning algorithm' on p5 is outside those sections, so I didn't code it as a claim. There are no ARCH or TRAIN contribution claims, so ablation is NA throughout. The architecture choices (MQA, RoPE, GeGLU, RMSNorm) are presented as existing techniques, not new ones. MQA is described as chosen 'based on ablations', but no ablation results are shown. The confidence intervals in Table 5 are computed over prompts, not over training runs, so seeds is NR. The report gives hardware (4096 TPUv5e for 7B, 512 for 2B) and carbon (~131 tCO2eq) but no training duration, GPU/TPU-hours or FLOPs, so compute_disclosed is N (conservative). Main table: Mistral entries marked * were run by the authors and the rest are from reports, while LLaMA-2 scores are copied, so rerun and scores_copied are MIXED. Third-party: HuggingFace ran the H6 evaluations in Table 7. The third_party quote crosses a two-column interleave in the extracted text. It is contiguous in the page text after whitespace normalisation."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "fdfed1270b51a631430b2b6cdd2d814ac0362828d9977aca45fa849390868b64",
+  "session_id": "67ee3cd2-9fa3-4857-8fa8-4db9fe3d568d",
+  "cost_usd": 0.2815582,
+  "timestamp": "2026-11-14T12:12:33+00:00"
+ }
+}

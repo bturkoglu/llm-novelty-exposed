@@ -1,0 +1,133 @@
+{
+ "arxiv": "2309.11419",
+ "model": "kosmos2_5",
+ "coding": {
+  "is_release_report": true,
+  "note": "The report describes released KOSMOS-2.5 and KOSMOS-2.5-CHAT models. No controlled ablations or independent-run counts are reported. Data disclosure is conservatively PARTIAL: Table 2 supplies category sampling ratios and several named sources, but broad web-crawled PDF/DOCX/design/project collections are not specified sufficiently to reconstruct them. Comparator evaluation provenance and copied-score provenance are not explicitly stated, so both are NR; new benchmarks alone do not establish a common evaluation harness for all reported comparators. Comparators are capped at 15, prioritizing Table 8 and adding GPT-4o and Vary from the reading tables. The existing encoder, resampler, coordinate-token approach, and autoregressive objective are attributed to prior work; no explicit renaming is identified.",
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "claim": "Two complementary document-reading pre-training tasks learn document order and structure: document-level text recognition and image-to-markdown generation.",
+    "category": "TRAIN",
+    "quote": "We propose two distinct yet cooperative document read-\n  ing tasks for pre-training a foundational document model\n  capable of machine reading and understanding the order\n  and structure of text-intensive documents.",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "A shared decoder-only autoregressive Transformer with task-specific prompts unifies spatially-aware and markdown transcription.",
+    "category": "ARCH",
+    "quote": "This unified multimodal literate capability is achieved\n  through a shared decoder-only autoregressive Transformer\narchitecture and task-specific prompts.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Fine-tuning the pre-trained model yields the document-understanding generalist KOSMOS-2.5-CHAT with competitive performance at 1.3B parameters.",
+    "category": "POST",
+    "quote": "Building on this foun-\n  dation, we fine-tune KOSMOS -2.5 for document understand-\n  ing tasks, resulting in a document understanding generalist\n  named KOSMOS -2.5- CHAT.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "A large, diverse corpus of 357.4 million document images annotated with bounding boxes or markdown is curated for pre-training.",
+    "category": "DATA",
+    "quote": "We curated a large and diverse corpus consisting of 357.4\n  million text-rich document images, with text lines anno-\n  tated with bounding boxes or in markdown format.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "An automated data collection, filtering, and quality-control pipeline provides insights for future document-reading research.",
+    "category": "DATA",
+    "quote": "The automated data curation pipeline provides valuable in-\n  sights for future research.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two comprehensive benchmarks, OCREval and MarkdownEval, evaluate document-level text recognition and image-to-markdown generation across diverse domains.",
+    "category": "EVAL",
+    "quote": "We introduce two comprehensive benchmarks, OCREval\n  and MarkdownEval, to provide thorough evaluations of\n  document-level machine reading capabilities.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "our pre-training dataset encompasses a\n  wide range of document types, including scanned documents,\n  academic papers, web pages, design images, mathematical\n  content, handwritten text, and more.",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "The total training\ninvolved approximately 260 billion tokens.",
+   "page": 5
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "DocPeida",
+   "DocOwl",
+   "QwenVL",
+   "UReader",
+   "Monkey",
+   "HRVDA",
+   "DocOwl-1.5",
+   "CogAgent",
+   "Donut",
+   "Dessurt",
+   "Pix2Struct LARGE",
+   "Vary-toy",
+   "MiniCPM-V 2.0",
+   "GPT-4o",
+   "Vary"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "da222ed4ee2018abe464629f6a8e4c0598c6178a507da26850c0bc05d1a8b2f1",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1087,
+   "totalTokens": 26476,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 25257
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:59+00:00"
+ }
+}

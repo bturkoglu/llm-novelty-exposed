@@ -1,0 +1,65 @@
+{
+ "arxiv": "2404.14219",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "MIXED",
+    "quote": "Our performance quality assessment setup used the same evaluation pipeline for all the baselines to ensure a fair comparison, with the exception of MM1-3B-Chat.",
+    "page": 12,
+    "reason": "Page 5 says the language-benchmark numbers use one pipeline, but page 12 explicitly excepts MM1-3B-Chat and states those scores were copied from published numbers because the model is unavailable. That is a same-harness rerun for most comparators and not for at least one, so rerun is MIXED rather than YES."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The abstract sentence reports that phi-3.5-MoE achieves superior benchmark performance versus similarly scaled open models. It does not state a new layer, attention, routing, or other architecture element as the authors' novelty, so it is not an ARCH/TRAIN contribution to keep."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "This is the same performance introduction as A_only0: a 16x3.8B MoE with 6.6B active parameters that 'achieves' better results. Adopting top-2 MoE is described later as using a known design, not claimed as a new ARCH method, so keep=false."
+   },
+   {
+    "item_id": "B_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The abstract only introduces phi-3.5-Vision as a 4.2B model derived from phi-3.5-mini that handles single- and multi-image prompts. That is a released-model capability statement, not an author-claimed novel architecture or training method."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ],
+  [
+   "B_only1",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7220,
+   "outputTokens": 2489,
+   "totalTokens": 9709,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

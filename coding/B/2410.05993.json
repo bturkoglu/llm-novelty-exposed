@@ -1,0 +1,152 @@
+{
+ "arxiv": "2410.05993",
+ "model": "aria",
+ "coding": {
+  "note": "Claims are drawn from the abstract and introduction/contribution bullets; repeated performance and pipeline claims are consolidated. No controlled architectural or training ablations, independent-run counts, or training-compute totals are reported. Data disclosure is partial: some multimodal sources and category token totals are provided, but the language mixture and several sources are unspecified. Comparator provenance is mixed according to table captions; external comparator leaderboard scores are not treated as independent evaluation of Aria. Comparators listed are those in the main overview table (Table 1). The definition of multimodal native is not coded as a rename of an existing technique.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Results of competing models are collected from verified official sources or reruned with\nofficial settings.",
+   "page": 2
+  },
+  "claims": [
+   {
+    "claim": "First open multimodal-native mixture-of-experts model, using a fine-grained MoE decoder for efficient parameter utilization.",
+    "category": "ARCH",
+    "quote": "In this report, we present A RIA, the first open mixture-of-experts (MoE) model that is\nmultimodal native.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provides a quantifiable definition of multimodal-native models based on matching modality-specialized models across input modalities.",
+    "category": "OTHER",
+    "quote": "Here, we provide a quantifiable\ndefinition: A multimodal native model refers to a single model with strong understanding capabilities\nacross multiple input modalities",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Uses a lightweight visual encoder supporting variable visual inputs.",
+    "category": "ARCH",
+    "quote": "lightweight visual encoder of 438M parameters. A RIA has a long multimodal",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provides a 64k-token multimodal context window.",
+    "category": "CTX",
+    "quote": "A RIA has a long multimodal\n  context window of 64k tokens.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Develops rigorous high-quality data curation from diverse sources for language and multimodal pretraining.",
+    "category": "DATA",
+    "quote": "We develop a rigorous procedure to curate high-quality data from a diverse set of\n  sources.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Designs a four-stage from-scratch training pipeline that progressively develops language, multimodal, long-context, and instruction-following capabilities.",
+    "category": "TRAIN",
+    "quote": "We design a 4-stage training pipeline, including language\n  pre-training, multimodal pre-training, multimodal long-context pre-training, and\n  multimodal post-training.",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Achieves best-in-class open multimodal-native performance across multimodal, language, and coding tasks, competitive with proprietary models.",
+    "category": "OTHER",
+    "quote": "Following this recipe, A RIA demonstrates state-of-the-art performance as an open multi-\nmodal native model.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-sources model weights and adoption/adaptation code under Apache 2.0.",
+    "category": "OTHER",
+    "quote": "We release A RIA under the Apache 2.0 license, free for both academic and commercial use.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Releases a training framework enabling finetuning across diverse data sources and formats with as few as one GPU.",
+    "category": "EFF",
+    "quote": "we open-source a training framework that enables finetuning\nA RIA on a wide variety of data sources and formats, using as few as one GPU.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Interleaved image-text web data. We extract and filter web pages from Common Crawl.",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "A RIA is pre-trained on 6.4T language tokens and 400B multimodal tokens.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Results of competing models are collected from verified official sources or reruned with\nofficial settings.",
+   "page": 2
+  },
+  "renames": [],
+  "comparators": [
+   "Pixtral-12B",
+   "Llama3.2-11B",
+   "GPT-4V",
+   "GPT-4o mini",
+   "GPT-4o",
+   "Gemini-1.5 Flash",
+   "Gemini-1.5 Pro"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "5949558e74743009795605eed1619e91e96c8352b3bda9dd0677cdb71f632b5e",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1221,
+   "totalTokens": 15487,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 14134
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:24+00:00"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "arxiv": "2408.00118",
+ "model": "gemma2",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Interleaving local sliding-window and global attention layers (known technique applied)",
+    "category": "ARCH",
+    "quote": "several known technical modifications to the Transformer architecture, such as interleaving local-global attentions (Beltagy et al., 2020a)",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Grouped-query attention (known technique applied)",
+    "category": "ARCH",
+    "quote": "attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023). We also train the 2B",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "GQA versus MHA. In Table 8, we compare two instances of our 9B with MHA or GQA.",
+    "ablation_page": 5
+   },
+   {
+    "claim": "Training 2B and 9B models with knowledge distillation instead of next-token prediction",
+    "category": "TRAIN",
+    "quote": "and 9B models with knowledge distillation (Hinton et al., 2015) instead of next token prediction.",
+    "page": 1,
+    "ablation": "YES",
+    "ablation_quote": "In Table 6, we show that distilling from a larger model improves",
+    "ablation_page": 5
+   },
+   {
+    "claim": "Models deliver best performance for their size, competitive with models 2-3x bigger",
+    "category": "OTHER",
+    "quote": "resulting models deliver the best performance for their size, and even offer competitive alternatives to models that are 2-3× bigger.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release of all models to the community",
+    "category": "OTHER",
+    "quote": "models that are 2-3× bigger. We release all our models to the community.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Gemma-1 2B",
+   "Mistral 7B",
+   "LLaMA-3 8B",
+   "Gemma-1 7B",
+   "LLaMA-3 70B",
+   "Qwen1.5 32B"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "these are evaluations run by us for Gemma 1 (Gemma Team, 2024).",
+   "page": 7
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The numbers for LLaMA-3 8B are either from the HuggingFace leaderboard or their blogpost.",
+   "page": 7
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "Evaluation of Gemma 2 Instruction Tuned models on the Chatbot Arena (Chiang et al., 2024). The models are evaluated against each other through blind side by side evaluations by human",
+   "page": 8
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "tokens come from a variety of data sources,",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "primarily-English data, the 9B model on 8 trillion tokens, and the 2B on 2 trillion tokens.",
+   "page": 3
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Local/global interleaving coded NO: Table 10 only varies the sliding-window size at inference and never compares with vs. without local attention; this was a borderline case, so I chose the lower level. Compute coded N: the TPU type and chip counts are given (Table 3) but there is no training duration, no GPU/TPU-hours and no FLOPs; only a carbon footprint. Data source quote is short because of the two-column layout and hyphenation in the extracted text. The 50x compute-optimal token claim from the introduction is not coded separately because a contiguous verbatim quote was not extractable from the interleaved columns. Seeds NR: the Table 11 standard deviations are across prompt formats, not across training runs."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "046e8e9a05cacd61da59c53a6d6d81b415cc68bf10352334de7b70c5ea91e016",
+  "session_id": "27544a62-03ec-479c-9834-cb6c7e0bde9c",
+  "cost_usd": 0.37397020000000003,
+  "timestamp": "2026-11-14T12:12:53+00:00"
+ }
+}

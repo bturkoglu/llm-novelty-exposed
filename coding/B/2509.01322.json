@@ -1,0 +1,217 @@
+{
+ "arxiv": "2509.01322",
+ "model": "longcat_flash",
+ "coding": {
+  "note": "Page numbers follow the supplied markers, not printed page numbers. Loss-curve-only comparisons are PARTIAL. No independent training seed count is stated; repeated evaluation samples and deterministic step re-runs are not independent training runs. Compute disclosure is coarse: tens of thousands of unspecified accelerators for 30 days, not exact GPU-hours. Data categories and some proportions are given but do not reconstruct the complete mixture. Prior techniques are explicitly cited, but no explicit renaming of an existing technique is established. Comparators include both base and chat main tables.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "To ensure fairness, all models are evaluated under identical pipelines and configurations. For minority results that\ncannot be reproduced, we directly adopt metrics from public reports and explicitly annotate them in Table 2.",
+   "page": 17
+  },
+  "claims": [
+   {
+    "claim": "Zero-computation experts enable context-dependent dynamic computation budgets.",
+    "category": "ARCH",
+    "quote": "we introduce the zero-computation experts mechanism in MoE blocks to allocate a dynamic\n  computation budget to important tokens based on their significance",
+    "page": 4,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Validation loss curve comparing models with/without zero-computation experts under matched computation\n  budgets.",
+    "ablation_page": 7
+   },
+   {
+    "claim": "PID-controlled expert bias maintains the average computation budget.",
+    "category": "TRAIN",
+    "quote": "To ensure consistent computation load, we employ expert\n  bias adjusted by a PID-controller, maintaining an average of ∼27 billion activated parameters per token.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Shortcut-connected MoE expands computation-communication overlap for efficient training and inference.",
+    "category": "ARCH",
+    "quote": "we incorporate the Shortcut-connected\n  MoE (ScMoE) [Cai et al., 2024] design to expand the computation-communication overlap window.",
+    "page": 4,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Training loss curves comparing baseline models (without ScMoE) against their ScMoE-enhanced counterparts\n  across four different model configurations.",
+    "ablation_page": 8
+   },
+   {
+    "claim": "Hyperparameter transfer predicts optimal large-model configurations from smaller proxies.",
+    "category": "TRAIN",
+    "quote": "We successfully apply a hyperparameter transfer strategy to such a large model, predicting optimal\n  hyperparameter configurations by leveraging results from smaller proxy models with theoretical guarantees.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Model-growth initialization from a refined half-scale checkpoint improves performance.",
+    "category": "TRAIN",
+    "quote": "We\n  initialize the model using a model-growth mechanism based on a refined half-scale checkpoint, achieving improved\n  performance compared to conventional initialization methods.",
+    "page": 4,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Figure 5b presents a representative case from our 6B activated model experiments, demonstrating\nthe advantage of model growth initialization.",
+    "ablation_page": 12
+   },
+   {
+    "claim": "Principled router-gradient balancing improves training stability.",
+    "category": "TRAIN",
+    "quote": "A multi-pronged stability suite incorporates\n  principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Hidden z-loss suppresses massive activations for training stability.",
+    "category": "TRAIN",
+    "quote": "a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+    "page": 4,
+    "ablation": "PARTIAL",
+    "ablation_quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+    "ablation_page": 15
+   },
+   {
+    "claim": "Fine-tuned optimizer configurations improve large-scale training stability.",
+    "category": "TRAIN",
+    "quote": "A multi-pronged stability suite incorporates\n  principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer\n  configurations.",
+    "page": 4,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Exploring the impact of the Root Mean Square (RMS) norm of gradients and epsilon on loss across different\nmodel sizes.",
+    "ablation_page": 16
+   },
+   {
+    "claim": "Deterministic computation ensures exact reproducibility and enables silent-data-corruption detection.",
+    "category": "TRAIN",
+    "quote": "To enhance the reliability of large-scale cluster training, we introduce deterministic computation.\n  This guarantees the exact reproducibility of experiments and enables the detection of SDC (Silent Data Corruption)\n  during the training process.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "A multi-stage training pipeline develops advanced agentic capabilities.",
+    "category": "POST",
+    "quote": "Through a meticulously designed pipeline, LongCat-Flash is\n  endowed with advanced agentic behaviors.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two-stage pretraining data fusion concentrates reasoning-intensive domains.",
+    "category": "DATA",
+    "quote": "we design a two-stage pretraining data fusion strategy to concentrate reasoning-intensive domain\n  data.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mid-training extends context to 128k for agentic post-training.",
+    "category": "CTX",
+    "quote": "During mid-training, we enhance reasoning and coding capabilities while extending the context length to 128k\n  to meet agentic post-training requirements.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Multi-agent synthesis generates difficult agentic tasks along three controlled complexity axes.",
+    "category": "DATA",
+    "quote": "we design\n  a multi-agent synthesis framework that defines task difficulty across three axes, i.e., information processing, tool-set\n  complexity, and user interaction—using specialized controllers to generate complex tasks requiring iterative reasoning\n  and environmental interaction.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Meeseeks is a new iterative-feedback benchmark for multi-turn instruction following.",
+    "category": "EVAL",
+    "quote": "we meticulously constructed two new benchmarks: Meeseeks [Wang et al., 2025a] and VitaBench. Meeseeks simulates\nrealistic human-LLM interactions through an iterative feedback framework to evaluate multi-turn instruction-following\nability",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "VitaBench is a new real-world-business benchmark for complex task proficiency.",
+    "category": "EVAL",
+    "quote": "VitaBench leverages real-world business\nscenarios to access models’ proficiency in addressing complex real-world tasks",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Architecture-infrastructure co-design achieves rapid training and high-speed low-cost inference.",
+    "category": "EFF",
+    "quote": "During inference, large-scale deployment efficiency exceeds 100 tokens per second (TPS) on H800,\nwith a cost of $0.7 per million output tokens, demonstrating remarkable performance compared to models with similar\nsize.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "We therefore scaled training across tens of thousands of\naccelerators, confronting challenges in scalability and stability. Through model–system co-design, multi-dimensional\nparallelism, and fully automated fault detection and recovery, we achieved near-linear scaling and 98.48% availability,\ncompleting training within 30 days.",
+   "page": 24
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We prioritize reasoning-intensive domains in this phase, with STEM and code comprising 70% of the final\n  mixture.",
+   "page": 16
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We train the model on approximately 20 trillion\ntokens with 8192 sequence length to establish a robust base model.",
+   "page": 11
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "To ensure fairness, all models are evaluated under identical pipelines and configurations. For minority results that\ncannot be reproduced, we directly adopt metrics from public reports and explicitly annotate them in Table 2.",
+   "page": 17
+  },
+  "renames": [],
+  "comparators": [
+   "DeepSeek-V3.1 Base",
+   "Llama-4-Maverick Base",
+   "Kimi-K2 Base",
+   "DeepSeek-V3.1",
+   "Qwen3-235B-A22B (2507)",
+   "Kimi-K2",
+   "GPT-4.1",
+   "Claude4-Sonnet",
+   "Gemini2.5-Flash"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "515c25f9be953549d6196d91cac7cf9db07b015b49f5dad1984b281b08d457c2",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 2310,
+   "totalTokens": 39330,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 36888
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:26:00+00:00"
+ }
+}

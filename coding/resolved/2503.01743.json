@@ -1,0 +1,33 @@
+{
+ "arxiv": "2503.01743",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The mixture-of-LoRAs claim is an ARCH novelty the authors state as their own ('novel modality extension', 'novel mixture of LoRAs'). Coder2's page-11 sentence only contrasts the frozen-LoRA design against other models' fully fine-tuned baselines on public benchmarks; it is not a controlled with-vs-without ablation at matched size, data, and tokens, so ablation is NO."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 6604,
+   "outputTokens": 269,
+   "totalTokens": 6873,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "arxiv": "2512.24618",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "The key technical advancements are as follows: (1) Compact Architecture with Long-Context Support: Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary",
+    "page": 1,
+    "reason": "The from-scratch vs distillation contrast is introductory positioning, not a technique the authors label new/novel/first/key. The sentence that names the key advancements lists architecture/vocab, the Commonsense-STEM-Agent curriculum, and agentic mid-training, and does not include pretraining-from-scratch. Pretraining from scratch is a known procedure, not their stated TRAIN novelty, so the unaligned claim is dropped."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 2745,
+   "outputTokens": 2806,
+   "totalTokens": 5551,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

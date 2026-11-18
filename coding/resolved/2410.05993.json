@@ -1,0 +1,33 @@
+{
+ "arxiv": "2410.05993",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Not an owned novelty claim. The intro lists fine-grained MoE as the model's core and a key recipe aspect, but the speed/specialization benefit is a known MoE property: p.2 says MoE 'has emerged as a preferred architecture over dense models' and cites Fedus, Jiang, and Dai. No with-vs-without ablation of this element appears."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 3277,
+   "outputTokens": 2622,
+   "totalTokens": 5899,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

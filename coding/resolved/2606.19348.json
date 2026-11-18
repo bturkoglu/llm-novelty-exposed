@@ -1,0 +1,53 @@
+{
+ "arxiv": "2606.19348",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "MIXED",
+    "quote": "We re-evaluate Claude Opus 4.6 and Gemini 3.1 Pro on these tasks with the goal of standardizing the configuration across all models.",
+    "page": 37,
+    "reason": "Authors re-ran Claude Opus 4.6 and Gemini 3.1 Pro themselves only on the 1M-context tasks (MRCR/CorpusQA) to standardize config, and explicitly did not evaluate GPT-5.4 there; other Table 6 cells were left blank when APIs failed. That is a partial same-harness rerun, not NR and not a full YES."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Abstract lists this hybrid CSA+HCA attention as key architectural upgrade (1), an ARCH novelty the authors claim as their own. No controlled with-vs-without comparison at matched size/data/tokens is shown, so ablation NO."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Introduction sentence is the same distinct hybrid CSA+HCA design already counted from the abstract key-upgrade list, not a second ARCH/TRAIN contribution. One entry per distinct claim; ablation not applicable once dropped."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9405,
+   "outputTokens": 5118,
+   "totalTokens": 14523,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "arxiv": "2403.08295",
+ "resolution": {
+  "fields": [
+   {
+    "field": "third_party",
+    "value": "YES",
+    "quote": "we further validate the quality of our models on an independent implementation of multiple known benchmarks. All evaluations were run by HuggingFace.",
+    "page": 7,
+    "reason": "Table 7 caption states the H6 benchmark evaluations were run by HuggingFace, an independent external party, so third_party is YES."
+   },
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "Gemma 2B and 7B are trained on 3T and 6T tokens respectively of primarily-English data from web documents, mathematics, and code.",
+    "page": 3,
+    "reason": "Sources are named only as categories (web documents, mathematics, and code) with no mixture proportions sufficient to reconstruct the dataset, which is PARTIAL rather than FULL or NONE."
+   },
+   {
+    "field": "tokens_disclosed",
+    "value": "Y",
+    "quote": "Gemma 2B and 7B are trained on 3T and 6T tokens respectively of primarily-English data from web documents, mathematics, and code.",
+    "page": 3,
+    "reason": "The report explicitly states pre-training token counts of 3T for the 2B model and 6T for the 7B model."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7011,
+   "outputTokens": 1804,
+   "totalTokens": 8815,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

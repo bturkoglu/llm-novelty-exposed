@@ -1,0 +1,127 @@
+{
+ "arxiv": "2306.11644",
+ "model": "phi",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "phi-1, a 1.3B code model trained on filtered web 'textbook quality' data plus GPT-3.5 synthetic textbooks and exercises",
+    "category": "DATA",
+    "quote": "phi-1 is a Transformer-based model with 1.3B parameters, trained for 4 days on",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Despite small scale, phi-1 reaches 50.6% HumanEval and 55.5% MBPP pass@1",
+    "category": "SCALE",
+    "quote": "Despite this small scale, phi-1 attains pass@1 accuracy 50.6% on HumanEval and 55.5% on MBPP.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Finetuning on CodeExercises unlocks emergent capabilities absent in phi-1-base",
+    "category": "POST",
+    "quote": "It also displays surprising emergent properties compared to phi-1-base, our model before our finetuning stage on a dataset of coding exercises",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "High-quality data breaks existing scaling laws; data selection is key to the result",
+    "category": "DATA",
+    "quote": "we discuss evidence for the importance of our data selection process in achieving this result",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Number of parameters plays a key role in emergence (phi-1 vs phi-1-small)",
+    "category": "SCALE",
+    "quote": "we confirm the hypothesis that the number of parameters plays a key role in emergence",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Alternative evaluation (LLM-graded unconventional problems) and contamination study via data pruning",
+    "category": "EVAL",
+    "quote": "Finally in Section 4 we discuss alternative benchmarks to evaluate the model and in Section 5 we study possible contamination of our training data with respect to HumanEval.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Codex-300M",
+   "Codex-12B",
+   "CodeGen-Mono-350M",
+   "CodeGen-Mono-16.1B",
+   "PaLM-Coder",
+   "CodeGeeX",
+   "GPT-3.5",
+   "SantaCoder",
+   "GPT-4",
+   "Replit",
+   "Replit-Finetuned",
+   "CodeGen2-7B",
+   "StarCoder",
+   "PaLM 2-S",
+   "WizardCoder"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "See Table 2 for our results with phi-1 and competing models.",
+   "page": 12
+  },
+  "scores_copied": {
+   "value": "YES",
+   "quote": "We use self-reported scores whenever available.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "A filtered code-language dataset, which is a subset of The Stack and StackOverflow, obtained by using a language model-based classifier (consisting of about 6B tokens).",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "this is equivalent to ∼ 8 epochs on our CodeTextbook dataset for a total of little over 50B total training tokens.",
+   "page": 7
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "We train on 8 Nvidia-A100 GPUs using deepspeed. Our pretrained base model phi-1-base was obtained in under 4 days of training.",
+   "page": 7
+  },
+  "renames": [],
+  "note": "No ARCH or TRAIN claims: the paper says its architecture and training are conventional, so ablation is NA throughout. The main table (Table 1) uses self-reported comparator scores 'whenever available', so scores_copied is YES. Rerun is MIXED because the authors ran the comparators themselves on the new Table 2 evaluation. Comparators are capped at 15; CodeGen2-1B, StarCoder-Prompted, CodeT5+ and InstructCodeT5+ were left out. Data disclosure is PARTIAL because synthetic data generation details are withheld 'for proprietary reasons'. A filtering-vs-unfiltered comparison exists for data (350M), but data claims are not coded for ablation. No seeds or variance are reported."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "dac8544ec2d48591d80bc1b893e06eca1dfbf660c43cf0faa31faa02e396f0b9",
+  "session_id": "35bb4fb7-25e8-4a5f-b3c4-f8e4e87f18b0",
+  "cost_usd": 0.32733419999999996,
+  "timestamp": "2026-11-14T12:11:59+00:00"
+ }
+}

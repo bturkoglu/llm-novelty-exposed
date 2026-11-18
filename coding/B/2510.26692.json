@@ -1,0 +1,114 @@
+{
+ "arxiv": "2510.26692",
+ "model": "kimi_linear",
+ "coding": {
+  "note": "Claims are deduplicated across the abstract, introduction, and contribution list. KDA has matched-model comparisons against GDN-H; the hybrid-ratio ablation is conservatively PARTIAL because equal FLOPs and hyperparameters do not establish equal training tokens. Eight GPQA runs are evaluation repetitions, not independent training seeds. Theoretical operator FLOPs and scaling-law plots are not treated as a disclosed training compute budget. Data disclosure names the K2 corpus but does not give a reconstructible mixture. Appendix comparators for the released 5.7T checkpoint are included. No explicit renaming of an unchanged existing technique was identified.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "All evaluations are conducted using our\ninternal framework derived from LM-Harness-Evaluation [10], ensuring consistent settings across all models.",
+   "page": 10
+  },
+  "claims": [
+   {
+    "quote": "a hardware-efficient linear attention module that extends Gated DeltaNet [111] with a finer-grained gating mechanism.",
+    "ablation": "YES",
+    "ablation_quote": "hybrid Gated DeltaNet (GDN-H) baseline, all of which share the same architecture, parameter count, and training setup\nfor fair comparisons.",
+    "claim": "Kimi Delta Attention extends the gated delta rule with fine-grained channel-wise forgetting for improved recurrent memory control.",
+    "page": 2,
+    "category": "ARCH",
+    "ablation_page": 9
+   },
+   {
+    "quote": "The Kimi Linear architecture: a hybrid design adopting a 3:1 KDA-to-global attention ratio, reducing memory\n  footprint while surpassing full-attention quality.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+    "claim": "Kimi Linear interleaves KDA and global attention at a 3:1 ratio to improve quality while reducing memory and KV-cache usage.",
+    "page": 2,
+    "category": "ARCH",
+    "ablation_page": 8
+   },
+   {
+    "quote": "enabling a bespoke chunkwise-parallel algorithm that substantially reduces computation relative to\ngeneral DPLR formulations while remaining consistent with the classical delta rule.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "A specialized constrained DPLR transition enables a hardware-efficient chunkwise-parallel algorithm with less computation than general DPLR.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Fair empirical validation at scale: through 1.4T token training runs, Kimi Linear outperforms full attention and\n  other baselines in short/long context and RL-style evaluations,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Matched-scale empirical validation demonstrates superior performance to full attention across short-context, long-context, and RL-style settings.",
+    "page": 2,
+    "category": "EVAL",
+    "ablation_page": 0
+   },
+   {
+    "quote": "To facilitate further research, we release open-source KDA kernels with vLLM integration, as well as pre-trained\nand instruction-tuned checkpoints.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Release of KDA kernels, vLLM integration, and pretrained and instruction-tuned model checkpoints compatible with existing attention pipelines.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "processing a shared total of 1.4 trillion tokens sampled from the K2 pretraining corpus\n[50].",
+   "page": 10
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Our final released Kimi Linear checkpoint is pretrained using the same procedure, but with an expanded total of 5.7\ntrillion tokens to match the pretraining tokens of Moonlight.",
+   "page": 10
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "YES",
+   "quote": "All evaluations are conducted using our\ninternal framework derived from LM-Harness-Evaluation [10], ensuring consistent settings across all models.",
+   "page": 10
+  },
+  "renames": [],
+  "comparators": [
+   "MLA",
+   "GDN-H",
+   "Kimi Linear (RoPE)",
+   "Moonlight-Base",
+   "Moonlight-Instruct"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "3f13da02ca43617f848c81c4166f2c2be2d5117612015361869756c0270f6bbf",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1356,
+   "totalTokens": 34112,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 32624
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:32+00:00"
+ }
+}

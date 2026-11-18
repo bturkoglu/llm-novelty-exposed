@@ -1,0 +1,41 @@
+{
+ "arxiv": "2311.16867",
+ "resolution": {
+  "fields": [
+   {
+    "field": "third_party",
+    "value": "YES",
+    "quote": "We report results for GPT-3 evaluated through the API by the BigScience group, FairSeq (Artetxe et al., 2021), GPT-Neo-1.3B (Black et al., 2021)",
+    "page": 36,
+    "reason": "Authors explicitly report an independent evaluation of GPT-3 run by the BigScience group through the API, which is an external-party harness result. That meets the third_party YES definition; coder1's NO is unsupported."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "The architecture of the models is based on PaLM (Chowdhery et al., 2022), although we independently validated each decision, ultimately resulting in some minor tweaks",
+    "page": 2,
+    "reason": "This is a descriptive note that the design follows PaLM after validating known recipes, not a new/novel/first/key ARCH or TRAIN contribution. The stated contributions are public documentation and open data/models; Section 4 frames the tweaks as validating popular recipes. Do not keep."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 10100,
+   "outputTokens": 3034,
+   "totalTokens": 13134,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

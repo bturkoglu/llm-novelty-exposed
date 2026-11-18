@@ -1,0 +1,77 @@
+{
+ "arxiv": "2506.21734",
+ "resolution": {
+  "fields": [
+   {
+    "field": "third_party",
+    "value": "YES",
+    "quote": "For ARC-AGI, the scores of the CoT models are taken from the official leaderboard 29 , while for Sudoku and Maze, the scores are obtained by evaluating through the corresponding API.",
+    "page": 12,
+    "reason": "Official-leaderboard scores for the CoT comparators are an external evaluation by others, which the definition explicitly counts as third-party. API evals of Sudoku/Maze are the authors' own, but one external leaderboard is enough for YES."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "Standard architectures saturates, failing to benefit from increased depth. HRM overcomes this fundamental limitation, effectively using its computational depth to achieve near-perfect accuracy.",
+    "page": 3,
+    "reason": "Intro states hierarchical convergence as their coined ARCH mechanism that avoids rapid RNN convergence. Figure 2 compares whole architectures (HRM vs standard/recurrent Transformers), not with-vs-without the mechanism at matched size/data/tokens, so PARTIAL not YES."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "we must first introduce two key elements of our proposed method: deep supervision and adaptive computational time.",
+    "page": 7,
+    "reason": "Authors explicitly call deep supervision (per-segment loss with detached hidden state) a key element of their training method, so it is a TRAIN contribution. No with-vs-without comparison appears in the paper, so ablation NO."
+   },
+   {
+    "item_id": "A_only2",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "Figure 5 presents a performance comparison between two HRM variants: one incorporating ACT and another employing a fixed computational step count equivalent to ACT's Mmax parameter.",
+    "page": 8,
+    "reason": "ACT/Q-learning halting is named as a key element of their method (TRAIN), including inference-time scaling via Mmax. Figure 5 is with vs without ACT but does not state matched data/tokens and the step budgets differ, so the lower code PARTIAL."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "This restates the same hierarchical-convergence contribution already kept as A_only0 (the process they term on p.3 and elaborate on p.5), not a second distinct ARCH novelty. Drop to avoid double-counting; no separate controlled ablation exists."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "A_only2",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 11566,
+   "outputTokens": 8374,
+   "totalTokens": 19940,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "arxiv": "2001.08210",
+ "model": "mbart",
+ "coding": {
+  "note": "mBART is a trained model family. Claims are consolidated across repeated abstract/introduction statements; performance includes sentence/document/unsupervised gains and new state-of-the-art results. The pre-training comparison is PARTIAL: random baselines lack the pre-training data/token budget and their architectures are separately tuned. No independent repeated seeds are stated. Comparator provenance is not explicit overall: HAN document BLEU is recomputed from supplied outputs, and some baselines are trained by the authors, but provenance of the dated XLM/MASS/BART scores is unclear; rerun and scores_copied remain NR. CC25 sources, language sizes and sampling rule are given, but exact crawl selection is not specified, so data disclosure is conservatively PARTIAL. Corpus token statistics and training steps/batch size are not an explicitly reported total of consumed pre-training tokens. Compute includes 256 V100 GPUs and approximately 2.5 weeks. mBART extends acknowledged BART to multilingual pre-training; this is not coded as renaming an unchanged existing technique.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "quote": "mBART is the first method for pre-training\n  a complete sequence-to-sequence model by",
+    "ablation": "PARTIAL",
+    "ablation_quote": "Pre-training consistently improves over a randomly ini-\ntialized baseline, with particularly large gains on low resource language pairs (e.g. Vi-En).",
+    "claim": "First complete sequence-to-sequence pre-training by denoising full texts in multiple languages.",
+    "page": 1,
+    "category": "TRAIN",
+    "ablation_page": 4
+   },
+   {
+    "quote": "Pre-training a complete  Different from other pre-training approaches for\n  model allows it to be directly fine tuned",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "A single pre-trained model can be directly fine-tuned for supervised sentence/document translation and unsupervised translation without task-specific modifications.",
+    "page": 1,
+    "category": "POST",
+    "ablation_page": 0
+   },
+   {
+    "quote": "These results further improve with back-\n  translation (BT), setting a new state-of-the-art on",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Multilingual denoising initialization improves sentence-level, document-level and unsupervised MT, including low-resource gains, state-of-the-art results with back-translation and non-degenerate dissimilar-language unsupervised results.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We also show that mBART enables new types  Code  Language  Tokens/M  Size/GB\nof transfer across language pairs.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Fine-tuning on one language pair enables translation for other pre-trained languages without their bi-text or further training.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We also show that languages not  Ro  Romanian  10354  61.4\nin pre-training corpora can benefit from mBART,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Pre-training transfers to languages absent from the pre-training corpus, suggesting partially language-universal initialization.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "detailed analysis of which factors contribute the  Zh  Chinese (Sim)  259 (*)  46.9\nmost to effective pre-training,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Extensive analysis identifies factors influencing effective multilingual pre-training, including language count and similarity.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "training time was approximately 2.5 weeks. We",
+   "page": 3
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "CC25 includes languages from different  corpus size. Throughout this paper, we replace the lan-\nfamilies and with varied amounts of text (Table 1).",
+   "page": 2
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "Random",
+   "XLM (2019)",
+   "MASS (2019)",
+   "BART (2019)",
+   "XLM-R (2019)",
+   "BART-En",
+   "BART-Ro",
+   "HAN (2018)"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "e846afc2d40efd02cea73c3fee8aa23cbd64bd272b815afc08145726bcce2a8d",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1893,
+   "totalTokens": 25708,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 23683
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:21:40+00:00"
+ }
+}

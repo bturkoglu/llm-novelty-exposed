@@ -1,0 +1,160 @@
+{
+ "arxiv": "2410.00037",
+ "model": "moshi",
+ "coding": {
+  "note": "Claims are deduplicated across the abstract and introductory contribution list. Mimi is coded TOK, so its codec-design ablations are NA; the separately claimed improved training tricks are TRAIN. The RQ-Transformer comparison is PARTIAL because adding a Depth Transformer changes model size. Main comparative results span Tables 2, 4, 7 and 8 (15-name cap). Comparator handling is MIXED: codec baselines are evaluated by the authors, while spoken-QA baseline scores are explicitly copied. No independent training-seed counts are stated; listener error bars and repeated generated samples are not training-run variance. Data disclosure is PARTIAL because the large unsupervised audio collection lacks reconstructible sources. H100 hardware is stated, but no training duration, GPU-hours or FLOPs.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "For\n the first two, we use the number reported by (Nachmani et al., 2024).",
+   "page": 29
+  },
+  "claims": [
+   {
+    "claim": "Present Helium, a 7B text language model pretrained on 2.1T public English tokens.",
+    "quote": "We present Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of\n  public English data.",
+    "page": 3,
+    "category": "OTHER",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce Mimi, a neural audio tokenizer combining distilled semantic information with acoustic RVQ tokens.",
+    "quote": "We train Mimi, a neural audio codec (Zeghidour et al., 2022; Défossez et al., 2023) that\n  converts audio into the discrete tokens predicted by Moshi and back, using residual\n  vector quantization (RVQ).",
+    "page": 3,
+    "category": "TOK",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce improved training tricks for Mimi's semantic-acoustic codec.",
+    "quote": "first level of acoustic tokens and introduce improved training tricks.",
+    "page": 3,
+    "category": "TRAIN",
+    "ablation": "YES",
+    "ablation_quote": "This human evaluation shows a significant improve-\nment from using adversarial losses only, with a MUSHRA score of 81.0 against 58.8 when\nusing the mix of loss functions used in Encodec.",
+    "ablation_page": 24
+   },
+   {
+    "claim": "Introduce a hierarchical, streaming Moshi audio-language-model architecture supporting real-time generation.",
+    "quote": "We propose Moshi, a new architecture for audio language modeling, which combines\n  Helium with a smaller Transformer (Vaswani et al., 2017) model to predict audio to-\n  kens in a hierarchical and streaming fashion.",
+    "page": 3,
+    "category": "ARCH",
+    "ablation": "PARTIAL",
+    "ablation_quote": "All models are initialized\nwith Helium and pretrained on audio. When not using RQ-Transformer, we predict the 8\nlevels of tokens with independent classification heads, following Copet et al. (2023).",
+    "ablation_page": 25
+   },
+   {
+    "claim": "Introduce joint multi-stream input/output audio modeling, removing explicit speaker turns and enabling full-duplex overlap and interruptions.",
+    "quote": "We furthermore extend this ar-\n  chitecture to model several audio streams in parallel, allowing for a conceptually and\n  practically simple handling of full-duplex dialogues with arbitrary dynamics.",
+    "page": 3,
+    "category": "ARCH",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce Inner Monologue: predict time-aligned text before audio to improve linguistic quality and factuality.",
+    "quote": "we introduce Inner Monologue, a new training and inference setup\n  for audio language models that significantly improves the factuality and linguistic\n  quality of generated speech by predicting time-aligned text tokens before audio to-\n  kens.",
+    "page": 3,
+    "category": "ARCH",
+    "ablation": "YES",
+    "ablation_quote": "All models are initialized with Helium, pretrained on audio and use\n the RQ-Transformer.",
+    "ablation_page": 25
+   },
+   {
+    "claim": "Derive streaming ASR and TTS by delaying aligned text relative to audio.",
+    "quote": "we also show how forcing a delay between text and audio\n  tokens allows deriving streaming ASR and streaming TTS from a Moshi model.",
+    "page": 3,
+    "category": "OTHER",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Evaluate Moshi components across text understanding, speech quality and spoken question answering, claiming state-of-the-art speech-text performance.",
+    "quote": "We evaluate all components of Moshi along several axes, including text understanding,\n  speech intelligibility and consistency, audio quality and spoken question answering.",
+    "page": 3,
+    "category": "EVAL",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Support several minutes of conversational context, demonstrated with five minutes.",
+    "quote": "being streaming compatible and able to model several minutes of context (5 min in\n  our experiments).",
+    "page": 3,
+    "category": "CTX",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use an audio collection of 7 million hours, which we call the unsupervised audio dataset,\nof readily available audio content, the majority of which contains English speech.",
+   "page": 18
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We present Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of\n  public English data.",
+   "page": 3
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "RVQGAN produces tokens at 75Hz, so we only keep the first two\nlevels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.",
+   "page": 23
+  },
+  "renames": [],
+  "comparators": [
+   "MPT",
+   "Falcon",
+   "Llama 2",
+   "OLMo",
+   "Mistral",
+   "Gemma 1",
+   "RVQGAN",
+   "SemantiCodec",
+   "SpeechTokenizer",
+   "GSLM",
+   "AudioLM",
+   "TWIST",
+   "VoxtLM",
+   "Spirit-LM",
+   "SpeechGPT"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "a39235c0d969af85d275992bda04f8fd18d169fd4b1175ec53741ba1ffec7656",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1743,
+   "totalTokens": 57917,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 56042
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:01+00:00"
+ }
+}

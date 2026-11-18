@@ -1,0 +1,92 @@
+{
+ "arxiv": "2205.06266",
+ "model": "xmod",
+ "coding": {
+  "note": "Released X-MOD models and code are stated on page 2. Architectural and from-the-start training comparisons are coded PARTIAL conservatively: active parameters and training steps are controlled, but total model capacity differs; the adapter comparison is also staged differently. Five random-seed runs are reported, without explicit across-run uncertainty. CC100 and language sampling are disclosed, but not a complete numerical mixture. GPU count alone does not meet the compute criterion; update steps alone do not disclose tokens. Only SHARED appears as a comparator in the main results tables; adapter baselines occur in secondary figures. No rename coded: the modules terminology explicitly distinguishes joint pre-training from post-hoc adapters.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "MULTI",
+   "quote": "All results are averaged across 5 random seed runs.",
+   "page": 5
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "We pre-train separate models for all combinations\n  along the following axes:",
+   "page": 4
+  },
+  "claims": [
+   {
+    "claim": "Introduce language-specific modular capacity, maintaining constant trainable parameters per language, to mitigate interference and enable positive transfer.",
+    "category": "ARCH",
+    "quote": "which allows us to grow the total capacity of\n  the model, while keeping the total number of\n  trainable parameters per language constant.",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60\nlanguages for 265k update steps.",
+    "ablation_page": 7
+   },
+   {
+    "claim": "Pre-train language-specific modules from the start rather than adding them post-hoc.",
+    "category": "TRAIN",
+    "quote": "In\n  contrast with prior work that learns language-\n  specific components post-hoc, we pre-train the",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Figure 7: Comparison on XNLI of X-M OD and shared\nmodels with an Adapter baseline, all models are pre-  future work we aim to evaluate the performance on\ntrained for 125k update steps.",
+    "ablation_page": 9
+   },
+   {
+    "claim": "Enable adding unseen languages after pre-training without degrading existing-language performance.",
+    "category": "POST",
+    "quote": "sign of our model allows us to extend it to new\nlanguages after pre-training. To that end, we learn",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "the CC100 dataset (Conneau et al., 2020) using",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "YES",
+   "quote": "We conduct experiments on NLI, NER, and QA.\n  In all cases, we fine-tune the model on English\n  and measure the zero-shot transfer performance in\n  other languages.",
+   "page": 5
+  },
+  "renames": [],
+  "comparators": [
+   "SHARED"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "15ba51a278515d3f03ac232c006db323b55711d2fb3171cc8973ff88ab853237",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1686,
+   "totalTokens": 25345,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 23527
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:28+00:00"
+ }
+}

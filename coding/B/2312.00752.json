@@ -1,0 +1,155 @@
+{
+ "arxiv": "2312.00752",
+ "model": "mamba",
+ "coding": {
+  "note": "The report releases pretrained Mamba language models as well as presenting a method. Claims consolidate repeated abstract/introduction statements. Architecture and selection ablations use the common approximately 350M/Chinchilla setting (Tables 6–7). ONE is supported by the explicit single run for the longest-context DNA downstream result; learning-rate sweeps and repeated timing measurements are not independent training seeds. Comparator names are consolidated by family from Table 3. Comparator reevaluation and copied-score provenance are not explicit enough to code beyond NR: using EleutherAI's harness is not independent third-party evaluation. Data disclosure is conservatively PARTIAL because the Pile is named but its source mixture is not reproduced. Hardware used for speed benchmarks alone does not disclose training compute.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "ONE",
+   "quote": "and a single run at length 220 was performed",
+   "page": 56
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "claim": "Input-dependent SSM parameters provide a selection mechanism for content-dependent propagation and forgetting.",
+    "category": "ARCH",
+    "quote": "we design a simple selection mechanism by parameterizing the SSM",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "there is little difference among different parameterizations of LTI models, while selective SSMs (S6) provide a large improvement.",
+    "ablation_page": 33
+   },
+   {
+    "claim": "A hardware-aware recurrent parallel-scan algorithm avoids materializing expanded states and improves computational efficiency.",
+    "category": "EFF",
+    "quote": "with a hardware-aware algorithm that computes the model recurrently with a scan instead of convolution, but does not",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba simplifies the end-to-end architecture by combining prior SSM and Transformer MLP components into a homogeneous block.",
+    "category": "ARCH",
+    "quote": "with the MLP block of Transformers into a single block, leading to a simple and homogenous",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "The Mamba block performs similarly to H3 while being simpler.",
+    "ablation_page": 33
+   },
+   {
+    "claim": "Mamba provides substantially higher generation throughput than similarly sized Transformers.",
+    "category": "EFF",
+    "quote": "Mamba enjoys fast\n  inference (5× higher throughput than Transformers) and linear scaling in sequence length",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Model quality improves with context length on real audio and genomics data up to million-length sequences.",
+    "category": "CTX",
+    "quote": "In both settings, its performance improves with longer\n  context up to million-length sequences.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba solves synthetic copying and induction tasks and extrapolates beyond one million tokens.",
+    "category": "CTX",
+    "quote": "Mamba not only solves them easily but can extrapolate solutions indefinitely long (>1M tokens).",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba achieves state-of-the-art audio and genomics modeling and downstream performance.",
+    "category": "OTHER",
+    "quote": "Mamba out-performs prior state-of-the-art models such as SaShiMi, Hyena, and Transformers",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Mamba is the first linear-time sequence model to achieve Transformer-quality language modeling, matching models twice its size.",
+    "category": "OTHER",
+    "quote": "Mamba is the first linear-time sequence model that truly achieves Transformer-quality performance,",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use the Pile dataset (L. Gao, Biderman, et al. 2020), and follow the training recipe described in Brown",
+   "page": 17
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "This pretraining procedure is the same as the scaling law protocol, but extended to 300B tokens and with the GPT-NeoX",
+   "page": 54
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [
+   {
+    "new_name": "Selective Copying task",
+    "existing_technique": "Denoising task (Jing et al. 2019)",
+    "quote": "Note that this task has been introduced before as the Denoising task (Jing et al. 2019).",
+    "page": 10
+   },
+   {
+    "new_name": "selection",
+    "existing_technique": "RNN gating (generalized to input-dependent SSM dynamics)",
+    "quote": "We also eschew the term “gating” in favor of selection to",
+    "page": 41
+   }
+  ],
+  "comparators": [
+   "Hybrid H3",
+   "Pythia",
+   "GPT-Neo",
+   "OPT",
+   "RWKV",
+   "GPT-J"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "ad69fb56d67b87e5e3fa04c8a3a1aa144198ebb25536c6ef73102e90d38155f8",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1222,
+   "totalTokens": 45414,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 44060
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:48+00:00"
+ }
+}

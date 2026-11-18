@@ -1,0 +1,4344 @@
+[
+ {
+  "model": "afmoe",
+  "classes": 11,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 3,
+   "gpt_oss": 1,
+   "qwen2_moe": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 465,
+  "modeling_lines": 674
+ },
+ {
+  "model": "aimv2",
+  "classes": 16,
+  "derived": 7,
+  "pure_rename": 5,
+  "parents": {
+   "siglip": 3,
+   "llama": 2,
+   "clip": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 555,
+  "modeling_lines": 780
+ },
+ {
+  "model": "altclip",
+  "classes": 23,
+  "derived": 18,
+  "pure_rename": 10,
+  "parents": {
+   "clip": 9,
+   "roberta": 5,
+   "chinese_clip": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 591,
+  "modeling_lines": 1101
+ },
+ {
+  "model": "apertus",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "nemotron": 1,
+   "llama": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 266,
+  "modeling_lines": 486
+ },
+ {
+  "model": "arcee",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 5,
+  "parents": {
+   "nemotron": 1,
+   "llama": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 117,
+  "modeling_lines": 506
+ },
+ {
+  "model": "aria",
+  "classes": 25,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 5,
+   "olmoe": 1,
+   "deepseek_v2": 1,
+   "llava": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 1044,
+  "modeling_lines": 1132
+ },
+ {
+  "model": "audio_spectrogram_transformer",
+  "classes": 9,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "vit": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 259,
+  "modeling_lines": 383
+ },
+ {
+  "model": "audioflamingo3",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "whisper": 2,
+   "qwen2_audio": 2,
+   "voxtral": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 365,
+  "modeling_lines": 654
+ },
+ {
+  "model": "axk1",
+  "classes": 14,
+  "derived": 11,
+  "pure_rename": 8,
+  "parents": {
+   "deepseek_v3": 10,
+   "glm4_moe_lite": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 290,
+  "modeling_lines": 735
+ },
+ {
+  "model": "axk2",
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 7,
+  "parents": {
+   "deepseek_v3": 1,
+   "clip": 1,
+   "deepseek_v32": 10
+  },
+  "causal_lm": true,
+  "modular_lines": 451,
+  "modeling_lines": 912
+ },
+ {
+  "model": "aya_vision",
+  "classes": 6,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 271,
+  "modeling_lines": 411
+ },
+ {
+  "model": "bailing_hybrid",
+  "classes": 15,
+  "derived": 13,
+  "pure_rename": 9,
+  "parents": {
+   "models": 13
+  },
+  "causal_lm": true,
+  "modular_lines": 457,
+  "modeling_lines": 1089
+ },
+ {
+  "model": "bamba",
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "mamba2": 2,
+   "jamba": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 432,
+  "modeling_lines": 1097
+ },
+ {
+  "model": "beam",
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "olmo3": 2,
+   "qwen3_moe": 4,
+   "deepseek_v4": 1,
+   "deepseek_v3": 3,
+   "deepseek_v32": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 510,
+  "modeling_lines": 664
+ },
+ {
+  "model": "beit",
+  "classes": 22,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "vit": 6,
+   "swin": 1,
+   "resnet": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 952,
+  "modeling_lines": 1153
+ },
+ {
+  "model": "biogpt",
+  "classes": 9,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "opt": 1,
+   "bart": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 513,
+  "modeling_lines": 682
+ },
+ {
+  "model": "bitnet",
+  "classes": 6,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 5,
+   "gemma": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 150,
+  "modeling_lines": 487
+ },
+ {
+  "model": "blt",
+  "classes": 13,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "mllama": 6,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1181,
+  "modeling_lines": 1437
+ },
+ {
+  "model": "camembert",
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 1,
+  "parents": {
+   "roberta": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 523,
+  "modeling_lines": 1256
+ },
+ {
+  "model": "canary",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "qwen2_5_omni": 1,
+   "cohere_asr": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 295,
+  "modeling_lines": 701
+ },
+ {
+  "model": "chinese_clip",
+  "classes": 22,
+  "derived": 18,
+  "pure_rename": 12,
+  "parents": {
+   "clip": 9,
+   "align": 5,
+   "bert": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 545,
+  "modeling_lines": 989
+ },
+ {
+  "model": "chmv2",
+  "classes": 12,
+  "derived": 2,
+  "pure_rename": 2,
+  "parents": {
+   "dpt": 1,
+   "depth_anything": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 528,
+  "modeling_lines": 430
+ },
+ {
+  "model": "clipseg",
+  "classes": 19,
+  "derived": 12,
+  "pure_rename": 6,
+  "parents": {
+   "clip": 12
+  },
+  "causal_lm": false,
+  "modular_lines": 678,
+  "modeling_lines": 1121
+ },
+ {
+  "model": "cohere",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 326,
+  "modeling_lines": 515
+ },
+ {
+  "model": "cohere2",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "cohere": 6,
+   "gemma2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 322,
+  "modeling_lines": 493
+ },
+ {
+  "model": "cohere2_moe",
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 1,
+   "cohere2": 8,
+   "mixtral": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 329,
+  "modeling_lines": 645
+ },
+ {
+  "model": "cohere2_vision",
+  "classes": 8,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 339,
+  "modeling_lines": 355
+ },
+ {
+  "model": "cohere_asr",
+  "classes": 8,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "clip": 1,
+   "moonshine": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 540,
+  "modeling_lines": 672
+ },
+ {
+  "model": "cohere_compass",
+  "classes": 19,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3": 1,
+   "cohere2": 5,
+   "qwen3_vl": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 681,
+  "modeling_lines": 1652
+ },
+ {
+  "model": "colmodernvbert",
+  "classes": 6,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "colpali": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 404,
+  "modeling_lines": 140
+ },
+ {
+  "model": "colpali",
+  "classes": 1,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 234,
+  "modeling_lines": 148
+ },
+ {
+  "model": "colqwen2",
+  "classes": 4,
+  "derived": 2,
+  "pure_rename": 1,
+  "parents": {
+   "colpali": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 311,
+  "modeling_lines": 182
+ },
+ {
+  "model": "conditional_detr",
+  "classes": 22,
+  "derived": 17,
+  "pure_rename": 11,
+  "parents": {
+   "detr": 17
+  },
+  "causal_lm": false,
+  "modular_lines": 1157,
+  "modeling_lines": 1856
+ },
+ {
+  "model": "cosmos3_edge",
+  "classes": 24,
+  "derived": 14,
+  "pure_rename": 3,
+  "parents": {
+   "qwen3_vl": 1,
+   "llama": 4,
+   "clip": 1,
+   "siglip2": 4,
+   "qwen2_vl": 3,
+   "qwen3_5_moe": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1078,
+  "modeling_lines": 1316
+ },
+ {
+  "model": "cosmos3_omni",
+  "classes": 3,
+  "derived": 2,
+  "pure_rename": 1,
+  "parents": {
+   "qwen3_vl": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 105,
+  "modeling_lines": 667
+ },
+ {
+  "model": "csm",
+  "classes": 13,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 761,
+  "modeling_lines": 1083
+ },
+ {
+  "model": "cwm",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2": 2,
+   "llama": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 198,
+  "modeling_lines": 486
+ },
+ {
+  "model": "d_fine",
+  "classes": 22,
+  "derived": 13,
+  "pure_rename": 4,
+  "parents": {
+   "rt_detr": 13
+  },
+  "causal_lm": false,
+  "modular_lines": 1013,
+  "modeling_lines": 2111
+ },
+ {
+  "model": "data2vec",
+  "classes": 14,
+  "derived": 11,
+  "pure_rename": 7,
+  "parents": {
+   "wav2vec2": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 272,
+  "modeling_lines": null
+ },
+ {
+  "model": "data2vec",
+  "classes": 14,
+  "derived": 7,
+  "pure_rename": 7,
+  "parents": {
+   "roberta": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 580,
+  "modeling_lines": null
+ },
+ {
+  "model": "dbrx",
+  "classes": 11,
+  "derived": 1,
+  "pure_rename": 1,
+  "parents": {
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 529,
+  "modeling_lines": 713
+ },
+ {
+  "model": "deepseek_ocr2",
+  "classes": 34,
+  "derived": 23,
+  "pure_rename": 12,
+  "parents": {
+   "llava_next": 5,
+   "sam": 5,
+   "qwen2": 6,
+   "llama": 2,
+   "deepseek_v2": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 1168,
+  "modeling_lines": 1675
+ },
+ {
+  "model": "deepseek_v2",
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "qwen2_moe": 2,
+   "llama": 7,
+   "olmoe": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 471,
+  "modeling_lines": 659
+ },
+ {
+  "model": "deepseek_v3",
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 4,
+   "qwen2_moe": 2,
+   "deepseek_v2": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 258,
+  "modeling_lines": 735
+ },
+ {
+  "model": "deepseek_v32",
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "deepseek_v3": 5,
+   "axk1": 1,
+   "glm4_moe_lite": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 443,
+  "modeling_lines": 836
+ },
+ {
+  "model": "deepseek_v4",
+  "classes": 22,
+  "derived": 9,
+  "pure_rename": 1,
+  "parents": {
+   "deepseek_v3": 1,
+   "laguna": 1,
+   "llama": 2,
+   "mixtral": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 1270,
+  "modeling_lines": 1556
+ },
+ {
+  "model": "deepseek_vl",
+  "classes": 10,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "idefics": 2,
+   "janus": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 185,
+  "modeling_lines": 297
+ },
+ {
+  "model": "deepseek_vl_hybrid",
+  "classes": 15,
+  "derived": 7,
+  "pure_rename": 3,
+  "parents": {
+   "idefics": 2,
+   "sam": 2,
+   "deepseek_vl": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 688,
+  "modeling_lines": 481
+ },
+ {
+  "model": "deformable_detr",
+  "classes": 20,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "detr": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 1544,
+  "modeling_lines": 1712
+ },
+ {
+  "model": "deimv2",
+  "classes": 28,
+  "derived": 20,
+  "pure_rename": 12,
+  "parents": {
+   "d_fine": 18,
+   "llama": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 956,
+  "modeling_lines": 2237
+ },
+ {
+  "model": "deit",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "vit": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 328,
+  "modeling_lines": 657
+ },
+ {
+  "model": "dia",
+  "classes": 13,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "phi3": 1,
+   "llama": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 671,
+  "modeling_lines": 858
+ },
+ {
+  "model": "diffllama",
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "mistral": 1,
+   "llama": 8,
+   "gemma": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 214,
+  "modeling_lines": 578
+ },
+ {
+  "model": "diffusion_gemma",
+  "classes": 23,
+  "derived": 12,
+  "pure_rename": 4,
+  "parents": {
+   "gemma4": 10,
+   "t5gemma2": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 1497,
+  "modeling_lines": 1684
+ },
+ {
+  "model": "dinov2",
+  "classes": 13,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "vit": 5,
+   "beit": 1,
+   "llama": 1,
+   "swin": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 377,
+  "modeling_lines": 554
+ },
+ {
+  "model": "dinov2_with_registers",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "dinov2": 8
+  },
+  "causal_lm": false,
+  "modular_lines": 297,
+  "modeling_lines": 570
+ },
+ {
+  "model": "dinov3_vit",
+  "classes": 13,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "pixtral": 1,
+   "dinov2": 2,
+   "arcee": 1,
+   "llama": 1,
+   "swin": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 534,
+  "modeling_lines": 634
+ },
+ {
+  "model": "doge",
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "mixtral": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 733,
+  "modeling_lines": 826
+ },
+ {
+  "model": "dots1",
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "qwen3": 4,
+   "deepseek_v3": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 273,
+  "modeling_lines": 619
+ },
+ {
+  "model": "dots3_note",
+  "classes": 38,
+  "derived": 30,
+  "pure_rename": 11,
+  "parents": {
+   "deepseek_v32": 9,
+   "diffusion_gemma": 1,
+   "glm_moe_dsa": 1,
+   "deepseek_v3": 1,
+   "phi": 1,
+   "nemotron": 1,
+   "phi3": 3,
+   "evolla": 1,
+   "glm_ocr": 2,
+   "glm_image": 1,
+   "llama": 1,
+   "hy_v3": 1,
+   "mimo_v2_flash": 1,
+   "qwen2_vl": 4,
+   "inkling": 1,
+   "voxtral": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1379,
+  "modeling_lines": 1867
+ },
+ {
+  "model": "dpt",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 289,
+  "modeling_lines": 1166
+ },
+ {
+  "model": "edgetam",
+  "classes": 12,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "sam2": 8
+  },
+  "causal_lm": false,
+  "modular_lines": 263,
+  "modeling_lines": 1266
+ },
+ {
+  "model": "edgetam_video",
+  "classes": 26,
+  "derived": 15,
+  "pure_rename": 11,
+  "parents": {
+   "sam2_video": 15
+  },
+  "causal_lm": false,
+  "modular_lines": 1462,
+  "modeling_lines": 3190
+ },
+ {
+  "model": "efficientloftr",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 141,
+  "modeling_lines": 1360
+ },
+ {
+  "model": "embedding_gemma2",
+  "classes": 19,
+  "derived": 10,
+  "pure_rename": 5,
+  "parents": {
+   "gemma4": 7,
+   "gemma3": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1130,
+  "modeling_lines": 935
+ },
+ {
+  "model": "emu3",
+  "classes": 26,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 4,
+   "chameleon": 2,
+   "siglip": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1206,
+  "modeling_lines": 1621
+ },
+ {
+  "model": "eomt",
+  "classes": 14,
+  "derived": 7,
+  "pure_rename": 5,
+  "parents": {
+   "mask2former": 2,
+   "dinov2": 4,
+   "siglip": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 521,
+  "modeling_lines": 1211
+ },
+ {
+  "model": "eomt_dinov3",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "dinov3_vit": 5,
+   "eomt": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 352,
+  "modeling_lines": 1370
+ },
+ {
+  "model": "ernie",
+  "classes": 18,
+  "derived": 17,
+  "pure_rename": 7,
+  "parents": {
+   "bert": 17
+  },
+  "causal_lm": true,
+  "modular_lines": 839,
+  "modeling_lines": 1466
+ },
+ {
+  "model": "ernie4_5",
+  "classes": 4,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "olmo": 1,
+   "llama": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 120,
+  "modeling_lines": 470
+ },
+ {
+  "model": "ernie4_5_moe",
+  "classes": 12,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 2,
+   "qwen3_moe": 2,
+   "ernie4_5": 1,
+   "mixtral": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 317,
+  "modeling_lines": 716
+ },
+ {
+  "model": "ernie4_5_vl_moe",
+  "classes": 39,
+  "derived": 16,
+  "pure_rename": 7,
+  "parents": {
+   "ernie4_5_moe": 7,
+   "qwen2_5_vl": 5,
+   "qwen2_vl": 3,
+   "glm4v": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1328,
+  "modeling_lines": 1790
+ },
+ {
+  "model": "esmc",
+  "classes": 13,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 4,
+   "nomic_bert": 1,
+   "esm": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 445,
+  "modeling_lines": 588
+ },
+ {
+  "model": "esmfold2",
+  "classes": 37,
+  "derived": 2,
+  "pure_rename": 1,
+  "parents": {
+   "nanochat": 1,
+   "phi3": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2287,
+  "modeling_lines": 2355
+ },
+ {
+  "model": "eurobert",
+  "classes": 8,
+  "derived": 4,
+  "pure_rename": 1,
+  "parents": {
+   "llama": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 364,
+  "modeling_lines": 615
+ },
+ {
+  "model": "evolla",
+  "classes": 26,
+  "derived": 16,
+  "pure_rename": 12,
+  "parents": {
+   "esm": 10,
+   "llama": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 929,
+  "modeling_lines": 1486
+ },
+ {
+  "model": "exaone4",
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 7,
+   "gemma2": 1,
+   "olmo2": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 391,
+  "modeling_lines": 527
+ },
+ {
+  "model": "exaone4_5",
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 5,
+  "parents": {
+   "qwen2_5_vl": 8,
+   "exaone4": 1,
+   "qwen2_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 438,
+  "modeling_lines": 940
+ },
+ {
+  "model": "exaone_moe",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "exaone4": 2,
+   "qwen2_moe": 1,
+   "deepseek_v3": 4,
+   "olmoe": 1,
+   "dots1": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 246,
+  "modeling_lines": 628
+ },
+ {
+  "model": "falcon_h1",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 5,
+   "bamba": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 686,
+  "modeling_lines": 1213
+ },
+ {
+  "model": "falcon_mamba",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "nanochat": 1,
+   "mamba": 7,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 318,
+  "modeling_lines": 847
+ },
+ {
+  "model": "fast_vlm",
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "llava": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 334,
+  "modeling_lines": 386
+ },
+ {
+  "model": "flex_olmo",
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "olmo2": 3,
+   "olmoe": 5,
+   "mixtral": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 268,
+  "modeling_lines": 673
+ },
+ {
+  "model": "flint",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "gpt_oss": 1,
+   "qwen3_moe": 7,
+   "qwen2_moe": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 267,
+  "modeling_lines": 690
+ },
+ {
+  "model": "florence2",
+  "classes": 22,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "llama4": 1,
+   "swin": 1,
+   "llava": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1594,
+  "modeling_lines": 973
+ },
+ {
+  "model": "fun_asr_nano",
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 0,
+  "parents": {
+   "audioflamingo3": 2,
+   "llama": 2,
+   "clip": 1,
+   "qwen3_asr": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 576,
+  "modeling_lines": 632
+ },
+ {
+  "model": "gemma",
+  "classes": 11,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 281,
+  "modeling_lines": 524
+ },
+ {
+  "model": "gemma2",
+  "classes": 11,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "gemma": 9
+  },
+  "causal_lm": true,
+  "modular_lines": 471,
+  "modeling_lines": 555
+ },
+ {
+  "model": "gemma3",
+  "classes": 18,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "paligemma": 4,
+   "gemma2": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 953,
+  "modeling_lines": 1127
+ },
+ {
+  "model": "gemma3n",
+  "classes": 31,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "paligemma": 4,
+   "gemma3": 5,
+   "gemma2": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 2472,
+  "modeling_lines": 2333
+ },
+ {
+  "model": "gemma4",
+  "classes": 36,
+  "derived": 18,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3n": 7,
+   "gemma3": 9,
+   "sam3": 1,
+   "mixtral": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 2460,
+  "modeling_lines": 2789
+ },
+ {
+  "model": "gemma4_unified",
+  "classes": 26,
+  "derived": 15,
+  "pure_rename": 5,
+  "parents": {
+   "gemma4": 13,
+   "gemma2": 1,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1423,
+  "modeling_lines": 1516
+ },
+ {
+  "model": "gemma4_unified_assistant",
+  "classes": 1,
+  "derived": 1,
+  "pure_rename": 0,
+  "parents": {
+   "gemma4_assistant": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 49,
+  "modeling_lines": 255
+ },
+ {
+  "model": "glm",
+  "classes": 6,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "phi3": 1,
+   "llama": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 135,
+  "modeling_lines": 513
+ },
+ {
+  "model": "glm4",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "phi3": 1,
+   "glm": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 130,
+  "modeling_lines": 517
+ },
+ {
+  "model": "glm46v",
+  "classes": 8,
+  "derived": 3,
+  "pure_rename": 1,
+  "parents": {
+   "glm4v": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 185,
+  "modeling_lines": 650
+ },
+ {
+  "model": "glm4_moe",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "glm": 1,
+   "cohere": 1,
+   "deepseek_v3": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 215,
+  "modeling_lines": 630
+ },
+ {
+  "model": "glm4_moe_lite",
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 9,
+  "parents": {
+   "glm4_moe": 10,
+   "deepseek_v3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 191,
+  "modeling_lines": 732
+ },
+ {
+  "model": "glm4v",
+  "classes": 21,
+  "derived": 12,
+  "pure_rename": 3,
+  "parents": {
+   "glm4": 2,
+   "qwen2_5_vl": 9,
+   "qwen2_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1151,
+  "modeling_lines": 1475
+ },
+ {
+  "model": "glm4v_moe",
+  "classes": 14,
+  "derived": 12,
+  "pure_rename": 4,
+  "parents": {
+   "glm4v": 5,
+   "glm4": 1,
+   "glm4_moe": 5,
+   "deepseek_v3": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 417,
+  "modeling_lines": 1716
+ },
+ {
+  "model": "glm5_next",
+  "classes": 30,
+  "derived": 16,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 1,
+   "qwen2_moe": 1,
+   "minimax_m3_vl": 1,
+   "deepseek_v3": 2,
+   "deepseek_v4": 1,
+   "qwen3_5": 1,
+   "glm_moe_dsa": 3,
+   "glm_ocr": 4,
+   "exaone4_5": 1,
+   "glm46v": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2392,
+  "modeling_lines": 2391
+ },
+ {
+  "model": "glm_image",
+  "classes": 24,
+  "derived": 14,
+  "pure_rename": 5,
+  "parents": {
+   "glm4v_moe": 2,
+   "siglip": 1,
+   "glm4v": 8,
+   "chameleon": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1296,
+  "modeling_lines": 1464
+ },
+ {
+  "model": "glm_moe_dsa",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "deepseek_v3": 1,
+   "deepseek_v32": 6,
+   "axk1": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 406,
+  "modeling_lines": 812
+ },
+ {
+  "model": "glm_ocr",
+  "classes": 15,
+  "derived": 12,
+  "pure_rename": 5,
+  "parents": {
+   "glm4v": 12
+  },
+  "causal_lm": false,
+  "modular_lines": 313,
+  "modeling_lines": 1401
+ },
+ {
+  "model": "glmasr",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "glm": 1,
+   "llama": 1,
+   "audioflamingo3": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 452,
+  "modeling_lines": 594
+ },
+ {
+  "model": "glmga",
+  "classes": 6,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 424,
+  "modeling_lines": null
+ },
+ {
+  "model": "got_ocr2",
+  "classes": 14,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "sam": 5,
+   "llava": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 406,
+  "modeling_lines": 744
+ },
+ {
+  "model": "gpt_neox",
+  "classes": 10,
+  "derived": 3,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 618,
+  "modeling_lines": 665
+ },
+ {
+  "model": "gpt_oss",
+  "classes": 12,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 3,
+   "qwen2": 2,
+   "mixtral": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 424,
+  "modeling_lines": 680
+ },
+ {
+  "model": "gradium_phonon_tts",
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 1,
+  "parents": {
+   "pocket_tts": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 202,
+  "modeling_lines": 887
+ },
+ {
+  "model": "granite",
+  "classes": 5,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 228,
+  "modeling_lines": 506
+ },
+ {
+  "model": "granite4_vision",
+  "classes": 14,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "llava_next": 5,
+   "granite": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 827,
+  "modeling_lines": 1235
+ },
+ {
+  "model": "granite_docling",
+  "classes": 23,
+  "derived": 12,
+  "pure_rename": 2,
+  "parents": {
+   "idefics3": 8,
+   "granite": 2,
+   "internvl": 1,
+   "siglip": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1361,
+  "modeling_lines": 1386
+ },
+ {
+  "model": "granite_speech5",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "parakeet": 5,
+   "moonshine_streaming": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 487,
+  "modeling_lines": 632
+ },
+ {
+  "model": "granite_speech_plus",
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "granite_speech": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 178,
+  "modeling_lines": 641
+ },
+ {
+  "model": "granite_swa",
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 1,
+   "granite": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 342,
+  "modeling_lines": 555
+ },
+ {
+  "model": "granitemoe",
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "granite": 2,
+   "mixtral": 4,
+   "llama": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 320,
+  "modeling_lines": 650
+ },
+ {
+  "model": "granitemoe_swa",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "granitemoe": 2,
+   "granite_swa": 1,
+   "granitemoeshared": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 255,
+  "modeling_lines": 760
+ },
+ {
+  "model": "granitemoehybrid",
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "granitemoeshared": 7,
+   "bamba": 2,
+   "gemma2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 305,
+  "modeling_lines": 1309
+ },
+ {
+  "model": "granitemoeshared",
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "granitemoe": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 156,
+  "modeling_lines": 716
+ },
+ {
+  "model": "grounding_dino",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 199,
+  "modeling_lines": 2606
+ },
+ {
+  "model": "gte",
+  "classes": 13,
+  "derived": 12,
+  "pure_rename": 5,
+  "parents": {
+   "jina_embeddings_v3": 7,
+   "llama": 1,
+   "gemma": 1,
+   "bert": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 255,
+  "modeling_lines": 651
+ },
+ {
+  "model": "helium",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 5,
+   "granite": 1,
+   "gemma": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 146,
+  "modeling_lines": 495
+ },
+ {
+  "model": "hgnet_v2",
+  "classes": 11,
+  "derived": 1,
+  "pure_rename": 0,
+  "parents": {
+   "rt_detr": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 578,
+  "modeling_lines": 489
+ },
+ {
+  "model": "higgs_audio_v2",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 5,
+   "csm": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 580,
+  "modeling_lines": 780
+ },
+ {
+  "model": "higgs_audio_v2_tokenizer",
+  "classes": 5,
+  "derived": 3,
+  "pure_rename": 1,
+  "parents": {
+   "xcodec": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 160,
+  "modeling_lines": 647
+ },
+ {
+  "model": "hrm_text",
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "nanochat": 1,
+   "llama": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 494,
+  "modeling_lines": 628
+ },
+ {
+  "model": "hubert",
+  "classes": 10,
+  "derived": 7,
+  "pure_rename": 6,
+  "parents": {
+   "wav2vec2": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 298,
+  "modeling_lines": 1124
+ },
+ {
+  "model": "hunyuan_v1_dense",
+  "classes": 9,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 9
+  },
+  "causal_lm": true,
+  "modular_lines": 185,
+  "modeling_lines": 523
+ },
+ {
+  "model": "hunyuan_v1_moe",
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 6,
+   "mixtral": 1,
+   "hunyuan_v1_dense": 1,
+   "deepseek_v2": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 200,
+  "modeling_lines": 611
+ },
+ {
+  "model": "hunyuan_vl",
+  "classes": 21,
+  "derived": 10,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 1,
+   "hunyuan_v1_dense": 5,
+   "siglip": 2,
+   "mllama": 1,
+   "qwen2_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1542,
+  "modeling_lines": 1320
+ },
+ {
+  "model": "hy_v3",
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "apertus": 1,
+   "mixtral": 1,
+   "qwen3_moe": 1,
+   "minimax_m2": 2,
+   "deepseek_v3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 323,
+  "modeling_lines": 590
+ },
+ {
+  "model": "hy_v4",
+  "classes": 16,
+  "derived": 15,
+  "pure_rename": 6,
+  "parents": {
+   "glm4_moe_lite": 7,
+   "deepseek_v4": 4,
+   "glm_moe_dsa": 2,
+   "deepseek_v32": 1,
+   "glm5_next": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 646,
+  "modeling_lines": 959
+ },
+ {
+  "model": "hyperclovax",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 5,
+  "parents": {
+   "granite": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 239,
+  "modeling_lines": 513
+ },
+ {
+  "model": "hyperclovax_vision_v2",
+  "classes": 5,
+  "derived": 3,
+  "pure_rename": 0,
+  "parents": {
+   "video_llama_3": 2,
+   "exaone4_5": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 391,
+  "modeling_lines": 384
+ },
+ {
+  "model": "ijepa",
+  "classes": 4,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "vit": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 172,
+  "modeling_lines": 426
+ },
+ {
+  "model": "informer",
+  "classes": 16,
+  "derived": 13,
+  "pure_rename": 7,
+  "parents": {
+   "time_series_transformer": 12,
+   "bart": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 799,
+  "modeling_lines": 1776
+ },
+ {
+  "model": "inkling",
+  "classes": 26,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3": 4,
+   "llama": 1,
+   "mixtral": 1,
+   "higgs_audio_v2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1484,
+  "modeling_lines": 1394
+ },
+ {
+  "model": "inkling2",
+  "classes": 36,
+  "derived": 21,
+  "pure_rename": 8,
+  "parents": {
+   "inkling": 12,
+   "olmo2": 1,
+   "deepseek_v4": 2,
+   "qwen3_moe": 1,
+   "sam3": 1,
+   "video_llama_3": 1,
+   "clip": 1,
+   "step3p7": 1,
+   "llava": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 1546,
+  "modeling_lines": 1747
+ },
+ {
+  "model": "instructblipvideo",
+  "classes": 9,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": true,
+  "modular_lines": 554,
+  "modeling_lines": 1411
+ },
+ {
+  "model": "internlm3",
+  "classes": 1,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 75,
+  "modeling_lines": null
+ },
+ {
+  "model": "internvl",
+  "classes": 16,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 1,
+   "janus": 1,
+   "clip": 1,
+   "llava": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 648,
+  "modeling_lines": 864
+ },
+ {
+  "model": "iquestcoder",
+  "classes": 1,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 74,
+  "modeling_lines": null
+ },
+ {
+  "model": "jais2",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "nemotron": 1,
+   "llama": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 109,
+  "modeling_lines": 457
+ },
+ {
+  "model": "jamba",
+  "classes": 13,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 2,
+   "falcon_mamba": 1,
+   "mistral": 1,
+   "mixtral": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 585,
+  "modeling_lines": 1095
+ },
+ {
+  "model": "janus",
+  "classes": 27,
+  "derived": 11,
+  "pure_rename": 5,
+  "parents": {
+   "idefics": 2,
+   "siglip": 3,
+   "blip_2": 1,
+   "chameleon": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 1106,
+  "modeling_lines": 1348
+ },
+ {
+  "model": "jetmoe",
+  "classes": 12,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "mixtral": 4,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 605,
+  "modeling_lines": 809
+ },
+ {
+  "model": "jina_embeddings_v3",
+  "classes": 14,
+  "derived": 13,
+  "pure_rename": 7,
+  "parents": {
+   "xlm_roberta": 9,
+   "llama": 2,
+   "clip": 1,
+   "gpt_neox": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 396,
+  "modeling_lines": 787
+ },
+ {
+  "model": "kimi_k25",
+  "classes": 16,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llava": 2,
+   "glm4v": 2,
+   "qwen2_vl": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 850,
+  "modeling_lines": 867
+ },
+ {
+  "model": "kimi_linear",
+  "classes": 14,
+  "derived": 13,
+  "pure_rename": 6,
+  "parents": {
+   "models": 13
+  },
+  "causal_lm": true,
+  "modular_lines": 412,
+  "modeling_lines": 1031
+ },
+ {
+  "model": "kolibri1",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "exaone4": 1,
+   "qwen3_moe": 4,
+   "deepseek_v3": 2,
+   "glm4": 1,
+   "qwen2_moe": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 196,
+  "modeling_lines": 604
+ },
+ {
+  "model": "kyutai_speech_to_text",
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 1,
+  "parents": {
+   "moshi": 2,
+   "mimi": 1,
+   "llama": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 523,
+  "modeling_lines": 932
+ },
+ {
+  "model": "laguna",
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2_moe": 4,
+   "gemma3": 1,
+   "qwen3_5_moe": 1,
+   "qwen3_moe": 2,
+   "afmoe": 1,
+   "glm4_moe_lite": 1,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 459,
+  "modeling_lines": 745
+ },
+ {
+  "model": "lasr",
+  "classes": 13,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 2,
+   "parakeet": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 597,
+  "modeling_lines": 732
+ },
+ {
+  "model": "layoutxlm",
+  "classes": 1,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 76,
+  "modeling_lines": null
+ },
+ {
+  "model": "lfm2",
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "gemma2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 318,
+  "modeling_lines": 608
+ },
+ {
+  "model": "lfm2_moe",
+  "classes": 12,
+  "derived": 12,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 2,
+   "lfm2": 5,
+   "qwen2_moe": 2,
+   "qwen3_moe": 1,
+   "mixtral": 1,
+   "deepseek_v2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 218,
+  "modeling_lines": 712
+ },
+ {
+  "model": "lfm2_vl",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "llava": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 373,
+  "modeling_lines": 452
+ },
+ {
+  "model": "lfm3",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "lfm2": 6,
+   "olmo3": 1,
+   "lfm2_moe": 1,
+   "qwen3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 415,
+  "modeling_lines": 664
+ },
+ {
+  "model": "lfm3_vl",
+  "classes": 16,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "lfm3": 2,
+   "qwen3_vl": 2,
+   "lfm2": 1,
+   "lfm2_vl": 1,
+   "qwen2_vl": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 617,
+  "modeling_lines": 808
+ },
+ {
+  "model": "lightglue",
+  "classes": 13,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 1,
+   "clip": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 927,
+  "modeling_lines": 923
+ },
+ {
+  "model": "lighton_ocr",
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 1,
+  "parents": {
+   "mistral3": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 307,
+  "modeling_lines": 396
+ },
+ {
+  "model": "llava_next_video",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 1,
+  "parents": {
+   "llava_next": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 629,
+  "modeling_lines": 853
+ },
+ {
+  "model": "llava_onevision",
+  "classes": 8,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "llava_next_video": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 855,
+  "modeling_lines": 817
+ },
+ {
+  "model": "longcat_flash",
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 3,
+  "parents": {
+   "deepseek_v3": 5,
+   "mixtral": 1,
+   "deepseek_v32": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 423,
+  "modeling_lines": 717
+ },
+ {
+  "model": "lw_detr",
+  "classes": 29,
+  "derived": 12,
+  "pure_rename": 6,
+  "parents": {
+   "vit": 1,
+   "vitdet": 4,
+   "rt_detr": 1,
+   "convnext": 1,
+   "deformable_detr": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 1392,
+  "modeling_lines": 1665
+ },
+ {
+  "model": "mask2former",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 627,
+  "modeling_lines": 2555
+ },
+ {
+  "model": "maskformer",
+  "classes": 23,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "detr": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 1479,
+  "modeling_lines": 2086
+ },
+ {
+  "model": "mellum",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "laguna": 3,
+   "qwen3_moe": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 172,
+  "modeling_lines": 705
+ },
+ {
+  "model": "metaclip_2",
+  "classes": 14,
+  "derived": 11,
+  "pure_rename": 5,
+  "parents": {
+   "clip": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 629,
+  "modeling_lines": 1170
+ },
+ {
+  "model": "mimo_v2_flash",
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 7,
+  "parents": {
+   "mixtral": 1,
+   "gemma3": 1,
+   "deepseek_v3": 5,
+   "glm4_moe": 1,
+   "qwen2": 1,
+   "glm4_moe_lite": 1,
+   "laguna": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 346,
+  "modeling_lines": 660
+ },
+ {
+  "model": "minicpm3",
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 5,
+  "parents": {
+   "gemma3": 1,
+   "llama": 8,
+   "deepseek_v2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 350,
+  "modeling_lines": 595
+ },
+ {
+  "model": "minicpm_ocr",
+  "classes": 9,
+  "derived": 2,
+  "pure_rename": 2,
+  "parents": {
+   "minicpmv4_6": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 364,
+  "modeling_lines": 905
+ },
+ {
+  "model": "minicpmv4_6",
+  "classes": 15,
+  "derived": 6,
+  "pure_rename": 1,
+  "parents": {
+   "idefics3": 1,
+   "siglip": 3,
+   "qwen2_vl": 1,
+   "lfm2_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 842,
+  "modeling_lines": 899
+ },
+ {
+  "model": "minicpmv4_7",
+  "classes": 6,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "minicpmv4_6": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 772,
+  "modeling_lines": 1383
+ },
+ {
+  "model": "minimax",
+  "classes": 15,
+  "derived": 12,
+  "pure_rename": 8,
+  "parents": {
+   "mixtral": 11,
+   "gemma2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 551,
+  "modeling_lines": 898
+ },
+ {
+  "model": "minimax_m2",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "mixtral": 7,
+   "glm4_moe": 1,
+   "flex_olmo": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 262,
+  "modeling_lines": 661
+ },
+ {
+  "model": "minimax_m3_vl",
+  "classes": 31,
+  "derived": 19,
+  "pure_rename": 3,
+  "parents": {
+   "gemma3": 1,
+   "deepseek_v4": 1,
+   "minimax_m2": 6,
+   "laguna": 1,
+   "mixtral": 1,
+   "qwen2_5_vl": 2,
+   "paddleocr_vl": 1,
+   "clip": 2,
+   "llava": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 1303,
+  "modeling_lines": 1641
+ },
+ {
+  "model": "ministral",
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 9,
+  "parents": {
+   "qwen2": 11
+  },
+  "causal_lm": true,
+  "modular_lines": 203,
+  "modeling_lines": 508
+ },
+ {
+  "model": "ministral3",
+  "classes": 8,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "mistral": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 124,
+  "modeling_lines": 492
+ },
+ {
+  "model": "mistral",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 191,
+  "modeling_lines": 479
+ },
+ {
+  "model": "mistral3",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "mistral": 1,
+   "llava": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 322,
+  "modeling_lines": 443
+ },
+ {
+  "model": "mistral4",
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 2,
+   "qwen2_moe": 1,
+   "deepseek_v2": 1,
+   "deepseek_v3": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 241,
+  "modeling_lines": 754
+ },
+ {
+  "model": "mistral_large4",
+  "classes": 18,
+  "derived": 15,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 2,
+   "deepseek_v32": 1,
+   "glm_moe_dsa": 4,
+   "qwen2_moe": 1,
+   "mistral4": 3,
+   "mistral3": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 886,
+  "modeling_lines": 1177
+ },
+ {
+  "model": "mixtral",
+  "classes": 13,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "mistral": 9
+  },
+  "causal_lm": true,
+  "modular_lines": 437,
+  "modeling_lines": 668
+ },
+ {
+  "model": "mlcd",
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "clip": 6,
+   "qwen2_5_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 383,
+  "modeling_lines": 554
+ },
+ {
+  "model": "mm_grounding_dino",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "grounding_dino": 9
+  },
+  "causal_lm": false,
+  "modular_lines": 304,
+  "modeling_lines": 2584
+ },
+ {
+  "model": "modernbert",
+  "classes": 14,
+  "derived": 1,
+  "pure_rename": 0,
+  "parents": {
+   "gemma3": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 905,
+  "modeling_lines": 844
+ },
+ {
+  "model": "modernbert_decoder",
+  "classes": 11,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "modernbert": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 695,
+  "modeling_lines": 713
+ },
+ {
+  "model": "modernvbert",
+  "classes": 10,
+  "derived": 3,
+  "pure_rename": 1,
+  "parents": {
+   "smolvlm": 2,
+   "modernbert": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 583,
+  "modeling_lines": 641
+ },
+ {
+  "model": "molmo2",
+  "classes": 26,
+  "derived": 14,
+  "pure_rename": 5,
+  "parents": {
+   "llava": 3,
+   "llama": 6,
+   "olmo2": 1,
+   "olmo": 1,
+   "siglip2": 2,
+   "cohere_asr": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1837,
+  "modeling_lines": 1094
+ },
+ {
+  "model": "moonshine",
+  "classes": 13,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "glm": 2,
+   "llama": 2,
+   "whisper": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 815,
+  "modeling_lines": 953
+ },
+ {
+  "model": "moonshine_streaming",
+  "classes": 16,
+  "derived": 7,
+  "pure_rename": 3,
+  "parents": {
+   "moonshine": 6,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 420,
+  "modeling_lines": 1124
+ },
+ {
+  "model": "moss_transcribe_diarize",
+  "classes": 13,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "audioflamingo3": 6,
+   "qwen2_audio": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 866,
+  "modeling_lines": 617
+ },
+ {
+  "model": "muse_glimmer",
+  "classes": 27,
+  "derived": 17,
+  "pure_rename": 8,
+  "parents": {
+   "gemma3": 2,
+   "gemma4": 1,
+   "gemma2": 6,
+   "afmoe": 1,
+   "kimi_k25": 5,
+   "paddleocr_vl": 1,
+   "qwen2_5_vl": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1174,
+  "modeling_lines": 1209
+ },
+ {
+  "model": "muse_glimmer_assistant",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "exaone4": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 284,
+  "modeling_lines": 452
+ },
+ {
+  "model": "muse_spark",
+  "classes": 30,
+  "derived": 19,
+  "pure_rename": 4,
+  "parents": {
+   "muse_glimmer": 14,
+   "minimax_m2": 1,
+   "deepseek_v3": 1,
+   "voxtral_realtime": 2,
+   "clip": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1090,
+  "modeling_lines": 1719
+ },
+ {
+  "model": "musicflamingo",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "moonshine": 1,
+   "audioflamingo3": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 413,
+  "modeling_lines": 480
+ },
+ {
+  "model": "nanochat",
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "llama4": 1,
+   "llama": 4,
+   "qwen3": 1,
+   "clip": 1,
+   "gemma2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 240,
+  "modeling_lines": 505
+ },
+ {
+  "model": "nemotron3_5_asr",
+  "classes": 5,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "nemotron_asr_streaming": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 504,
+  "modeling_lines": 352
+ },
+ {
+  "model": "nemotron3_5_transcribe",
+  "classes": 19,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "audioflamingo3": 5,
+   "nemotron3_diarization": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 830,
+  "modeling_lines": 983
+ },
+ {
+  "model": "nemotron3_diarization",
+  "classes": 17,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "glmasr": 2,
+   "clip": 2,
+   "pe_audio": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 840,
+  "modeling_lines": 855
+ },
+ {
+  "model": "nemotron_asr_streaming",
+  "classes": 21,
+  "derived": 12,
+  "pure_rename": 2,
+  "parents": {
+   "voxtral_realtime": 2,
+   "parakeet": 9,
+   "fastspeech2_conformer": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1133,
+  "modeling_lines": 1242
+ },
+ {
+  "model": "nemotron_h",
+  "classes": 12,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "models": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 533,
+  "modeling_lines": 1256
+ },
+ {
+  "model": "nemotron_h_omni",
+  "classes": 4,
+  "derived": 2,
+  "pure_rename": 1,
+  "parents": {
+   "nemotron_h": 1,
+   "internvl": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 429,
+  "modeling_lines": 456
+ },
+ {
+  "model": "neomme",
+  "classes": 18,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "gemma4": 1,
+   "laguna": 1,
+   "muse_glimmer": 2,
+   "nemotron": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 807,
+  "modeling_lines": 776
+ },
+ {
+  "model": "neucodec",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "xcodec2": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 443,
+  "modeling_lines": 1136
+ },
+ {
+  "model": "nomic_bert",
+  "classes": 13,
+  "derived": 12,
+  "pure_rename": 6,
+  "parents": {
+   "jina_embeddings_v3": 4,
+   "llama": 1,
+   "gemma": 1,
+   "bert": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 293,
+  "modeling_lines": 678
+ },
+ {
+  "model": "olmo",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 193,
+  "modeling_lines": 490
+ },
+ {
+  "model": "olmo2",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 2,
+   "olmo": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 239,
+  "modeling_lines": 494
+ },
+ {
+  "model": "olmo3",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "olmo2": 7,
+   "gemma3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 313,
+  "modeling_lines": 528
+ },
+ {
+  "model": "olmo_hybrid",
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "qwen3_next": 3,
+   "olmo3": 5,
+   "olmo2": 1,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 622,
+  "modeling_lines": 1051
+ },
+ {
+  "model": "olmoe",
+  "classes": 11,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 4,
+   "gemma": 1,
+   "mixtral": 3,
+   "qwen2_moe": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 278,
+  "modeling_lines": 675
+ },
+ {
+  "model": "openai_privacy_filter",
+  "classes": 11,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "gpt_oss": 8
+  },
+  "causal_lm": false,
+  "modular_lines": 411,
+  "modeling_lines": 497
+ },
+ {
+  "model": "ovis2",
+  "classes": 15,
+  "derived": 10,
+  "pure_rename": 5,
+  "parents": {
+   "llava_next": 2,
+   "llama": 2,
+   "siglip": 2,
+   "aimv2": 2,
+   "llava": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 449,
+  "modeling_lines": 700
+ },
+ {
+  "model": "owlv2",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 428,
+  "modeling_lines": 1419
+ },
+ {
+  "model": "paddleocr_vl",
+  "classes": 25,
+  "derived": 14,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2_5_vl": 1,
+   "qwen2_vl": 3,
+   "ernie4_5": 4,
+   "qwen2_5_omni": 1,
+   "siglip": 2,
+   "video_llama_3": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 901,
+  "modeling_lines": 1439
+ },
+ {
+  "model": "parakeet",
+  "classes": 19,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "fastspeech2_conformer": 1,
+   "llama": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 974,
+  "modeling_lines": 1127
+ },
+ {
+  "model": "pe_audio",
+  "classes": 10,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "dac": 2,
+   "pe_audio_video": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 364,
+  "modeling_lines": 864
+ },
+ {
+  "model": "pe_audio_video",
+  "classes": 16,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "qwen3": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 868,
+  "modeling_lines": 1056
+ },
+ {
+  "model": "pe_video",
+  "classes": 7,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "pe_audio_video": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 274,
+  "modeling_lines": 670
+ },
+ {
+  "model": "perception_lm",
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "llava": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 385,
+  "modeling_lines": 414
+ },
+ {
+  "model": "phi",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 7,
+   "clip": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 279,
+  "modeling_lines": 480
+ },
+ {
+  "model": "phi3",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "phi": 1,
+   "mistral": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 269,
+  "modeling_lines": 545
+ },
+ {
+  "model": "phi4_multimodal",
+  "classes": 30,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "siglip": 6,
+   "phi3": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 1521,
+  "modeling_lines": 1736
+ },
+ {
+  "model": "phimoe",
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "mixtral": 6,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 401,
+  "modeling_lines": 883
+ },
+ {
+  "model": "pi0",
+  "classes": 8,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 702,
+  "modeling_lines": 389
+ },
+ {
+  "model": "pixio",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 5,
+  "parents": {
+   "vit": 4,
+   "dinov2": 1,
+   "swin": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 310,
+  "modeling_lines": 439
+ },
+ {
+  "model": "plbart",
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "bart": 5,
+   "bigbird_pegasus": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 396,
+  "modeling_lines": 1153
+ },
+ {
+  "model": "pocket_tts",
+  "classes": 13,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "mimi": 1,
+   "jais2": 1,
+   "llama": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 600,
+  "modeling_lines": 864
+ },
+ {
+  "model": "pocket_tts_audio_tokenizer",
+  "classes": 13,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "mimi": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 387,
+  "modeling_lines": 1305
+ },
+ {
+  "model": "pp_chart2table",
+  "classes": 4,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 95,
+  "modeling_lines": null
+ },
+ {
+  "model": "pp_doclayout_v2",
+  "classes": 20,
+  "derived": 14,
+  "pure_rename": 3,
+  "parents": {
+   "pp_doclayout_v3": 1,
+   "layoutlmv3": 8,
+   "rt_detr": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 979,
+  "modeling_lines": 2518
+ },
+ {
+  "model": "pp_doclayout_v3",
+  "classes": 18,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "rt_detr": 9,
+   "resnet": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1443,
+  "modeling_lines": 2142
+ },
+ {
+  "model": "pp_doclayout_v4",
+  "classes": 16,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "pp_doclayout_v3": 10,
+   "rt_detr": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 964,
+  "modeling_lines": 1754
+ },
+ {
+  "model": "pp_formulanet",
+  "classes": 13,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "slanext": 3,
+   "mbart": 1,
+   "florence2": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 538,
+  "modeling_lines": 1145
+ },
+ {
+  "model": "pp_lcnet",
+  "classes": 11,
+  "derived": 1,
+  "pure_rename": 0,
+  "parents": {
+   "resnet": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 542,
+  "modeling_lines": 371
+ },
+ {
+  "model": "pp_lcnet_v3",
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "pp_lcnet": 5,
+   "hgnet_v2": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 268,
+  "modeling_lines": 410
+ },
+ {
+  "model": "pp_lcnet_v4",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 5,
+  "parents": {
+   "hgnet_v2": 2,
+   "pp_lcnet": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 274,
+  "modeling_lines": 403
+ },
+ {
+  "model": "pp_ocrv5_mobile_det",
+  "classes": 8,
+  "derived": 3,
+  "pure_rename": 2,
+  "parents": {
+   "pp_ocrv5_server_det": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 272,
+  "modeling_lines": 320
+ },
+ {
+  "model": "pp_ocrv5_mobile_rec",
+  "classes": 4,
+  "derived": 3,
+  "pure_rename": 2,
+  "parents": {
+   "pp_ocrv5_server_rec": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 78,
+  "modeling_lines": 406
+ },
+ {
+  "model": "pp_ocrv5_server_det",
+  "classes": 12,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 906,
+  "modeling_lines": 448
+ },
+ {
+  "model": "pp_ocrv5_server_rec",
+  "classes": 13,
+  "derived": 5,
+  "pure_rename": 1,
+  "parents": {
+   "clip": 1,
+   "blip_2": 1,
+   "resnet": 1,
+   "paddleocr_vl": 1,
+   "focalnet": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 470,
+  "modeling_lines": 389
+ },
+ {
+  "model": "pp_ocrv6_medium_det",
+  "classes": 5,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "pp_ocrv5_mobile_det": 1,
+   "pp_ocrv5_server_det": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 138,
+  "modeling_lines": 387
+ },
+ {
+  "model": "pp_ocrv6_small_det",
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "pp_ocrv5_mobile_det": 4,
+   "pp_lcnet": 1,
+   "pp_ocrv5_server_det": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 171,
+  "modeling_lines": 338
+ },
+ {
+  "model": "pp_ocrv6_small_rec",
+  "classes": 5,
+  "derived": 3,
+  "pure_rename": 1,
+  "parents": {
+   "pp_ocrv5_server_rec": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 211,
+  "modeling_lines": 393
+ },
+ {
+  "model": "pp_ocrv6_tiny_rec",
+  "classes": 4,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "pp_ocrv6_small_rec": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 134,
+  "modeling_lines": 144
+ },
+ {
+  "model": "prompt_depth_anything",
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 1,
+  "parents": {
+   "depth_anything": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 328,
+  "modeling_lines": 478
+ },
+ {
+  "model": "qianfan_ocr",
+  "classes": 17,
+  "derived": 13,
+  "pure_rename": 8,
+  "parents": {
+   "beit": 1,
+   "internvl": 12
+  },
+  "causal_lm": false,
+  "modular_lines": 473,
+  "modeling_lines": 845
+ },
+ {
+  "model": "qwen2",
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 8,
+   "gemma2": 1,
+   "mistral": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 207,
+  "modeling_lines": 496
+ },
+ {
+  "model": "qwen2_5_omni",
+  "classes": 59,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2_5_vl": 8,
+   "qwen2_audio": 1,
+   "qwen2_vl": 1,
+   "llama": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 3937,
+  "modeling_lines": 4090
+ },
+ {
+  "model": "qwen2_5_vl",
+  "classes": 15,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 1,
+   "qwen2_vl": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 703,
+  "modeling_lines": 1442
+ },
+ {
+  "model": "qwen2_moe",
+  "classes": 14,
+  "derived": 9,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 3,
+   "gemma2": 1,
+   "gemma": 1,
+   "mixtral": 4
+  },
+  "causal_lm": true,
+  "modular_lines": 262,
+  "modeling_lines": 703
+ },
+ {
+  "model": "qwen3",
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 6,
+  "parents": {
+   "qwen2": 6,
+   "gemma": 1,
+   "llama": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 158,
+  "modeling_lines": 520
+ },
+ {
+  "model": "qwen3_5",
+  "classes": 19,
+  "derived": 12,
+  "pure_rename": 3,
+  "parents": {
+   "qwen3_vl": 4,
+   "qwen3_next": 6,
+   "qwen2_vl": 1,
+   "qwen3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 701,
+  "modeling_lines": 1955
+ },
+ {
+  "model": "qwen3_5_moe",
+  "classes": 19,
+  "derived": 16,
+  "pure_rename": 10,
+  "parents": {
+   "qwen3_5": 7,
+   "qwen3_next": 7,
+   "qwen3_vl_moe": 2
+  },
+  "causal_lm": true,
+  "modular_lines": 473,
+  "modeling_lines": 2122
+ },
+ {
+  "model": "qwen3_asr",
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 0,
+  "parents": {
+   "qwen2_audio": 1,
+   "qwen3_omni_moe": 2,
+   "voxtral": 1,
+   "audioflamingo3": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 313,
+  "modeling_lines": 708
+ },
+ {
+  "model": "qwen3_moe",
+  "classes": 13,
+  "derived": 12,
+  "pure_rename": 9,
+  "parents": {
+   "qwen3": 1,
+   "qwen2_moe": 4,
+   "llama": 4,
+   "mixtral": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 202,
+  "modeling_lines": 697
+ },
+ {
+  "model": "qwen3_next",
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 8,
+  "parents": {
+   "gemma2": 1,
+   "gemma3": 1,
+   "qwen3_moe": 3,
+   "qwen2_moe": 3,
+   "mixtral": 1,
+   "llama": 3
+  },
+  "causal_lm": true,
+  "modular_lines": 885,
+  "modeling_lines": 1246
+ },
+ {
+  "model": "qwen3_omni_moe",
+  "classes": 61,
+  "derived": 34,
+  "pure_rename": 11,
+  "parents": {
+   "qwen2_5_omni": 7,
+   "qwen3_vl_moe": 6,
+   "qwen3_moe": 9,
+   "qwen3": 9,
+   "qwen2_moe": 2,
+   "mimi": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2982,
+  "modeling_lines": 4348
+ },
+ {
+  "model": "qwen3_vl",
+  "classes": 21,
+  "derived": 11,
+  "pure_rename": 1,
+  "parents": {
+   "qwen2_vl": 4,
+   "qwen2_5_vl": 4,
+   "qwen3": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1150,
+  "modeling_lines": 1426
+ },
+ {
+  "model": "qwen3_vl_moe",
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 8,
+  "parents": {
+   "qwen3_moe": 5,
+   "qwen3_vl": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 460,
+  "modeling_lines": 1622
+ },
+ {
+  "model": "qwen4_exp",
+  "classes": 23,
+  "derived": 15,
+  "pure_rename": 5,
+  "parents": {
+   "qwen3_5": 4,
+   "qwen3_next": 5,
+   "qwen3_5_moe": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 1147,
+  "modeling_lines": 2581
+ },
+ {
+  "model": "radio",
+  "classes": 10,
+  "derived": 4,
+  "pure_rename": 3,
+  "parents": {
+   "dinov2": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 391,
+  "modeling_lines": 521
+ },
+ {
+  "model": "rf_detr",
+  "classes": 23,
+  "derived": 15,
+  "pure_rename": 3,
+  "parents": {
+   "dinov2": 5,
+   "lw_detr": 8,
+   "convnext": 1,
+   "clip": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 1555,
+  "modeling_lines": 2110
+ },
+ {
+  "model": "roberta",
+  "classes": 14,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "bert": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 756,
+  "modeling_lines": 1256
+ },
+ {
+  "model": "rt_detr",
+  "classes": 24,
+  "derived": 4,
+  "pure_rename": 4,
+  "parents": {
+   "detr": 3,
+   "deformable_detr": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2035,
+  "modeling_lines": 1901
+ },
+ {
+  "model": "rt_detr_v2",
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 1,
+  "parents": {
+   "rt_detr": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 460,
+  "modeling_lines": 1928
+ },
+ {
+  "model": "sam2",
+  "classes": 23,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "detr": 1,
+   "sam": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 1431,
+  "modeling_lines": 1623
+ },
+ {
+  "model": "sam2_video",
+  "classes": 24,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "sam2": 7,
+   "sam3": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2516,
+  "modeling_lines": 2859
+ },
+ {
+  "model": "sam3",
+  "classes": 1,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 279,
+  "modeling_lines": 2493
+ },
+ {
+  "model": "sam3_lite_text",
+  "classes": 21,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "siglip": 4,
+   "sam3": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 408,
+  "modeling_lines": 2231
+ },
+ {
+  "model": "sam3_tracker",
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 10,
+  "parents": {
+   "sam2": 12
+  },
+  "causal_lm": false,
+  "modular_lines": 222,
+  "modeling_lines": 1098
+ },
+ {
+  "model": "sam3_tracker_video",
+  "classes": 30,
+  "derived": 26,
+  "pure_rename": 23,
+  "parents": {
+   "sam2_video": 26
+  },
+  "causal_lm": false,
+  "modular_lines": 506,
+  "modeling_lines": 2874
+ },
+ {
+  "model": "sam_hq",
+  "classes": 17,
+  "derived": 11,
+  "pure_rename": 8,
+  "parents": {
+   "sam": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 595,
+  "modeling_lines": 1491
+ },
+ {
+  "model": "sapiens2",
+  "classes": 29,
+  "derived": 15,
+  "pure_rename": 5,
+  "parents": {
+   "dinov3_vit": 10,
+   "vitpose": 1,
+   "vitmatte": 1,
+   "llama": 1,
+   "pp_ocrv5_server_det": 1,
+   "mask2former": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 2135,
+  "modeling_lines": 1443
+ },
+ {
+  "model": "seed_oss",
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 198,
+  "modeling_lines": 508
+ },
+ {
+  "model": "segformer",
+  "classes": 17,
+  "derived": 3,
+  "pure_rename": 1,
+  "parents": {
+   "vit": 2,
+   "swin": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 767,
+  "modeling_lines": 614
+ },
+ {
+  "model": "sew",
+  "classes": 15,
+  "derived": 10,
+  "pure_rename": 10,
+  "parents": {
+   "wav2vec2": 10
+  },
+  "causal_lm": false,
+  "modular_lines": 400,
+  "modeling_lines": 993
+ },
+ {
+  "model": "shieldgemma2",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 192,
+  "modeling_lines": 140
+ },
+ {
+  "model": "siglip2",
+  "classes": 14,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 592,
+  "modeling_lines": 1020
+ },
+ {
+  "model": "slanet",
+  "classes": 11,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "slanext": 3,
+   "pp_lcnet": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 369,
+  "modeling_lines": 480
+ },
+ {
+  "model": "slanext",
+  "classes": 12,
+  "derived": 2,
+  "pure_rename": 2,
+  "parents": {
+   "got_ocr2": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 533,
+  "modeling_lines": 641
+ },
+ {
+  "model": "smollm3",
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 8,
+  "parents": {
+   "qwen2": 2,
+   "llama": 7
+  },
+  "causal_lm": true,
+  "modular_lines": 230,
+  "modeling_lines": 524
+ },
+ {
+  "model": "smolvlm",
+  "classes": 9,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "idefics3": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 344,
+  "modeling_lines": 805
+ },
+ {
+  "model": "solar_open",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 2,
+   "glm4_moe": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 111,
+  "modeling_lines": 601
+ },
+ {
+  "model": "starcoder2",
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "mistral": 6
+  },
+  "causal_lm": true,
+  "modular_lines": 223,
+  "modeling_lines": 483
+ },
+ {
+  "model": "step3p7",
+  "classes": 24,
+  "derived": 15,
+  "pure_rename": 4,
+  "parents": {
+   "kimi_k25": 1,
+   "minimax_m3_vl": 4,
+   "clip": 1,
+   "siglip": 1,
+   "laguna": 3,
+   "deepseek_v4": 2,
+   "gemma3": 1,
+   "deepseek_ocr2": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 1144,
+  "modeling_lines": 1240
+ },
+ {
+  "model": "swin",
+  "classes": 19,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "vit": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 1101,
+  "modeling_lines": 1142
+ },
+ {
+  "model": "switch_transformers",
+  "classes": 15,
+  "derived": 5,
+  "pure_rename": 5,
+  "parents": {
+   "t5": 5
+  },
+  "causal_lm": false,
+  "modular_lines": 835,
+  "modeling_lines": 1155
+ },
+ {
+  "model": "t5gemma",
+  "classes": 19,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "gemma2": 6
+  },
+  "causal_lm": false,
+  "modular_lines": 1216,
+  "modeling_lines": 1365
+ },
+ {
+  "model": "t5gemma2",
+  "classes": 23,
+  "derived": 12,
+  "pure_rename": 5,
+  "parents": {
+   "gemma3": 8,
+   "t5gemma": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 1329,
+  "modeling_lines": 1548
+ },
+ {
+  "model": "timesfm",
+  "classes": 11,
+  "derived": 1,
+  "pure_rename": 1,
+  "parents": {
+   "llama": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 760,
+  "modeling_lines": 803
+ },
+ {
+  "model": "timesfm2_5",
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "timesfm": 5,
+   "clip": 1,
+   "llama": 3,
+   "apertus": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 662,
+  "modeling_lines": 901
+ },
+ {
+  "model": "tipsv2",
+  "classes": 21,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "clip": 5,
+   "dinov2_with_registers": 5,
+   "speech_to_text": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 871,
+  "modeling_lines": 1143
+ },
+ {
+  "model": "tipsv2_dpt",
+  "classes": 18,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "sapiens2": 2,
+   "dpt": 1,
+   "zoedepth": 3,
+   "depth_anything": 2
+  },
+  "causal_lm": false,
+  "modular_lines": 738,
+  "modeling_lines": 709
+ },
+ {
+  "model": "ultrabert",
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 1,
+   "modernbert": 4,
+   "eurobert": 4,
+   "olmo3": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 281,
+  "modeling_lines": 658
+ },
+ {
+  "model": "ultravbert",
+  "classes": 13,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "modernvbert": 8,
+   "ultrabert": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 399,
+  "modeling_lines": 603
+ },
+ {
+  "model": "unispeech",
+  "classes": 12,
+  "derived": 9,
+  "pure_rename": 7,
+  "parents": {
+   "wav2vec2": 9
+  },
+  "causal_lm": false,
+  "modular_lines": 412,
+  "modeling_lines": 1323
+ },
+ {
+  "model": "unispeech_sat",
+  "classes": 14,
+  "derived": 11,
+  "pure_rename": 9,
+  "parents": {
+   "wav2vec2": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 425,
+  "modeling_lines": 1598
+ },
+ {
+  "model": "unlimited_ocr",
+  "classes": 24,
+  "derived": 13,
+  "pure_rename": 6,
+  "parents": {
+   "deepseek_ocr2": 9,
+   "clip": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 1460,
+  "modeling_lines": 2172
+ },
+ {
+  "model": "uvdoc",
+  "classes": 14,
+  "derived": 2,
+  "pure_rename": 0,
+  "parents": {
+   "pp_lcnet": 1,
+   "pp_ocrv5_server_det": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 612,
+  "modeling_lines": 391
+ },
+ {
+  "model": "vaultgemma",
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "gemma2": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 112,
+  "modeling_lines": 532
+ },
+ {
+  "model": "vibevoice",
+  "classes": 13,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "qwen2": 1,
+   "clip": 1,
+   "llama": 1,
+   "voxtral": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 429,
+  "modeling_lines": 507
+ },
+ {
+  "model": "vibevoice_acoustic_tokenizer",
+  "classes": 17,
+  "derived": 2,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 1,
+   "voxtral_realtime": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 501,
+  "modeling_lines": 579
+ },
+ {
+  "model": "vibevoice_asr",
+  "classes": 8,
+  "derived": 2,
+  "pure_rename": 1,
+  "parents": {
+   "qwen2": 1,
+   "vibevoice_acoustic_tokenizer": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 444,
+  "modeling_lines": 525
+ },
+ {
+  "model": "video_llama_3",
+  "classes": 21,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "qwen2_5_vl": 1,
+   "siglip": 4,
+   "qwen2_vl": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1149,
+  "modeling_lines": 875
+ },
+ {
+  "model": "videomt",
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 7,
+  "parents": {
+   "eomt": 11
+  },
+  "causal_lm": false,
+  "modular_lines": 267,
+  "modeling_lines": 1207
+ },
+ {
+  "model": "videoprism",
+  "classes": 21,
+  "derived": 7,
+  "pure_rename": 0,
+  "parents": {
+   "vivit": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 967,
+  "modeling_lines": 951
+ },
+ {
+  "model": "vipllava",
+  "classes": 6,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 291,
+  "modeling_lines": 399
+ },
+ {
+  "model": "vit_mae",
+  "classes": 12,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "vit": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 677,
+  "modeling_lines": 866
+ },
+ {
+  "model": "vit_msn",
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "vit": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 217,
+  "modeling_lines": 457
+ },
+ {
+  "model": "vivit",
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "vit": 7
+  },
+  "causal_lm": false,
+  "modular_lines": 394,
+  "modeling_lines": 565
+ },
+ {
+  "model": "voxtral",
+  "classes": 8,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "qwen2_audio": 4
+  },
+  "causal_lm": false,
+  "modular_lines": 354,
+  "modeling_lines": 578
+ },
+ {
+  "model": "voxtral_realtime",
+  "classes": 23,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "models": 10
+  },
+  "causal_lm": false,
+  "modular_lines": 950,
+  "modeling_lines": 1323
+ },
+ {
+  "model": "wav2vec2_bert",
+  "classes": 16,
+  "derived": 9,
+  "pure_rename": 1,
+  "parents": {
+   "wav2vec2_conformer": 6,
+   "wav2vec2": 3
+  },
+  "causal_lm": false,
+  "modular_lines": 1011,
+  "modeling_lines": 1487
+ },
+ {
+  "model": "wav2vec2_conformer",
+  "classes": 21,
+  "derived": 13,
+  "pure_rename": 7,
+  "parents": {
+   "wav2vec2": 13
+  },
+  "causal_lm": false,
+  "modular_lines": 723,
+  "modeling_lines": 1875
+ },
+ {
+  "model": "wavlm",
+  "classes": 15,
+  "derived": 9,
+  "pure_rename": 8,
+  "parents": {
+   "wav2vec2": 9
+  },
+  "causal_lm": false,
+  "modular_lines": 547,
+  "modeling_lines": 1555
+ },
+ {
+  "model": "x_clip",
+  "classes": 18,
+  "derived": 15,
+  "pure_rename": 1,
+  "parents": {
+   "clip": 12,
+   "altclip": 2,
+   "beit": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 804,
+  "modeling_lines": 1232
+ },
+ {
+  "model": "xcodec2",
+  "classes": 23,
+  "derived": 12,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 3,
+   "clip": 1,
+   "qwen2_5_omni": 4,
+   "dac": 3,
+   "voxtral": 1
+  },
+  "causal_lm": false,
+  "modular_lines": 778,
+  "modeling_lines": 1103
+ },
+ {
+  "model": "xlm_roberta",
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 1,
+  "parents": {
+   "roberta": 8
+  },
+  "causal_lm": true,
+  "modular_lines": 539,
+  "modeling_lines": 1244
+ },
+ {
+  "model": "xlm_roberta_xl",
+  "classes": 18,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "roberta": 3,
+   "bert": 5
+  },
+  "causal_lm": true,
+  "modular_lines": 725,
+  "modeling_lines": 1198
+ },
+ {
+  "model": "yolos",
+  "classes": 2,
+  "derived": 0,
+  "pure_rename": 0,
+  "parents": {},
+  "causal_lm": false,
+  "modular_lines": 287,
+  "modeling_lines": 638
+ },
+ {
+  "model": "youtu",
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 6,
+   "qwen3": 1,
+   "deepseek_v3": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 154,
+  "modeling_lines": 620
+ },
+ {
+  "model": "zamba2",
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "mamba2": 1,
+   "zamba": 8,
+   "llama": 1,
+   "bamba": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 651,
+  "modeling_lines": 1438
+ },
+ {
+  "model": "zaya",
+  "classes": 15,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "laguna": 2,
+   "qwen3_moe": 2,
+   "phi3": 1,
+   "llama": 2,
+   "afmoe": 1
+  },
+  "causal_lm": true,
+  "modular_lines": 702,
+  "modeling_lines": 894
+ }
+]

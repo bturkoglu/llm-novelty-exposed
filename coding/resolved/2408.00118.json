@@ -1,0 +1,33 @@
+{
+ "arxiv": "2408.00118",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "we apply several known technical modifications to the Transformer architecture, such as interleaving local-global attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023).",
+    "page": 1,
+    "reason": "Authors explicitly label group-query attention a known modification and cite Ainslie et al. 2023, so it is not an ARCH novelty they claim as their own. Although Table 8 (p.5) does compare MHA vs GQA on two 9B instances, that comparison is not coded because the claim is not kept."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 6429,
+   "outputTokens": 3386,
+   "totalTokens": 9815,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

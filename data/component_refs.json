@@ -1,0 +1,74 @@
+{
+ "GQA": {
+  "arxiv": "2305.13245",
+  "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+  "first_author": "Ainslie",
+  "doi": ""
+ },
+ "QK-Norm (ViT-22B)": {
+  "arxiv": "2302.05442",
+  "title": "Scaling Vision Transformers to 22 Billion Parameters",
+  "first_author": "Dehghani",
+  "doi": ""
+ },
+ "GLU variants (SwiGLU/GeGLU)": {
+  "arxiv": "2002.05202",
+  "title": "GLU Variants Improve Transformer",
+  "first_author": "Shazeer",
+  "doi": ""
+ },
+ "MQA": {
+  "arxiv": "1911.02150",
+  "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+  "first_author": "Shazeer",
+  "doi": ""
+ },
+ "Longformer (SWA)": {
+  "arxiv": "2004.05150",
+  "title": "Longformer: The Long-Document Transformer",
+  "first_author": "Beltagy",
+  "doi": ""
+ },
+ "Sparse Transformer": {
+  "arxiv": "1904.10509",
+  "title": "Generating Long Sequences with Sparse Transformers",
+  "first_author": "Child",
+  "doi": ""
+ },
+ "Swin v2 (res-post-norm)": {
+  "arxiv": "2111.09883",
+  "title": "Swin Transformer V2: Scaling Up Capacity and Resolution",
+  "first_author": "Liu",
+  "doi": ""
+ },
+ "RMSNorm": {
+  "arxiv": "1910.07467",
+  "title": "Root Mean Square Layer Normalization",
+  "first_author": "Zhang",
+  "doi": ""
+ },
+ "RoPE/RoFormer": {
+  "arxiv": "2104.09864",
+  "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+  "first_author": "Su",
+  "doi": ""
+ },
+ "RoPE ABF long context": {
+  "arxiv": "2309.16039",
+  "title": "Effective Long-Context Scaling of Foundation Models",
+  "first_author": "Xiong",
+  "doi": ""
+ },
+ "Llama 2": {
+  "arxiv": "2307.09288",
+  "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+  "first_author": "Touvron",
+  "doi": ""
+ },
+ "Transformer": {
+  "arxiv": "1706.03762",
+  "title": "Attention Is All You Need",
+  "first_author": "Vaswani",
+  "doi": ""
+ }
+}

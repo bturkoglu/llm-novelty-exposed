@@ -1,0 +1,190 @@
+{
+ "arxiv": "2606.19348",
+ "model": "deepseek_v4",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Hybrid attention architecture combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) for long-context efficiency",
+    "category": "ARCH",
+    "quote": "a hybrid attention architecture that combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to improve long-context efficiency",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Manifold-Constrained Hyper-Connections (mHC) replacing/upgrading conventional residual connections",
+    "category": "ARCH",
+    "quote": "To strengthen modeling capability, we incorporate Manifold-Constrained Hyper-Connections (mHC) (Xie et al., 2026) that upgrade conventional residual connections.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Muon optimizer for faster convergence and training stability",
+    "category": "TRAIN",
+    "quote": "we introduce the Muon (Jordan et al., 2024; Liu et al., 2025) optimizer to the training of DeepSeek-V4 series, leading to faster convergence and improved training stability.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Efficient native support for one-million-token context",
+    "category": "CTX",
+    "quote": "This breakthrough enables efficient support for a context length of one million tokens, ushering in a new era of million-length contexts for next-generation LLMs.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pre-training on more than 32T diverse, high-quality tokens",
+    "category": "DATA",
+    "quote": "We pre-train both models on more than 32T diverse and high-quality tokens, followed by a comprehensive post-training pipeline",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two-stage post-training: specialist SFT+RL experts consolidated via on-policy distillation",
+    "category": "POST",
+    "quote": "followed by unified model consolidation via on-policy distillation (Gu et al., 2024; Lu and Lab, 2025).",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Large reduction in inference FLOPs and KV cache vs DeepSeek-V3.2 at 1M context",
+    "category": "EFF",
+    "quote": "even DeepSeek-V4-Pro, which has a larger number of activated parameters, attains only 27% of the single-token FLOPs (measured in equivalent FP8 FLOPs) and 10% of the KV cache",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Single fused MoE kernel overlapping computation, communication and memory access",
+    "category": "EFF",
+    "quote": "we design and implement a single fused kernel for MoE modules that fully overlaps computation, communication, and memory access.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Use of TileLang DSL for kernel development",
+    "category": "EFF",
+    "quote": "we employ TileLang (Wang et al., 2026), a Domain-Specific Language (DSL) to balance development productivity and runtime efficiency.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Batch-invariant and deterministic kernel libraries for bitwise reproducibility",
+    "category": "EFF",
+    "quote": "we provide efficient batch-invariant and deterministic kernel libraries to ensure bitwise reproducibility across",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Training framework extensions: tensor-level checkpointing, hybrid ZeRO for Muon, mHC implementations, two-stage contextual parallelism",
+    "category": "EFF",
+    "quote": "we extend the autograd framework with tensor-level checkpointing for fine-grained recomputation control",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Heterogeneous KV cache structure with on-disk storage for shared-prefix reuse",
+    "category": "EFF",
+    "quote": "we design a heterogeneous KV cache structure with on-disk storage strategies to enable efficient shared-prefix reuse.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "FP4 quantization-aware training for MoE expert weights and indexer QK path in post-training",
+    "category": "EFF",
+    "quote": "we incorporate FP4 quantization-aware training for MoE expert weights and the indexer QK path to reduce memory and computation.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "DeepSeek-V4-Pro-Max redefines state of the art for open models",
+    "category": "OTHER",
+    "quote": "Max, the maximum reasoning effort mode of DeepSeek-V4-Pro, redefines the state-of-the-art for open models, outperforming its predecessors in core tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Claude Opus 4.6 Max",
+   "GPT-5.4 xHigh",
+   "Gemini-3.1-Pro High",
+   "Kimi K2.6 Thinking",
+   "GLM-5.1 Thinking",
+   "DeepSeek-V3.2"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We re-evaluate Claude Opus 4.6 and Gemini 3.1 Pro on these tasks with the goal of standardizing the configuration across all models.",
+   "page": 37
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "our pre-training corpus comprises more than 32T tokens, containing mathematical contents, codes, web pages, long documents, and other high-quality categories.",
+   "page": 24
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "we train DeepSeek-V4-Flash on 32T tokens and DeepSeek-V4-Pro on 33T tokens, respectively.",
+   "page": 5
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "None of the architecture/training claims (CSA/HCA, mHC, Muon) has a controlled ablation. The only comparisons are against DeepSeek-V3.2, and V3.2 also differs in data, size and token count. Rerun is coded MIXED: the authors say they re-evaluated Opus 4.6 and Gemini 3.1 Pro on the long-context tasks, and they mention querying the K2.6/GLM-5.1 APIs. They do not say where the other comparator scores came from, so scores_copied is NR. Third-party is coded NO conservatively: GDPval-AA cites the Artificial Analysis leaderboard, but the report does not clearly say those scores came from that independent run. Anticipatory Routing and SwiGLU clamping (section 4.2.3) are not coded because they do not appear in the abstract or introduction. Comparators are taken from Table 6, plus DeepSeek-V3.2 from the base-model Table 1."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "fd6721c766acb481090b6635cff1c60e13338f01a58f8f3965466691dbc3f1fd",
+  "session_id": "d99413ee-156a-46a8-a5fe-891acbc6011c",
+  "cost_usd": 0.7859102,
+  "timestamp": "2026-11-14T12:17:04+00:00"
+ }
+}

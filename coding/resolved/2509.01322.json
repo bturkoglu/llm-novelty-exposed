@@ -1,0 +1,89 @@
+{
+ "arxiv": "2509.01322",
+ "resolution": {
+  "fields": [
+   {
+    "field": "compute_disclosed",
+    "value": "Y",
+    "quote": "scaled training across tens of thousands of accelerators, confronting challenges in scalability and stability. Through model–system co-design, multi-dimensional parallelism, and fully automated fault detection and recovery, we achieved near-linear scaling and 98.48% availability, completing training within 30 days.",
+    "page": 24,
+    "reason": "The definition accepts hardware × duration, not only FLOPs or GPU-hours. Page 24 states the hardware scale (tens of thousands of accelerators) and the duration (training completed within 30 days) in one passage. The count is approximate, but both factors are explicitly disclosed, so Y is supported over N."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+    "page": 15,
+    "reason": "The multi-pronged stability suite is a stated TRAIN contribution. Hidden z-loss is compared with vs without, but only as norm/loss curves on a small model with suboptimal hyperparameters (Figure 6), not a matched-scale results table. Epsilon is likewise only a loss-curve sweep (Figure 7). That matches PARTIAL, not YES or NO."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "In the introduction contribution list the authors state as their own design that expert bias is adjusted by a PID-controller to hold a consistent compute budget (ARCH/TRAIN). No with-vs-without comparison of the PID bias appears in the report, so the ablation is NO."
+   },
+   {
+    "item_id": "B_only1",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+    "page": 15,
+    "reason": "Authors explicitly say they design hidden z-loss (inspired by router z-loss) to suppress massive activations, so it is their TRAIN contribution. Figure 6 is a with-vs-without comparison but only loss/norm curves on a small model, which the protocol codes as PARTIAL."
+   },
+   {
+    "item_id": "B_only2",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "Exploring the impact of the Root Mean Square (RMS) norm of gradients and epsilon on loss across different model sizes.",
+    "page": 16,
+    "reason": "Fine-tuned Adam epsilon is listed by the authors inside the stability-suite contribution and they adopt ε=1e-16. Figure 7 compares epsilon values, but only via loss curves and across mismatched sizes (390K–400M), so the ablation is PARTIAL rather than YES or NO."
+   },
+   {
+    "item_id": "B_only3",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The contribution list says they introduce deterministic computation to guarantee reproducibility and detect silent data corruption, a TRAIN/reliability claim. Later text shows bitwise-aligned re-runs and kernel speedups, but no controlled with-vs-without comparison of model quality, so ablation is NO."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ],
+  [
+   "B_only1",
+   "B_only"
+  ],
+  [
+   "B_only2",
+   "B_only"
+  ],
+  [
+   "B_only3",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 10803,
+   "outputTokens": 11266,
+   "totalTokens": 22069,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

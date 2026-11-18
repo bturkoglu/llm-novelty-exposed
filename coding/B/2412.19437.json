@@ -1,0 +1,190 @@
+{
+ "arxiv": "2412.19437",
+ "model": "deepseek_v3",
+ "coding": {
+  "is_release_report": true,
+  "note": "DeepSeek-V3 is a released trained model. Claims are deduplicated across abstract, introduction and contribution list; the core evaluation contributions are included as OTHER, not as novel evaluation methods. MLA and DeepSeekMoE are explicitly inherited, not new claims. MTP and balancing have matched comparisons at smaller scales (Tables 4–5); FP8 has only loss-curve comparisons, hence PARTIAL. Training seeds are NR: the 16 evaluation runs are decoding repetitions, not independent training runs. Data categories and languages are disclosed without reconstructible sources/proportions. Comparator list combines main base and chat tables. No independent third-party run or explicit renaming of an existing technique is established; using external benchmark protocols is not third-party evaluation. No renames coded: similarity to prior methods and the Self-Rewarding heading alone do not establish a renamed identical technique.",
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "DeepSeek-V2-Base",
+   "Qwen2.5 72B Base",
+   "LLaMA-3.1 405B Base",
+   "DeepSeek-V2-0506",
+   "DeepSeek-V2.5-0905",
+   "Qwen2.5 72B Instruct",
+   "LLaMA-3.1 405B Instruct",
+   "Claude-Sonnet-3.5-1022",
+   "GPT-4o-0513"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "We evaluate all these models\nwith our internal evaluation framework, and ensure that they share the same evaluation setting.",
+   "page": 24
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "All models are evaluated in our internal framework and share the same evaluation\nsetting.",
+   "page": 25
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "The base model of DeepSeek-V3 is pretrained on a multilingual corpus with English and Chinese\nconstituting the majority",
+   "page": 24
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "we set the maximum\nsequence length to 4K during pre-training, and pre-train DeepSeek-V3 on 14.8T tokens.",
+   "page": 22
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "DeepSeek-V3 costs only 2.788M GPU hours for its full training.",
+   "page": 5
+  },
+  "renames": [],
+  "claims": [
+   {
+    "claim": "Pioneer auxiliary-loss-free expert load balancing to reduce performance degradation.",
+    "category": "ARCH",
+    "quote": "we pioneer an auxiliary-loss-free\n  strategy for load balancing, which minimizes the performance degradation that arises\n  from encouraging load balancing.",
+    "page": 5,
+    "ablation": "YES",
+    "ablation_quote": "keeping the training data and the other architectures the\nsame, we remove all auxiliary losses and introduce the auxiliary-loss-free balancing strategy for\ncomparison.",
+    "ablation_page": 27
+   },
+   {
+    "claim": "Multi-token prediction improves model performance and supports speculative decoding acceleration.",
+    "category": "TRAIN",
+    "quote": "We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model\n  performance. It can also be used for speculative decoding for inference acceleration.",
+    "page": 5,
+    "ablation": "YES",
+    "ablation_quote": "keeping the training data and the other architectures the same, we append a 1-depth\nMTP module onto them and train two models with the MTP strategy for comparison.",
+    "ablation_page": 26
+   },
+   {
+    "claim": "FP8 mixed-precision framework, with first validation on an extremely large-scale model.",
+    "category": "TRAIN",
+    "quote": "We design an FP8 mixed precision training framework and, for the first time, validate the\n  feasibility and effectiveness of FP8 training on an extremely large-scale model.",
+    "page": 5,
+    "ablation": "PARTIAL",
+    "ablation_quote": "We validate our FP8 mixed precision framework with a comparison to BF16 training on top of\ntwo baseline models across different scales.",
+    "ablation_page": 47
+   },
+   {
+    "claim": "DualPipe pipeline parallelism reduces bubbles and overlaps computation with communication.",
+    "category": "EFF",
+    "quote": "we design the DualPipe algorithm for efficient pipeline parallelism,\nwhich has fewer pipeline bubbles and hides most of the communication during training through\ncomputation-communication overlap.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Efficient cross-node all-to-all kernels exploit IB and NVLink bandwidth to overcome communication bottlenecks.",
+    "category": "EFF",
+    "quote": "we also develop efficient cross-node all-to-all communication kernels to fully utilize\nInfiniBand (IB) and NVLink bandwidths.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Memory-footprint optimizations enable training without costly tensor parallelism.",
+    "category": "EFF",
+    "quote": "we meticulously optimize the memory\nfootprint, making it possible to train DeepSeek-V3 without using costly tensor parallelism.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Scale to a 671B-parameter MoE with 37B activated parameters.",
+    "category": "SCALE",
+    "quote": "we scale up our models and introduce DeepSeek-V3, a large Mixture-of-Experts (MoE)\nmodel with 671B parameters, of which 37B are activated for each token.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Economical 14.8T-token pretraining produces the strongest open-source base model.",
+    "category": "EFF",
+    "quote": "At an economical cost of only 2.664M H800 GPU hours, we complete the pre-training of\n  DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model.",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Innovative distillation of long-CoT DeepSeek-R1 reasoning into standard LLMs, preserving output style and length.",
+    "category": "POST",
+    "quote": "We introduce an innovative methodology to distill reasoning capabilities from the long-\n  Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models,\n  into standard LLMs, particularly DeepSeek-V3.",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Educational knowledge performance surpasses other open-source models and approaches leading closed-source models.",
+    "category": "OTHER",
+    "quote": "DeepSeek-V3 outperforms all other open-source models, achieving 88.5 on MMLU, 75.9\n  on MMLU-Pro, and 59.1 on GPQA.",
+    "page": 6,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Superior open-source factuality, including stronger Chinese factual knowledge than the named closed-source models.",
+    "category": "OTHER",
+    "quote": "DeepSeek-V3\n  demonstrates superior performance among open-source models on both SimpleQA and\n  Chinese SimpleQA.",
+    "page": 6,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art mathematical benchmark performance among non-long-CoT models.",
+    "category": "OTHER",
+    "quote": "DeepSeek-V3 achieves state-of-the-art performance on\n  math-related benchmarks among all non-long-CoT open-source and closed-source models.",
+    "page": 6,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Leading coding competition performance and competitive engineering-task performance.",
+    "category": "OTHER",
+    "quote": "DeepSeek-V3 emerges as the top-performing model for coding competition benchmarks,\n  such as LiveCodeBench, solidifying its position as the leading model in this domain.",
+    "page": 6,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "6cdba7cd745cc847f17ba7da7b7729438d2d54ee9fa1b0f29f7872c907347be7",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1876,
+   "totalTokens": 54465,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 52457
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:21+00:00"
+ }
+}

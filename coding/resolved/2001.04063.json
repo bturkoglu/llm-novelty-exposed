@@ -1,0 +1,69 @@
+{
+ "arxiv": "2001.04063",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "We can see that the performance of ProphetNetbase -3gram and ProphetNetbase -2gram is comparable. Both of them perform better than MASSbase and ProphetNetbase -1gram.",
+    "page": 8,
+    "reason": "Authors explicitly call future n-gram prediction a novel self-supervised objective (abstract and §2). Table 6 compares n=1/2/3 and MASS at matched 6-layer size, Wiki+BookCorpus data, and 125k steps, so the objective is ablated with vs without multi-token future prediction."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "Transformer (Raffel et al., 2019) 39.19 17.60 36.69 ProphetNetw/o pre-train 40.66 18.05 37.79",
+    "page": 7,
+    "reason": "Abstract and §2 present n-stream self-attention as their proposed extension of XLNet two-stream attention, a distinct ARCH contribution from the loss. Table 5 compares full ProphetNet to a Transformer at matched hyperparameters, but the gap also includes the n-gram loss and positional changes, so the comparison is confounded."
+   },
+   {
+    "item_id": "A_only2",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Token-span mask denoising is not stated as new: §2.4 says the denoising task is widely used and token span masking is the same as MASS. It is an adopted prior objective, not an ARCH/TRAIN novelty claim."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Same TRAIN contribution as A_only0 (future n-gram prediction for planning / less local overfitting), not a second claim. Its ablation=NO is also unsupported: Table 6 is a matched n-gram comparison, already coded YES on A_only0."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "A_only2",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 13090,
+   "outputTokens": 7963,
+   "totalTokens": 21053,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

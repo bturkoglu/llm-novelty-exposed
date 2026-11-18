@@ -1,0 +1,142 @@
+{
+ "arxiv": "2007.14062",
+ "model": "big_bird",
+ "coding": {
+  "note": "The paper describes trained pretrained Big Bird models and provides code, so it qualifies despite its architecture/method emphasis. Architecture ablations are PARTIAL: Table 1 fixes sequence length but does not establish matched training data/tokens; ITC-versus-ETC comparisons also change attention settings and position encodings. Pretraining corpus token counts are disclosed, but total tokens actually processed are not. TPU configurations and training steps are reported, but no hardware-duration product, accelerator hours, or FLOPs. Data sources are named without a reconstructable sampling mixture. Comparator list prioritizes the main QA tables and selected summarization models, capped at 15. Reported and re-evaluated Pegasus rows support MIXED comparator provenance. No explicit renaming of an existing technique was identified.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "VAR",
+   "quote": "Experiments\non smaller IMDb and Hyperpartisan datasets are repeated 5 times and the average performance is\npresented along with standard deviation.",
+   "page": 36
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Pegasus (Reported) [107] 44.21  16.95  38.83  45.97  20.15  41.34  52.29  33.08  41.75\nLarge  Pegasus (Re-eval)  43.85  16.83  39.17  44.53  19.30  40.70  52.25  33.04  41.80",
+   "page": 8
+  },
+  "claims": [
+   {
+    "quote": "To remedy this, we propose, B IG B IRD, a sparse\n  attention mechanism that reduces this quadratic dependency to linear.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "BERT-base  64.2  88.5  83.4\nRandom (R)  60.1  83.0  80.2\nWindow (W)  58.3  76.4  73.1\nR+W  62.7  85.1  80.5",
+    "claim": "A linear-complexity sparse attention architecture combining random, local-window, and global attention.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 4
+   },
+   {
+    "quote": "we show that adding extra tokens allows one to express all continuous sequence to sequence\n  functions with only O(n)-inner products.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Proves universal approximation of continuous sequence-to-sequence functions with linear attention connections.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Furthermore, we show that under standard assumptions\n  regarding precision, B IG B IRD is Turing complete.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Proves Turing completeness of sparse-attention transformers under precision assumptions.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "our theoretical analysis reveals some of the benefits of having\n  O(1) global tokens (such as CLS), that attend to the entire sequence as part of the\n  sparse attention mechanism.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "B IG B IRD-ITC  75.7  86.8  67.7  70.8  53.3  79.5  75.9\n  B IG B IRD-ETC  75.5  87.1  67.8  73.9  54.9  78.7  75.9",
+    "claim": "Identifies globally attending tokens, including additional global tokens, as important for sparse attention's expressivity and performance.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 7
+   },
+   {
+    "quote": "The proposed sparse attention can handle sequences\n  of length up to 8x of what was previously possible using similar hardware.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Supports sequences up to eight times longer on similar hardware.",
+    "page": 1,
+    "category": "CTX",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We achieve state of the art results for question answering and document summarization on\n  a number of different datasets.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Extended context improves NLP performance, achieving state-of-the-art question answering and document summarization results.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Lastly, we introduce a novel application of attention based models where long contexts are\n  beneficial: extracting contextual representations of genomics sequences like DNA.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduces long-context attention-based contextual DNA representations and pretraining for improved promoter-region and chromatin-profile prediction.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use four publicly available datasets Books [110], CC-News [34], Stories [89] and Wikipedia to\npretrain B IG B IRD.",
+   "page": 33
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "The Test results (F1 for HotpotQA, Natural\nQuestions, TriviaQA, and Accuracy for WikiHop) have been picked from their respective leaderboard.",
+   "page": 7
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Pegasus (Reported) [107] 44.21  16.95  38.83  45.97  20.15  41.34  52.29  33.08  41.75\nLarge  Pegasus (Re-eval)  43.85  16.83  39.17  44.53  19.30  40.70  52.25  33.04  41.80",
+   "page": 8
+  },
+  "renames": [],
+  "comparators": [
+   "RoBERTa",
+   "Longformer",
+   "HGN",
+   "GSAN",
+   "ReflectionNet",
+   "RikiNet-v2",
+   "Fusion-in-Decoder",
+   "SpanBERT",
+   "MRC-GCN",
+   "MultiHop",
+   "Transformer",
+   "Pegasus",
+   "Dancer",
+   "Extr-Abst-TLM",
+   "Long-Doc-Seq2Seq"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "e898d1e55804b9db3f9ef961f10d8f6e876c35e12232dc2cbb2da87e93a9ba9b",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1839,
+   "totalTokens": 45054,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 43083
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:21:37+00:00"
+ }
+}

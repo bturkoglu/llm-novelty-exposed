@@ -1,0 +1,142 @@
+{
+ "arxiv": "2409.18869",
+ "model": "emu3",
+ "coding": {
+  "note": "Emu3 is a released, author-trained multimodal model family. Claims are deduplicated across abstract and introduction; the single-transformer design and next-token objective are coded separately. No matched architecture/objective ablations are reported; comparisons against other model families do not qualify. DPO comparisons are POST and therefore NA under this protocol. Scaling potential is an introductory efficiency claim, not demonstrated scaling evidence. Automated image comparator scores are explicitly sourced from prior reports, while human comparisons are conducted by the authors; rerun and scores_copied are MIXED across results. No independent third-party evaluation of Emu3 is reported; using public benchmarks alone does not qualify. Comparator list includes all 12 models in Table 4 plus three prominent comparators from other main results, capped at 15. Data sources/categories are disclosed but not reconstructible mixture proportions. Training seeds, total pre-training tokens, and training compute are not reported.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The results of other methods in the MSCOCO 30K are sourced from [82, 92, 108]",
+   "page": 20
+  },
+  "claims": [
+   {
+    "claim": "A unified single transformer trained from scratch on discrete image, text, and video sequences eliminates diffusion and compositional architectures.",
+    "category": "ARCH",
+    "quote": "We simplify complex multimodal model designs by converging on a",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art multimodal models trained solely with next-token prediction.",
+    "category": "TRAIN",
+    "quote": "a new suite of state-of-the-art multimodal models trained solely with next-token\n  prediction.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Emu3 surpasses established task-specific models in generation and perception, including SDXL and LLaVA-1.6.",
+    "category": "OTHER",
+    "quote": "Emu3 outperforms the flagship Stable Diffusion model, i.e., SDXL [66],",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Causal next-token prediction enables high-fidelity video generation and future video extension.",
+    "category": "OTHER",
+    "quote": "With a video in context, Emu3 extends the video and predicts what will happen next.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release of a robust image/video discrete vision tokenizer previously publicly unavailable.",
+    "category": "TOK",
+    "quote": "we provide a robust vision tokenizer, enabling the transformation of videos and images into discrete\ntokens, which was previously publicly unavailable.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "DPO can be applied directly to autoregressive vision generation to align outputs with human preferences.",
+    "category": "POST",
+    "quote": "seamlessly applied to autoregressive vision generation, aligning the model with human preferences.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Simplification to tokens unlocks scaling potential during both training and inference.",
+    "category": "EFF",
+    "quote": "unlocks significant potential for scaling both during training and inference.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use the same language data as in Aquila [101], which is a high-quality corpus",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We conduct a human evaluation comparing the text-to-image generation capabilities of different\nmodels.",
+   "page": 8
+  },
+  "renames": [],
+  "comparators": [
+   "SDv1.5",
+   "DALL-E 2",
+   "SDv2.1",
+   "SDXL",
+   "PixArt-alpha",
+   "DALL-E 3",
+   "SD3",
+   "Emu",
+   "Show-o",
+   "Transfusion",
+   "Chameleon",
+   "LlamaGen",
+   "LLaVA-1.5",
+   "LLaVA-1.6(HD)",
+   "OpenSora V1.2"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "b54010cf3cea37c912cc9cfed5119be2478d05c09d76e65ee1ad64081fc1b96c",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1246,
+   "totalTokens": 24324,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 22946
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:31+00:00"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "arxiv": "2409.18869",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "The sentence describes the released model suite (SOTA multimodal models trained only with next-token prediction), not a new TRAIN contribution (optimizer, schedule, stability, or objective). Next-token prediction is treated as the known paradigm; the paper does not claim a novel training algorithm. Not an ARCH/TRAIN novelty claim, so it is not kept."
+   }
+  ]
+ },
+ "items": [
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 1533,
+   "outputTokens": 230,
+   "totalTokens": 2868,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

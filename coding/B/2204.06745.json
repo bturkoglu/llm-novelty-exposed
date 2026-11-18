@@ -1,0 +1,129 @@
+{
+ "arxiv": "2204.06745",
+ "model": "gpt_neox",
+ "coding": {
+  "note": "This is a model release report. C1 is restricted to contributions and noteworthy findings asserted in the abstract/introduction; the later architectural deviations are attributed to prior work, not claimed as novel there. Quotes preserve the supplied two-column extraction, including intervening column text. Sources are named but mixture proportions are omitted, so data disclosure is PARTIAL. Total pre-training tokens are not explicitly stated: approximately 472 billion can be inferred from batch size and steps, but tokens_disclosed is conservatively N. Evaluation error bars are across examples, not independent training runs. Rerun and copied scores are MIXED because most comparators were evaluated by the authors, but five-shot GPT-3 knowledge-task results were copied. Copied comparator results are not counted as independent evaluation of the released model.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Instead, we\nreport numbers from Hendrycks et al. (2021a) with model sizes corrected.",
+   "page": 10
+  },
+  "claims": [
+   {
+    "quote": "knowledge, the largest dense autoregressive  GPT-2, and even at that scale there are nearly a\n  model that has publicly available weights at  dozen different models. However, these models are",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce and publicly release GPT-NeoX-20B, claimed to be the largest dense autoregressive model with publicly available weights at submission.",
+    "page": 1,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "open-source the training and evaluation code,  Megatron-11B1 , Pangu-α-13B (Zeng et al., 2021),\n  as well as the model weights, at https://",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Open-source the training and evaluation code alongside model weights.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "spaced 1000 step intervals throughout the whole  tion we give a high-level overview of those differ-\nof training. We hope that by making a wide range",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Make intermediate checkpoints available throughout training at 1000-step intervals to facilitate training-dynamics research.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "noteworthy phenomena at odds with the established  literature. We train on a dataset that contains dupli-",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Find no evidence of performance loss despite duplicated training data and training for more than one epoch.",
+    "page": 2,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "doesn’t apply to either GPT-NeoX-20B or FairSeq  embeddings are a form of static relative positional\nmodels. Finally, we find that GPT-NeoX-20B is a",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Find that the previously reported lack of few-shot improvement on advanced knowledge tasks is specific to GPT-3 and does not apply to GPT-NeoX-20B or FairSeq.",
+    "page": 2,
+    "category": "EVAL",
+    "ablation_page": 0
+   },
+   {
+    "quote": "powerful few-shot learner, recieving a much larger  embeddings. In brief, they twist the embedding\nperformance boost from few-shot examples than  space such that the attention of a token at position",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Find GPT-NeoX-20B to be a powerful few-shot learner with larger few-shot performance gains than comparably sized GPT-3 and FairSeq models.",
+    "page": 2,
+    "category": "EVAL",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "43.92 MWh of electricity over the course of 1830\nhours of training. Scaling, testing, and evaluation\nwere responsible for the equivalent of another 920\nhours on our systems",
+   "page": 23
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Certain components are up-sampled to obtain a\n  more balanced data distribution. In contrast, GPT-",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "and Mathematical Tasks. We evalutate GPT-J-6B,\n  GPT-NeoX-20B, and FairSeq models both zero-\n  and five-shot, but due to financial constraints only\n  evaluate GPT-3 models zero-shot.",
+   "page": 6
+  },
+  "renames": [],
+  "comparators": [
+   "GPT-J-6B",
+   "GPT-3 Ada",
+   "GPT-3 Babbage",
+   "GPT-3 Curie",
+   "GPT-3 DaVinci",
+   "FairSeq 125M",
+   "FairSeq 355M",
+   "FairSeq 1.3B",
+   "FairSeq 2.7B",
+   "FairSeq 6.7B",
+   "FairSeq 13B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "4ea858b5384fb1f2854c39eb40e9c85202dc5ece3a9eb8f207fd94e7e00bcdfb",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1930,
+   "totalTokens": 48904,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 46842
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:21:46+00:00"
+ }
+}

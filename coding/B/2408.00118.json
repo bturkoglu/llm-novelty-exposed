@@ -1,0 +1,115 @@
+{
+ "arxiv": "2408.00118",
+ "model": "gemma2",
+ "coding": {
+  "note": "Gemma 2 is a model-family release. Claims cover the new family, the two attention modifications highlighted in the abstract, pre-training distillation, and size-relative performance; routine report contents are not treated as novelty claims. Distillation is TRAIN because it replaces the pre-training objective, not merely post-training. GQA is PARTIAL conservatively: the comparison identifies 9B models but does not explicitly establish matched data and token budgets. Seeds are NR: formatting variance and human-evaluation confidence intervals are not variance across independent training runs; merging models with different hyperparameters does not specify repeated seeds. Main comparators are taken from Tables 12–13. Comparator provenance is mixed. Hardware counts and carbon emissions are disclosed, but no duration, training FLOPs, or accelerator-hours, so compute is N. Quotes retain extraction artifacts where necessary.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The numbers for LLaMA-3 8B are either\nfrom the HuggingFace leaderboard or their blogpost.",
+   "page": 7
+  },
+  "claims": [
+   {
+    "quote": "In this work, we introduce Gemma 2, a new addition to the Gemma family of lightweight, state-of-the-art\n  open models, ranging in scale from 2 billion to 27 billion parameters.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce and release the Gemma 2 open model family at 2B–27B scale.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "several known technical modifications to the Transformer architecture, such as interleaving local-global\n  attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023).",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Apply interleaved local and global attention in Gemma 2.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 0
+   },
+   {
+    "quote": "several known technical modifications to the Transformer architecture, such as interleaving local-global\n  attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023).",
+    "ablation": "PARTIAL",
+    "ablation_quote": "Head Attention (MHA) with GQA on a 9B model\naveraged over 4 benchmarks.",
+    "claim": "Apply grouped-query attention in Gemma 2.",
+    "page": 1,
+    "category": "ARCH",
+    "ablation_page": 5
+   },
+   {
+    "quote": "We also train the 2B\n  and 9B models with knowledge distillation (Hinton et al., 2015) instead of next token prediction.",
+    "ablation": "YES",
+    "ablation_quote": "over 500B tokens either from scratch or with dis-\ntillation from a 7B model.",
+    "claim": "Train small models with knowledge distillation instead of next-token prediction, extending distillation to heavily overtrained models.",
+    "page": 1,
+    "category": "TRAIN",
+    "ablation_page": 5
+   },
+   {
+    "quote": "The\n  resulting models deliver the best performance for their size, and even offer competitive alternatives to\n  models that are 2-3× bigger.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Achieve best performance for model size and compete with models two to three times larger.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "tokens come from a variety of data sources, in-  for Gemma models.\ncluding web documents, code, and science ar-\nticles.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We train Gemma 2 27B on 13 trillion tokens of  End of sequence  <eos>\nprimarily-English data, the 9B model on 8 trillion\ntokens, and the 2B on 2 trillion tokens.",
+   "page": 3
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "Table 14 | Evaluation of Gemma 2 Instruction Tuned models on the Chatbot Arena (Chiang et al.,\n2024).",
+   "page": 8
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "these are evaluations run by us for Gemma 1 (Gemma Team, 2024).",
+   "page": 7
+  },
+  "renames": [],
+  "comparators": [
+   "Gemma-1 2B",
+   "Gemma-1 7B",
+   "Mistral 7B",
+   "LLaMA-3 8B",
+   "LLaMA-3 70B",
+   "Qwen1.5 32B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "046e8e9a05cacd61da59c53a6d6d81b415cc68bf10352334de7b70c5ea91e016",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1505,
+   "totalTokens": 23959,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 22322
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:22+00:00"
+ }
+}

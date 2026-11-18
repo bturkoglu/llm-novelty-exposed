@@ -1,0 +1,41 @@
+{
+ "arxiv": "2205.06266",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "YES",
+    "quote": "Scores are averaged across all 5 random seeds of the best hyperparameter setting, evaluated on the development set.",
+    "page": 7,
+    "reason": "The main table only compares X-MOD and SHARED, both pre-trained by the authors on the same 60 languages for 265k steps, and the caption states those scores come from their own seed-averaged evaluation under one hyperparameter protocol. That is a same-harness rerun of the comparator, not an unreproduced external number."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60 languages for 265k update steps.",
+    "page": 7,
+    "reason": "This is the authors' own ARCH claim (language-specific modules pre-trained from the start). Table 2 is a with-vs-without comparison at matched languages and update steps, with per-language trainable parameters held constant by design; the extra stored modules are the ablated element, not a separate size/data confound."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9031,
+   "outputTokens": 4958,
+   "totalTokens": 13989,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

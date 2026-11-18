@@ -1,0 +1,163 @@
+{
+ "arxiv": "2409.02060",
+ "model": "olmoe",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "OLMoE: a fully open, state-of-the-art sparse MoE language model (1B active / 7B total)",
+    "category": "OTHER",
+    "quote": "We introduce OLM O E, a fully open, state-of-the-art language model leveraging",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pretrained on 5 trillion tokens",
+    "category": "SCALE",
+    "quote": "We pretrain it on 5 trillion tokens and further adapt it to create OLM O E-1B-7B-I NSTRUCT.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Instruction/preference-tuned OLMoE-1B-7B-Instruct exceeds larger instruct models",
+    "category": "POST",
+    "quote": "find exceeds various larger instruct models including Llama2-13B-Chat [183], OLMo-7B-Instruct",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "MoEs train ~2x faster than dense LMs with equivalent active parameters",
+    "category": "ARCH",
+    "quote": "Our experiments show that MoEs train ∼2× faster than dense LMs",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "Apart from MoE-related changes, we train both with the same configuration for 130B tokens.",
+    "ablation_page": 9
+   },
+   {
+    "claim": "Fine-grained routing with 64 small experts, 8 active, is critical",
+    "category": "ARCH",
+    "quote": "One critical design decision for making MoEs performant is the use of fine-grained routing with granular experts [42]: we employ 64 small experts in each layer",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "We vary the number of experts in tandem with the FFN dimension to ensure that active and total parameters and thus compute cost remain the same.",
+    "ablation_page": 10
+   },
+   {
+    "claim": "Dropless token-choice routing outperforms expert-choice routing",
+    "category": "ARCH",
+    "quote": "we find dropless [58] token-based routing [154] outperforms expert-based routing [219]",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "Both models have an 8-expert MoE in every 2nd layer. For TC, 2 experts are activated per token",
+    "ablation_page": 11
+   },
+   {
+    "claim": "Shared experts are ineffective",
+    "category": "ARCH",
+    "quote": "Our findings also include those that challenge prior work, such as the ineffectiveness of shared experts",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "While both settings lead to similar performance, sharing an expert performs slightly worse.",
+    "ablation_page": 10
+   },
+   {
+    "claim": "Sparse upcycling from a dense model has limited benefits except at small compute budgets",
+    "category": "TRAIN",
+    "quote": "challenge prior work, such as the ineffectiveness of shared experts [42] and the limited benefits of sparsely",
+    "page": 3,
+    "ablation": "YES",
+    "ablation_quote": "We find that after 500B tokens, an otherwise equivalent MoE trained from scratch already catches up with the upcycled model",
+    "ablation_page": 12
+   },
+   {
+    "claim": "Routing analysis: early router saturation, rare co-activation, domain and vocabulary specialization",
+    "category": "OTHER",
+    "quote": "analyze the routing behavior in OLM O E-1B-7B, finding that routing saturates early in pretraining, experts are rarely co-activated",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open release of code, intermediate checkpoints, logs and training data",
+    "category": "OTHER",
+    "quote": "We release training code, intermediate checkpoints (every 5000 steps), training logs, and training data under open-source licenses",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Llama2-7B",
+   "OLMo-7B (0724)",
+   "Mistral-7B",
+   "DCLM-7B",
+   "Llama3.1-8B",
+   "Gemma2-9B",
+   "OpenMoE-3B-9B",
+   "StableLM-2B",
+   "DeepSeek-3B-16B",
+   "JetMoE-2B-9B",
+   "Gemma2-3B",
+   "Qwen1.5-3B-14B",
+   "Pythia-1B",
+   "OLMo-1B (0724)",
+   "TinyLlama-1B"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "We run all evaluations ourselves with 5 few-shots, see Appendix C for details.",
+   "page": 7
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "We run all evaluations ourselves with 5 few-shots, see Appendix C for details.",
+   "page": 7
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "Composition of the pretraining data for OLM O E-1B-7B. StarCoder, peS2o, and Wikipedia parts come from Dolma 1.7 [163].",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We shuffle all samples randomly at the beginning of each epoch and train for a total of 5.133T tokens",
+   "page": 6
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "We pretrain OLM O E-1B-7B on 256 H100 GPUs for approximately 10 days",
+   "page": 45
+  },
+  "renames": [],
+  "note": "Claims are taken from the abstract and introduction only. Load balancing loss, router z-loss, QK-Norm and the other settings in Table 1 and §4 also have controlled ablations, but the introduction does not state them as key contributions, so they are not coded as claims. The upcycling comparison matches the new-token budget, but the upcycled model starts from a 2T-token dense checkpoint. I still coded it YES because the authors call it 'otherwise equivalent'. Table 4 has 17 comparators. Llama3.2-1B and DCLM-1B were dropped because of the 15-model cap. The AlpacaEval leaderboard mention compares the authors' own score with leaderboard entries; it is not an independent evaluation of OLMoE, so third_party is NO. No seeds or run-to-run variance are reported."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "c2c8368d373cabfca297b1fad9d3247d45c8f8f9b6a506c4799b685f82919e44",
+  "session_id": "720506d4-4629-4dbc-be27-5f7c4de34e0e",
+  "cost_usd": 0.8846102,
+  "timestamp": "2026-11-14T12:13:35+00:00"
+ }
+}

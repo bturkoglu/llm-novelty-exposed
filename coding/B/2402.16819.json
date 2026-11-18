@@ -1,0 +1,121 @@
+{
+ "arxiv": "2402.16819",
+ "model": "nemotron",
+ "coding": {
+  "note": "This is a trained-model technical report. Claims are restricted to the abstract/introduction; standard architecture choices and continued training described later are not presented there as novel contributions. Performance claims are coded OTHER, not as new evaluation methods. Data disclosure is PARTIAL: broad mixture proportions and language distributions are given, but reconstructible source-level data are not. Comparator provenance is MIXED: most scores are copied, while Mistral is rerun for MultiPL-E and MGSM. No independent evaluation of Nemotron-4 itself or training-run counts are reported. Compute is disclosed through hardware and the GPU/time breakdown in Table 2 (approximately 13 calendar days).",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "and unless otherwise stated we use the numbers published in the reports of the corresponding models.",
+   "page": 6
+  },
+  "claims": [
+   {
+    "claim": "Introduces Nemotron-4 15B, a multilingual 15-billion-parameter model trained on 8 trillion tokens.",
+    "category": "SCALE",
+    "quote": "We introduce Nemotron-4 15B, a 15-billion-parameter large multilingual language model trained\n  on 8 trillion text tokens.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Outperforms similarly sized open models in four of seven evaluation areas and is competitive in the others.",
+    "category": "OTHER",
+    "quote": "it outperforms all existing similarly-sized open models on 4 out of 7\n  downstream evaluation areas and achieves competitive performance to the leading open models in the\n  remaining ones.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Achieves leading multilingual capability at its size, outperforming much larger and multilingual-specialized models.",
+    "category": "OTHER",
+    "quote": "Specifically, Nemotron-4 15B exhibits the best multilingual capabilities of all similarly-\n  sized models, even outperforming models over four times larger and those explicitly specialized for\n  multilingual tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Developed as a strong general-purpose model that fits on a single A100 or H100 GPU.",
+    "category": "EFF",
+    "quote": "and coding text and was developed to be the best general-purpose large language model (LLM) that can fit\non a single NVIDIA A100 or H100 GPU.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Achieves better average and low-resource programming-language accuracy than Starcoder and Mistral 7B.",
+    "category": "OTHER",
+    "quote": "find that Nemotron-4 15B achieves better average accuracy, and in particular on low-resource programming\nlanguages, than Starcoder (Li et al., 2023), a code-specific model, and Mistral 7B.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "Nemotron-4 was trained using 384 DGX H100 nodes; each node contains 8 H100 80GB\nSXM5 GPUs based on the NVIDIA Hopper architecture",
+   "page": 4
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "the data blend is split into three different types of data: English natural language data (70%), multilingual\nnatural language data (15%), and source-code data (15%).",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We train Nemotron-4 15B on a pre-training dataset consisting of 8 trillion tokens.",
+   "page": 3
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Results for Mistral are from our runs of Mistral in the same setting as Nemotron-4.",
+   "page": 8
+  },
+  "renames": [],
+  "comparators": [
+   "LLaMA-2 13B",
+   "LLaMA-2 34B",
+   "Baichuan-2 13B",
+   "QWEN 14B",
+   "Mistral 7B",
+   "Gemma 7B",
+   "Starcoder 15B",
+   "BLOOM 176B",
+   "XGLM 7.5B",
+   "mGPT 13B",
+   "PaLM 62B",
+   "PaLM 62B-cont"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "c45b6e8c4d694ad55997501faf81f0c4dcfdc3a3f27def38dfb465a0454d5024",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1351,
+   "totalTokens": 16964,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 15481
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:43+00:00"
+ }
+}

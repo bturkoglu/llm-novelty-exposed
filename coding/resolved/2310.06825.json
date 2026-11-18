@@ -1,0 +1,27 @@
+{
+ "arxiv": "2310.06825",
+ "resolution": {
+  "fields": [
+   {
+    "field": "data_disclosure",
+    "value": "NONE",
+    "quote": "",
+    "page": 0,
+    "reason": "Coder2's p.4 sentence only says the Instruct model was fine-tuned on unnamed 'instruction datasets publicly available on the Hugging Face repository.' That names neither sources nor a mixture, and the provided pages disclose no pre-training corpus, categories, or proportions. PARTIAL requires categories or some sources; a generic location is not enough, so the lower level NONE is correct."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 3915,
+   "outputTokens": 1424,
+   "totalTokens": 5339,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

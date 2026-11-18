@@ -1,0 +1,116 @@
+{
+ "arxiv": "2510.26692",
+ "model": "kimi_linear",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Kimi Delta Attention (KDA): linear attention refining gated delta rule with fine-grained channel-wise gating",
+    "category": "ARCH",
+    "quote": "Kimi Delta Attention (KDA): a linear attention mechanism that refines the gated delta rule with improved recurrent",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "hybrid Gated DeltaNet (GDN-H) baseline, all of which share the same architecture, parameter count, and training setup",
+    "ablation_page": 9
+   },
+   {
+    "claim": "Kimi Linear hybrid architecture with 3:1 KDA-to-global attention ratio",
+    "category": "ARCH",
+    "quote": "The Kimi Linear architecture: a hybrid design adopting a 3:1 KDA-to-global attention ratio, reducing memory",
+    "page": 2,
+    "ablation": "YES",
+    "ablation_quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+    "ablation_page": 8
+   },
+   {
+    "claim": "Bespoke chunkwise-parallel algorithm via constrained DPLR variant reducing computation",
+    "category": "EFF",
+    "quote": "enabling a bespoke chunkwise-parallel algorithm that substantially reduces computation relative to",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Up to 6x higher decoding throughput at 1M context and 75% KV cache reduction",
+    "category": "EFF",
+    "quote": "tasks—while achieving up to 6× higher decoding throughput at 1M context length.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Fair empirical validation at 1.4T tokens showing Kimi Linear outperforms full attention in short/long context and RL",
+    "category": "EVAL",
+    "quote": "Fair empirical validation at scale: through 1.4T token training runs, Kimi Linear outperforms full attention and",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-source KDA kernels, vLLM integration and checkpoints",
+    "category": "OTHER",
+    "quote": "To facilitate further research, we release open-source KDA kernels with vLLM integration, as well as pre-trained",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "MLA",
+   "GDN-H",
+   "Kimi Linear (RoPE)",
+   "Moonlight"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "internal framework derived from LM-Harness-Evaluation [10], ensuring consistent settings across all models.",
+   "page": 10
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "NONE",
+   "quote": "WSD learning rate schedule, processing a shared total of 1.4 trillion tokens sampled from the K2 pretraining corpus",
+   "page": 10
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Our final released Kimi Linear checkpoint is pretrained using the same procedure, but with an expanded total of 5.7",
+   "page": 10
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Pretraining data only referenced as K2 corpus without sources/proportions, coded NONE (conservative; SFT/RL categories math/code/STEM given). GPQA eight runs are evaluation repeats, not training seeds, so seeds NR. Comparators are in-house baselines trained with identical recipe; Moonlight compared in appendix. Compute not disclosed (PFLOP/s-days only as scaling plot axis)."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "3f13da02ca43617f848c81c4166f2c2be2d5117612015361869756c0270f6bbf",
+  "session_id": "5b0f05be-ea99-4993-8efa-f5aaa27ba315",
+  "cost_usd": 0.4525782,
+  "timestamp": "2026-11-14T12:15:55+00:00"
+ }
+}

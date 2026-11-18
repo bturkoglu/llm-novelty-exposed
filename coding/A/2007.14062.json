@@ -1,0 +1,127 @@
+{
+ "arxiv": "2007.14062",
+ "model": "big_bird",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "BigBird sparse attention mechanism (random + window + global tokens) whose complexity is linear in sequence length",
+    "category": "ARCH",
+    "quote": "To remedy this, we propose, B IG B IRD, a sparse attention mechanism that reduces this quadratic dependency to linear.",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "We found that random blocks and local window were insufficient in capturing all the context necessary to compete with the performance of BERT.",
+    "ablation_page": 4
+   },
+   {
+    "claim": "Global tokens (ITC/ETC) attending to the entire sequence are critical for expressivity and performance",
+    "category": "ARCH",
+    "quote": "our theoretical analysis reveals some of the benefits of having O(1) global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "BigBird is a universal approximator of sequence functions and Turing complete",
+    "category": "OTHER",
+    "quote": "We show that B IG B IRD is a universal approximator of sequence functions and is Turing complete, thereby preserving these properties of the quadratic, full attention model.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Handles sequences up to 8x longer than previously possible on similar hardware",
+    "category": "CTX",
+    "quote": "The proposed sparse attention can handle sequences of length up to 8x of what was previously possible using similar hardware.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art results on question answering and document summarization",
+    "category": "OTHER",
+    "quote": "We achieve state of the art results for question answering and document summarization on a number of different datasets.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Novel application of attention models to genomics sequences (DNA) with long-context MLM pretraining",
+    "category": "OTHER",
+    "quote": "Lastly, we introduce a novel application of attention based models where long contexts are beneficial: extracting contextual representations of genomics sequences like DNA.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "VAR",
+   "quote": "Experiments on smaller IMDb and Hyperpartisan datasets are repeated 5 times and the average performance is presented along with standard deviation.",
+   "page": 36
+  },
+  "comparators": [
+   "RoBERTa",
+   "Longformer",
+   "HGN",
+   "GSAN",
+   "ReflectionNet",
+   "RikiNet-v2",
+   "Fusion-in-Decoder",
+   "SpanBERT",
+   "MRC-GCN",
+   "MultiHop",
+   "Pegasus",
+   "Dancer",
+   "Extr-Abst-TLM",
+   "Sent-PTR",
+   "Sent-CLF"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Large  Pegasus (Re-eval)  43.85  16.83  39.17  44.53",
+   "page": 8
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The Test results (F1 for HotpotQA, Natural Questions, TriviaQA, and Accuracy for WikiHop) have been picked from their respective leaderboard.",
+   "page": 7
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "In Tab. 3, we compare B IG B IRD-ETC model to top-3 entries from the leaderboard excluding B IG B IRD.",
+   "page": 8
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use four publicly available datasets Books [110], CC-News [34], Stories [89] and Wikipedia to pretrain B IG B IRD.",
+   "page": 33
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Method-style paper, but the authors pretrain and release base/large BigBird models with code, so it is coded as a release report. Table 1 compares building blocks (R, W, R+W vs BERT) at length 512, but there is no with/without-global ablation, so the sparse-attention claim is PARTIAL and the global-token claim is NO. Data is coded PARTIAL rather than FULL: Table 9 gives sources and dataset token counts, but sampling proportions are not given and training warm-starts from RoBERTa. Tokens trained on and NLP training duration are not stated; only TPU slice sizes are given, so tokens and compute are both N. Rerun/scores are MIXED: Table 3 scores come from leaderboards, while Pegasus was re-evaluated by the authors. The Pegasus rerun quote is taken from a table row, so it may fail verbatim matching if spacing differs."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "e898d1e55804b9db3f9ef961f10d8f6e876c35e12232dc2cbb2da87e93a9ba9b",
+  "session_id": "41418e2a-2e24-492a-835f-1242068f764b",
+  "cost_usd": 0.5386142,
+  "timestamp": "2026-11-14T12:09:01+00:00"
+ }
+}

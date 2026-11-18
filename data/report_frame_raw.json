@@ -1,0 +1,1394 @@
+[
+ {
+  "model": "bart",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "1910.13461",
+  "all_ids": [
+   "1910.13461"
+  ]
+ },
+ {
+  "model": "blenderbot",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "2004.13637",
+  "all_ids": [
+   "2004.13637",
+   "1706.03762"
+  ]
+ },
+ {
+  "model": "camembert",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "1911.03894",
+  "all_ids": [
+   "1911.03894"
+  ]
+ },
+ {
+  "model": "electra",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "2003.10555",
+  "all_ids": [
+   "2003.10555"
+  ]
+ },
+ {
+  "model": "marian",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "1804.00344",
+  "all_ids": [
+   "1804.00344"
+  ]
+ },
+ {
+  "model": "mbart",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "2001.08210",
+  "all_ids": [
+   "2001.08210",
+   "2008.00401"
+  ]
+ },
+ {
+  "model": "pegasus",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "1912.08777",
+  "all_ids": [
+   "1912.08777"
+  ]
+ },
+ {
+  "model": "prophetnet",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "2001.04063",
+  "all_ids": [
+   "2001.04063"
+  ]
+ },
+ {
+  "model": "roberta",
+  "added": "2020-11-16",
+  "doc": true,
+  "arxiv": "1907.11692",
+  "all_ids": [
+   "1907.11692"
+  ]
+ },
+ {
+  "model": "big_bird",
+  "added": "2021-03-30",
+  "doc": true,
+  "arxiv": "2007.14062",
+  "all_ids": [
+   "2007.14062"
+  ]
+ },
+ {
+  "model": "gpt_neo",
+  "added": "2021-03-30",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "bigbird_pegasus",
+  "added": "2021-05-07",
+  "doc": true,
+  "arxiv": "2007.14062",
+  "all_ids": [
+   "2007.14062"
+  ]
+ },
+ {
+  "model": "roformer",
+  "added": "2021-05-20",
+  "doc": true,
+  "arxiv": "2104.09864",
+  "all_ids": [
+   "2104.09864"
+  ]
+ },
+ {
+  "model": "rembert",
+  "added": "2021-07-24",
+  "doc": true,
+  "arxiv": "2010.12821",
+  "all_ids": [
+   "2010.12821"
+  ]
+ },
+ {
+  "model": "gptj",
+  "added": "2021-08-31",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "trocr",
+  "added": "2021-10-13",
+  "doc": true,
+  "arxiv": "2109.10282",
+  "all_ids": [
+   "2109.10282"
+  ]
+ },
+ {
+  "model": "xglm",
+  "added": "2022-01-28",
+  "doc": true,
+  "arxiv": "2112.10668",
+  "all_ids": [
+   "2112.10668"
+  ]
+ },
+ {
+  "model": "plbart",
+  "added": "2022-02-18",
+  "doc": true,
+  "arxiv": "2103.06333",
+  "all_ids": [
+   "2103.06333"
+  ]
+ },
+ {
+  "model": "opt",
+  "added": "2022-05-12",
+  "doc": true,
+  "arxiv": "2205.01068",
+  "all_ids": [
+   "2205.01068"
+  ]
+ },
+ {
+  "model": "gpt_neox",
+  "added": "2022-05-24",
+  "doc": true,
+  "arxiv": "2204.06745",
+  "all_ids": [
+   "2204.06745"
+  ]
+ },
+ {
+  "model": "bloom",
+  "added": "2022-06-09",
+  "doc": true,
+  "arxiv": "2211.05100",
+  "all_ids": [
+   "2211.05100"
+  ]
+ },
+ {
+  "model": "codegen",
+  "added": "2022-06-24",
+  "doc": true,
+  "arxiv": "2203.13474",
+  "all_ids": [
+   "2203.13474"
+  ]
+ },
+ {
+  "model": "mvp",
+  "added": "2022-06-29",
+  "doc": true,
+  "arxiv": "2206.12131",
+  "all_ids": [
+   "2206.12131",
+   "2101.00190"
+  ]
+ },
+ {
+  "model": "ernie",
+  "added": "2022-09-09",
+  "doc": true,
+  "arxiv": "1904.09223",
+  "all_ids": [
+   "1904.09223",
+   "2107.02137",
+   "2010.12148",
+   "2110.07244"
+  ]
+ },
+ {
+  "model": "gpt_neox_japanese",
+  "added": "2022-09-14",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "whisper",
+  "added": "2022-10-05",
+  "doc": true,
+  "arxiv": "2212.04356",
+  "all_ids": [
+   "2212.04356"
+  ]
+ },
+ {
+  "model": "roc_bert",
+  "added": "2022-11-08",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "biogpt",
+  "added": "2022-12-05",
+  "doc": true,
+  "arxiv": "2210.10341",
+  "all_ids": [
+   "2210.10341"
+  ]
+ },
+ {
+  "model": "git",
+  "added": "2023-01-03",
+  "doc": true,
+  "arxiv": "2205.14100",
+  "all_ids": [
+   "2205.14100"
+  ]
+ },
+ {
+  "model": "xmod",
+  "added": "2023-02-10",
+  "doc": true,
+  "arxiv": "2205.06266",
+  "all_ids": [
+   "2205.06266"
+  ]
+ },
+ {
+  "model": "llama",
+  "added": "2023-03-16",
+  "doc": true,
+  "arxiv": "2302.13971",
+  "all_ids": [
+   "2302.13971"
+  ]
+ },
+ {
+  "model": "gpt_bigcode",
+  "added": "2023-04-10",
+  "doc": true,
+  "arxiv": "2301.03988",
+  "all_ids": [
+   "2301.03988"
+  ]
+ },
+ {
+  "model": "cpmant",
+  "added": "2023-04-12",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "rwkv",
+  "added": "2023-05-09",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "musicgen",
+  "added": "2023-06-29",
+  "doc": true,
+  "arxiv": "2306.05284",
+  "all_ids": [
+   "2306.05284"
+  ]
+ },
+ {
+  "model": "falcon",
+  "added": "2023-07-11",
+  "doc": true,
+  "arxiv": "2311.16867",
+  "all_ids": [
+   "2311.16867"
+  ]
+ },
+ {
+  "model": "mpt",
+  "added": "2023-07-25",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "persimmon",
+  "added": "2023-09-12",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "mistral",
+  "added": "2023-09-27",
+  "doc": true,
+  "arxiv": "2310.06825",
+  "all_ids": [
+   "2310.06825"
+  ]
+ },
+ {
+  "model": "fuyu",
+  "added": "2023-10-19",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "clvp",
+  "added": "2023-11-10",
+  "doc": true,
+  "arxiv": "2305.07243",
+  "all_ids": [
+   "2305.07243"
+  ]
+ },
+ {
+  "model": "phi",
+  "added": "2023-11-10",
+  "doc": true,
+  "arxiv": "2306.11644",
+  "all_ids": [
+   "2306.11644"
+  ]
+ },
+ {
+  "model": "mixtral",
+  "added": "2023-12-11",
+  "doc": true,
+  "arxiv": "2401.04088",
+  "all_ids": [
+   "2401.04088"
+  ]
+ },
+ {
+  "model": "qwen2",
+  "added": "2024-01-17",
+  "doc": true,
+  "arxiv": "2407.10671",
+  "all_ids": [
+   "2407.10671"
+  ]
+ },
+ {
+  "model": "stablelm",
+  "added": "2024-02-14",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "gemma",
+  "added": "2024-02-21",
+  "doc": true,
+  "arxiv": "2403.08295",
+  "all_ids": [
+   "2403.08295"
+  ]
+ },
+ {
+  "model": "starcoder2",
+  "added": "2024-02-28",
+  "doc": true,
+  "arxiv": "2402.19173",
+  "all_ids": [
+   "2402.19173"
+  ]
+ },
+ {
+  "model": "mamba",
+  "added": "2024-03-05",
+  "doc": true,
+  "arxiv": "2312.00752",
+  "all_ids": [
+   "2312.00752"
+  ]
+ },
+ {
+  "model": "cohere",
+  "added": "2024-03-15",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "musicgen_melody",
+  "added": "2024-03-18",
+  "doc": true,
+  "arxiv": "2306.05284",
+  "all_ids": [
+   "2306.05284"
+  ]
+ },
+ {
+  "model": "qwen2_moe",
+  "added": "2024-03-27",
+  "doc": true,
+  "arxiv": "2407.10671",
+  "all_ids": [
+   "2407.10671"
+  ]
+ },
+ {
+  "model": "recurrent_gemma",
+  "added": "2024-04-10",
+  "doc": true,
+  "arxiv": "2404.07839",
+  "all_ids": [
+   "2404.07839"
+  ]
+ },
+ {
+  "model": "olmo",
+  "added": "2024-04-17",
+  "doc": true,
+  "arxiv": "2402.00838",
+  "all_ids": [
+   "2402.00838"
+  ]
+ },
+ {
+  "model": "dbrx",
+  "added": "2024-04-18",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "jamba",
+  "added": "2024-04-18",
+  "doc": true,
+  "arxiv": "2403.19887",
+  "all_ids": [
+   "2403.19887"
+  ]
+ },
+ {
+  "model": "phi3",
+  "added": "2024-04-24",
+  "doc": true,
+  "arxiv": "2404.14219",
+  "all_ids": [
+   "2404.14219"
+  ]
+ },
+ {
+  "model": "jetmoe",
+  "added": "2024-05-14",
+  "doc": true,
+  "arxiv": "2306.04640",
+  "all_ids": [
+   "2306.04640"
+  ]
+ },
+ {
+  "model": "gemma2",
+  "added": "2024-06-27",
+  "doc": true,
+  "arxiv": "2408.00118",
+  "all_ids": [
+   "2408.00118"
+  ]
+ },
+ {
+  "model": "mamba2",
+  "added": "2024-08-06",
+  "doc": true,
+  "arxiv": "2405.21060",
+  "all_ids": [
+   "2405.21060"
+  ]
+ },
+ {
+  "model": "nemotron",
+  "added": "2024-08-06",
+  "doc": true,
+  "arxiv": "2402.16819",
+  "all_ids": [
+   "2402.16819",
+   "2407.14679",
+   "2009.03300"
+  ]
+ },
+ {
+  "model": "falcon_mamba",
+  "added": "2024-08-12",
+  "doc": true,
+  "arxiv": "2410.05355",
+  "all_ids": [
+   "2410.05355"
+  ]
+ },
+ {
+  "model": "granite",
+  "added": "2024-08-27",
+  "doc": true,
+  "arxiv": "2408.13359",
+  "all_ids": [
+   "2408.13359"
+  ]
+ },
+ {
+  "model": "olmoe",
+  "added": "2024-09-03",
+  "doc": true,
+  "arxiv": "2409.02060",
+  "all_ids": [
+   "2409.02060"
+  ]
+ },
+ {
+  "model": "granitemoe",
+  "added": "2024-09-20",
+  "doc": true,
+  "arxiv": "2408.13359",
+  "all_ids": [
+   "2408.13359"
+  ]
+ },
+ {
+  "model": "mllama",
+  "added": "2024-09-25",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "phimoe",
+  "added": "2024-10-04",
+  "doc": true,
+  "arxiv": "2404.14219",
+  "all_ids": [
+   "2404.14219"
+  ]
+ },
+ {
+  "model": "zamba",
+  "added": "2024-10-04",
+  "doc": true,
+  "arxiv": "2405.16712",
+  "all_ids": [
+   "2405.16712"
+  ]
+ },
+ {
+  "model": "moshi",
+  "added": "2024-10-16",
+  "doc": true,
+  "arxiv": "2410.00037",
+  "all_ids": [
+   "2410.00037"
+  ]
+ },
+ {
+  "model": "glm",
+  "added": "2024-10-18",
+  "doc": true,
+  "arxiv": "2406.12793",
+  "all_ids": [
+   "2406.12793"
+  ]
+ },
+ {
+  "model": "olmo2",
+  "added": "2024-11-25",
+  "doc": true,
+  "arxiv": "2501.00656",
+  "all_ids": [
+   "2501.00656"
+  ]
+ },
+ {
+  "model": "aria",
+  "added": "2024-12-06",
+  "doc": true,
+  "arxiv": "2410.05993",
+  "all_ids": [
+   "2410.05993"
+  ]
+ },
+ {
+  "model": "cohere2",
+  "added": "2024-12-13",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "bamba",
+  "added": "2024-12-19",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "diffllama",
+  "added": "2025-01-07",
+  "doc": true,
+  "arxiv": "2410.05258",
+  "all_ids": [
+   "2410.05258"
+  ]
+ },
+ {
+  "model": "emu3",
+  "added": "2025-01-10",
+  "doc": true,
+  "arxiv": "2409.18869",
+  "all_ids": [
+   "2409.18869"
+  ]
+ },
+ {
+  "model": "helium",
+  "added": "2025-01-13",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "zamba2",
+  "added": "2025-01-27",
+  "doc": true,
+  "arxiv": "2411.15242",
+  "all_ids": [
+   "2411.15242"
+  ]
+ },
+ {
+  "model": "granitemoeshared",
+  "added": "2025-02-14",
+  "doc": true,
+  "arxiv": "2408.13359",
+  "all_ids": [
+   "2408.13359"
+  ]
+ },
+ {
+  "model": "gemma3",
+  "added": "2025-03-12",
+  "doc": true,
+  "arxiv": "2503.19786",
+  "all_ids": [
+   "2503.19786"
+  ]
+ },
+ {
+  "model": "phi4_multimodal",
+  "added": "2025-03-25",
+  "doc": true,
+  "arxiv": "2503.01743",
+  "all_ids": [
+   "2503.01743"
+  ]
+ },
+ {
+  "model": "deepseek_v3",
+  "added": "2025-03-28",
+  "doc": true,
+  "arxiv": "2412.19437",
+  "all_ids": [
+   "2412.19437"
+  ]
+ },
+ {
+  "model": "qwen3",
+  "added": "2025-03-31",
+  "doc": true,
+  "arxiv": "2505.09388",
+  "all_ids": [
+   "2505.09388"
+  ]
+ },
+ {
+  "model": "qwen3_moe",
+  "added": "2025-03-31",
+  "doc": true,
+  "arxiv": "2505.09388",
+  "all_ids": [
+   "2505.09388"
+  ]
+ },
+ {
+  "model": "llama4",
+  "added": "2025-04-05",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "glm4",
+  "added": "2025-04-09",
+  "doc": true,
+  "arxiv": "2406.12793",
+  "all_ids": [
+   "2406.12793"
+  ]
+ },
+ {
+  "model": "bitnet",
+  "added": "2025-04-28",
+  "doc": true,
+  "arxiv": "2504.12285",
+  "all_ids": [
+   "2504.12285"
+  ]
+ },
+ {
+  "model": "granitemoehybrid",
+  "added": "2025-05-05",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "csm",
+  "added": "2025-05-07",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "falcon_h1",
+  "added": "2025-05-21",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "minimax",
+  "added": "2025-06-04",
+  "doc": true,
+  "arxiv": "2501.08313",
+  "all_ids": [
+   "2501.08313"
+  ]
+ },
+ {
+  "model": "arcee",
+  "added": "2025-06-24",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "dots1",
+  "added": "2025-06-25",
+  "doc": true,
+  "arxiv": "2506.05767",
+  "all_ids": [
+   "2506.05767"
+  ]
+ },
+ {
+  "model": "smollm3",
+  "added": "2025-06-25",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "gemma3n",
+  "added": "2025-06-26",
+  "doc": true,
+  "arxiv": "2411.07501",
+  "all_ids": [
+   "2411.07501",
+   "2310.07707",
+   "2506.06644",
+   "2303.01037"
+  ]
+ },
+ {
+  "model": "doge",
+  "added": "2025-07-08",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "deepseek_v2",
+  "added": "2025-07-09",
+  "doc": true,
+  "arxiv": "2405.04434",
+  "all_ids": [
+   "2405.04434"
+  ]
+ },
+ {
+  "model": "lfm2",
+  "added": "2025-07-10",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "ernie4_5",
+  "added": "2025-07-21",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "ernie4_5_moe",
+  "added": "2025-07-21",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "glm4_moe",
+  "added": "2025-07-21",
+  "doc": true,
+  "arxiv": "2508.06471",
+  "all_ids": [
+   "2508.06471"
+  ]
+ },
+ {
+  "model": "xlstm",
+  "added": "2025-07-25",
+  "doc": true,
+  "arxiv": "2405.04517",
+  "all_ids": [
+   "2405.04517"
+  ]
+ },
+ {
+  "model": "exaone4",
+  "added": "2025-07-26",
+  "doc": true,
+  "arxiv": "2507.11407",
+  "all_ids": [
+   "2507.11407"
+  ]
+ },
+ {
+  "model": "gpt_oss",
+  "added": "2025-08-05",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "kosmos2_5",
+  "added": "2025-08-19",
+  "doc": true,
+  "arxiv": "2309.11419",
+  "all_ids": [
+   "2309.11419"
+  ]
+ },
+ {
+  "model": "hunyuan_v1_dense",
+  "added": "2025-08-22",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "hunyuan_v1_moe",
+  "added": "2025-08-22",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "seed_oss",
+  "added": "2025-08-22",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "apertus",
+  "added": "2025-08-28",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "qwen3_next",
+  "added": "2025-09-10",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "ministral",
+  "added": "2025-09-11",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "vaultgemma",
+  "added": "2025-09-12",
+  "doc": true,
+  "arxiv": "1607.00133",
+  "all_ids": [
+   "1607.00133"
+  ]
+ },
+ {
+  "model": "olmo3",
+  "added": "2025-09-16",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "longcat_flash",
+  "added": "2025-09-17",
+  "doc": true,
+  "arxiv": "2509.01322",
+  "all_ids": [
+   "2509.01322"
+  ]
+ },
+ {
+  "model": "flex_olmo",
+  "added": "2025-09-18",
+  "doc": true,
+  "arxiv": "2507.07024",
+  "all_ids": [
+   "2507.07024"
+  ]
+ },
+ {
+  "model": "blt",
+  "added": "2025-09-19",
+  "doc": true,
+  "arxiv": "2412.09871",
+  "all_ids": [
+   "2412.09871"
+  ]
+ },
+ {
+  "model": "lfm2_moe",
+  "added": "2025-10-07",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "cwm",
+  "added": "2025-10-09",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "nanochat",
+  "added": "2025-11-27",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "afmoe",
+  "added": "2025-11-29",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "ministral3",
+  "added": "2025-12-01",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "jais2",
+  "added": "2025-12-17",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "minimax_m2",
+  "added": "2026-01-09",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "glm4_moe_lite",
+  "added": "2026-01-13",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "solar_open",
+  "added": "2026-01-22",
+  "doc": true,
+  "arxiv": "2601.07022",
+  "all_ids": [
+   "2601.07022"
+  ]
+ },
+ {
+  "model": "youtu",
+  "added": "2026-01-28",
+  "doc": true,
+  "arxiv": "2512.24618",
+  "all_ids": [
+   "2512.24618"
+  ]
+ },
+ {
+  "model": "exaone_moe",
+  "added": "2026-02-04",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "glm_moe_dsa",
+  "added": "2026-02-09",
+  "doc": true,
+  "arxiv": "2603.12201",
+  "all_ids": [
+   "2603.12201",
+   "2602.15763"
+  ]
+ },
+ {
+  "model": "qwen3_5",
+  "added": "2026-02-09",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "qwen3_5_moe",
+  "added": "2026-02-09",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "olmo_hybrid",
+  "added": "2026-02-26",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "nemotron_h",
+  "added": "2026-03-03",
+  "doc": true,
+  "arxiv": "2504.03624",
+  "all_ids": [
+   "2504.03624"
+  ]
+ },
+ {
+  "model": "mistral4",
+  "added": "2026-03-16",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "gemma4",
+  "added": "2026-04-02",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "hy_v3",
+  "added": "2026-04-22",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "laguna",
+  "added": "2026-04-28",
+  "doc": true,
+  "arxiv": "2408.15664",
+  "all_ids": [
+   "2408.15664"
+  ]
+ },
+ {
+  "model": "deepseek_v4",
+  "added": "2026-05-02",
+  "doc": true,
+  "arxiv": "2606.19348",
+  "all_ids": [
+   "2606.19348"
+  ]
+ },
+ {
+  "model": "gemma4_assistant",
+  "added": "2026-05-05",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "hyperclovax",
+  "added": "2026-05-08",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "hrm_text",
+  "added": "2026-05-18",
+  "doc": true,
+  "arxiv": "2506.21734",
+  "all_ids": [
+   "2506.21734"
+  ]
+ },
+ {
+  "model": "cohere2_moe",
+  "added": "2026-05-20",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "mellum",
+  "added": "2026-05-28",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "gemma4_unified",
+  "added": "2026-06-03",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "gemma4_unified_assistant",
+  "added": "2026-06-03",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "deepseek_v32",
+  "added": "2026-06-10",
+  "doc": true,
+  "arxiv": "2512.02556",
+  "all_ids": [
+   "2512.02556"
+  ]
+ },
+ {
+  "model": "minimax_m3_vl",
+  "added": "2026-06-12",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "minicpm3",
+  "added": "2026-06-22",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "mimo_v2_flash",
+  "added": "2026-06-30",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "zaya",
+  "added": "2026-07-01",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "inkling",
+  "added": "2026-07-15",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "axk1",
+  "added": "2026-07-23",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "axk2",
+  "added": "2026-07-24",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "granite_swa",
+  "added": "2026-07-29",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "granitemoe_swa",
+  "added": "2026-07-29",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "cohere_compass",
+  "added": "2026-08-10",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "qwen4_exp",
+  "added": "2026-08-26",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "kimi_linear",
+  "added": "2026-09-04",
+  "doc": true,
+  "arxiv": "2510.26692",
+  "all_ids": [
+   "2510.26692",
+   "2412.06464"
+  ]
+ },
+ {
+  "model": "hy_v4",
+  "added": "2026-09-07",
+  "doc": true,
+  "arxiv": "2603.12201",
+  "all_ids": [
+   "2603.12201"
+  ]
+ },
+ {
+  "model": "kolibri1",
+  "added": "2026-10-12",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "bailing_hybrid",
+  "added": "2026-10-13",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "beam",
+  "added": "2026-10-16",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "flint",
+  "added": "2026-10-21",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "lfm3",
+  "added": "2026-11-05",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "inkling2",
+  "added": "2026-11-11",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "dots3_note",
+  "added": "2026-11-12",
+  "doc": true,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "blenderbot_small",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "kosmos2",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "megatron_bert",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "modernbert_decoder",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "roberta_prelayernorm",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "xlm_roberta",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ },
+ {
+  "model": "xlm_roberta_xl",
+  "added": null,
+  "doc": false,
+  "arxiv": null,
+  "all_ids": []
+ }
+]

@@ -1,0 +1,65 @@
+{
+ "arxiv": "2204.06745",
+ "resolution": {
+  "fields": [
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "It consists of data from 22 data sources, coarsely broken down into 5 categories",
+    "page": 4,
+    "reason": "Sources and five coarse categories are listed, but upsampling is mentioned without proportions, so the mixture cannot be reconstructed (not FULL) and disclosure is not NONE."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "we follow Wang and Komatsuzaki (2021) and instead apply it only to the first 25% of embedding vector dimensions",
+    "page": 3,
+    "reason": "RoPE is cited to Su et al. (2021) and the 25% partial application is explicitly following Wang and Komatsuzaki, not stated as the authors' own novelty."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "In Mesh Transformer JAX (Wang, 2021), this led to a 15% throughput increase, while having comparable loss curves",
+    "page": 3,
+    "reason": "Parallel attention and feed-forward is presented as a known efficiency choice from Wang (2021)/Mesh Transformer JAX, not as a new contribution of this paper."
+   },
+   {
+    "item_id": "A_only2",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "For the Feed-Forward output layers before the residuals, we used the initialization scheme introduced in Wang (2021)",
+    "page": 3,
+    "reason": "Both inits are attributed to prior work (Wang 2021 and Nguyen and Salazar 2019); the authors do not claim the scheme as their own."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "A_only2",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 6949,
+   "outputTokens": 3162,
+   "totalTokens": 10111,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

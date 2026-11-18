@@ -1,0 +1,115 @@
+{
+ "arxiv": "2306.11644",
+ "model": "phi",
+ "coding": {
+  "note": "The report releases phi-1 and describes phi-1-base and phi-1-small. Claims are restricted to the model introduction and substantive contribution statements in the abstract/introduction; section pointers to evaluation and contamination studies are not treated as explicit novelty claims. No novel ARCH or TRAIN contribution is asserted; the architecture and training are described as conventional. Seeds are not reported: checkpoints, different model sizes, and pruning experiments are not independent-seed counts. Comparator evaluation is MIXED across the report: Table 1 uses self-reported scores, whereas Table 2 reports the authors' new evaluation of competing models. Data disclosure is PARTIAL despite source categories and approximate quantities because synthetic-generation details are explicitly withheld. Comparator names are capped at 15, omitting some redundant size/prompt variants. The dedicated evaluation-problem team is not evidence of independent external model evaluation.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "We use self-reported scores whenever available. Despite being trained",
+   "page": 2
+  },
+  "claims": [
+   {
+    "quote": "We introduce phi-1, a new large language model for code, with significantly smaller size than",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce phi-1, a substantially smaller code language model with competitive benchmark performance.",
+    "page": 1,
+    "category": "SCALE",
+    "ablation_page": 0
+   },
+   {
+    "quote": "In this work we go beyond the initial foray of Eldan and Li to show that high quality\n  data can even improve the SOTA of large language models (LLMs), while dramatically reducing the\n  dataset size and training compute.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Use high-quality filtered and synthetic textbook-style data to achieve strong code-model performance with substantially less data and compute.",
+    "page": 1,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "It also displays surprising emergent\n  properties compared to phi-1-base, our model before our finetuning stage on a dataset of coding\n  exercises,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Finetuning on coding exercises yields surprising emergent capabilities relative to the pretrained base model.",
+    "page": 1,
+    "category": "POST",
+    "ablation_page": 0
+   },
+   {
+    "quote": "in particular we confirm the hypothesis that the number\nof parameters plays a key role in emergence",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Compare phi-1 with the same-pipeline 350M-parameter phi-1-small to support the role of parameter count in capability emergence.",
+    "page": 2,
+    "category": "SCALE",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "phi-1 is a Transformer-based model with 1.3B parameters, trained for 4 days on\n  8 A100s,",
+   "page": 1
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We release the model for usage and evaluation by the broader\ncommunity, but omit some details of the synthetic data generation, for proprietary reasons.",
+   "page": 2
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "for roughly 8 passes over 7B tokens (slightly over 50B total tokens seen) followed by finetuning on less than\n200M tokens.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "See Table 2 for our results with phi-1 and competing models.",
+   "page": 12
+  },
+  "renames": [],
+  "comparators": [
+   "Codex-300M",
+   "Codex-12B",
+   "CodeGen-Mono-350M",
+   "CodeGen-Mono-16.1B",
+   "PaLM-Coder",
+   "CodeGeeX",
+   "GPT-3.5",
+   "SantaCoder",
+   "GPT-4",
+   "Replit",
+   "Replit-Finetuned",
+   "CodeGen2-7B",
+   "StarCoder",
+   "PaLM 2-S",
+   "WizardCoder"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "dac8544ec2d48591d80bc1b893e06eca1dfbf660c43cf0faa31faa02e396f0b9",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1343,
+   "totalTokens": 24196,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 22721
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:23:01+00:00"
+ }
+}

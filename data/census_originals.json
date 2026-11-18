@@ -1,0 +1,3852 @@
+[
+ {
+  "id": "openai-community/gpt2",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 33264897
+ },
+ {
+  "id": "facebook/opt-125m",
+  "created": "2022-05-11T08:25:17.000Z",
+  "class": "OPTForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 4604588
+ },
+ {
+  "id": "EleutherAI/pythia-160m",
+  "created": "2023-02-08T19:25:46.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 3505550
+ },
+ {
+  "id": "Qwen/Qwen3-32B",
+  "created": "2025-04-27T03:52:59.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 3145695
+ },
+ {
+  "id": "trl-internal-testing/tiny-Qwen3ForCausalLM",
+  "created": "2025-05-05T18:41:16.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2932322
+ },
+ {
+  "id": "Qwen/Qwen3-4B-Instruct-2507",
+  "created": "2025-08-05T10:58:03.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2621624
+ },
+ {
+  "id": "HuggingFaceTB/SmolLM2-135M",
+  "created": "2024-10-31T00:46:04.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2491411
+ },
+ {
+  "id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+  "created": "2024-11-25T15:06:15.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2356442
+ },
+ {
+  "id": "zai-org/GLM-5.3",
+  "created": "2026-08-25T06:42:50.000Z",
+  "class": "GlmMoeDsaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1853368
+ },
+ {
+  "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "created": "2025-07-31T07:04:55.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1768086
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1",
+  "created": "2025-01-20T03:46:07.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1653912
+ },
+ {
+  "id": "ornith-ai/Ornith-1.0-35B",
+  "created": "2026-06-21T03:30:07.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 1477105
+ },
+ {
+  "id": "distilbert/distilgpt2",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1438177
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "created": "2025-12-04T03:37:11.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1417435
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V3",
+  "created": "2024-12-25T12:52:23.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1413463
+ },
+ {
+  "id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "created": "2023-12-11T13:18:44.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1296636
+ },
+ {
+  "id": "zai-org/GLM-5",
+  "created": "2026-02-11T04:55:46.000Z",
+  "class": "GlmMoeDsaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1240185
+ },
+ {
+  "id": "zai-org/GLM-4.5-Air",
+  "created": "2025-07-20T03:25:55.000Z",
+  "class": "Glm4MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1167675
+ },
+ {
+  "id": "Qwen/Qwen2.5-0.5B",
+  "created": "2024-09-15T12:15:39.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 1163625
+ },
+ {
+  "id": "ornith-ai/Ornith-1.5-9B-NVFP4",
+  "created": "2026-08-26T06:32:35.000Z",
+  "class": "Qwen3_5ForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 1123712
+ },
+ {
+  "id": "zai-org/GLM-4.7-Flash",
+  "created": "2026-01-19T06:28:10.000Z",
+  "class": "Glm4MoeLiteForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1092889
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2.5",
+  "created": "2026-02-12T06:05:24.000Z",
+  "class": "MiniMaxM2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1078125
+ },
+ {
+  "id": "sshleifer/tiny-gpt2",
+  "created": "2022-03-02T23:29:05.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1046077
+ },
+ {
+  "id": "tencent/Hy3",
+  "created": "2026-07-02T13:23:54.000Z",
+  "class": "HYV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1044765
+ },
+ {
+  "id": "openai-community/gpt2-large",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1043366
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "created": "2026-06-03T14:50:04.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1033648
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B",
+  "created": "2026-09-06T11:12:19.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1032832
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "created": "2026-08-01T06:55:21.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 995986
+ },
+ {
+  "id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "created": "2023-12-30T06:27:30.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 957334
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "created": "2026-03-10T18:32:14.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 916254
+ },
+ {
+  "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "created": "2025-07-28T07:31:27.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 836591
+ },
+ {
+  "id": "ornith-ai/Ornith-1.0-9B",
+  "created": "2026-06-21T04:27:07.000Z",
+  "class": "Qwen3_5ForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 818873
+ },
+ {
+  "id": "zai-org/GLM-5.1",
+  "created": "2026-04-03T09:28:47.000Z",
+  "class": "GlmMoeDsaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 789840
+ },
+ {
+  "id": "poolside/Laguna-XS.2",
+  "created": "2026-04-23T20:50:45.000Z",
+  "class": "LagunaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 764375
+ },
+ {
+  "id": "poolside/Laguna-M.1",
+  "created": "2026-06-15T09:17:53.000Z",
+  "class": "LagunaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "?",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 728375
+ },
+ {
+  "id": "poolside/Laguna-XS-2.1",
+  "created": "2026-06-20T14:14:26.000Z",
+  "class": "LagunaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 615848
+ },
+ {
+  "id": "Qwen/Qwen3-1.7B-Base",
+  "created": "2025-04-28T05:05:55.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 603304
+ },
+ {
+  "id": "EleutherAI/pythia-70m-deduped",
+  "created": "2023-02-13T16:01:41.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 602393
+ },
+ {
+  "id": "bigscience/bloomz-560m",
+  "created": "2022-10-08T16:14:42.000Z",
+  "class": "BloomForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 594663
+ },
+ {
+  "id": "rinna/japanese-gpt-neox-small",
+  "created": "2022-08-31T05:58:25.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 587290
+ },
+ {
+  "id": "Qwen/Qwen3-8B-Base",
+  "created": "2025-04-28T05:03:58.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 582913
+ },
+ {
+  "id": "Qwen/Qwen3-0.6B-Base",
+  "created": "2025-04-28T05:09:54.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 572103
+ },
+ {
+  "id": "trl-internal-testing/tiny-Qwen3MoeForCausalLM",
+  "created": "2025-07-09T14:33:30.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 552794
+ },
+ {
+  "id": "ornith-ai/Ornith-1.5-9B",
+  "created": "2026-08-18T06:20:12.000Z",
+  "class": "Qwen3_5ForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 542632
+ },
+ {
+  "id": "Qwen/Qwen2.5-1.5B",
+  "created": "2024-09-15T12:16:50.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 529908
+ },
+ {
+  "id": "Qwen/Qwen2.5-7B",
+  "created": "2024-09-15T12:17:40.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 528709
+ },
+ {
+  "id": "poolside/Laguna-S-2.1",
+  "created": "2026-07-13T13:58:35.000Z",
+  "class": "LagunaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 511510
+ },
+ {
+  "id": "llamafactory/tiny-random-Llama-3",
+  "created": "2024-06-07T17:30:09.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 490326
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B-DSpark",
+  "created": "2026-09-06T11:33:35.000Z",
+  "class": "Qwen3DSparkModel",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 459126
+ },
+ {
+  "id": "EleutherAI/gpt-neo-125m",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPTNeoForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 457990
+ },
+ {
+  "id": "ibm-granite/granite-4.1-3b",
+  "created": "2026-04-06T13:18:12.000Z",
+  "class": "GraniteForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 456946
+ },
+ {
+  "id": "mistralai/Mistral-7B-v0.1",
+  "created": "2023-09-20T13:03:50.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 441952
+ },
+ {
+  "id": "Qwen/Qwen3-4B-Base",
+  "created": "2025-04-28T05:04:27.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 435359
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "created": "2025-05-29T11:07:47.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 433173
+ },
+ {
+  "id": "Qwen/Qwen3-Coder-Next",
+  "created": "2026-01-30T15:08:18.000Z",
+  "class": "Qwen3NextForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 423187
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "created": "2025-01-20T09:04:18.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 418932
+ },
+ {
+  "id": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+  "created": "2024-05-20T03:38:40.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 418197
+ },
+ {
+  "id": "IlyaGusev/saiga_llama3_8b",
+  "created": "2024-04-18T18:25:25.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 415341
+ },
+ {
+  "id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "created": "2024-12-01T13:15:33.000Z",
+  "class": "ExaoneForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 402209
+ },
+ {
+  "id": "bigscience/bloom-560m",
+  "created": "2022-05-19T11:51:24.000Z",
+  "class": "BloomForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 389178
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  "created": "2025-01-20T09:19:00.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 359835
+ },
+ {
+  "id": "microsoft/Phi-3.5-mini-instruct",
+  "created": "2024-08-16T20:48:26.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 352150
+ },
+ {
+  "id": "Qwen/Qwen3-4B-Thinking-2507",
+  "created": "2025-08-05T11:02:27.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 338489
+ },
+ {
+  "id": "microsoft/Phi-4-mini-instruct",
+  "created": "2025-02-19T01:00:58.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 332457
+ },
+ {
+  "id": "erwanf/gpt2-mini",
+  "created": "2024-06-23T13:43:07.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 329216
+ },
+ {
+  "id": "trl-internal-testing/tiny-Phi3ForCausalLM-3",
+  "created": "2026-04-14T16:40:46.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 328727
+ },
+ {
+  "id": "zai-org/GLM-5.2",
+  "created": "2026-06-16T07:39:20.000Z",
+  "class": "GlmMoeDsaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 316008
+ },
+ {
+  "id": "ornith-ai/Ornith-1.5-122B",
+  "created": "2026-10-16T07:14:27.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 312882
+ },
+ {
+  "id": "Qwen/Qwen3-235B-A22B",
+  "created": "2025-04-27T03:53:46.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 311875
+ },
+ {
+  "id": "microsoft/Phi-3-mini-4k-instruct",
+  "created": "2024-04-22T16:18:17.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 307635
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "created": "2025-01-20T09:16:14.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 303037
+ },
+ {
+  "id": "Qwen/Qwen2-7B",
+  "created": "2024-06-04T13:35:27.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 298203
+ },
+ {
+  "id": "ornith-ai/Ornith-1.5-35B-A3B",
+  "created": "2026-08-18T06:24:38.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 297519
+ },
+ {
+  "id": "trl-internal-testing/tiny-Gemma2ForCausalLM",
+  "created": "2024-11-25T15:05:27.000Z",
+  "class": "Gemma2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-GELU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 291647
+ },
+ {
+  "id": "EleutherAI/pythia-14m",
+  "created": "2026-02-24T21:28:14.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 291557
+ },
+ {
+  "id": "XLabs-AI/xflux_text_encoders",
+  "created": "2024-08-11T23:53:08.000Z",
+  "class": "T5EncoderModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 286721
+ },
+ {
+  "id": "LiquidAI/LFM2.5-230M-Base",
+  "created": "2026-06-16T13:45:20.000Z",
+  "class": "Lfm2ForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:conv+full_attention"
+  ],
+  "downloads": 275312
+ },
+ {
+  "id": "EleutherAI/gpt-neox-20b",
+  "created": "2022-04-07T20:28:29.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gated-GELU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 272732
+ },
+ {
+  "id": "h2oai/h2o-danube3-500m-chat",
+  "created": "2024-07-04T12:49:13.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 269375
+ },
+ {
+  "id": "ornith-ai/Ornith-1.5-397B",
+  "created": "2026-08-18T06:34:59.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 255775
+ },
+ {
+  "id": "moonshotai/Kimi-K2-Instruct",
+  "created": "2025-07-11T00:55:12.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 248200
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2.7",
+  "created": "2026-04-09T03:37:12.000Z",
+  "class": "MiniMaxM2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 244043
+ },
+ {
+  "id": "trl-internal-testing/tiny-random-LlamaForCausalLM",
+  "created": "2023-03-29T07:11:13.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 242253
+ },
+ {
+  "id": "microsoft/Phi-3-mini-128k-instruct",
+  "created": "2024-04-22T16:26:23.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 239865
+ },
+ {
+  "id": "microsoft/phi-4",
+  "created": "2024-12-11T11:47:29.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 236972
+ },
+ {
+  "id": "openbmb/MiniCPM5-1B",
+  "created": "2026-05-21T07:27:59.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 232073
+ },
+ {
+  "id": "shibing624/macbert4csc-base-chinese",
+  "created": "2022-03-02T23:29:05.000Z",
+  "class": "BertForMaskedLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 230326
+ },
+ {
+  "id": "roneneldan/TinyStories-1M",
+  "created": "2023-05-12T19:01:50.000Z",
+  "class": "GPTNeoForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 228845
+ },
+ {
+  "id": "RadixArk/Kimi-K3-DSpark",
+  "created": "2026-07-27T10:51:18.000Z",
+  "class": "DSparkDraftModel",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 228729
+ },
+ {
+  "id": "trl-internal-testing/tiny-GptOssForCausalLM",
+  "created": "2025-08-05T16:11:54.000Z",
+  "class": "GptOssForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 226696
+ },
+ {
+  "id": "Voicelab/vlt5-base-keywords",
+  "created": "2022-09-27T12:13:59.000Z",
+  "class": "T5ForConditionalGeneration",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 221793
+ },
+ {
+  "id": "modularai/SmolLM-135M-Instruct-FP32",
+  "created": "2025-07-31T03:43:40.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 221017
+ },
+ {
+  "id": "Qwen/Qwen2.5-3B",
+  "created": "2024-09-15T12:17:03.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 207299
+ },
+ {
+  "id": "facebook/opt-350m",
+  "created": "2022-05-11T08:25:39.000Z",
+  "class": "OPTForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 187660
+ },
+ {
+  "id": "ornith-ai/Ornith-1.0-397B",
+  "created": "2026-06-23T21:31:47.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 186525
+ },
+ {
+  "id": "microsoft/phi-2",
+  "created": "2023-12-13T21:19:59.000Z",
+  "class": "PhiForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gated-GELU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 182583
+ },
+ {
+  "id": "HuggingFaceM4/tiny-random-LlamaForCausalLM",
+  "created": "2023-03-16T23:18:46.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 182094
+ },
+ {
+  "id": "peft-internal-testing/tiny-random-OPTForCausalLM",
+  "created": "2025-11-13T13:22:55.000Z",
+  "class": "OPTForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 174290
+ },
+ {
+  "id": "laion/delphi-1e22-9_7Bparams-160Btokens-base-wc386k_lr1e5-sft",
+  "created": "2026-06-19T17:07:05.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 173446
+ },
+ {
+  "id": "Cactus-Compute/needle3",
+  "created": "2026-09-16T06:41:36.000Z",
+  "class": "NeedleForToolCalling",
+  "sig": [
+   "?",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 169478
+ },
+ {
+  "id": "openai-community/gpt2-medium",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 159622
+ },
+ {
+  "id": "Qwen/Qwen2-0.5B",
+  "created": "2024-05-31T08:38:11.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 156977
+ },
+ {
+  "id": "datificate/gpt2-small-spanish",
+  "created": "2022-03-02T23:29:05.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 156136
+ },
+ {
+  "id": "Qwen/Qwen1.5-1.8B-Chat",
+  "created": "2024-01-30T17:20:21.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 155012
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V3-0324",
+  "created": "2025-03-24T09:28:22.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 151437
+ },
+ {
+  "id": "fla-hub/transformer-1.3B-100B",
+  "created": "2024-04-01T16:57:11.000Z",
+  "class": "TransformerForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 151164
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "created": "2025-01-20T09:18:27.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 150510
+ },
+ {
+  "id": "vllm-project/tiny-random-LlamaForCausalLM",
+  "created": "2025-04-29T21:47:13.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 149390
+ },
+ {
+  "id": "echarlaix/tiny-mpt-random-remote-code",
+  "created": "2024-03-25T10:38:54.000Z",
+  "class": "MPTForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 144897
+ },
+ {
+  "id": "peft-internal-testing/tiny-dummy-qwen2",
+  "created": "2024-07-04T10:15:41.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 142885
+ },
+ {
+  "id": "microsoft/DialoGPT-medium",
+  "created": "2022-03-02T23:29:05.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 140236
+ },
+ {
+  "id": "EleutherAI/pythia-160m-deduped",
+  "created": "2023-02-08T21:50:19.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gelu",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 139516
+ },
+ {
+  "id": "HuggingFaceTB/SmolLM2-360M",
+  "created": "2024-10-31T00:43:11.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 139095
+ },
+ {
+  "id": "typhoon-ai/typhoon2.5-qwen3-4b",
+  "created": "2025-09-23T09:29:53.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 139042
+ },
+ {
+  "id": "bigscience/bloom",
+  "created": "2022-05-19T11:53:33.000Z",
+  "class": "BloomForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 9306
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-0528",
+  "created": "2025-05-28T09:46:42.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 120415
+ },
+ {
+  "id": "tiiuae/falcon-40b",
+  "created": "2023-05-24T12:08:30.000Z",
+  "class": "FalconForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 10826
+ },
+ {
+  "id": "zai-org/GLM-4.7",
+  "created": "2025-12-22T07:45:52.000Z",
+  "class": "Glm4MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 47139
+ },
+ {
+  "id": "XingChen-AGI/Xing4.0-29B-A4B",
+  "created": "2026-09-16T06:44:40.000Z",
+  "class": "Xing4_0ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 5372
+ },
+ {
+  "id": "moonshotai/Kimi-K2-Thinking",
+  "created": "2025-11-04T08:25:31.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 54497
+ },
+ {
+  "id": "EleutherAI/gpt-j-6b",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPTJForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 61876
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2",
+  "created": "2025-10-22T13:45:10.000Z",
+  "class": "MiniMaxM2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 108430
+ },
+ {
+  "id": "zai-org/GLM-4.5",
+  "created": "2025-07-20T03:25:36.000Z",
+  "class": "Glm4MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 115159
+ },
+ {
+  "id": "RecursiveSI/flint",
+  "created": "2026-10-21T14:20:58.000Z",
+  "class": "FlintForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 53207
+ },
+ {
+  "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+  "created": "2025-07-22T14:52:38.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 59119
+ },
+ {
+  "id": "Qwen/Qwen3.8-2.4T-A95B",
+  "created": "2026-08-08T01:50:52.000Z",
+  "class": "Qwen3_5MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 28354
+ },
+ {
+  "id": "microsoft/phi-1_5",
+  "created": "2023-09-10T04:03:46.000Z",
+  "class": "PhiForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gated-GELU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 50855
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2.1",
+  "created": "2025-12-20T05:45:05.000Z",
+  "class": "MiniMaxM2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 13792
+ },
+ {
+  "id": "01-ai/Yi-34B",
+  "created": "2023-11-01T07:03:50.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 11665
+ },
+ {
+  "id": "dphn/dolphin-2.5-mixtral-8x7b",
+  "created": "2023-12-14T00:45:47.000Z",
+  "class": "MixtralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1860
+ },
+ {
+  "id": "zai-org/GLM-4.6",
+  "created": "2025-09-29T18:22:51.000Z",
+  "class": "Glm4MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 27684
+ },
+ {
+  "id": "ai21labs/Jamba-v0.1",
+  "created": "2024-03-28T12:32:22.000Z",
+  "class": "JambaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4482
+ },
+ {
+  "id": "tiiuae/falcon-40b-instruct",
+  "created": "2023-05-25T10:14:36.000Z",
+  "class": "FalconForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 11456
+ },
+ {
+  "id": "openchat/openchat_3.5",
+  "created": "2023-10-30T05:59:34.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 787
+ },
+ {
+  "id": "tiiuae/falcon-7b",
+  "created": "2023-04-24T16:36:24.000Z",
+  "class": "FalconForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 122933
+ },
+ {
+  "id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "created": "2025-09-09T15:40:56.000Z",
+  "class": "Qwen3NextForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 128641
+ },
+ {
+  "id": "tiiuae/falcon-7b-instruct",
+  "created": "2023-04-25T06:21:01.000Z",
+  "class": "FalconForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 33979
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V3.1-Base",
+  "created": "2025-08-19T10:01:00.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 5838
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Zero",
+  "created": "2025-01-20T03:35:48.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4490
+ },
+ {
+  "id": "microsoft/Phi-3-vision-128k-instruct",
+  "created": "2024-05-19T15:07:39.000Z",
+  "class": "Phi3VForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 35208
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "created": "2025-01-20T09:09:42.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 77220
+ },
+ {
+  "id": "stabilityai/StableBeluga2",
+  "created": "2023-07-20T15:09:28.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 908
+ },
+ {
+  "id": "nex-agi/Nex-N2.5-mini",
+  "created": "2026-09-08T05:08:43.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 2901
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-Prover-V2-671B",
+  "created": "2025-04-30T06:14:35.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1832
+ },
+ {
+  "id": "baichuan-inc/Baichuan-7B",
+  "created": "2023-06-13T07:47:16.000Z",
+  "class": "BaiChuanForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 34914
+ },
+ {
+  "id": "sapientinc/HRM-Text-1B",
+  "created": "2026-05-17T15:13:02.000Z",
+  "class": "HrmTextForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 3478
+ },
+ {
+  "id": "Phind/Phind-CodeLlama-34B-v2",
+  "created": "2023-08-28T21:29:09.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 855
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+  "created": "2025-01-20T09:13:33.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 25344
+ },
+ {
+  "id": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+  "created": "2025-09-16T06:56:49.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 12481
+ },
+ {
+  "id": "jinaai/ReaderLM-v2",
+  "created": "2025-01-13T02:44:23.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1255
+ },
+ {
+  "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "created": "2025-07-21T06:46:56.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 74357
+ },
+ {
+  "id": "Qwen/Qwen-7B-Chat",
+  "created": "2023-08-03T03:01:31.000Z",
+  "class": "QWenLMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 50242
+ },
+ {
+  "id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+  "created": "2025-09-08T14:18:31.000Z",
+  "class": "Ernie4_5_MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 64420
+ },
+ {
+  "id": "tencent/Hunyuan-A13B-Instruct",
+  "created": "2025-06-25T12:39:52.000Z",
+  "class": "HunYuanMoEV1ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 70361
+ },
+ {
+  "id": "moonshotai/Kimi-K2-Instruct-0905",
+  "created": "2025-09-03T03:34:36.000Z",
+  "class": "DeepseekV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 8724
+ },
+ {
+  "id": "WizardLMTeam/WizardCoder-Python-34B-V1.0",
+  "created": "2023-08-26T03:59:07.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 415
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "created": "2026-04-27T12:52:53.000Z",
+  "class": "MiMoV2ForCausalLM",
+  "sig": [
+   "?",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 9375
+ },
+ {
+  "id": "WizardLMTeam/WizardCoder-15B-V1.0",
+  "created": "2023-06-14T10:43:19.000Z",
+  "class": "GPTBigCodeForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 983
+ },
+ {
+  "id": "upstage/Solar-Open2-250B",
+  "created": "2026-07-22T02:40:42.000Z",
+  "class": "SolarOpen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 7355
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2-Flash",
+  "created": "2025-12-16T08:47:02.000Z",
+  "class": "MiMoV2FlashForCausalLM",
+  "sig": [
+   "?",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 17933
+ },
+ {
+  "id": "PygmalionAI/pygmalion-6b",
+  "created": "2023-01-07T18:43:33.000Z",
+  "class": "GPTJForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 824
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V2.5",
+  "created": "2024-09-05T09:30:06.000Z",
+  "class": "DeepseekV2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4371
+ },
+ {
+  "id": "replit/replit-code-v1-3b",
+  "created": "2023-04-28T19:00:45.000Z",
+  "class": "MPTForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2092
+ },
+ {
+  "id": "Gustavosta/MagicPrompt-Stable-Diffusion",
+  "created": "2022-09-17T22:34:07.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 9168
+ },
+ {
+  "id": "anon8231489123/gpt4-x-alpaca-13b-native-4bit-128g",
+  "created": "2023-04-01T01:04:45.000Z",
+  "class": "LLaMAForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 619
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "created": "2024-06-14T06:23:33.000Z",
+  "class": "DeepseekV2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 87184
+ },
+ {
+  "id": "ATH-MaaS/Marco-o1",
+  "created": "2024-11-13T02:37:28.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 805
+ },
+ {
+  "id": "togethercomputer/GPT-NeoXT-Chat-Base-20B",
+  "created": "2023-03-03T00:24:29.000Z",
+  "class": "GPTNeoXForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gated-GELU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 393
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M1-80k",
+  "created": "2025-06-13T08:21:14.000Z",
+  "class": "MiniMaxM1ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 2122
+ },
+ {
+  "id": "Open-Orca/Mistral-7B-OpenOrca",
+  "created": "2023-09-29T19:18:38.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 726
+ },
+ {
+  "id": "openbmb/MiniCPM-SALA",
+  "created": "2026-02-11T07:03:05.000Z",
+  "class": "MiniCPMSALAForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 4023
+ },
+ {
+  "id": "bigcode/starcoder2-15b",
+  "created": "2024-02-20T17:58:19.000Z",
+  "class": "Starcoder2ForCausalLM",
+  "sig": [
+   "?",
+   "gated-GELU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 17428
+ },
+ {
+  "id": "gradientai/Llama-3-8B-Instruct-Gradient-1048k",
+  "created": "2024-04-29T10:36:56.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 30374
+ },
+ {
+  "id": "nex-agi/Nex-N2.5-Pro",
+  "created": "2026-09-08T11:01:41.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 1914
+ },
+ {
+  "id": "QuixiAI/WizardLM-13B-Uncensored",
+  "created": "2023-05-09T18:56:32.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 928
+ },
+ {
+  "id": "microsoft/Orca-2-13b",
+  "created": "2023-11-14T01:12:36.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1178
+ },
+ {
+  "id": "mistral-community/Mixtral-8x22B-v0.1",
+  "created": "2024-04-10T08:43:36.000Z",
+  "class": "MixtralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 345
+ },
+ {
+  "id": "InternScience/Agents-A1",
+  "created": "2026-06-22T02:22:59.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 7232
+ },
+ {
+  "id": "allenai/OLMo-7B",
+  "created": "2024-01-09T23:13:23.000Z",
+  "class": "OLMoForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 3863
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-Text-01",
+  "created": "2025-01-12T13:48:31.000Z",
+  "class": "MiniMaxText01ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 3277
+ },
+ {
+  "id": "baichuan-inc/Baichuan-13B-Chat",
+  "created": "2023-07-08T05:58:27.000Z",
+  "class": "BaichuanForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 8136
+ },
+ {
+  "id": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
+  "created": "2025-10-30T12:37:31.000Z",
+  "class": "KimiLinearForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 44661
+ },
+ {
+  "id": "jinaai/reader-lm-1.5b",
+  "created": "2024-09-06T02:56:15.000Z",
+  "class": "Qwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 600
+ },
+ {
+  "id": "deepseek-ai/deepseek-coder-33b-instruct",
+  "created": "2023-11-01T05:46:34.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 10973
+ },
+ {
+  "id": "tencent/Hunyuan-1.8B-Instruct",
+  "created": "2025-07-30T03:14:30.000Z",
+  "class": "HunYuanDenseV1ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2251
+ },
+ {
+  "id": "microsoft/Phi-3.5-MoE-instruct",
+  "created": "2024-08-17T21:34:19.000Z",
+  "class": "PhiMoEForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 21414
+ },
+ {
+  "id": "CohereLabs/North-Mini-Code-1.0",
+  "created": "2026-06-05T02:38:01.000Z",
+  "class": "Cohere2MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 8171
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny",
+  "created": "2026-08-10T02:44:06.000Z",
+  "class": "BailingMoeV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 13742
+ },
+ {
+  "id": "starvector/starvector-8b-im2svg",
+  "created": "2025-01-11T18:30:52.000Z",
+  "class": "StarVectorForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1734
+ },
+ {
+  "id": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+  "created": "2025-12-26T11:55:04.000Z",
+  "class": "ExaoneMoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 9067
+ },
+ {
+  "id": "NousResearch/Yarn-Mistral-7b-128k",
+  "created": "2023-10-31T13:15:14.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 790
+ },
+ {
+  "id": "berkeley-nest/Starling-LM-7B-alpha",
+  "created": "2023-11-25T17:42:15.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 2086
+ },
+ {
+  "id": "tencent/Hy4-preview",
+  "created": "2026-08-27T08:52:40.000Z",
+  "class": "HYV4ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 11554
+ },
+ {
+  "id": "nvidia/Llama3-ChatQA-1.5-8B",
+  "created": "2024-04-28T21:32:50.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 12567
+ },
+ {
+  "id": "inclusionAI/Ling-1T",
+  "created": "2025-10-02T13:41:55.000Z",
+  "class": "BailingMoeV2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4089
+ },
+ {
+  "id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "created": "2023-10-29T11:01:36.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 26167
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Chat",
+  "created": "2025-08-29T07:39:50.000Z",
+  "class": "LongcatFlashForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 14186
+ },
+ {
+  "id": "togethercomputer/LLaMA-2-7B-32K",
+  "created": "2023-07-26T02:19:41.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 4568
+ },
+ {
+  "id": "nvidia/Nemotron-Cascade-2-30B-A3B",
+  "created": "2026-03-18T20:57:41.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 7142
+ },
+ {
+  "id": "QuixiAI/WizardLM-7B-Uncensored",
+  "created": "2023-05-04T20:31:51.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 867
+ },
+ {
+  "id": "BioMistral/BioMistral-7B",
+  "created": "2024-02-14T11:33:32.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 9412
+ },
+ {
+  "id": "bigscience/bloomz",
+  "created": "2022-09-17T10:48:39.000Z",
+  "class": "BloomForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1096
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-1T",
+  "created": "2026-04-29T03:19:36.000Z",
+  "class": "BailingMoeV2_5ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 2672
+ },
+ {
+  "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "created": "2025-08-20T15:03:26.000Z",
+  "class": "SeedOssForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 41387
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-flash",
+  "created": "2026-04-28T03:27:56.000Z",
+  "class": "BailingMoeV2_5ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 3233
+ },
+ {
+  "id": "EleutherAI/gpt-neo-2.7B",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPTNeoForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 13666
+ },
+ {
+  "id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+  "created": "2025-09-09T15:45:31.000Z",
+  "class": "Qwen3NextForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 45136
+ },
+ {
+  "id": "upstage/Solar-Open-100B",
+  "created": "2025-12-10T01:10:35.000Z",
+  "class": "SolarOpenForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 88704
+ },
+ {
+  "id": "zai-org/GLM-4-32B-0414",
+  "created": "2025-04-07T12:53:41.000Z",
+  "class": "Glm4ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 8298
+ },
+ {
+  "id": "Sao10K/L3-8B-Stheno-v3.2",
+  "created": "2024-06-05T10:30:57.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 4496
+ },
+ {
+  "id": "maicomputer/gpt4-x-alpaca",
+  "created": "2023-03-31T13:03:46.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 151
+ },
+ {
+  "id": "vikhyatk/moondream1",
+  "created": "2024-01-20T18:10:04.000Z",
+  "class": "Moondream",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 9873
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V2-Chat",
+  "created": "2024-04-28T09:53:56.000Z",
+  "class": "DeepseekV2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 24637
+ },
+ {
+  "id": "WhiteRabbitNeo/WhiteRabbitNeo-13B-v1",
+  "created": "2023-12-17T16:26:55.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 708
+ },
+ {
+  "id": "upstage/solar-pro-preview-instruct",
+  "created": "2024-09-09T01:08:58.000Z",
+  "class": "SolarForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 4581
+ },
+ {
+  "id": "m-a-p/YuE-s1-7B-anneal-en-cot",
+  "created": "2025-01-26T16:10:21.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2899
+ },
+ {
+  "id": "stanford-crfm/BioMedLM",
+  "created": "2022-12-14T08:14:59.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1648
+ },
+ {
+  "id": "JetBrains/Mellum-4b-base",
+  "created": "2025-04-28T13:53:19.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1972
+ },
+ {
+  "id": "NousResearch/Nous-Hermes-13b",
+  "created": "2023-06-03T03:21:50.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 873
+ },
+ {
+  "id": "CarperAI/stable-vicuna-13b-delta",
+  "created": "2023-04-26T03:42:37.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 124
+ },
+ {
+  "id": "openlm-research/open_llama_13b",
+  "created": "2023-06-15T10:51:45.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 891
+ },
+ {
+  "id": "lmsys/vicuna-13b-delta-v0",
+  "created": "2023-04-03T14:38:18.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 732
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash",
+  "created": "2026-08-02T16:14:41.000Z",
+  "class": "BailingMoeV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 9155
+ },
+ {
+  "id": "amazon/MistralLite",
+  "created": "2023-10-16T00:57:56.000Z",
+  "class": "MistralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 351
+ },
+ {
+  "id": "baichuan-inc/Baichuan2-13B-Chat",
+  "created": "2023-08-29T02:30:01.000Z",
+  "class": "BaichuanForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 9524
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5",
+  "created": "2026-04-27T13:37:38.000Z",
+  "class": "MiMoV2ForCausalLM",
+  "sig": [
+   "?",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 89122
+ },
+ {
+  "id": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "created": "2026-09-01T23:01:25.000Z",
+  "class": "K2HorizonForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 14943
+ },
+ {
+  "id": "deepgrove/maple-preview",
+  "created": "2026-08-04T20:50:54.000Z",
+  "class": "MapleForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 1867
+ },
+ {
+  "id": "openbmb/MiniCPM3-4B",
+  "created": "2024-09-03T12:47:22.000Z",
+  "class": "MiniCPM3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 10287
+ },
+ {
+  "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "created": "2025-07-25T04:59:05.000Z",
+  "class": "Qwen3MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 7723
+ },
+ {
+  "id": "alpindale/WizardLM-2-8x22B",
+  "created": "2024-04-16T02:36:59.000Z",
+  "class": "MixtralForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 10946
+ },
+ {
+  "id": "georgesung/llama2_7b_chat_uncensored",
+  "created": "2023-07-20T10:45:03.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 806
+ },
+ {
+  "id": "Gryphe/MythoMax-L2-13b",
+  "created": "2023-08-10T20:35:34.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1795
+ },
+ {
+  "id": "yandex/AliceAI-Foundation-80B-A3B-Base",
+  "created": "2026-09-12T10:32:07.000Z",
+  "class": "AliceAIForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 2345
+ },
+ {
+  "id": "lmsys/vicuna-13b-delta-v1.1",
+  "created": "2023-04-12T09:47:00.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 119
+ },
+ {
+  "id": "apple/FastVLM-0.5B",
+  "created": "2025-08-25T17:04:42.000Z",
+  "class": "LlavaQwen2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 18483
+ },
+ {
+  "id": "Qwen/Qwen-7B",
+  "created": "2023-08-03T02:51:18.000Z",
+  "class": "QWenLMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 41436
+ },
+ {
+  "id": "lmsys/vicuna-7b-v1.5",
+  "created": "2023-07-29T04:42:33.000Z",
+  "class": "LlamaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 82901
+ },
+ {
+  "id": "InternScience/Sage-A1.5",
+  "created": "2026-10-15T08:34:39.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 23072
+ },
+ {
+  "id": "openai-community/gpt2-xl",
+  "created": "2022-03-02T23:29:04.000Z",
+  "class": "GPT2LMHeadModel",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 86151
+ },
+ {
+  "id": "z-lab/Qwen3.6-27B-DFlash",
+  "created": "2026-04-23T10:15:06.000Z",
+  "class": "DFlashDraftModel",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 80929
+ },
+ {
+  "id": "microsoft/Phi-3-medium-128k-instruct",
+  "created": "2024-05-07T15:27:32.000Z",
+  "class": "Phi3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 10471
+ },
+ {
+  "id": "NaiveAI/Naive-N0.5-Flash",
+  "created": "2026-09-27T14:14:32.000Z",
+  "class": "NaiveN05FlashForCausalLM",
+  "sig": [
+   "?",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 8429
+ },
+ {
+  "id": "KRAFTON/Raon-1-nano",
+  "created": "2026-10-29T05:38:14.000Z",
+  "class": "Raon1NanoForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "MLA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 806
+ },
+ {
+  "id": "baidu/ERNIE-5.5-Flash-Base",
+  "created": "2026-10-21T08:40:58.000Z",
+  "class": "Ernie5_5_MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "situ",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 3372
+ },
+ {
+  "id": "MinimaLabs/KLM-1.6",
+  "created": "2026-11-09T10:00:48.000Z",
+  "class": "KLMForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1095
+ },
+ {
+  "id": "Cactus-Compute/cactus",
+  "created": "2026-11-05T19:36:27.000Z",
+  "class": "?",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 765
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "created": "2026-10-16T18:25:29.000Z",
+  "class": "DoryForCausalLM",
+  "sig": [
+   "?",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 15034
+ },
+ {
+  "id": "Axion1-0/Axion-1.0-35B",
+  "created": "2026-10-16T07:38:43.000Z",
+  "class": "Qwen3_5MoeForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 1645
+ },
+ {
+  "id": "Teriminal-RSI/Terminal-RSI-27B",
+  "created": "2026-10-21T04:52:31.000Z",
+  "class": "Qwen3_5ForConditionalGeneration",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 2611
+ },
+ {
+  "id": "opencerebral/Boris-2",
+  "created": "2026-10-23T18:27:15.000Z",
+  "class": "Boris2ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "MHA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 206
+ },
+ {
+  "id": "reflection/Beam-1.0-501B-A23B",
+  "created": "2026-10-07T19:52:01.000Z",
+  "class": "BeamForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 13995
+ },
+ {
+  "id": "KRAFTON/Raon-1-mini-preview",
+  "created": "2026-10-21T00:14:48.000Z",
+  "class": "Raon1MiniForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "situ",
+   "?",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4643
+ },
+ {
+  "id": "LiquidAI/LFM3-1.7B-Base",
+  "created": "2026-10-26T16:28:49.000Z",
+  "class": "Lfm3ForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:conv+full_attention+sliding_attention"
+  ],
+  "downloads": 11042
+ },
+ {
+  "id": "StarpowerTechnology/WVY-Blender-5m",
+  "created": "2026-11-12T05:26:09.000Z",
+  "class": "?",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 50
+ },
+ {
+  "id": "cooler8/yejin-korean-8b-v3-base",
+  "created": "2026-10-03T02:08:25.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 485
+ },
+ {
+  "id": "ByteDance-Seed/Cola2",
+  "created": "2026-11-06T06:59:36.000Z",
+  "class": "Cola2ForConditionalGeneration",
+  "sig": [
+   "LayerNorm",
+   "gated-SiLU",
+   "RoPE",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 1166
+ },
+ {
+  "id": "inclusionAI/Ling-3.1-flash",
+  "created": "2026-10-13T11:16:41.000Z",
+  "class": "BailingMoeV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 7967
+ },
+ {
+  "id": "fastino/GLiDE-9B",
+  "created": "2026-11-01T19:36:13.000Z",
+  "class": "Qwen3_5ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:full_attention+linear_attention"
+  ],
+  "downloads": 862
+ },
+ {
+  "id": "gnani/gnani-evon-v3.3-30B-A3B",
+  "created": "2026-08-10T05:16:03.000Z",
+  "class": "NemotronHForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 64656
+ },
+ {
+  "id": "IFM/K2-Horizon-7B",
+  "created": "2026-09-01T23:14:30.000Z",
+  "class": "K2HorizonForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "?",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 31153
+ },
+ {
+  "id": "osunlp/ARLoop-1.2B",
+  "created": "2026-10-29T03:50:12.000Z",
+  "class": "ARLoopForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2453
+ },
+ {
+  "id": "digi-the-robot/Tallow",
+  "created": "2026-11-07T06:40:11.000Z",
+  "class": "?",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "?",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 739
+ },
+ {
+  "id": "8BitStudio/Sekai-1",
+  "created": "2026-11-08T00:42:36.000Z",
+  "class": "Qwen3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 479
+ },
+ {
+  "id": "Cactus-Compute/needle2",
+  "created": "2026-07-29T16:11:52.000Z",
+  "class": "NeedleForToolCalling",
+  "sig": [
+   "?",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 1748
+ },
+ {
+  "id": "baidu/ERNIE-5.5-Flash-Base-BF16",
+  "created": "2026-10-21T05:04:01.000Z",
+  "class": "Ernie5_5_MoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "situ",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 1157
+ },
+ {
+  "id": "sevren-ai/Embla1-bf16",
+  "created": "2026-11-11T09:49:43.000Z",
+  "class": "EmblaForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "?",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 5
+ },
+ {
+  "id": "Vxtzq/Crowd-v1",
+  "created": "2026-08-21T14:06:48.000Z",
+  "class": "CrowdForCausalLM",
+  "sig": [
+   "LayerNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 90388
+ },
+ {
+  "id": "maxwell-model/Maxwell-V1-Flash",
+  "created": "2026-10-13T07:53:39.000Z",
+  "class": "MaxwellMoeForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 1
+ },
+ {
+  "id": "XHToken/Spark-X2.6-4B-Base",
+  "created": "2026-10-19T07:16:54.000Z",
+  "class": "Spark2_5ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gelu",
+   "?",
+   "GQA",
+   "dense",
+   "swa-mix"
+  ],
+  "downloads": 2390
+ },
+ {
+  "id": "inclusionAI/Ling-3.1-flash-1019",
+  "created": "2026-10-27T05:46:51.000Z",
+  "class": "BailingMoeV3ForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "MLA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 4467
+ },
+ {
+  "id": "osunlp/ARLoop-0.6B",
+  "created": "2026-10-30T04:42:53.000Z",
+  "class": "ARLoopForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "?",
+   "RoPE",
+   "GQA",
+   "dense",
+   "full-attn"
+  ],
+  "downloads": 2208
+ },
+ {
+  "id": "nvidia/Nemotron-Flash-1B",
+  "created": "2025-11-06T17:36:39.000Z",
+  "class": "NemotronFlashForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "full-attn"
+  ],
+  "downloads": 839
+ },
+ {
+  "id": "p-e-w/gpt-oss-20b-heretic",
+  "created": "2025-11-16T03:54:20.000Z",
+  "class": "GptOssForCausalLM",
+  "sig": [
+   "RMSNorm",
+   "gated-SiLU",
+   "RoPE",
+   "GQA",
+   "MoE",
+   "swa-mix"
+  ],
+  "downloads": 2662
+ },
+ {
+  "id": "LiquidAI/LFM2.5-350M-Base",
+  "created": "2026-03-31T06:38:57.000Z",
+  "class": "Lfm2ForCausalLM",
+  "sig": [
+   "?",
+   "?",
+   "?",
+   "GQA",
+   "dense",
+   "hybrid:conv+full_attention"
+  ],
+  "downloads": 4665
+ }
+]

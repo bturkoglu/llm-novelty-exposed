@@ -1,0 +1,4163 @@
+[
+ {
+  "model": "afmoe",
+  "added": "2025-11-29",
+  "published": null,
+  "modular": true,
+  "classes": 11,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 3,
+   "gpt_oss": 1,
+   "qwen2_moe": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gpt_oss",
+   "llama",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen2_moe",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "apertus",
+  "added": "2025-08-28",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "nemotron": 1,
+   "llama": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "nemotron"
+  ],
+  "core_borrowed": {
+   "MLP": "nemotron",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "arcee",
+  "added": "2025-06-24",
+  "published": null,
+  "modular": true,
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 5,
+  "parents": {
+   "nemotron": 1,
+   "llama": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "nemotron"
+  ],
+  "core_borrowed": {
+   "MLP": "nemotron"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "aria",
+  "added": "2024-12-06",
+  "published": "2024-10-08",
+  "modular": true,
+  "classes": 25,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 5,
+   "olmoe": 1,
+   "deepseek_v2": 1,
+   "llava": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "llama",
+   "llava",
+   "olmoe"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "axk1",
+  "added": "2026-07-23",
+  "published": null,
+  "modular": true,
+  "classes": 14,
+  "derived": 11,
+  "pure_rename": 8,
+  "parents": {
+   "deepseek_v3": 10,
+   "glm4_moe_lite": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "glm4_moe_lite"
+  ],
+  "core_borrowed": {
+   "MLP": "deepseek_v3",
+   "Attention": "deepseek_v3",
+   "DecoderLayer": "glm4_moe_lite"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "axk2",
+  "added": "2026-07-24",
+  "published": null,
+  "modular": true,
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 7,
+  "parents": {
+   "deepseek_v3": 1,
+   "clip": 1,
+   "deepseek_v32": 10
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "deepseek_v3",
+   "deepseek_v32"
+  ],
+  "core_borrowed": {
+   "MLP": "clip",
+   "Attention": "deepseek_v32",
+   "DecoderLayer": "deepseek_v32"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "bailing_hybrid",
+  "added": "2026-10-13",
+  "published": null,
+  "modular": true,
+  "classes": 15,
+  "derived": 13,
+  "pure_rename": 9,
+  "parents": {
+   "models": 13
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "models"
+  ],
+  "core_borrowed": {
+   "MLP": "models",
+   "Attention": "models",
+   "DecoderLayer": "models"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "bamba",
+  "added": "2024-12-19",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "mamba2": 2,
+   "jamba": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "jamba",
+   "llama",
+   "mamba2"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "MLP": "llama",
+   "DecoderLayer": "jamba"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "bart",
+  "added": "2020-11-16",
+  "published": "2019-10-29",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "beam",
+  "added": "2026-10-16",
+  "published": null,
+  "modular": true,
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "olmo3": 2,
+   "qwen3_moe": 4,
+   "deepseek_v4": 1,
+   "deepseek_v3": 3,
+   "deepseek_v32": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "deepseek_v32",
+   "deepseek_v4",
+   "olmo3",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_moe",
+   "MLP": "qwen3_moe",
+   "DecoderLayer": "deepseek_v32"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "big_bird",
+  "added": "2021-03-30",
+  "published": "2020-07-28",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 9
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "bigbird_pegasus",
+  "added": "2021-05-07",
+  "published": "2020-07-28",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 7,
+   "big_bird": 3,
+   "mbart": 1,
+   "pegasus": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "big_bird",
+   "mbart",
+   "pegasus"
+  ],
+  "core_borrowed": {
+   "Attention": "big_bird",
+   "DecoderLayer": "mbart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "biogpt",
+  "added": "2022-12-05",
+  "published": "2022-10-19",
+  "modular": true,
+  "classes": 9,
+  "derived": 4,
+  "pure_rename": 2,
+  "parents": {
+   "opt": 1,
+   "bart": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "opt"
+  ],
+  "core_borrowed": {
+   "Attention": "bart",
+   "DecoderLayer": "bart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "bitnet",
+  "added": "2025-04-28",
+  "published": "2025-04-16",
+  "modular": true,
+  "classes": 6,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 5,
+   "gemma": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "blenderbot",
+  "added": "2020-11-16",
+  "published": "2020-04-28",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 5,
+   "bert": 1,
+   "mbart": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bert",
+   "mbart"
+  ],
+  "core_borrowed": {
+   "Attention": "bart",
+   "DecoderLayer": "mbart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "blenderbot_small",
+  "added": null,
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 6,
+   "blenderbot": 1,
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bert",
+   "blenderbot"
+  ],
+  "core_borrowed": {
+   "Attention": "bart",
+   "DecoderLayer": "bart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "bloom",
+  "added": "2022-06-09",
+  "published": "2022-11-09",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "blt",
+  "added": "2025-09-19",
+  "published": "2024-12-13",
+  "modular": true,
+  "classes": 13,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "mllama": 6,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mllama"
+  ],
+  "core_borrowed": {
+   "MLP": "mllama",
+   "Attention": "mllama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "camembert",
+  "added": "2020-11-16",
+  "published": "2019-11-10",
+  "modular": true,
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 1,
+  "parents": {
+   "roberta": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "roberta"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "clvp",
+  "added": "2023-11-10",
+  "published": "2023-05-12",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "clip": 2,
+   "llama": 2,
+   "xlm": 1,
+   "gpt2": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "gpt2",
+   "llama",
+   "xlm"
+  ],
+  "core_borrowed": {
+   "MLP": "gpt2"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "codegen",
+  "added": "2022-06-24",
+  "published": "2022-03-25",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "gptj": 5
+  },
+  "declared_derivative": true,
+  "sources": [
+   "gptj"
+  ],
+  "core_borrowed": {
+   "MLP": "gptj"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "cohere",
+  "added": "2024-03-15",
+  "published": null,
+  "modular": true,
+  "classes": 7,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "cohere2",
+  "added": "2024-12-13",
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "cohere": 6,
+   "gemma2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "cohere",
+   "gemma2"
+  ],
+  "core_borrowed": {
+   "Attention": "cohere",
+   "DecoderLayer": "cohere"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "cohere2_moe",
+  "added": "2026-05-20",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 1,
+   "cohere2": 8,
+   "mixtral": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "cohere2",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "cohere2",
+   "Attention": "cohere2",
+   "DecoderLayer": "cohere2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "cohere_compass",
+  "added": "2026-08-10",
+  "published": null,
+  "modular": true,
+  "classes": 19,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3": 1,
+   "cohere2": 5,
+   "qwen3_vl": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "cohere2",
+   "gemma3",
+   "qwen3_vl"
+  ],
+  "core_borrowed": {
+   "MLP": "cohere2",
+   "Attention": "cohere2",
+   "DecoderLayer": "cohere2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "cpmant",
+  "added": "2023-04-12",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "csm",
+  "added": "2025-05-07",
+  "published": null,
+  "modular": true,
+  "classes": 13,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "cwm",
+  "added": "2025-10-09",
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2": 2,
+   "llama": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen2",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "dbrx",
+  "added": "2024-04-18",
+  "published": null,
+  "modular": true,
+  "classes": 11,
+  "derived": 1,
+  "pure_rename": 1,
+  "parents": {
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "deepseek_v2",
+  "added": "2025-07-09",
+  "published": "2024-05-07",
+  "modular": true,
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "qwen2_moe": 2,
+   "llama": 7,
+   "olmoe": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "olmoe",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "deepseek_v3",
+  "added": "2025-03-28",
+  "published": "2024-12-27",
+  "modular": true,
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 4,
+   "qwen2_moe": 2,
+   "deepseek_v2": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "llama",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen2_moe",
+   "Attention": "deepseek_v2",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "deepseek_v32",
+  "added": "2026-06-10",
+  "published": "2025-12-02",
+  "modular": true,
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "deepseek_v3": 5,
+   "axk1": 1,
+   "glm4_moe_lite": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "axk1",
+   "deepseek_v3",
+   "glm4_moe_lite"
+  ],
+  "core_borrowed": {
+   "Attention": "axk1",
+   "DecoderLayer": "glm4_moe_lite"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "deepseek_v4",
+  "added": "2026-05-02",
+  "published": null,
+  "modular": true,
+  "classes": 22,
+  "derived": 9,
+  "pure_rename": 1,
+  "parents": {
+   "deepseek_v3": 1,
+   "laguna": 1,
+   "llama": 2,
+   "mixtral": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "laguna",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "llama"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "diffllama",
+  "added": "2025-01-07",
+  "published": "2024-10-07",
+  "modular": true,
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "mistral": 1,
+   "llama": 8,
+   "gemma": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "llama",
+   "mistral"
+  ],
+  "core_borrowed": {
+   "MLP": "mistral",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "doge",
+  "added": "2025-07-08",
+  "published": null,
+  "modular": true,
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "mixtral": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "llama"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "dots1",
+  "added": "2025-06-25",
+  "published": "2025-06-06",
+  "modular": true,
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "qwen3": 4,
+   "deepseek_v3": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "qwen3"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3",
+   "MLP": "deepseek_v3",
+   "DecoderLayer": "deepseek_v3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "dots3_note",
+  "added": "2026-11-12",
+  "published": null,
+  "modular": true,
+  "classes": 38,
+  "derived": 30,
+  "pure_rename": 11,
+  "parents": {
+   "deepseek_v32": 9,
+   "diffusion_gemma": 1,
+   "glm_moe_dsa": 1,
+   "deepseek_v3": 1,
+   "phi": 1,
+   "nemotron": 1,
+   "phi3": 3,
+   "evolla": 1,
+   "glm_ocr": 2,
+   "glm_image": 1,
+   "llama": 1,
+   "hy_v3": 1,
+   "mimo_v2_flash": 1,
+   "qwen2_vl": 4,
+   "inkling": 1,
+   "voxtral": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "deepseek_v32",
+   "diffusion_gemma",
+   "evolla",
+   "glm_image",
+   "glm_moe_dsa",
+   "glm_ocr",
+   "hy_v3",
+   "inkling",
+   "llama",
+   "mimo_v2_flash",
+   "nemotron",
+   "phi",
+   "phi3",
+   "qwen2_vl",
+   "voxtral"
+  ],
+  "core_borrowed": {
+   "MLP": "deepseek_v32",
+   "Attention": "deepseek_v3",
+   "DecoderLayer": "deepseek_v32"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "electra",
+  "added": "2020-11-16",
+  "published": "2020-03-23",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 11,
+   "xlm": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "xlm"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "emu3",
+  "added": "2025-01-10",
+  "published": "2024-09-27",
+  "modular": true,
+  "classes": 26,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 4,
+   "chameleon": 2,
+   "siglip": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "chameleon",
+   "llama",
+   "siglip"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "ernie",
+  "added": "2022-09-09",
+  "published": "2019-04-19",
+  "modular": true,
+  "classes": 18,
+  "derived": 17,
+  "pure_rename": 7,
+  "parents": {
+   "bert": 17
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "ernie4_5",
+  "added": "2025-07-21",
+  "published": null,
+  "modular": true,
+  "classes": 4,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "olmo": 1,
+   "llama": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "olmo"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "ernie4_5_moe",
+  "added": "2025-07-21",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 2,
+   "qwen3_moe": 2,
+   "ernie4_5": 1,
+   "mixtral": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "ernie4_5",
+   "llama",
+   "mixtral",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen3_moe",
+   "Attention": "llama",
+   "DecoderLayer": "qwen3_moe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "exaone4",
+  "added": "2025-07-26",
+  "published": "2025-07-15",
+  "modular": true,
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 7,
+   "gemma2": 1,
+   "olmo2": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "llama",
+   "olmo2"
+  ],
+  "core_borrowed": {
+   "MLP": "olmo2",
+   "DecoderLayer": "olmo2"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "exaone_moe",
+  "added": "2026-02-04",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "exaone4": 2,
+   "qwen2_moe": 1,
+   "deepseek_v3": 4,
+   "olmoe": 1,
+   "dots1": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "dots1",
+   "exaone4",
+   "olmoe",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "exaone4",
+   "MLP": "qwen2_moe",
+   "DecoderLayer": "olmoe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "falcon",
+  "added": "2023-07-11",
+  "published": "2023-11-28",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 3,
+   "bloom": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bloom",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "bloom"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "falcon_h1",
+  "added": "2025-05-21",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 5,
+   "bamba": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bamba",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "MLP": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "falcon_mamba",
+  "added": "2024-08-12",
+  "published": "2024-10-07",
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "nanochat": 1,
+   "mamba": 7,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mamba",
+   "nanochat"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "flex_olmo",
+  "added": "2025-09-18",
+  "published": "2025-07-09",
+  "modular": true,
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "olmo2": 3,
+   "olmoe": 5,
+   "mixtral": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "mixtral",
+   "olmo2",
+   "olmoe"
+  ],
+  "core_borrowed": {
+   "MLP": "olmoe",
+   "Attention": "olmo2",
+   "DecoderLayer": "olmoe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "flint",
+  "added": "2026-10-21",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "gpt_oss": 1,
+   "qwen3_moe": 7,
+   "qwen2_moe": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gpt_oss",
+   "qwen2_moe",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen3_moe",
+   "Attention": "qwen3_moe",
+   "DecoderLayer": "qwen3_moe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "fuyu",
+  "added": "2023-10-19",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "gemma",
+  "added": "2024-02-21",
+  "published": "2024-03-13",
+  "modular": true,
+  "classes": 11,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gemma2",
+  "added": "2024-06-27",
+  "published": "2024-07-31",
+  "modular": true,
+  "classes": 11,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "gemma": 9
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma",
+   "Attention": "gemma"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gemma3",
+  "added": "2025-03-12",
+  "published": "2025-03-25",
+  "modular": true,
+  "classes": 18,
+  "derived": 11,
+  "pure_rename": 2,
+  "parents": {
+   "paligemma": 4,
+   "gemma2": 7
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "paligemma"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma2",
+   "Attention": "gemma2"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gemma3n",
+  "added": "2025-06-26",
+  "published": "2024-11-12",
+  "modular": true,
+  "classes": 31,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "paligemma": 4,
+   "gemma3": 5,
+   "gemma2": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "gemma3",
+   "paligemma"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma2",
+   "DecoderLayer": "gemma3"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gemma4",
+  "added": "2026-04-02",
+  "published": null,
+  "modular": true,
+  "classes": 36,
+  "derived": 18,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3n": 7,
+   "gemma3": 9,
+   "sam3": 1,
+   "mixtral": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma3",
+   "gemma3n",
+   "mixtral",
+   "sam3"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma3",
+   "Attention": "gemma3",
+   "DecoderLayer": "gemma3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "gemma4_assistant",
+  "added": "2026-05-05",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "gemma4_unified",
+  "added": "2026-06-03",
+  "published": null,
+  "modular": true,
+  "classes": 26,
+  "derived": 15,
+  "pure_rename": 5,
+  "parents": {
+   "gemma4": 13,
+   "gemma2": 1,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "gemma4",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "gemma4",
+   "MLP": "gemma4",
+   "DecoderLayer": "gemma2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "gemma4_unified_assistant",
+  "added": "2026-06-03",
+  "published": null,
+  "modular": true,
+  "classes": 1,
+  "derived": 1,
+  "pure_rename": 0,
+  "parents": {
+   "gemma4_assistant": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma4_assistant"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "git",
+  "added": "2023-01-03",
+  "published": "2022-05-27",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "clip": 2,
+   "bert": 3,
+   "siglip": 1,
+   "altclip": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "altclip",
+   "bert",
+   "clip",
+   "siglip"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "glm",
+  "added": "2024-10-18",
+  "published": "2024-06-18",
+  "modular": true,
+  "classes": 6,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "phi3": 1,
+   "llama": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "phi3"
+  ],
+  "core_borrowed": {
+   "MLP": "phi3",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "glm4",
+  "added": "2025-04-09",
+  "published": "2024-06-18",
+  "modular": true,
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "phi3": 1,
+   "glm": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "glm",
+   "phi3"
+  ],
+  "core_borrowed": {
+   "MLP": "phi3",
+   "Attention": "glm"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "glm4_moe",
+  "added": "2025-07-21",
+  "published": "2025-08-08",
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "glm": 1,
+   "cohere": 1,
+   "deepseek_v3": 7
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "cohere",
+   "deepseek_v3",
+   "glm"
+  ],
+  "core_borrowed": {
+   "Attention": "cohere",
+   "MLP": "deepseek_v3",
+   "DecoderLayer": "deepseek_v3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "glm4_moe_lite",
+  "added": "2026-01-13",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 9,
+  "parents": {
+   "glm4_moe": 10,
+   "deepseek_v3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "glm4_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "deepseek_v3",
+   "MLP": "glm4_moe",
+   "DecoderLayer": "glm4_moe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "glm_moe_dsa",
+  "added": "2026-02-09",
+  "published": "2026-02-17",
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "deepseek_v3": 1,
+   "deepseek_v32": 6,
+   "axk1": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "axk1",
+   "deepseek_v3",
+   "deepseek_v32"
+  ],
+  "core_borrowed": {
+   "Attention": "axk1",
+   "DecoderLayer": "deepseek_v32"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gpt_bigcode",
+  "added": "2023-04-10",
+  "published": "2023-01-09",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "gpt2": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "gpt2"
+  ],
+  "core_borrowed": {
+   "MLP": "gpt2"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "gpt_neo",
+  "added": "2021-03-30",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "gpt_neox",
+  "added": "2022-05-24",
+  "published": "2022-04-14",
+  "modular": true,
+  "classes": 10,
+  "derived": 3,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "gpt_neox_japanese",
+  "added": "2022-09-14",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "gpt_oss",
+  "added": "2025-08-05",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 3,
+   "qwen2": 2,
+   "mixtral": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mixtral",
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen2",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "gptj",
+  "added": "2021-08-31",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "granite",
+  "added": "2024-08-27",
+  "published": "2024-08-23",
+  "modular": true,
+  "classes": 5,
+  "derived": 5,
+  "pure_rename": 0,
+  "parents": {
+   "llama": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "granite_swa",
+  "added": "2026-07-29",
+  "published": null,
+  "modular": true,
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 1,
+   "granite": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "granite",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "granite"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "granitemoe",
+  "added": "2024-09-20",
+  "published": "2024-08-23",
+  "modular": true,
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "granite": 2,
+   "mixtral": 4,
+   "llama": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "granite",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "mixtral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "granitemoe_swa",
+  "added": "2026-07-29",
+  "published": null,
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 5,
+  "parents": {
+   "granitemoe": 2,
+   "granite_swa": 1,
+   "granitemoeshared": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "granite_swa",
+   "granitemoe",
+   "granitemoeshared"
+  ],
+  "core_borrowed": {
+   "Attention": "granite_swa",
+   "DecoderLayer": "granitemoeshared"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "granitemoehybrid",
+  "added": "2025-05-05",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 3,
+  "parents": {
+   "granitemoeshared": 7,
+   "bamba": 2,
+   "gemma2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bamba",
+   "gemma2",
+   "granitemoeshared"
+  ],
+  "core_borrowed": {
+   "Attention": "granitemoeshared",
+   "MLP": "granitemoeshared",
+   "DecoderLayer": "granitemoeshared"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "granitemoeshared",
+  "added": "2025-02-14",
+  "published": "2024-08-23",
+  "modular": true,
+  "classes": 6,
+  "derived": 4,
+  "pure_rename": 0,
+  "parents": {
+   "granitemoe": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "granitemoe"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "granitemoe"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "helium",
+  "added": "2025-01-13",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 5,
+   "granite": 1,
+   "gemma": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "granite",
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "granite",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hrm_text",
+  "added": "2026-05-18",
+  "published": "2025-06-26",
+  "modular": true,
+  "classes": 9,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "nanochat": 1,
+   "llama": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "nanochat"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hunyuan_v1_dense",
+  "added": "2025-08-22",
+  "published": null,
+  "modular": true,
+  "classes": 9,
+  "derived": 9,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 9
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hunyuan_v1_moe",
+  "added": "2025-08-22",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 6,
+  "parents": {
+   "llama": 6,
+   "mixtral": 1,
+   "hunyuan_v1_dense": 1,
+   "deepseek_v2": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "hunyuan_v1_dense",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hy_v3",
+  "added": "2026-04-22",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "apertus": 1,
+   "mixtral": 1,
+   "qwen3_moe": 1,
+   "minimax_m2": 2,
+   "deepseek_v3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "apertus",
+   "deepseek_v3",
+   "llama",
+   "minimax_m2",
+   "mixtral",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "apertus",
+   "DecoderLayer": "deepseek_v3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hy_v4",
+  "added": "2026-09-07",
+  "published": null,
+  "modular": true,
+  "classes": 16,
+  "derived": 15,
+  "pure_rename": 6,
+  "parents": {
+   "glm4_moe_lite": 7,
+   "deepseek_v4": 4,
+   "glm_moe_dsa": 2,
+   "deepseek_v32": 1,
+   "glm5_next": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v32",
+   "deepseek_v4",
+   "glm4_moe_lite",
+   "glm5_next",
+   "glm_moe_dsa"
+  ],
+  "core_borrowed": {
+   "Attention": "glm_moe_dsa",
+   "MLP": "glm4_moe_lite",
+   "DecoderLayer": "deepseek_v4"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "hyperclovax",
+  "added": "2026-05-08",
+  "published": "2025-07-21",
+  "modular": true,
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 5,
+  "parents": {
+   "granite": 7
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "granite"
+  ],
+  "core_borrowed": {
+   "Attention": "granite",
+   "DecoderLayer": "granite"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "inkling",
+  "added": "2026-07-15",
+  "published": null,
+  "modular": true,
+  "classes": 26,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "gemma3": 4,
+   "llama": 1,
+   "mixtral": 1,
+   "higgs_audio_v2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma3",
+   "higgs_audio_v2",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma3"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "inkling2",
+  "added": "2026-11-11",
+  "published": null,
+  "modular": true,
+  "classes": 36,
+  "derived": 21,
+  "pure_rename": 8,
+  "parents": {
+   "inkling": 12,
+   "olmo2": 1,
+   "deepseek_v4": 2,
+   "qwen3_moe": 1,
+   "sam3": 1,
+   "video_llama_3": 1,
+   "clip": 1,
+   "step3p7": 1,
+   "llava": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "deepseek_v4",
+   "inkling",
+   "llava",
+   "olmo2",
+   "qwen3_moe",
+   "sam3",
+   "step3p7",
+   "video_llama_3"
+  ],
+  "core_borrowed": {
+   "Attention": "inkling",
+   "MLP": "clip"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "jais2",
+  "added": "2025-12-17",
+  "published": null,
+  "modular": true,
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "nemotron": 1,
+   "llama": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "nemotron"
+  ],
+  "core_borrowed": {
+   "MLP": "nemotron",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "jamba",
+  "added": "2024-04-18",
+  "published": "2024-03-28",
+  "modular": true,
+  "classes": 13,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 2,
+   "falcon_mamba": 1,
+   "mistral": 1,
+   "mixtral": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "falcon_mamba",
+   "llama",
+   "mistral",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "MLP": "mistral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "jetmoe",
+  "added": "2024-05-14",
+  "published": "2023-06-07",
+  "modular": true,
+  "classes": 12,
+  "derived": 5,
+  "pure_rename": 2,
+  "parents": {
+   "mixtral": 4,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "kimi_linear",
+  "added": "2026-09-04",
+  "published": "2025-10-30",
+  "modular": true,
+  "classes": 14,
+  "derived": 13,
+  "pure_rename": 6,
+  "parents": {
+   "models": 13
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "models"
+  ],
+  "core_borrowed": {
+   "MLP": "models",
+   "Attention": "models",
+   "DecoderLayer": "models"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "kolibri1",
+  "added": "2026-10-12",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "exaone4": 1,
+   "qwen3_moe": 4,
+   "deepseek_v3": 2,
+   "glm4": 1,
+   "qwen2_moe": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "exaone4",
+   "glm4",
+   "qwen2_moe",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "exaone4",
+   "MLP": "qwen3_moe",
+   "DecoderLayer": "glm4"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "kosmos2",
+  "added": null,
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "clip": 2,
+   "altclip": 1,
+   "m2m_100": 4,
+   "roberta": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "altclip",
+   "clip",
+   "m2m_100",
+   "roberta"
+  ],
+  "core_borrowed": {
+   "MLP": "clip"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "kosmos2_5",
+  "added": "2025-08-19",
+  "published": "2023-09-20",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "kosmos2": 2,
+   "pix2struct": 3,
+   "t5": 1,
+   "m2m_100": 4,
+   "roberta": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "kosmos2",
+   "m2m_100",
+   "pix2struct",
+   "roberta",
+   "t5"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "laguna",
+  "added": "2026-04-28",
+  "published": "2024-08-28",
+  "modular": true,
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "qwen2_moe": 4,
+   "gemma3": 1,
+   "qwen3_5_moe": 1,
+   "qwen3_moe": 2,
+   "afmoe": 1,
+   "glm4_moe_lite": 1,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "afmoe",
+   "gemma3",
+   "glm4_moe_lite",
+   "llama",
+   "qwen2_moe",
+   "qwen3_5_moe",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen2_moe",
+   "Attention": "afmoe",
+   "DecoderLayer": "glm4_moe_lite"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "lfm2",
+  "added": "2025-07-10",
+  "published": null,
+  "modular": true,
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 5,
+   "gemma2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "lfm2_moe",
+  "added": "2025-10-07",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 12,
+  "pure_rename": 5,
+  "parents": {
+   "llama": 2,
+   "lfm2": 5,
+   "qwen2_moe": 2,
+   "qwen3_moe": 1,
+   "mixtral": 1,
+   "deepseek_v2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "lfm2",
+   "llama",
+   "mixtral",
+   "qwen2_moe",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "lfm2",
+   "Attention": "lfm2",
+   "DecoderLayer": "lfm2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "lfm3",
+  "added": "2026-11-05",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 3,
+  "parents": {
+   "lfm2": 6,
+   "olmo3": 1,
+   "lfm2_moe": 1,
+   "qwen3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "lfm2",
+   "lfm2_moe",
+   "olmo3",
+   "qwen3"
+  ],
+  "core_borrowed": {
+   "MLP": "lfm2_moe",
+   "Attention": "qwen3",
+   "DecoderLayer": "lfm2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "llama",
+  "added": "2023-03-16",
+  "published": "2023-02-27",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "llama4",
+  "added": "2025-04-05",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "longcat_flash",
+  "added": "2025-09-17",
+  "published": "2025-09-01",
+  "modular": true,
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 3,
+  "parents": {
+   "deepseek_v3": 5,
+   "mixtral": 1,
+   "deepseek_v32": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "deepseek_v32",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "deepseek_v3"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "mamba",
+  "added": "2024-03-05",
+  "published": "2023-12-01",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "mamba2",
+  "added": "2024-08-06",
+  "published": "2024-05-31",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "mamba": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "mamba"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "marian",
+  "added": "2020-11-16",
+  "published": "2018-04-01",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 6,
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bert"
+  ],
+  "core_borrowed": {
+   "Attention": "bart",
+   "DecoderLayer": "bart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "mbart",
+  "added": "2020-11-16",
+  "published": "2020-01-22",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 8,
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bert"
+  ],
+  "core_borrowed": {
+   "Attention": "bart"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "megatron_bert",
+  "added": null,
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 8
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "mellum",
+  "added": "2026-05-28",
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "laguna": 3,
+   "qwen3_moe": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "laguna",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_moe",
+   "DecoderLayer": "laguna"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "mimo_v2_flash",
+  "added": "2026-06-30",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 7,
+  "parents": {
+   "mixtral": 1,
+   "gemma3": 1,
+   "deepseek_v3": 5,
+   "glm4_moe": 1,
+   "qwen2": 1,
+   "glm4_moe_lite": 1,
+   "laguna": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "gemma3",
+   "glm4_moe",
+   "glm4_moe_lite",
+   "laguna",
+   "mixtral",
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "MLP": "glm4_moe",
+   "Attention": "qwen2",
+   "DecoderLayer": "glm4_moe_lite"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "minicpm3",
+  "added": "2026-06-22",
+  "published": "2024-09-05",
+  "modular": true,
+  "classes": 11,
+  "derived": 10,
+  "pure_rename": 5,
+  "parents": {
+   "gemma3": 1,
+   "llama": 8,
+   "deepseek_v2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "gemma3",
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "deepseek_v2",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "minimax",
+  "added": "2025-06-04",
+  "published": "2025-01-14",
+  "modular": true,
+  "classes": 15,
+  "derived": 12,
+  "pure_rename": 8,
+  "parents": {
+   "mixtral": 11,
+   "gemma2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "Attention": "mixtral",
+   "DecoderLayer": "mixtral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "minimax_m2",
+  "added": "2026-01-09",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "mixtral": 7,
+   "glm4_moe": 1,
+   "flex_olmo": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "flex_olmo",
+   "glm4_moe",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "Attention": "flex_olmo"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "minimax_m3_vl",
+  "added": "2026-06-12",
+  "published": null,
+  "modular": true,
+  "classes": 31,
+  "derived": 19,
+  "pure_rename": 3,
+  "parents": {
+   "gemma3": 1,
+   "deepseek_v4": 1,
+   "minimax_m2": 6,
+   "laguna": 1,
+   "mixtral": 1,
+   "qwen2_5_vl": 2,
+   "paddleocr_vl": 1,
+   "clip": 2,
+   "llava": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "deepseek_v4",
+   "gemma3",
+   "laguna",
+   "llava",
+   "minimax_m2",
+   "mixtral",
+   "paddleocr_vl",
+   "qwen2_5_vl"
+  ],
+  "core_borrowed": {
+   "Attention": "minimax_m2",
+   "DecoderLayer": "mixtral",
+   "MLP": "clip"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "ministral",
+  "added": "2025-09-11",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 11,
+  "pure_rename": 9,
+  "parents": {
+   "qwen2": 11
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen2",
+   "Attention": "qwen2",
+   "DecoderLayer": "qwen2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "ministral3",
+  "added": "2025-12-01",
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "mistral": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "mistral"
+  ],
+  "core_borrowed": {
+   "Attention": "mistral",
+   "DecoderLayer": "mistral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "mistral",
+  "added": "2023-09-27",
+  "published": "2023-10-10",
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "mistral4",
+  "added": "2026-03-16",
+  "published": null,
+  "modular": true,
+  "classes": 13,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 2,
+   "qwen2_moe": 1,
+   "deepseek_v2": 1,
+   "deepseek_v3": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v2",
+   "deepseek_v3",
+   "llama",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen2_moe",
+   "Attention": "deepseek_v3",
+   "DecoderLayer": "deepseek_v3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "mixtral",
+  "added": "2023-12-11",
+  "published": "2024-01-08",
+  "modular": true,
+  "classes": 13,
+  "derived": 9,
+  "pure_rename": 6,
+  "parents": {
+   "mistral": 9
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "mistral"
+  ],
+  "core_borrowed": {
+   "Attention": "mistral"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "mllama",
+  "added": "2024-09-25",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "clip": 1,
+   "llama": 6,
+   "gemma2": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "gemma2",
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "clip"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "modernbert_decoder",
+  "added": null,
+  "published": null,
+  "modular": true,
+  "classes": 11,
+  "derived": 5,
+  "pure_rename": 4,
+  "parents": {
+   "modernbert": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "modernbert"
+  ],
+  "core_borrowed": {
+   "MLP": "modernbert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "moshi",
+  "added": "2024-10-16",
+  "published": "2024-09-17",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "gemma": 2,
+   "llama": 5,
+   "musicgen": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "llama",
+   "musicgen"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "mpt",
+  "added": "2023-07-25",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "musicgen",
+  "added": "2023-06-29",
+  "published": "2023-06-08",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "musicgen_melody",
+  "added": "2024-03-18",
+  "published": "2023-06-08",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "musicgen": 10,
+   "bert": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "musicgen"
+  ],
+  "core_borrowed": {
+   "Attention": "musicgen"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "mvp",
+  "added": "2022-06-29",
+  "published": "2022-06-24",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 4
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "nanochat",
+  "added": "2025-11-27",
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "llama4": 1,
+   "llama": 4,
+   "qwen3": 1,
+   "clip": 1,
+   "gemma2": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "gemma2",
+   "llama",
+   "llama4",
+   "qwen3"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3",
+   "MLP": "clip",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "nemotron",
+  "added": "2024-08-06",
+  "published": "2024-02-26",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 4
+  },
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "nemotron_h",
+  "added": "2026-03-03",
+  "published": "2025-04-04",
+  "modular": true,
+  "classes": 12,
+  "derived": 8,
+  "pure_rename": 2,
+  "parents": {
+   "models": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "models"
+  ],
+  "core_borrowed": {
+   "MLP": "models",
+   "Attention": "models"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "olmo",
+  "added": "2024-04-17",
+  "published": "2024-02-01",
+  "modular": true,
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 7
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "olmo2",
+  "added": "2024-11-25",
+  "published": "2024-12-31",
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 2,
+   "olmo": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "olmo"
+  ],
+  "core_borrowed": {
+   "Attention": "olmo",
+   "DecoderLayer": "olmo"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "olmo3",
+  "added": "2025-09-16",
+  "published": null,
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "olmo2": 7,
+   "gemma3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma3",
+   "olmo2"
+  ],
+  "core_borrowed": {
+   "Attention": "olmo2",
+   "DecoderLayer": "olmo2"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "olmo_hybrid",
+  "added": "2026-02-26",
+  "published": null,
+  "modular": true,
+  "classes": 12,
+  "derived": 10,
+  "pure_rename": 4,
+  "parents": {
+   "qwen3_next": 3,
+   "olmo3": 5,
+   "olmo2": 1,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "olmo2",
+   "olmo3",
+   "qwen3_next"
+  ],
+  "core_borrowed": {
+   "Attention": "olmo3",
+   "MLP": "olmo3",
+   "DecoderLayer": "olmo3"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "olmoe",
+  "added": "2024-09-03",
+  "published": "2024-09-03",
+  "modular": true,
+  "classes": 11,
+  "derived": 9,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 4,
+   "gemma": 1,
+   "mixtral": 3,
+   "qwen2_moe": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "llama",
+   "mixtral",
+   "qwen2_moe"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "opt",
+  "added": "2022-05-12",
+  "published": "2022-05-02",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "siglip": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "siglip"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "pegasus",
+  "added": "2020-11-16",
+  "published": "2019-12-18",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 4,
+   "marian": 1,
+   "bert": 1,
+   "mbart": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bert",
+   "marian",
+   "mbart"
+  ],
+  "core_borrowed": {
+   "Attention": "bart",
+   "DecoderLayer": "mbart"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "persimmon",
+  "added": "2023-09-12",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 4,
+   "gpt_neox": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "gpt_neox",
+   "llama"
+  ],
+  "core_borrowed": {
+   "MLP": "gpt_neox"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "phi",
+  "added": "2023-11-10",
+  "published": "2023-06-20",
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "llama": 7,
+   "clip": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "clip",
+   "llama"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "MLP": "clip"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "phi3",
+  "added": "2024-04-24",
+  "published": "2024-04-22",
+  "modular": true,
+  "classes": 8,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "phi": 1,
+   "mistral": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "mistral",
+   "phi"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "mistral"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "phi4_multimodal",
+  "added": "2025-03-25",
+  "published": "2025-03-03",
+  "modular": true,
+  "classes": 30,
+  "derived": 11,
+  "pure_rename": 3,
+  "parents": {
+   "siglip": 6,
+   "phi3": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "phi3",
+   "siglip"
+  ],
+  "core_borrowed": {
+   "MLP": "siglip",
+   "DecoderLayer": "phi3"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "phimoe",
+  "added": "2024-10-04",
+  "published": "2024-04-22",
+  "modular": true,
+  "classes": 11,
+  "derived": 7,
+  "pure_rename": 2,
+  "parents": {
+   "mixtral": 6,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "mixtral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "plbart",
+  "added": "2022-02-18",
+  "published": "2021-03-10",
+  "modular": true,
+  "classes": 9,
+  "derived": 6,
+  "pure_rename": 4,
+  "parents": {
+   "bart": 5,
+   "bigbird_pegasus": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "bigbird_pegasus"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "prophetnet",
+  "added": "2020-11-16",
+  "published": "2020-01-13",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "qwen2",
+  "added": "2024-01-17",
+  "published": "2024-07-15",
+  "modular": true,
+  "classes": 10,
+  "derived": 10,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 8,
+   "gemma2": 1,
+   "mistral": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "llama",
+   "mistral"
+  ],
+  "core_borrowed": {
+   "MLP": "llama",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "qwen2_moe",
+  "added": "2024-03-27",
+  "published": "2024-07-15",
+  "modular": true,
+  "classes": 14,
+  "derived": 9,
+  "pure_rename": 2,
+  "parents": {
+   "llama": 3,
+   "gemma2": 1,
+   "gemma": 1,
+   "mixtral": 4
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "gemma2",
+   "llama",
+   "mixtral"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma",
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "qwen3",
+  "added": "2025-03-31",
+  "published": "2025-05-14",
+  "modular": true,
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 6,
+  "parents": {
+   "qwen2": 6,
+   "gemma": 1,
+   "llama": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "llama",
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "qwen3_5",
+  "added": "2026-02-09",
+  "published": null,
+  "modular": true,
+  "classes": 19,
+  "derived": 12,
+  "pure_rename": 3,
+  "parents": {
+   "qwen3_vl": 4,
+   "qwen3_next": 6,
+   "qwen2_vl": 1,
+   "qwen3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "qwen2_vl",
+   "qwen3",
+   "qwen3_next",
+   "qwen3_vl"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_next",
+   "MLP": "qwen3_next"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "qwen3_5_moe",
+  "added": "2026-02-09",
+  "published": null,
+  "modular": true,
+  "classes": 19,
+  "derived": 16,
+  "pure_rename": 10,
+  "parents": {
+   "qwen3_5": 7,
+   "qwen3_next": 7,
+   "qwen3_vl_moe": 2
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "qwen3_5",
+   "qwen3_next",
+   "qwen3_vl_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_next",
+   "MLP": "qwen3_5",
+   "DecoderLayer": "qwen3_next"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "qwen3_moe",
+  "added": "2025-03-31",
+  "published": "2025-05-14",
+  "modular": true,
+  "classes": 13,
+  "derived": 12,
+  "pure_rename": 9,
+  "parents": {
+   "qwen3": 1,
+   "qwen2_moe": 4,
+   "llama": 4,
+   "mixtral": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mixtral",
+   "qwen2_moe",
+   "qwen3"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3",
+   "MLP": "qwen2_moe",
+   "DecoderLayer": "qwen2_moe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "qwen3_next",
+  "added": "2025-09-10",
+  "published": null,
+  "modular": true,
+  "classes": 16,
+  "derived": 12,
+  "pure_rename": 8,
+  "parents": {
+   "gemma2": 1,
+   "gemma3": 1,
+   "qwen3_moe": 3,
+   "qwen2_moe": 3,
+   "mixtral": 1,
+   "llama": 3
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2",
+   "gemma3",
+   "llama",
+   "mixtral",
+   "qwen2_moe",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_moe",
+   "MLP": "qwen3_moe",
+   "DecoderLayer": "qwen3_moe"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "qwen4_exp",
+  "added": "2026-08-26",
+  "published": null,
+  "modular": true,
+  "classes": 23,
+  "derived": 15,
+  "pure_rename": 5,
+  "parents": {
+   "qwen3_5": 4,
+   "qwen3_next": 5,
+   "qwen3_5_moe": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "qwen3_5",
+   "qwen3_5_moe",
+   "qwen3_next"
+  ],
+  "core_borrowed": {
+   "Attention": "qwen3_5",
+   "MLP": "qwen3_next"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "recurrent_gemma",
+  "added": "2024-04-10",
+  "published": "2024-04-11",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "gemma": 1,
+   "llama": 4,
+   "gpt_neox": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "gemma",
+   "gpt_neox",
+   "llama"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "rembert",
+  "added": "2021-07-24",
+  "published": "2020-10-24",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 7
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "roberta",
+  "added": "2020-11-16",
+  "published": "2019-07-26",
+  "modular": true,
+  "classes": 14,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "bert": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "roberta_prelayernorm",
+  "added": null,
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "roberta": 10,
+   "bert": 7
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "roberta"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "roc_bert",
+  "added": "2022-11-08",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bert": 28
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "roformer",
+  "added": "2021-05-20",
+  "published": "2021-04-20",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "marian": 1,
+   "bert": 4,
+   "xlm": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "marian",
+   "xlm"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "rwkv",
+  "added": "2023-05-09",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "seed_oss",
+  "added": "2025-08-22",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 8,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "smollm3",
+  "added": "2025-06-25",
+  "published": null,
+  "modular": true,
+  "classes": 10,
+  "derived": 9,
+  "pure_rename": 8,
+  "parents": {
+   "qwen2": 2,
+   "llama": 7
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "qwen2"
+  ],
+  "core_borrowed": {
+   "Attention": "llama",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "solar_open",
+  "added": "2026-01-22",
+  "published": "2026-01-11",
+  "modular": true,
+  "classes": 8,
+  "derived": 7,
+  "pure_rename": 4,
+  "parents": {
+   "llama": 2,
+   "glm4_moe": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "glm4_moe",
+   "llama"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "llama",
+   "Attention": "llama"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "stablelm",
+  "added": "2024-02-14",
+  "published": null,
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 6,
+   "mistral": 1,
+   "persimmon": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mistral",
+   "persimmon"
+  ],
+  "core_borrowed": {
+   "MLP": "mistral"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "starcoder2",
+  "added": "2024-02-28",
+  "published": "2024-02-29",
+  "modular": true,
+  "classes": 7,
+  "derived": 6,
+  "pure_rename": 3,
+  "parents": {
+   "mistral": 6
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "mistral"
+  ],
+  "core_borrowed": {
+   "Attention": "mistral",
+   "DecoderLayer": "mistral"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "trocr",
+  "added": "2021-10-13",
+  "published": "2021-09-21",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 2
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "vaultgemma",
+  "added": "2025-09-12",
+  "published": "2016-07-01",
+  "modular": true,
+  "classes": 6,
+  "derived": 5,
+  "pure_rename": 3,
+  "parents": {
+   "gemma2": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "gemma2"
+  ],
+  "core_borrowed": {
+   "MLP": "gemma2",
+   "Attention": "gemma2",
+   "DecoderLayer": "gemma2"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "whisper",
+  "added": "2022-10-05",
+  "published": "2022-12-06",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 1,
+   "wav2vec2": 1,
+   "mbart": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "mbart",
+   "wav2vec2"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "xglm",
+  "added": "2022-01-28",
+  "published": "2021-12-20",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "bart": 1,
+   "musicgen": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bart",
+   "musicgen"
+  ],
+  "core_borrowed": {
+   "DecoderLayer": "musicgen"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "xlm_roberta",
+  "added": null,
+  "published": null,
+  "modular": true,
+  "classes": 8,
+  "derived": 8,
+  "pure_rename": 1,
+  "parents": {
+   "roberta": 8
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "roberta"
+  ],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "xlm_roberta_xl",
+  "added": null,
+  "published": null,
+  "modular": true,
+  "classes": 18,
+  "derived": 8,
+  "pure_rename": 4,
+  "parents": {
+   "roberta": 3,
+   "bert": 5
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "roberta"
+  ],
+  "core_borrowed": {
+   "Attention": "bert"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "xlstm",
+  "added": "2025-07-25",
+  "published": "2024-05-07",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {},
+  "declared_derivative": false,
+  "sources": [],
+  "core_borrowed": {},
+  "n_core_borrowed": 0
+ },
+ {
+  "model": "xmod",
+  "added": "2023-02-10",
+  "published": "2022-05-12",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "roberta": 19,
+   "bert": 3
+  },
+  "declared_derivative": true,
+  "sources": [
+   "bert",
+   "roberta"
+  ],
+  "core_borrowed": {
+   "Attention": "roberta"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "youtu",
+  "added": "2026-01-28",
+  "published": "2025-12-31",
+  "modular": true,
+  "classes": 9,
+  "derived": 8,
+  "pure_rename": 7,
+  "parents": {
+   "llama": 6,
+   "qwen3": 1,
+   "deepseek_v3": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "deepseek_v3",
+   "llama",
+   "qwen3"
+  ],
+  "core_borrowed": {
+   "MLP": "qwen3",
+   "Attention": "deepseek_v3",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 3
+ },
+ {
+  "model": "zamba",
+  "added": "2024-10-04",
+  "published": "2024-05-26",
+  "modular": false,
+  "classes": null,
+  "derived": null,
+  "pure_rename": null,
+  "parents": null,
+  "copied_from": {
+   "llama": 2,
+   "mistral": 1
+  },
+  "declared_derivative": true,
+  "sources": [
+   "llama",
+   "mistral"
+  ],
+  "core_borrowed": {
+   "MLP": "mistral"
+  },
+  "n_core_borrowed": 1
+ },
+ {
+  "model": "zamba2",
+  "added": "2025-01-27",
+  "published": "2024-11-22",
+  "modular": true,
+  "classes": 13,
+  "derived": 11,
+  "pure_rename": 4,
+  "parents": {
+   "mamba2": 1,
+   "zamba": 8,
+   "llama": 1,
+   "bamba": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "bamba",
+   "llama",
+   "mamba2",
+   "zamba"
+  ],
+  "core_borrowed": {
+   "Attention": "zamba",
+   "DecoderLayer": "zamba"
+  },
+  "n_core_borrowed": 2
+ },
+ {
+  "model": "zaya",
+  "added": "2026-07-01",
+  "published": null,
+  "modular": true,
+  "classes": 15,
+  "derived": 8,
+  "pure_rename": 3,
+  "parents": {
+   "laguna": 2,
+   "qwen3_moe": 2,
+   "phi3": 1,
+   "llama": 2,
+   "afmoe": 1
+  },
+  "copied_from": {},
+  "declared_derivative": true,
+  "sources": [
+   "afmoe",
+   "laguna",
+   "llama",
+   "phi3",
+   "qwen3_moe"
+  ],
+  "core_borrowed": {
+   "Attention": "phi3",
+   "DecoderLayer": "llama"
+  },
+  "n_core_borrowed": 2
+ }
+]

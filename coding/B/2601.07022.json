@@ -1,0 +1,103 @@
+{
+ "arxiv": "2601.07022",
+ "model": "solar_open",
+ "coding": {
+  "note": "Claims are restricted to the abstract/introduction: the model introduction and three methodological contributions. Curriculum evidence is PARTIAL because comparison with GLM-4.5-Base changes model, data and token budget and does not isolate the curriculum. Comparator evaluation provenance and independent training seeds are not stated. Data categories and volumes are disclosed, but reconstructible source mixtures are not. Compute is coded N conservatively: 480 B200 GPUs and a three-month target are given, not an actual training duration, GPU-hours or FLOPs. No explicit renaming of an acknowledged existing technique was identified; similarity to PRIME-RL alone is insufficient.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "quote": "To address these challenges, we present Solar Open, Upstage’s flagship open-weight LLM",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce Solar Open, a bilingual Korean/English open-weight 102B-parameter MoE language model.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Synthetic data plays a dual role in our approach: addressing Korean language scarcity while",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Generate 4.5T tokens of synthetic data to address Korean data scarcity and support RL-oriented reasoning development across training stages.",
+    "page": 2,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We implement a multi-phase curriculum (Section 3) with general quality",
+    "ablation": "PARTIAL",
+    "ablation_quote": "We compare Solar Open’s training trajectory against GLM-4.5-Base (Zeng et al.,\n2025), a comparable-scale model (106B) trained on 23 trillion tokens.",
+    "claim": "Progressive bilingual and reasoning-targeted curriculum jointly coordinates data composition, language-aware quality thresholds and domain coverage.",
+    "page": 3,
+    "category": "TRAIN",
+    "ablation_page": 13
+   },
+   {
+    "quote": "We address this through SnapPO (Section 6), a cyclic off-policy framework that decouples",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Propose SnapPO, a cyclic off-policy RL framework decoupling generation, reward computation and training for scalable multi-domain optimization.",
+    "page": 3,
+    "category": "POST",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "English General (13.0T), Math & Code (3.7T), Korean General\n(1.1T), Japanese (0.8T), Multilingual (0.8T), and Domain-Specific content in Finance, Medical,\nand Legal domains (0.4T).",
+   "page": 9
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "trained on 20 trillion tokens. Solar Open is built on a Mixture-of-Experts (MoE) architecture",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "gpt-oss-120b (high)",
+   "gpt-oss-120b (medium)",
+   "GLM-4.5-Air"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "1ee17603024e2fffc51e58b9b6f4109d77f275402d50b2baa136c349b43cf845",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1206,
+   "totalTokens": 27197,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 25859
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:53+00:00"
+ }
+}

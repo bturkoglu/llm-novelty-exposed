@@ -1,0 +1,1563 @@
+[
+ {
+  "model": "bart",
+  "added": "2020-11-16",
+  "arxiv": "1910.13461",
+  "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+  "year": 2019,
+  "name_hits": [
+   "bart"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "blenderbot",
+  "added": "2020-11-16",
+  "arxiv": "2004.13637",
+  "title": "Recipes for building an open-domain chatbot",
+  "year": 2020,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "camembert",
+  "added": "2020-11-16",
+  "arxiv": "1911.03894",
+  "title": "CamemBERT: a Tasty French Language Model",
+  "year": 2019,
+  "name_hits": [
+   "camembert"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "electra",
+  "added": "2020-11-16",
+  "arxiv": "2003.10555",
+  "title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
+  "year": 2020,
+  "name_hits": [
+   "electra"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "marian",
+  "added": "2020-11-16",
+  "arxiv": "1804.00344",
+  "title": "Marian: Fast Neural Machine Translation in C++",
+  "year": 2018,
+  "name_hits": [
+   "marian"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "mbart",
+  "added": "2020-11-16",
+  "arxiv": "2001.08210",
+  "title": "Multilingual Denoising Pre-training for Neural Machine Translation",
+  "year": 2020,
+  "name_hits": [
+   "mbart"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "pegasus",
+  "added": "2020-11-16",
+  "arxiv": "1912.08777",
+  "title": "PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization",
+  "year": 2019,
+  "name_hits": [
+   "pegasus"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "prophetnet",
+  "added": "2020-11-16",
+  "arxiv": "2001.04063",
+  "title": "ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training",
+  "year": 2020,
+  "name_hits": [
+   "prophetnet"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "roberta",
+  "added": "2020-11-16",
+  "arxiv": "1907.11692",
+  "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+  "year": 2019,
+  "name_hits": [
+   "roberta"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "big_bird",
+  "added": "2021-03-30",
+  "arxiv": "2007.14062",
+  "title": "Big Bird: Transformers for Longer Sequences",
+  "year": 2020,
+  "name_hits": [
+   "big",
+   "bird"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "gpt_neo",
+  "added": "2021-03-30",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "bigbird_pegasus",
+  "added": "2021-05-07",
+  "arxiv": "2007.14062",
+  "title": "Big Bird: Transformers for Longer Sequences",
+  "year": 2020,
+  "name_hits": [
+   "bigbird"
+  ],
+  "status": "DUPLICATE",
+  "reason": "report shared with big_bird"
+ },
+ {
+  "model": "roformer",
+  "added": "2021-05-20",
+  "arxiv": "2104.09864",
+  "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+  "year": 2021,
+  "name_hits": [
+   "roformer"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "rembert",
+  "added": "2021-07-24",
+  "arxiv": "2010.12821",
+  "title": "Rethinking embedding coupling in pre-trained language models",
+  "year": 2020,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "gptj",
+  "added": "2021-08-31",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "trocr",
+  "added": "2021-10-13",
+  "arxiv": "2109.10282",
+  "title": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models",
+  "year": 2021,
+  "name_hits": [
+   "trocr"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "xglm",
+  "added": "2022-01-28",
+  "arxiv": "2112.10668",
+  "title": "Few-shot Learning with Multilingual Language Models",
+  "year": 2021,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "plbart",
+  "added": "2022-02-18",
+  "arxiv": "2103.06333",
+  "title": "Unified Pre-training for Program Understanding and Generation",
+  "year": 2021,
+  "name_hits": [
+   "plbart"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "opt",
+  "added": "2022-05-12",
+  "arxiv": "2205.01068",
+  "title": "OPT: Open Pre-trained Transformer Language Models",
+  "year": 2022,
+  "name_hits": [
+   "opt"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "gpt_neox",
+  "added": "2022-05-24",
+  "arxiv": "2204.06745",
+  "title": "GPT-NeoX-20B: An Open-Source Autoregressive Language Model",
+  "year": 2022,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "bloom",
+  "added": "2022-06-09",
+  "arxiv": "2211.05100",
+  "title": "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model",
+  "year": 2022,
+  "name_hits": [
+   "bloom"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "codegen",
+  "added": "2022-06-24",
+  "arxiv": "2203.13474",
+  "title": "CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis",
+  "year": 2022,
+  "name_hits": [
+   "codegen"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mvp",
+  "added": "2022-06-29",
+  "arxiv": "2206.12131",
+  "title": "MVP: Multi-task Supervised Pre-training for Natural Language Generation",
+  "year": 2022,
+  "name_hits": [
+   "mvp"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "ernie",
+  "added": "2022-09-09",
+  "arxiv": "1904.09223",
+  "title": "ERNIE: Enhanced Representation through Knowledge Integration",
+  "year": 2019,
+  "name_hits": [
+   "ernie"
+  ],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "gpt_neox_japanese",
+  "added": "2022-09-14",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "whisper",
+  "added": "2022-10-05",
+  "arxiv": "2212.04356",
+  "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+  "year": 2022,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "roc_bert",
+  "added": "2022-11-08",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "biogpt",
+  "added": "2022-12-05",
+  "arxiv": "2210.10341",
+  "title": "BioGPT: Generative Pre-trained Transformer for Biomedical Text Generation and Mining",
+  "year": 2022,
+  "name_hits": [
+   "biogpt"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "git",
+  "added": "2023-01-03",
+  "arxiv": "2205.14100",
+  "title": "GIT: A Generative Image-to-text Transformer for Vision and Language",
+  "year": 2022,
+  "name_hits": [
+   "git"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "xmod",
+  "added": "2023-02-10",
+  "arxiv": "2205.06266",
+  "title": "Lifting the Curse of Multilinguality by Pre-training Modular Transformers",
+  "year": 2022,
+  "name_hits": [
+   "xmod"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "llama",
+  "added": "2023-03-16",
+  "arxiv": "2302.13971",
+  "title": "LLaMA: Open and Efficient Foundation Language Models",
+  "year": 2023,
+  "name_hits": [
+   "llama"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "gpt_bigcode",
+  "added": "2023-04-10",
+  "arxiv": "2301.03988",
+  "title": "SantaCoder: don't reach for the stars!",
+  "year": 2023,
+  "name_hits": [
+   "bigcode"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "cpmant",
+  "added": "2023-04-12",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "rwkv",
+  "added": "2023-05-09",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "musicgen",
+  "added": "2023-06-29",
+  "arxiv": "2306.05284",
+  "title": "Simple and Controllable Music Generation",
+  "year": 2023,
+  "name_hits": [
+   "musicgen"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "falcon",
+  "added": "2023-07-11",
+  "arxiv": "2311.16867",
+  "title": "The Falcon Series of Open Language Models",
+  "year": 2023,
+  "name_hits": [
+   "falcon"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mpt",
+  "added": "2023-07-25",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "persimmon",
+  "added": "2023-09-12",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "mistral",
+  "added": "2023-09-27",
+  "arxiv": "2310.06825",
+  "title": "Mistral 7B",
+  "year": 2023,
+  "name_hits": [
+   "mistral"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "fuyu",
+  "added": "2023-10-19",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "clvp",
+  "added": "2023-11-10",
+  "arxiv": "2305.07243",
+  "title": "Better speech synthesis through scaling",
+  "year": 2023,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "phi",
+  "added": "2023-11-10",
+  "arxiv": "2306.11644",
+  "title": "Textbooks Are All You Need",
+  "year": 2023,
+  "name_hits": [
+   "phi"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mixtral",
+  "added": "2023-12-11",
+  "arxiv": "2401.04088",
+  "title": "Mixtral of Experts",
+  "year": 2024,
+  "name_hits": [
+   "mixtral"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "qwen2",
+  "added": "2024-01-17",
+  "arxiv": "2407.10671",
+  "title": "Qwen2 Technical Report",
+  "year": 2024,
+  "name_hits": [
+   "qwen"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "stablelm",
+  "added": "2024-02-14",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "gemma",
+  "added": "2024-02-21",
+  "arxiv": "2403.08295",
+  "title": "Gemma: Open Models Based on Gemini Research and Technology",
+  "year": 2024,
+  "name_hits": [
+   "gemma"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "starcoder2",
+  "added": "2024-02-28",
+  "arxiv": "2402.19173",
+  "title": "StarCoder 2 and The Stack v2: The Next Generation",
+  "year": 2024,
+  "name_hits": [
+   "starcoder"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mamba",
+  "added": "2024-03-05",
+  "arxiv": "2312.00752",
+  "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+  "year": 2023,
+  "name_hits": [
+   "mamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "cohere",
+  "added": "2024-03-15",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "musicgen_melody",
+  "added": "2024-03-18",
+  "arxiv": "2306.05284",
+  "title": "Simple and Controllable Music Generation",
+  "year": 2023,
+  "name_hits": [
+   "musicgen"
+  ],
+  "status": "DUPLICATE",
+  "reason": "report shared with musicgen"
+ },
+ {
+  "model": "qwen2_moe",
+  "added": "2024-03-27",
+  "arxiv": "2407.10671",
+  "title": "Qwen2 Technical Report",
+  "year": 2024,
+  "name_hits": [
+   "qwen"
+  ],
+  "status": "DUPLICATE",
+  "reason": "report shared with qwen2"
+ },
+ {
+  "model": "recurrent_gemma",
+  "added": "2024-04-10",
+  "arxiv": "2404.07839",
+  "title": "RecurrentGemma: Moving Past Transformers for Efficient Open Language Models",
+  "year": 2024,
+  "name_hits": [
+   "recurrent",
+   "gemma"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "olmo",
+  "added": "2024-04-17",
+  "arxiv": "2402.00838",
+  "title": "OLMo: Accelerating the Science of Language Models",
+  "year": 2024,
+  "name_hits": [
+   "olmo"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "dbrx",
+  "added": "2024-04-18",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "jamba",
+  "added": "2024-04-18",
+  "arxiv": "2403.19887",
+  "title": "Jamba: A Hybrid Transformer-Mamba Language Model",
+  "year": 2024,
+  "name_hits": [
+   "jamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "phi3",
+  "added": "2024-04-24",
+  "arxiv": "2404.14219",
+  "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone",
+  "year": 2024,
+  "name_hits": [
+   "phi"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "jetmoe",
+  "added": "2024-05-14",
+  "arxiv": "2306.04640",
+  "title": "ModuleFormer: Modularity Emerges from Mixture-of-Experts",
+  "year": 2023,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "gemma2",
+  "added": "2024-06-27",
+  "arxiv": "2408.00118",
+  "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+  "year": 2024,
+  "name_hits": [
+   "gemma"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mamba2",
+  "added": "2024-08-06",
+  "arxiv": "2405.21060",
+  "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+  "year": 2024,
+  "name_hits": [
+   "mamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "nemotron",
+  "added": "2024-08-06",
+  "arxiv": "2402.16819",
+  "title": "Nemotron-4 15B Technical Report",
+  "year": 2024,
+  "name_hits": [
+   "nemotron"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "falcon_mamba",
+  "added": "2024-08-12",
+  "arxiv": "2410.05355",
+  "title": "Falcon Mamba: The First Competitive Attention-free 7B Language Model",
+  "year": 2024,
+  "name_hits": [
+   "falcon",
+   "mamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "granite",
+  "added": "2024-08-27",
+  "arxiv": "2408.13359",
+  "title": "Power Scheduler: A Batch Size and Token Number Agnostic Learning Rate Scheduler",
+  "year": 2024,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "olmoe",
+  "added": "2024-09-03",
+  "arxiv": "2409.02060",
+  "title": "OLMoE: Open Mixture-of-Experts Language Models",
+  "year": 2024,
+  "name_hits": [
+   "olmoe"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "granitemoe",
+  "added": "2024-09-20",
+  "arxiv": "2408.13359",
+  "title": "Power Scheduler: A Batch Size and Token Number Agnostic Learning Rate Scheduler",
+  "year": 2024,
+  "name_hits": [],
+  "status": "DUPLICATE",
+  "reason": "report shared with granite"
+ },
+ {
+  "model": "mllama",
+  "added": "2024-09-25",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "phimoe",
+  "added": "2024-10-04",
+  "arxiv": "2404.14219",
+  "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone",
+  "year": 2024,
+  "name_hits": [],
+  "status": "DUPLICATE",
+  "reason": "report shared with phi3"
+ },
+ {
+  "model": "zamba",
+  "added": "2024-10-04",
+  "arxiv": "2405.16712",
+  "title": "Zamba: A Compact 7B SSM Hybrid Model",
+  "year": 2024,
+  "name_hits": [
+   "zamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "moshi",
+  "added": "2024-10-16",
+  "arxiv": "2410.00037",
+  "title": "Moshi: a speech-text foundation model for real-time dialogue",
+  "year": 2024,
+  "name_hits": [
+   "moshi"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "glm",
+  "added": "2024-10-18",
+  "arxiv": "2406.12793",
+  "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools",
+  "year": 2024,
+  "name_hits": [
+   "glm"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "olmo2",
+  "added": "2024-11-25",
+  "arxiv": "2501.00656",
+  "title": "2 OLMo 2 Furious",
+  "year": 2025,
+  "name_hits": [
+   "olmo"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "aria",
+  "added": "2024-12-06",
+  "arxiv": "2410.05993",
+  "title": "Aria: An Open Multimodal Native Mixture-of-Experts Model",
+  "year": 2024,
+  "name_hits": [
+   "aria"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "cohere2",
+  "added": "2024-12-13",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "bamba",
+  "added": "2024-12-19",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "diffllama",
+  "added": "2025-01-07",
+  "arxiv": "2410.05258",
+  "title": "Differential Transformer",
+  "year": 2024,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "emu3",
+  "added": "2025-01-10",
+  "arxiv": "2409.18869",
+  "title": "Emu3: Next-Token Prediction is All You Need",
+  "year": 2024,
+  "name_hits": [
+   "emu"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "helium",
+  "added": "2025-01-13",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "zamba2",
+  "added": "2025-01-27",
+  "arxiv": "2411.15242",
+  "title": "The Zamba2 Suite: Technical Report",
+  "year": 2024,
+  "name_hits": [
+   "zamba"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "granitemoeshared",
+  "added": "2025-02-14",
+  "arxiv": "2408.13359",
+  "title": "Power Scheduler: A Batch Size and Token Number Agnostic Learning Rate Scheduler",
+  "year": 2024,
+  "name_hits": [],
+  "status": "DUPLICATE",
+  "reason": "report shared with granite"
+ },
+ {
+  "model": "gemma3",
+  "added": "2025-03-12",
+  "arxiv": "2503.19786",
+  "title": "Gemma 3 Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "gemma"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "phi4_multimodal",
+  "added": "2025-03-25",
+  "arxiv": "2503.01743",
+  "title": "Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs",
+  "year": 2025,
+  "name_hits": [
+   "phi"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "deepseek_v3",
+  "added": "2025-03-28",
+  "arxiv": "2412.19437",
+  "title": "DeepSeek-V3 Technical Report",
+  "year": 2024,
+  "name_hits": [
+   "deepseek"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "qwen3",
+  "added": "2025-03-31",
+  "arxiv": "2505.09388",
+  "title": "Qwen3 Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "qwen"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "qwen3_moe",
+  "added": "2025-03-31",
+  "arxiv": "2505.09388",
+  "title": "Qwen3 Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "qwen"
+  ],
+  "status": "DUPLICATE",
+  "reason": "report shared with qwen3"
+ },
+ {
+  "model": "llama4",
+  "added": "2025-04-05",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "glm4",
+  "added": "2025-04-09",
+  "arxiv": "2406.12793",
+  "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools",
+  "year": 2024,
+  "name_hits": [
+   "glm"
+  ],
+  "status": "DUPLICATE",
+  "reason": "report shared with glm"
+ },
+ {
+  "model": "bitnet",
+  "added": "2025-04-28",
+  "arxiv": "2504.12285",
+  "title": "BitNet b1.58 2B4T Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "bitnet"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "granitemoehybrid",
+  "added": "2025-05-05",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "csm",
+  "added": "2025-05-07",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "falcon_h1",
+  "added": "2025-05-21",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "minimax",
+  "added": "2025-06-04",
+  "arxiv": "2501.08313",
+  "title": "MiniMax-01: Scaling Foundation Models with Lightning Attention",
+  "year": 2025,
+  "name_hits": [
+   "minimax"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "arcee",
+  "added": "2025-06-24",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "dots1",
+  "added": "2025-06-25",
+  "arxiv": "2506.05767",
+  "title": "dots.llm1 Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "dots"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "smollm3",
+  "added": "2025-06-25",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "gemma3n",
+  "added": "2025-06-26",
+  "arxiv": "2411.07501",
+  "title": "LAuReL: Learned Augmented Residual Layer",
+  "year": 2024,
+  "name_hits": [
+   "n"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "doge",
+  "added": "2025-07-08",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "deepseek_v2",
+  "added": "2025-07-09",
+  "arxiv": "2405.04434",
+  "title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",
+  "year": 2024,
+  "name_hits": [
+   "deepseek"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "lfm2",
+  "added": "2025-07-10",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "ernie4_5",
+  "added": "2025-07-21",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "ernie4_5_moe",
+  "added": "2025-07-21",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "glm4_moe",
+  "added": "2025-07-21",
+  "arxiv": "2508.06471",
+  "title": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+  "year": 2025,
+  "name_hits": [
+   "glm"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "xlstm",
+  "added": "2025-07-25",
+  "arxiv": "2405.04517",
+  "title": "xLSTM: Extended Long Short-Term Memory",
+  "year": 2024,
+  "name_hits": [
+   "xlstm"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "exaone4",
+  "added": "2025-07-26",
+  "arxiv": "2507.11407",
+  "title": "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes",
+  "year": 2025,
+  "name_hits": [
+   "exaone"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "gpt_oss",
+  "added": "2025-08-05",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "kosmos2_5",
+  "added": "2025-08-19",
+  "arxiv": "2309.11419",
+  "title": "KOSMOS-2.5: A Multimodal Literate Model",
+  "year": 2023,
+  "name_hits": [
+   "kosmos"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "hunyuan_v1_dense",
+  "added": "2025-08-22",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "hunyuan_v1_moe",
+  "added": "2025-08-22",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "seed_oss",
+  "added": "2025-08-22",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "apertus",
+  "added": "2025-08-28",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "qwen3_next",
+  "added": "2025-09-10",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "ministral",
+  "added": "2025-09-11",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "vaultgemma",
+  "added": "2025-09-12",
+  "arxiv": "1607.00133",
+  "title": "Deep Learning with Differential Privacy",
+  "year": 2016,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "report before 2020"
+ },
+ {
+  "model": "olmo3",
+  "added": "2025-09-16",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "longcat_flash",
+  "added": "2025-09-17",
+  "arxiv": "2509.01322",
+  "title": "LongCat-Flash Technical Report",
+  "year": 2025,
+  "name_hits": [
+   "longcat"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "flex_olmo",
+  "added": "2025-09-18",
+  "arxiv": "2507.07024",
+  "title": "FlexOlmo: Open Language Models for Flexible Data Use",
+  "year": 2025,
+  "name_hits": [
+   "flex"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "blt",
+  "added": "2025-09-19",
+  "arxiv": "2412.09871",
+  "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+  "year": 2024,
+  "name_hits": [
+   "blt"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "lfm2_moe",
+  "added": "2025-10-07",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "cwm",
+  "added": "2025-10-09",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "nanochat",
+  "added": "2025-11-27",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "afmoe",
+  "added": "2025-11-29",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "ministral3",
+  "added": "2025-12-01",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "jais2",
+  "added": "2025-12-17",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "minimax_m2",
+  "added": "2026-01-09",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "glm4_moe_lite",
+  "added": "2026-01-13",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "solar_open",
+  "added": "2026-01-22",
+  "arxiv": "2601.07022",
+  "title": "Solar Open Technical Report",
+  "year": 2026,
+  "name_hits": [
+   "solar"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "youtu",
+  "added": "2026-01-28",
+  "arxiv": "2512.24618",
+  "title": "Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models",
+  "year": 2025,
+  "name_hits": [
+   "youtu"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "exaone_moe",
+  "added": "2026-02-04",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "glm_moe_dsa",
+  "added": "2026-02-09",
+  "arxiv": "2603.12201",
+  "title": "IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse",
+  "year": 2026,
+  "name_hits": [
+   "glm"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "qwen3_5",
+  "added": "2026-02-09",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "qwen3_5_moe",
+  "added": "2026-02-09",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "olmo_hybrid",
+  "added": "2026-02-26",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "nemotron_h",
+  "added": "2026-03-03",
+  "arxiv": "2504.03624",
+  "title": "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models",
+  "year": 2025,
+  "name_hits": [
+   "nemotron"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "mistral4",
+  "added": "2026-03-16",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "gemma4",
+  "added": "2026-04-02",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "hy_v3",
+  "added": "2026-04-22",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "laguna",
+  "added": "2026-04-28",
+  "arxiv": "2408.15664",
+  "title": "Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts",
+  "year": 2024,
+  "name_hits": [],
+  "status": "NOT_ELIGIBLE",
+  "reason": "arXiv title/abstract does not name the model or family"
+ },
+ {
+  "model": "deepseek_v4",
+  "added": "2026-05-02",
+  "arxiv": "2606.19348",
+  "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+  "year": 2026,
+  "name_hits": [
+   "deepseek"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "gemma4_assistant",
+  "added": "2026-05-05",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "hyperclovax",
+  "added": "2026-05-08",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "hrm_text",
+  "added": "2026-05-18",
+  "arxiv": "2506.21734",
+  "title": "Hierarchical Reasoning Model",
+  "year": 2025,
+  "name_hits": [
+   "hrm"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "cohere2_moe",
+  "added": "2026-05-20",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "mellum",
+  "added": "2026-05-28",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "gemma4_unified",
+  "added": "2026-06-03",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "gemma4_unified_assistant",
+  "added": "2026-06-03",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "deepseek_v32",
+  "added": "2026-06-10",
+  "arxiv": "2512.02556",
+  "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+  "year": 2025,
+  "name_hits": [
+   "deepseek"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "minimax_m3_vl",
+  "added": "2026-06-12",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "minicpm3",
+  "added": "2026-06-22",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "mimo_v2_flash",
+  "added": "2026-06-30",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "zaya",
+  "added": "2026-07-01",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "inkling",
+  "added": "2026-07-15",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "axk1",
+  "added": "2026-07-23",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "axk2",
+  "added": "2026-07-24",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "granite_swa",
+  "added": "2026-07-29",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "granitemoe_swa",
+  "added": "2026-07-29",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "cohere_compass",
+  "added": "2026-08-10",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "qwen4_exp",
+  "added": "2026-08-26",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "kimi_linear",
+  "added": "2026-09-04",
+  "arxiv": "2510.26692",
+  "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+  "year": 2025,
+  "name_hits": [
+   "kimi",
+   "linear"
+  ],
+  "status": "ELIGIBLE_AUTO"
+ },
+ {
+  "model": "hy_v4",
+  "added": "2026-09-07",
+  "arxiv": "2603.12201",
+  "title": "IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse",
+  "year": 2026,
+  "name_hits": [],
+  "status": "DUPLICATE",
+  "reason": "report shared with glm_moe_dsa"
+ },
+ {
+  "model": "kolibri1",
+  "added": "2026-10-12",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "bailing_hybrid",
+  "added": "2026-10-13",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "beam",
+  "added": "2026-10-16",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "flint",
+  "added": "2026-10-21",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "lfm3",
+  "added": "2026-11-05",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "inkling2",
+  "added": "2026-11-11",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "dots3_note",
+  "added": "2026-11-12",
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "blenderbot_small",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "kosmos2",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "megatron_bert",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "modernbert_decoder",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "roberta_prelayernorm",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "xlm_roberta",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ },
+ {
+  "model": "xlm_roberta_xl",
+  "added": null,
+  "arxiv": null,
+  "status": "NOT_ELIGIBLE",
+  "reason": "no arXiv link in model_doc"
+ }
+]

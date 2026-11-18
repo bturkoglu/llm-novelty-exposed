@@ -1,0 +1,222 @@
+{
+ "arxiv": "2606.19348",
+ "model": "deepseek_v4",
+ "coding": {
+  "note": "Coded only the supplied report, without verifying its identifier or authenticity. C1 includes the introduced model family, architectural/optimization upgrades, distinct introductory infrastructure contributions, post-training paradigm, and headline context/efficiency/performance contributions. No element-specific ARCH/TRAIN ablations are reported; comparisons between V3.2 and V4 change architecture, data, scale, and tokens together and do not isolate these elements. Training seeds are not stated; sampling multiple solutions is not independent training replication. Comparator names are from main Table 6. Authors explicitly rerun long-context comparators and base models, but provenance and same-harness evaluation of all Table 6 scores are not established, so overall rerun and copied-score status are NR. GDPval-AA scores and a Codeforces leaderboard mention do not explicitly establish an independent evaluation run; third_party is conservatively NO. Inference FLOPs are not training-compute disclosure. Data categories are disclosed without reconstructible source proportions. Prior named techniques are adopted or modified, not explicitly renamed.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "claim": "Introduce the DeepSeek-V4-Pro and DeepSeek-V4-Flash model family at trillion/hundred-billion parameter scales.",
+    "category": "SCALE",
+    "quote": "series, including the preview versions of DeepSeek-V4-Pro with 1.6T parameters (49B activated)\nand DeepSeek-V4-Flash with 284B parameters (13B activated).",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Efficient native support for million-token contexts.",
+    "category": "CTX",
+    "quote": "This breakthrough enables efficient support for a context length of one\nmillion tokens, ushering in a new era of million-length contexts for next-generation LLMs.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Hybrid attention combining Compressed Sparse Attention and Heavily Compressed Attention.",
+    "category": "ARCH",
+    "quote": "context efficiency, we design a hybrid attention mechanism combining Compressed Sparse\nAttention (CSA) and Heavily Compressed Attention (HCA).",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Incorporate manifold-constrained hyper-connections to strengthen residual connections.",
+    "category": "ARCH",
+    "quote": "To strengthen modeling capability, we incorporate Manifold-Constrained\nHyper-Connections (mHC) (Xie et al., 2026) that upgrade conventional residual connections.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Introduce Muon optimization for faster convergence and training stability.",
+    "category": "TRAIN",
+    "quote": "Additionally, we introduce the Muon (Jordan et al., 2024; Liu et al., 2025) optimizer to the\ntraining of DeepSeek-V4 series, leading to faster convergence and improved training stability.",
+    "page": 4,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Single fused MoE kernel overlapping computation, communication, and memory access.",
+    "category": "EFF",
+    "quote": "First, we design and implement\na single fused kernel for MoE modules that fully overlaps computation, communication, and\nmemory access.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Employ TileLang to balance kernel-development productivity and runtime efficiency.",
+    "category": "EFF",
+    "quote": "Second, we employ TileLang (Wang et al., 2026), a Domain-Specific Language\n(DSL) to balance development productivity and runtime efficiency.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Provide efficient batch-invariant deterministic kernel libraries for bitwise reproducibility.",
+    "category": "EFF",
+    "quote": "Third, we provide efficient\nbatch-invariant and deterministic kernel libraries to ensure bitwise reproducibility across train-\ning and inference.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Extend autograd with tensor-level activation checkpointing for fine-grained recomputation control.",
+    "category": "EFF",
+    "quote": "Fourth, for the training framework, we extend the autograd framework with\ntensor-level checkpointing for fine-grained recomputation control;",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Hybrid ZeRO strategy to implement Muon efficiently.",
+    "category": "EFF",
+    "quote": "and we enhance training\nefficiency with a hybrid ZeRO strategy for the Muon optimizer,",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Cost-effective mHC implementation using recomputation and fused kernels.",
+    "category": "EFF",
+    "quote": "cost-effective mHC implemen-\ntations via recomputation and fused kernels, and two-stage contextual parallelism to manage\ncompressed attention.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two-stage contextual parallelism for compressed attention.",
+    "category": "EFF",
+    "quote": "and two-stage contextual parallelism to manage\ncompressed attention. Fifth, for the inference framework, we design a heterogeneous KV cache",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Heterogeneous KV-cache structure and on-disk storage for efficient shared-prefix reuse.",
+    "category": "EFF",
+    "quote": "Fifth, for the inference framework, we design a heterogeneous KV cache\nstructure with on-disk storage strategies to enable efficient shared-prefix reuse.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "FP4 quantization-aware post-training of expert weights and indexer QK path to reduce computation and memory.",
+    "category": "POST",
+    "quote": "during the post-training stage, we incorporate FP4 quantization-aware training for MoE expert\nweights and the indexer QK path to reduce memory and computation.",
+    "page": 4,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Substantially reduced inference FLOPs and KV-cache requirements versus DeepSeek-V3.2 at million-token context.",
+    "category": "EFF",
+    "quote": "V4-Pro requires only 27% of single-token inference FLOPs and 10% of KV cache compared\n  with DeepSeek-V3.2.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Two-stage post-training paradigm: train domain specialists and consolidate by on-policy distillation.",
+    "category": "POST",
+    "quote": "The post-training pipeline of DeepSeek-V4 series features a two-stage paradigm: the inde-\npendent cultivation of domain-specific experts, followed by unified model consolidation via\non-policy distillation",
+    "page": 5,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "DeepSeek-V4-Pro-Max sets a new state of the art for open models.",
+    "category": "OTHER",
+    "quote": "Max, the maximum reasoning effort mode of DeepSeek-V4-Pro, redefines the state-of-the-art for\n  open models, outperforming its predecessors in core tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Combining all the above, our pre-training corpus comprises more than 32T tokens, containing\nmathematical contents, codes, web pages, long documents, and other high-quality categories.",
+   "page": 24
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "During pre-training, we train DeepSeek-V4-Flash on 32T tokens and DeepSeek-V4-Pro on 33T\ntokens, respectively.",
+   "page": 5
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "Claude Opus-4.6-Max",
+   "GPT-5.4-xHigh",
+   "Gemini-3.1-Pro-High",
+   "Kimi-K2.6-Thinking",
+   "GLM-5.1-Thinking"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "fd6721c766acb481090b6635cff1c60e13338f01a58f8f3965466691dbc3f1fd",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1945,
+   "totalTokens": 57242,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 55165
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:26:01+00:00"
+ }
+}

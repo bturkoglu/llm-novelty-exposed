@@ -1,0 +1,701 @@
+{
+ "sorensen2015": {
+  "id": "doi:10.1111/itor.12001",
+  "verified": true,
+  "title": "Metaheuristics—the metaphor exposed",
+  "authors": [
+   "Sörensen"
+  ],
+  "n_authors": 1,
+  "year": 2013,
+  "venue": "International Transactions in Operational Research",
+  "volume": "22",
+  "pages": "3-18",
+  "doi": "10.1111/itor.12001",
+  "registry": "crossref"
+ },
+ "weyland2010": {
+  "id": "title:A rigorous analysis of the harmony search algorithm",
+  "verified": true,
+  "title": "A Rigorous Analysis of the Harmony Search Algorithm",
+  "authors": [
+   "Weyland"
+  ],
+  "n_authors": 1,
+  "year": 2012,
+  "venue": "Modeling, Analysis, and Applications in Metaheuristic Computing",
+  "volume": null,
+  "pages": "72-83",
+  "doi": "10.4018/978-1-4666-0270-0.ch005",
+  "registry": "crossref"
+ },
+ "camacho2023": {
+  "id": "title:Exposing the grey wolf, moth-flame, whale, firefly, bat, and antlion algorithms: six misleading optimization techniques inspired by bestial metaphors",
+  "verified": true,
+  "title": "Exposing the grey wolf, moth‐flame, whale, firefly, bat, and antlion algorithms: six misleading optimization techniques inspired by bestial metaphors",
+  "authors": [
+   "Camacho‐Villalón",
+   "Dorigo",
+   "Stützle"
+  ],
+  "n_authors": 3,
+  "year": 2022,
+  "venue": "International Transactions in Operational Research",
+  "volume": "30",
+  "pages": "2945-2971",
+  "doi": "10.1111/itor.13176",
+  "registry": "crossref"
+ },
+ "vaswani2017": {
+  "id": "arxiv:1706.03762",
+  "verified": true,
+  "title": "Attention Is All You Need",
+  "authors": [
+   "Vaswani",
+   "Shazeer",
+   "Parmar",
+   "Uszkoreit",
+   "Jones",
+   "Gomez"
+  ],
+  "n_authors": 8,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "1706.03762",
+  "registry": "arxiv"
+ },
+ "devlin2019": {
+  "id": "arxiv:1810.04805",
+  "verified": true,
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "authors": [
+   "Devlin",
+   "Chang",
+   "Lee",
+   "Toutanova"
+  ],
+  "n_authors": 4,
+  "year": 2019,
+  "doi": "",
+  "arxiv": "1810.04805",
+  "registry": "arxiv"
+ },
+ "brown2020": {
+  "id": "arxiv:2005.14165",
+  "verified": true,
+  "title": "Language Models are Few-Shot Learners",
+  "authors": [
+   "Brown",
+   "Mann",
+   "Ryder",
+   "Subbiah",
+   "Kaplan",
+   "Dhariwal"
+  ],
+  "n_authors": 31,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "2005.14165",
+  "registry": "arxiv"
+ },
+ "kaplan2020": {
+  "id": "arxiv:2001.08361",
+  "verified": true,
+  "title": "Scaling Laws for Neural Language Models",
+  "authors": [
+   "Kaplan",
+   "McCandlish",
+   "Henighan",
+   "Brown",
+   "Chess",
+   "Child"
+  ],
+  "n_authors": 10,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "2001.08361",
+  "registry": "arxiv"
+ },
+ "hoffmann2022": {
+  "id": "arxiv:2203.15556",
+  "verified": true,
+  "title": "Training Compute-Optimal Large Language Models",
+  "authors": [
+   "Hoffmann",
+   "Borgeaud",
+   "Mensch",
+   "Buchatskaya",
+   "Cai",
+   "Rutherford"
+  ],
+  "n_authors": 22,
+  "year": 2022,
+  "doi": "",
+  "arxiv": "2203.15556",
+  "registry": "arxiv"
+ },
+ "ouyang2022": {
+  "id": "arxiv:2203.02155",
+  "verified": true,
+  "title": "Training language models to follow instructions with human feedback",
+  "authors": [
+   "Ouyang",
+   "Wu",
+   "Jiang",
+   "Almeida",
+   "Wainwright",
+   "Mishkin"
+  ],
+  "n_authors": 20,
+  "year": 2022,
+  "doi": "",
+  "arxiv": "2203.02155",
+  "registry": "arxiv"
+ },
+ "shazeer2017": {
+  "id": "arxiv:1701.06538",
+  "verified": true,
+  "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+  "authors": [
+   "Shazeer",
+   "Mirhoseini",
+   "Maziarz",
+   "Davis",
+   "Le",
+   "Hinton"
+  ],
+  "n_authors": 7,
+  "year": 2017,
+  "doi": "",
+  "arxiv": "1701.06538",
+  "registry": "arxiv"
+ },
+ "fedus2022": {
+  "id": "arxiv:2101.03961",
+  "verified": true,
+  "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+  "authors": [
+   "Fedus",
+   "Zoph",
+   "Shazeer"
+  ],
+  "n_authors": 3,
+  "year": 2022,
+  "doi": "",
+  "arxiv": "2101.03961",
+  "registry": "arxiv"
+ },
+ "snell2024": {
+  "id": "arxiv:2408.03314",
+  "verified": true,
+  "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+  "authors": [
+   "Snell",
+   "Lee",
+   "Xu",
+   "Kumar"
+  ],
+  "n_authors": 4,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2408.03314",
+  "registry": "arxiv"
+ },
+ "touvron2023": {
+  "id": "arxiv:2302.13971",
+  "verified": true,
+  "title": "LLaMA: Open and Efficient Foundation Language Models",
+  "authors": [
+   "Touvron",
+   "Lavril",
+   "Izacard",
+   "Martinet",
+   "Lachaux",
+   "Lacroix"
+  ],
+  "n_authors": 14,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2302.13971",
+  "registry": "arxiv"
+ },
+ "narang2021": {
+  "id": "arxiv:2102.11972",
+  "verified": true,
+  "title": "Do Transformer Modifications Transfer Across Implementations and Applications?",
+  "authors": [
+   "Narang",
+   "Chung",
+   "Tay",
+   "Fedus",
+   "Fevry",
+   "Matena"
+  ],
+  "n_authors": 16,
+  "year": 2021,
+  "doi": "",
+  "arxiv": "2102.11972",
+  "registry": "arxiv"
+ },
+ "laufer2025": {
+  "id": "arxiv:2508.06811",
+  "verified": true,
+  "title": "Anatomy of a Machine Learning Ecosystem: 2 Million Models on Hugging Face",
+  "authors": [
+   "Laufer",
+   "Oderinwale",
+   "Kleinberg"
+  ],
+  "n_authors": 3,
+  "year": 2025,
+  "doi": "",
+  "arxiv": "2508.06811",
+  "registry": "arxiv"
+ },
+ "hugginggraph2025": {
+  "id": "arxiv:2507.14240",
+  "verified": true,
+  "title": "HuggingGraph: Understanding the Supply Chain of LLM Ecosystem",
+  "authors": [
+   "Rahman",
+   "Gao",
+   "Ji"
+  ],
+  "n_authors": 3,
+  "year": 2025,
+  "doi": "",
+  "arxiv": "2507.14240",
+  "registry": "arxiv"
+ },
+ "disruptive2026": {
+  "id": "arxiv:2604.11618",
+  "verified": true,
+  "title": "Identifying Disruptive Models in the Open-Source LLM Community",
+  "authors": [
+   "Wei",
+   "Kang",
+   "Pan",
+   "Yang"
+  ],
+  "n_authors": 4,
+  "year": 2026,
+  "doi": "",
+  "arxiv": "2604.11618",
+  "registry": "arxiv"
+ },
+ "polysemy2026": {
+  "id": "arxiv:2604.21043",
+  "verified": true,
+  "title": "Strategic Polysemy in AI Discourse: A Philosophical Analysis of Language, Hype, and Power",
+  "authors": [
+   "LaCroix",
+   "Mallory",
+   "Luccioni"
+  ],
+  "n_authors": 3,
+  "year": 2026,
+  "doi": "10.1145/3805689.3812399",
+  "arxiv": "2604.21043",
+  "registry": "arxiv"
+ },
+ "narang_update2026": {
+  "id": "arxiv:2605.20798",
+  "verified": true,
+  "title": "Most Transformer Modifications Still Do Not Transfer at 1-3B: A 2020-2026 Update to Narang et al. (2021) with Downstream Evaluation and a Noise Floor",
+  "authors": [
+   "Zhao",
+   "Lu",
+   "Huang",
+   "Zhang",
+   "Zhou"
+  ],
+  "n_authors": 5,
+  "year": 2026,
+  "doi": "",
+  "arxiv": "2605.20798",
+  "registry": "arxiv"
+ },
+ "lipton2018": {
+  "id": "arxiv:1807.03341",
+  "verified": true,
+  "title": "Troubling Trends in Machine Learning Scholarship",
+  "authors": [
+   "Lipton",
+   "Steinhardt"
+  ],
+  "n_authors": 2,
+  "year": 2018,
+  "doi": "",
+  "arxiv": "1807.03341",
+  "registry": "arxiv"
+ },
+ "dodge2019": {
+  "id": "arxiv:1909.03004",
+  "verified": true,
+  "title": "Show Your Work: Improved Reporting of Experimental Results",
+  "authors": [
+   "Dodge",
+   "Gururangan",
+   "Card",
+   "Schwartz",
+   "Smith"
+  ],
+  "n_authors": 5,
+  "year": 2019,
+  "doi": "",
+  "arxiv": "1909.03004",
+  "registry": "arxiv"
+ },
+ "bouthillier2021": {
+  "id": "arxiv:2103.03098",
+  "verified": true,
+  "title": "Accounting for Variance in Machine Learning Benchmarks",
+  "authors": [
+   "Bouthillier",
+   "Delaunay",
+   "Bronzi",
+   "Trofimov",
+   "Nichyporuk",
+   "Szeto"
+  ],
+  "n_authors": 17,
+  "year": 2021,
+  "doi": "",
+  "arxiv": "2103.03098",
+  "registry": "arxiv"
+ },
+ "melis2018": {
+  "id": "arxiv:1707.05589",
+  "verified": true,
+  "title": "On the State of the Art of Evaluation in Neural Language Models",
+  "authors": [
+   "Melis",
+   "Dyer",
+   "Blunsom"
+  ],
+  "n_authors": 3,
+  "year": 2017,
+  "doi": "",
+  "arxiv": "1707.05589",
+  "registry": "arxiv"
+ },
+ "wolf2020": {
+  "id": "arxiv:1910.03771",
+  "verified": true,
+  "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+  "authors": [
+   "Wolf",
+   "Debut",
+   "Sanh",
+   "Chaumond",
+   "Delangue",
+   "Moi"
+  ],
+  "n_authors": 22,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "1910.03771",
+  "registry": "arxiv"
+ },
+ "qwen2_2024": {
+  "id": "arxiv:2407.10671",
+  "verified": true,
+  "title": "Qwen2 Technical Report",
+  "authors": [
+   "Yang",
+   "Yang",
+   "Hui",
+   "Zheng",
+   "Yu",
+   "Zhou"
+  ],
+  "n_authors": 62,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2407.10671",
+  "registry": "arxiv"
+ },
+ "qwen3_2025": {
+  "id": "arxiv:2505.09388",
+  "verified": true,
+  "title": "Qwen3 Technical Report",
+  "authors": [
+   "Yang",
+   "Li",
+   "Yang",
+   "Zhang",
+   "Hui",
+   "Zheng"
+  ],
+  "n_authors": 60,
+  "year": 2025,
+  "doi": "",
+  "arxiv": "2505.09388",
+  "registry": "arxiv"
+ },
+ "olmo2_2025": {
+  "id": "arxiv:2501.00656",
+  "verified": true,
+  "title": "2 OLMo 2 Furious",
+  "authors": [
+   "OLMo",
+   "Walsh",
+   "Soldaini",
+   "Groeneveld",
+   "Lo",
+   "Arora"
+  ],
+  "n_authors": 43,
+  "year": 2025,
+  "doi": "",
+  "arxiv": "2501.00656",
+  "registry": "arxiv"
+ },
+ "mistral2023": {
+  "id": "arxiv:2310.06825",
+  "verified": true,
+  "title": "Mistral 7B",
+  "authors": [
+   "Jiang",
+   "Sablayrolles",
+   "Mensch",
+   "Bamford",
+   "Chaplot",
+   "Casas"
+  ],
+  "n_authors": 18,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2310.06825",
+  "registry": "arxiv"
+ },
+ "falcon2023": {
+  "id": "arxiv:2311.16867",
+  "verified": true,
+  "title": "The Falcon Series of Open Language Models",
+  "authors": [
+   "Almazrouei",
+   "Alobeidli",
+   "Alshamsi",
+   "Cappelli",
+   "Cojocaru",
+   "Debbah"
+  ],
+  "n_authors": 14,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2311.16867",
+  "registry": "arxiv"
+ },
+ "gemma2024": {
+  "id": "arxiv:2403.08295",
+  "verified": true,
+  "title": "Gemma: Open Models Based on Gemini Research and Technology",
+  "authors": [
+   "Gemma Team",
+   "Mesnard",
+   "Hardin",
+   "Dadashi",
+   "Bhupatiraju",
+   "Pathak"
+  ],
+  "n_authors": 108,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2403.08295",
+  "registry": "arxiv"
+ },
+ "mamba2023": {
+  "id": "arxiv:2312.00752",
+  "verified": true,
+  "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+  "authors": [
+   "Gu",
+   "Dao"
+  ],
+  "n_authors": 2,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2312.00752",
+  "registry": "arxiv"
+ },
+ "dehghani2023": {
+  "id": "arxiv:2302.05442",
+  "verified": true,
+  "title": "Scaling Vision Transformers to 22 Billion Parameters",
+  "authors": [
+   "Dehghani",
+   "Djolonga",
+   "Mustafa",
+   "Padlewski",
+   "Heek",
+   "Gilmer"
+  ],
+  "n_authors": 42,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2302.05442",
+  "registry": "arxiv"
+ },
+ "ainslie2023": {
+  "id": "arxiv:2305.13245",
+  "verified": true,
+  "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+  "authors": [
+   "Ainslie",
+   "Lee-Thorp",
+   "de Jong",
+   "Zemlyanskiy",
+   "Lebrón",
+   "Sanghai"
+  ],
+  "n_authors": 6,
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2305.13245",
+  "registry": "arxiv"
+ },
+ "mitchell2019": {
+  "id": "arxiv:1810.03993",
+  "verified": true,
+  "title": "Model Cards for Model Reporting",
+  "authors": [
+   "Mitchell",
+   "Wu",
+   "Zaldivar",
+   "Barnes",
+   "Vasserman",
+   "Hutchinson"
+  ],
+  "n_authors": 9,
+  "year": 2019,
+  "doi": "10.1145/3287560.3287596",
+  "arxiv": "1810.03993",
+  "registry": "arxiv"
+ },
+ "gebru2021": {
+  "id": "arxiv:1803.09010",
+  "verified": true,
+  "title": "Datasheets for Datasets",
+  "authors": [
+   "Gebru",
+   "Morgenstern",
+   "Vecchione",
+   "Vaughan",
+   "Wallach",
+   "Daumé"
+  ],
+  "n_authors": 7,
+  "year": 2021,
+  "doi": "",
+  "arxiv": "1803.09010",
+  "registry": "arxiv"
+ },
+ "pineau2021": {
+  "id": "arxiv:2003.12206",
+  "verified": true,
+  "title": "Improving Reproducibility in Machine Learning Research (A Report from the NeurIPS 2019 Reproducibility Program)",
+  "authors": [
+   "Pineau",
+   "Vincent-Lamarre",
+   "Sinha",
+   "Larivière",
+   "Beygelzimer",
+   "d'Alché-Buc"
+  ],
+  "n_authors": 8,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "2003.12206",
+  "registry": "arxiv"
+ },
+ "child2019": {
+  "id": "arxiv:1904.10509",
+  "verified": true,
+  "title": "Generating Long Sequences with Sparse Transformers",
+  "authors": [
+   "Child",
+   "Gray",
+   "Radford",
+   "Sutskever"
+  ],
+  "n_authors": 4,
+  "year": 2019,
+  "doi": "",
+  "arxiv": "1904.10509",
+  "registry": "arxiv"
+ },
+ "beltagy2020": {
+  "id": "arxiv:2004.05150",
+  "verified": true,
+  "title": "Longformer: The Long-Document Transformer",
+  "authors": [
+   "Beltagy",
+   "Peters",
+   "Cohan"
+  ],
+  "n_authors": 3,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "2004.05150",
+  "registry": "arxiv"
+ },
+ "shazeer2019": {
+  "id": "arxiv:1911.02150",
+  "verified": true,
+  "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+  "authors": [
+   "Shazeer"
+  ],
+  "n_authors": 1,
+  "year": 2019,
+  "doi": "",
+  "arxiv": "1911.02150",
+  "registry": "arxiv"
+ },
+ "shazeer2020": {
+  "id": "arxiv:2002.05202",
+  "verified": true,
+  "title": "GLU Variants Improve Transformer",
+  "authors": [
+   "Shazeer"
+  ],
+  "n_authors": 1,
+  "year": 2020,
+  "doi": "",
+  "arxiv": "2002.05202",
+  "registry": "arxiv"
+ },
+ "mamba2_2024": {
+  "id": "arxiv:2405.21060",
+  "verified": true,
+  "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+  "authors": [
+   "Dao",
+   "Gu"
+  ],
+  "n_authors": 2,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2405.21060",
+  "registry": "arxiv"
+ },
+ "falconmamba2024": {
+  "id": "arxiv:2410.05355",
+  "verified": true,
+  "title": "Falcon Mamba: The First Competitive Attention-free 7B Language Model",
+  "authors": [
+   "Zuo",
+   "Velikanov",
+   "Rhaiem",
+   "Chahed",
+   "Belkada",
+   "Kunsch"
+  ],
+  "n_authors": 7,
+  "year": 2024,
+  "doi": "",
+  "arxiv": "2410.05355",
+  "registry": "arxiv"
+ }
+}

@@ -1,0 +1,4734 @@
+{
+ "coder": "A",
+ "stats": {
+  "checked": 484,
+  "failed": 17
+ },
+ "reports": {
+  "2001.04063": {
+   "model": "prophetnet",
+   "is_release_report": true,
+   "comparators": [
+    "LEAD-3",
+    "PTGEN",
+    "PTGEN+Coverage",
+    "S2S-ELMo",
+    "Bottom-Up",
+    "BERTSUMABS",
+    "BERTSUMEXTABS",
+    "MASS",
+    "UniLM",
+    "OpenNMT",
+    "Re3Sum",
+    "SemQG",
+    "T5",
+    "PEGASUS-Large",
+    "BART"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Novel self-supervised objective: future n-gram prediction, i.e. predicting the next n tokens at once at each time step",
+     "page": 3,
+     "quote": "For simplicity, we take bigram (n = 2) as an example to introduce ProphetNet, whose modeling target is",
+     "ablation_quote": "ProphetNetbase -2gram 42.52 19.78 39.59 ProphetNetbase -3gram 42.61 19.83 39.67",
+     "ablation_page": 8
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Proposed n-stream self-attention in the decoder (extends XLNet two-stream attention), with main and predicting streams that can be switched off at inference",
+     "page": 4,
+     "quote": "N-stream self-attention mechanism which contains a main stream self-attention and n predicting stream self-attention.",
+     "ablation_quote": "Transformer (Raffel et al., 2019) 39.19 17.60 36.69 ProphetNetw/o pre-train 40.66 18.05 37.79",
+     "ablation_page": 7
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Mask-based auto-encoder denoising (token span masking) for Seq2Seq pre-training",
+     "page": 4,
+     "quote": "This paper uses token span masking as our de-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Pre-trained on a base-scale 16GB dataset (BookCorpus + Wikipedia) and a large-scale 160GB corpus",
+     "page": 5,
+     "quote": "et al., 2018), we use BookCorpus (Zhu et al., 2015)",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "New state-of-the-art results on CNN/DailyMail, Gigaword and SQuAD question generation, with less pre-training than BART, T5 and PEGASUS",
+     "page": 7,
+     "quote": "BART (Lewis et al., 2019) 160GB 44.16 21.28 40.90 ProphetNet 160GB 44.20 21.17 41.30",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "et al., 2018), we use BookCorpus (Zhu et al., 2015)",
+    "page": 5
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2001.08210": {
+   "model": "mbart",
+   "is_release_report": true,
+   "comparators": [
+    "Random init",
+    "XLM",
+    "MASS",
+    "BART",
+    "XLM-R",
+    "BART-En",
+    "BART-Ro",
+    "HAN"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "mBART is the first method to pre-train a complete sequence-to-sequence model by denoising full texts in multiple languages",
+     "page": 1,
+     "quote": "mBART is the first method for pre-training a complete sequence-to-sequence model by",
+     "ablation_quote": "Table 2: Low/Medium Resource Machine Translation Pre-training consistently improves over a randomly ini-",
+     "ablation_page": 4
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "mBART initialization yields significant gains (up to 12 BLEU) on low/medium-resource MT",
+     "page": 1,
+     "quote": "significant gains (up to 12 BLEU points) across low/medium-resource pairs (<10M bi-text pairs),",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "d-BLEU is recomputed from the provided system output.",
+    "page": 8
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "XLM (2019)  34.3  26.4  31.8  33.3  0.5  0.1  0.1  0.1",
+    "page": 10
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Table 1: Languages and Statistics of the CC25 Cor-",
+    "page": 2
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "guages) is trained on 256 Nvidia V100 GPUs",
+    "page": 3
+   },
+   "renames": []
+  },
+  "2003.10555": {
+   "model": "electra",
+   "is_release_report": true,
+   "comparators": [
+    "BERT-Large",
+    "BERT-Base",
+    "BERT-Small",
+    "BERT (ours)",
+    "RoBERTa-100K",
+    "RoBERTa-500K",
+    "XLNet",
+    "XLNet-Base",
+    "ALBERT",
+    "SpanBERT",
+    "GPT",
+    "ELMo",
+    "TinyBERT",
+    "MobileBERT"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Replaced token detection: a new, more sample-efficient pre-training task in which a discriminator predicts, for every input token, whether a small generator replaced it",
+     "page": 1,
+     "quote": "As an alternative, we propose a more sample-efficient pre-training task called replaced token detection.",
+     "ablation_quote": "To provide a fair comparison, we also train a BERT-Small model using the same hyperparameters.",
+     "ablation_page": 6
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Learning from all input tokens rather than the masked subset makes the task more compute-efficient than MLM",
+     "page": 1,
+     "quote": "A key advantage of our discriminative task is that the model learns from all input tokens instead of just the small masked-out subset, making it more computationally efficient.",
+     "ablation_quote": "First, we find that ELECTRA is greatly benefiting from having a loss defined over all input tokens rather than just a subset: ELECTRA 15% performs much worse than ELECTRA.",
+     "ablation_page": 8
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "ELECTRA-Small can be trained on one GPU in 4 days and outperforms GPT on GLUE",
+     "page": 1,
+     "quote": "we train a model on one GPU for 4 days that outperforms GPT (trained using 30x more compute) on the GLUE natural lan-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "At large scale ELECTRA matches RoBERTa/XLNet with under 1/4 of their compute, beats them at equal compute, and sets a new SQuAD 2.0 state of the art",
+     "page": 2,
+     "quote": "and sets a new state-of-the-art for SQuAD 2.0.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Sharing embeddings between the generator and discriminator (proposed model extension)",
+     "page": 4,
+     "quote": "We propose improving the efficiency of the pre-training by sharing weights be- tween the generator and discriminator.",
+     "ablation_quote": "GLUE scores are 83.6 for no weight tying, 84.3 for tying token embeddings, and 84.4 for tying all weights.",
+     "ablation_page": 4
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Using a smaller generator (1/4 to 1/2 the size of the discriminator) works best",
+     "page": 5,
+     "quote": "Nevertheless, we find that models work best with generators 1/4-1/2 the size of the discriminator.",
+     "ablation_quote": "GLUE scores for differently-sized generators and discriminators are shown in the left of Figure 3. All models are trained for 500k steps,",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Joint maximum-likelihood training of the generator works better than two-stage or adversarial training",
+     "page": 5,
+     "quote": "Although still outperforming BERT, we found adversarial training to underperform maximum-likelihood training.",
+     "ablation_quote": "During two-stage training, downstream task performance notably improves after the switch from the generative to the discriminative objective, but does not end up outscoring joint training.",
+     "ablation_page": 5
+    }
+   ],
+   "seeds": "MULTI",
+   "seeds_evidence": {
+    "quote": "We therefore report the median of 10 fine-tuning runs from the same pre-trained checkpoint for each result.",
+    "page": 4
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "As a baseline, we trained our own BERT-Large model using the same hyperparameters and training time as ELECTRA-400K.",
+    "page": 7
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "BERT dev results are from Clark et al. (2019).",
+    "page": 7
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "we report the average score excluding QNLI (Avg.*) in addition to the GLUE leaderboard score (Score).",
+    "page": 7
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "which extends the BERT dataset to 33B tokens by including data from ClueWeb (Callan et al., 2009), CommonCrawl, and Gigaword (Parker et al., 2011).",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "For most experiments we pre-train on the same data as BERT, which consists of 3.3 Billion tokens from Wikipedia and BooksCorpus",
+    "page": 4
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "ELECTRA-Small 1.4e18 / 3.7e9 45x / 8x 14M 4d on 1 V100 GPU 79.9",
+    "page": 6
+   },
+   "renames": []
+  },
+  "2007.14062": {
+   "model": "big_bird",
+   "is_release_report": true,
+   "comparators": [
+    "RoBERTa",
+    "Longformer",
+    "HGN",
+    "GSAN",
+    "ReflectionNet",
+    "RikiNet-v2",
+    "Fusion-in-Decoder",
+    "SpanBERT",
+    "MRC-GCN",
+    "MultiHop",
+    "Pegasus",
+    "Dancer",
+    "Extr-Abst-TLM",
+    "Sent-PTR",
+    "Sent-CLF"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "BigBird sparse attention mechanism (random + window + global tokens) whose complexity is linear in sequence length",
+     "page": 1,
+     "quote": "To remedy this, we propose, B IG B IRD, a sparse attention mechanism that reduces this quadratic dependency to linear.",
+     "ablation_quote": "We found that random blocks and local window were insufficient in capturing all the context necessary to compete with the performance of BERT.",
+     "ablation_page": 4
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Global tokens (ITC/ETC) attending to the entire sequence are critical for expressivity and performance",
+     "page": 1,
+     "quote": "our theoretical analysis reveals some of the benefits of having O(1) global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "BigBird is a universal approximator of sequence functions and Turing complete",
+     "page": 1,
+     "quote": "We show that B IG B IRD is a universal approximator of sequence functions and is Turing complete, thereby preserving these properties of the quadratic, full attention model.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Handles sequences up to 8x longer than previously possible on similar hardware",
+     "page": 1,
+     "quote": "The proposed sparse attention can handle sequences of length up to 8x of what was previously possible using similar hardware.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State-of-the-art results on question answering and document summarization",
+     "page": 2,
+     "quote": "We achieve state of the art results for question answering and document summarization on a number of different datasets.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Novel application of attention models to genomics sequences (DNA) with long-context MLM pretraining",
+     "page": 2,
+     "quote": "Lastly, we introduce a novel application of attention based models where long contexts are beneficial: extracting contextual representations of genomics sequences like DNA.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "VAR",
+   "seeds_evidence": {
+    "quote": "Experiments on smaller IMDb and Hyperpartisan datasets are repeated 5 times and the average performance is presented along with standard deviation.",
+    "page": 36
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "Large  Pegasus (Re-eval)  43.85  16.83  39.17  44.53",
+    "page": 8
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "The Test results (F1 for HotpotQA, Natural Questions, TriviaQA, and Accuracy for WikiHop) have been picked from their respective leaderboard.",
+    "page": 7
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "In Tab. 3, we compare B IG B IRD-ETC model to top-3 entries from the leaderboard excluding B IG B IRD.",
+    "page": 8
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "We use four publicly available datasets Books [110], CC-News [34], Stories [89] and Wikipedia to pretrain B IG B IRD.",
+    "page": 33
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2203.13474": {
+   "model": "codegen",
+   "is_release_report": true,
+   "comparators": [
+    "GPT-Neo 350M",
+    "GPT-Neo 2.7B",
+    "GPT-J 6B",
+    "Codex 300M",
+    "Codex 2.5B",
+    "Codex 12B",
+    "code-cushman-001",
+    "code-davinci-001",
+    "code-davinci-002"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Train and release a family of LLMs up to 16.1B parameters (CodeGen) on natural language and programming language data",
+     "page": 1,
+     "quote": "To democratize this, we train and release a family of large language models up to 16.1B parameters, called C ODE G EN, on natural language",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Open source the custom training library JAXFORMER for TPU-v4",
+     "page": 2,
+     "quote": "We will open source model checkpoints2 and the custom training library: JAX FORMER.3",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Model is competitive with previous state of the art on zero-shot Python code generation on HumanEval",
+     "page": 1,
+     "quote": "We show the utility of the trained model by demonstrating that it is competitive with the previous state-of-the-art on zero-shot Python code generation on HumanEval.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Study multi-turn program synthesis emerging in autoregressive models under scaling laws",
+     "page": 2,
+     "quote": "We study multi-turn program synthesis emerging in autoregressive models under scaling laws.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Introduce a multi-turn program synthesis paradigm; multi-turn specification improves synthesis over single-turn",
+     "page": 1,
+     "quote": "Our analysis on MTPB shows that the same intent provided to C ODE G EN in multi- turn fashion significantly improves program synthesis over that provided as a single turn.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Novel open Multi-Turn Programming Benchmark (MTPB) with 115 problems, first multi-turn program synthesis benchmark",
+     "page": 2,
+     "quote": "To the best of our knowledge, this is the first multi-turn program synthesis benchmark, which allows quantitative analysis of multi-turn program synthesis.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "All models are evaluated with temperature t \u2208 {0.2, 0.6, 0.8}, and we compute pass@k where k \u2208 {1, 10, 100} for each model.",
+    "page": 4
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "Results for the model marked with \u2217 are from Chen et al. (2022).",
+    "page": 4
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "For the multi- lingual training, the following 6 programming languages are chosen: C, C++, Go, Java, JavaScript, and Python.",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Table 5: Approximate statistics for training corpora along the pre-processing steps.",
+    "page": 14
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2204.06745": {
+   "model": "gpt_neox",
+   "is_release_report": true,
+   "comparators": [
+    "GPT-J-6B",
+    "GPT-3 Ada",
+    "GPT-3 Babbage",
+    "GPT-3 Curie",
+    "GPT-3 DaVinci",
+    "FairSeq 125M",
+    "FairSeq 355M",
+    "FairSeq 1.3B",
+    "FairSeq 2.7B",
+    "FairSeq 6.7B",
+    "FairSeq 13B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Introduces and openly releases GPT-NeoX-20B, a 20B dense autoregressive model with weights under a permissive license, claimed to be the largest publicly available dense model at the time",
+     "page": 1,
+     "quote": "In this paper we introduce GPT-NeoX-20B, a 20",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Releases intermediate checkpoints every 1000 steps to support research on training dynamics",
+     "page": 2,
+     "quote": "we will facilitate research on the training dynamics",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Training on duplicated data for more than one epoch shows no performance loss",
+     "page": 5,
+     "quote": "As shown in fig. 4, even at the 20B parameter scale we see no drop in test validation loss after crossing",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "GPT-NeoX-20B is a powerful few-shot learner and gains much more from five-shot prompting than GPT-3 and FairSeq models",
+     "page": 10,
+     "quote": "by 0.0598 while the FairSeq 6.7B and 13B models",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Uses rotary positional embeddings, applied to 25% of dimensions, instead of learned positional embeddings",
+     "page": 2,
+     "quote": "We use rotary embeddings (Su et al., 2021) instead",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Computes attention and feed-forward layers in parallel",
+     "page": 3,
+     "quote": "layers in parallel4 and sum the results, rather than",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Uses a different initialization scheme (Wang init for FF outputs, small init elsewhere)",
+     "page": 3,
+     "quote": "fact that the parallel and feed-forward layers are",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TOK",
+     "ablation": "NA",
+     "claim": "New BPE tokenizer trained on the Pile, with consistent space delimitation and tokens for repeated whitespace",
+     "page": 5,
+     "quote": "vocabulary size of 50257, with three major changes",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "publicly accessible. We compare with the GPT-3 models on the OpenAI API (Brown et al., 2020),",
+    "page": 6
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "Due to financial limitations we were unable to evaluate on the OpenAI API.",
+    "page": 10
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "of data from 22 data sources, coarsely broken down",
+    "page": 4
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "43.92 MWh of electricity over the course of 1830 hours of training.",
+    "page": 23
+   },
+   "renames": []
+  },
+  "2205.01068": {
+   "model": "opt",
+   "is_release_report": true,
+   "comparators": [
+    "GPT-3 (Davinci)",
+    "PaLM",
+    "Chinchilla",
+    "Gopher",
+    "GPT-NeoX-20B (Eleuther)",
+    "Jurassic-1",
+    "Reddit 2.7B",
+    "BlenderBot 1",
+    "R2C2 BlenderBot"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Suite of decoder-only pre-trained transformers from 125M to 175B parameters (OPT), shared with researchers",
+     "page": 24,
+     "quote": "OPT-175B was trained with AdamW for parameter sizes from 125M to 175B.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "OPT-175B is comparable to GPT-3 while requiring only 1/7th the carbon footprint",
+     "page": 1,
+     "quote": "1/7th the carbon footprint of GPT-3. While this is a",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "metaseq codebase enabled training OPT-175B on 992 A100 GPUs at 147 TFLOP/s per GPU",
+     "page": 1,
+     "quote": "on 992 80GB A100 GPUs, reaching 147 TFLOP/s",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Release of logbook of model creation and the codebase",
+     "page": 1,
+     "quote": "logbook of our model creation as well as our code-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Applying latest best practices in data collection and efficient training",
+     "page": 1,
+     "quote": "while also applying the latest best practices in data",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "For MultiRC, we are unable to replicate the GPT-3",
+    "page": 4
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "with comparisons to the GPT-3 reported performance. As with zero-shot, performance is roughly similar",
+    "page": 18
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "The pre-training data for training the OPT-175B model was created by a union of five datasets",
+    "page": 19
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "The training data contains 180B tokens corresponding to 800 GB of data.",
+    "page": 20
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "on 992 80GB A100 GPUs, reaching 147 TFLOP/s",
+    "page": 1
+   },
+   "renames": []
+  },
+  "2205.06266": {
+   "model": "xmod",
+   "is_release_report": true,
+   "comparators": [
+    "SHARED (non-modular baseline)",
+    "Adapters (MAD-X style on shared_nm)"
+   ],
+   "failed": [
+    {
+     "field": "scores_copied",
+     "quote": "",
+     "page": 0
+    },
+    {
+     "field": "rename0",
+     "quote": "Inspired by the adapter3 architecture of Pfeiffer et al. (2021a) we",
+     "page": 3
+    }
+   ],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Language-specific modular components pre-trained from the start (X-MOD) mitigate negative interference between languages and achieve positive transfer",
+     "page": 2,
+     "quote": "that our modular architecture not only is effective at mitigating interference between languages, but also",
+     "ablation_quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60",
+     "ablation_page": 7
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "X-MOD can be extended to unseen languages post-hoc with no measurable drop in performance",
+     "page": 2,
+     "quote": "we show that X-M OD can be extended to unseen languages, with no measurable drop in",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "MULTI",
+   "seeds_evidence": {
+    "quote": "All results are averaged across 5 random seed runs.",
+    "page": 5
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "Table 2: Pre-trained language results for the modular and shared model variants, pre-trained on the set of 60",
+    "page": 7
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "guages with \u03b1 = 0.7 and train our models with",
+    "page": 5
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2206.12131": {
+   "model": "mvp",
+   "is_release_report": true,
+   "comparators": [
+    "BART-large",
+    "Flan-T5-large"
+   ],
+   "failed": [
+    {
+     "field": "claim2",
+     "quote": "key to generalizing to new tasks for large PLMs,  we combine these labeled datasets for multi-task",
+     "page": 2
+    }
+   ],
+   "claims": [
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Collect MVPCorpus, a large-scale labeled NLG corpus of 77 datasets over 11 NLG tasks (claimed largest NLG dataset collection)",
+     "page": 3,
+     "quote": "In this paper, we collect a large-scale labeled",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Supervised pre-training (with labeled data) for NLG-oriented PLMs, rather than unsupervised pre-training",
+     "page": 2,
+     "quote": "To fill this gap, we explore supervised\npre-training and multi-task learning for deriving",
+     "ablation_quote": "\u2022 BARTLARGE (Lewis et al., 2020): BART is a  First, supervised pre-training models (i.e., MVP,",
+     "ablation_page": 6
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Pre-train task-specific soft (prefix) prompts per task to stimulate task capacity and mitigate multi-task neutralization",
+     "page": 2,
+     "quote": "To mitigate this potential issue, we propose to learn",
+     "ablation_quote": "\u2022 Randomly initialized prompts (MVP+R): The  task prompt (MVP+S) consistently surpasses the",
+     "ablation_page": 6
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "MVP achieves state-of-the-art on 13 of 17 datasets, outperforming BART by 9.3% and Flan-T5 by 5.8%",
+     "page": 1,
+     "quote": "of NLG tasks, which achieves state-of-the-art\n  performance on 13 out of 17 datasets, outper-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "task supervised pre-training, and we compare it  best-reported results from original papers in the",
+    "page": 6
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "We utilize the large versions of T5.1.1 and\nExT5, and all the results of them are from Aribandi et al. (2022).",
+    "page": 26
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "FULL",
+   "data_disclosure_evidence": {
+    "quote": "Table 9: The statistics and licenses of datasets for pre-training our MVP model.",
+    "page": 23
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2306.11644": {
+   "model": "phi",
+   "is_release_report": true,
+   "comparators": [
+    "Codex-300M",
+    "Codex-12B",
+    "CodeGen-Mono-350M",
+    "CodeGen-Mono-16.1B",
+    "PaLM-Coder",
+    "CodeGeeX",
+    "GPT-3.5",
+    "SantaCoder",
+    "GPT-4",
+    "Replit",
+    "Replit-Finetuned",
+    "CodeGen2-7B",
+    "StarCoder",
+    "PaLM 2-S",
+    "WizardCoder"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "phi-1, a 1.3B code model trained on filtered web 'textbook quality' data plus GPT-3.5 synthetic textbooks and exercises",
+     "page": 1,
+     "quote": "phi-1 is a Transformer-based model with 1.3B parameters, trained for 4 days on",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Despite small scale, phi-1 reaches 50.6% HumanEval and 55.5% MBPP pass@1",
+     "page": 1,
+     "quote": "Despite this small scale, phi-1 attains pass@1 accuracy 50.6% on HumanEval and 55.5% on MBPP.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Finetuning on CodeExercises unlocks emergent capabilities absent in phi-1-base",
+     "page": 1,
+     "quote": "It also displays surprising emergent properties compared to phi-1-base, our model before our finetuning stage on a dataset of coding exercises",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "High-quality data breaks existing scaling laws; data selection is key to the result",
+     "page": 2,
+     "quote": "we discuss evidence for the importance of our data selection process in achieving this result",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Number of parameters plays a key role in emergence (phi-1 vs phi-1-small)",
+     "page": 2,
+     "quote": "we confirm the hypothesis that the number of parameters plays a key role in emergence",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Alternative evaluation (LLM-graded unconventional problems) and contamination study via data pruning",
+     "page": 2,
+     "quote": "Finally in Section 4 we discuss alternative benchmarks to evaluate the model and in Section 5 we study possible contamination of our training data with respect to HumanEval.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "See Table 2 for our results with phi-1 and competing models.",
+    "page": 12
+   },
+   "scores_copied": "YES",
+   "scores_copied_evidence": {
+    "quote": "We use self-reported scores whenever available.",
+    "page": 2
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "A filtered code-language dataset, which is a subset of The Stack and StackOverflow, obtained by using a language model-based classifier (consisting of about 6B tokens).",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "this is equivalent to \u223c 8 epochs on our CodeTextbook dataset for a total of little over 50B total training tokens.",
+    "page": 7
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "We train on 8 Nvidia-A100 GPUs using deepspeed. Our pretrained base model phi-1-base was obtained in under 4 days of training.",
+    "page": 7
+   },
+   "renames": []
+  },
+  "2309.11419": {
+   "model": "kosmos2_5",
+   "is_release_report": true,
+   "comparators": [
+    "DocPedia",
+    "DocOwl",
+    "Qwen-VL",
+    "UReader",
+    "Monkey",
+    "HRVDA",
+    "DocOwl-1.5",
+    "CogAgent",
+    "Donut",
+    "Dessurt",
+    "Pix2Struct-Large",
+    "Vary-toy",
+    "MiniCPM-V 2.0",
+    "GPT-4o",
+    "Nougat"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Two complementary pre-training tasks: document-level text recognition (spatially-aware text with bounding boxes) and image-to-markdown generation, unified via task prompts",
+     "page": 2,
+     "quote": "KOSMOS -2.5 is a multimodal document foundation model that takes text images as input and generates spatially-aware",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Shared decoder-only Transformer architecture combining ViT-based vision encoder and language decoder via resampler, unified for both tasks",
+     "page": 3,
+     "quote": "The model architecture of KOSMOS -2.5 leverages a shared Transformer architecture that combines a ViT-based vision",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Curated large diverse pre-training corpus of 357.4M document pages with automated curation pipeline",
+     "page": 2,
+     "quote": "We curated a large and diverse corpus consisting of 357.4",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "New benchmarks OCREval and MarkdownEval for document-level reading",
+     "page": 7,
+     "quote": "trast, our proposed OCREval is the first benchmark specif-",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "KOSMOS-2.5-CHAT fine-tuned document understanding generalist competitive with 7B models at 1.3B",
+     "page": 2,
+     "quote": "document understanding generalist that can answer user-provided questions about text-rich images from various domains.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Summary of data used to pre-train KOSMOS -2.5, including descriptions of each document category, the number of",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "involved approximately 260 billion tokens.",
+    "page": 5
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2310.06825": {
+   "model": "mistral",
+   "is_release_report": true,
+   "comparators": [
+    "Llama 2 7B",
+    "Llama 2 13B",
+    "Code-Llama 7B",
+    "Llama 1 34B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Mistral 7B outperforms the best open 13B model (Llama 2) on all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics and code",
+     "page": 1,
+     "quote": "Mistral 7B outperforms the best open 13B model (Llama 2) across all evaluated benchmarks, and the best released 34B model (Llama 1) in reasoning, mathematics, and code generation.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Uses grouped-query attention (GQA) for faster inference and lower decoding memory",
+     "page": 1,
+     "quote": "GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Uses sliding window attention (SWA) to handle sequences of arbitrary length at reduced inference cost",
+     "page": 1,
+     "quote": "coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Instruction-tuned model Mistral 7B \u2013 Instruct surpasses Llama 2 13B \u2013 Chat on human and automated benchmarks",
+     "page": 1,
+     "quote": "We also provide a model fine-tuned to follow instructions, Mistral 7B \u2013 Instruct, that surpasses Llama 2 13B \u2013 chat model both on human and automated benchmarks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Models released under Apache 2.0 with reference implementation for easy deployment",
+     "page": 2,
+     "quote": "Mistral 7B is released under the Apache 2.0 license. This release is accompanied by a reference implementation1 facilitating easy deployment either locally or on cloud platforms",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "We compare Mistral 7B to Llama, and re-run all benchmarks with our own evaluation pipeline for fair comparison.",
+    "page": 3
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison.",
+    "page": 4
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "independent human evaluation was conducted on",
+    "page": 4
+   },
+   "data_disclosure": "NONE",
+   "data_disclosure_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2311.16867": {
+   "model": "falcon",
+   "is_release_report": true,
+   "comparators": [
+    "PaLM",
+    "PaLM-2 Small",
+    "PaLM-2 Medium",
+    "PaLM-2 Large",
+    "GPT-3.5",
+    "GPT-4",
+    "GPT-3",
+    "Gopher",
+    "Chinchilla",
+    "MT-NLG",
+    "LLaMA-2",
+    "Inflection-1",
+    "Codex",
+    "StarCoder",
+    "Code LLaMA"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Falcon-180B trained on over 3.5T tokens, the largest openly documented pretraining run",
+     "page": 1,
+     "quote": "The largest model, Falcon-180B, has been trained on over 3.5 trillion tokens of text\u2013the largest openly documented pretraining run.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Falcon-180B nears PaLM-2-Large performance at reduced cost, one of the three best LMs",
+     "page": 1,
+     "quote": "It nears the performance of PaLM-2-Large at a reduced pretraining and inference cost, making it, to our knowledge, one of the three best language models in the world",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Custom distributed training codebase enabling efficient pretraining on up to 4,096 A100s on AWS with limited interconnect",
+     "page": 1,
+     "quote": "we report on our custom distributed training codebase, allowing us to efficiently pretrain these models on up to 4,096 A100s on cloud AWS infrastructure with limited interconnect.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Open release of 600B token RefinedWeb extract and Falcon-7/40/180B models",
+     "page": 1,
+     "quote": "We release a 600B tokens extract of our web dataset, as well as the Falcon-7/40/180B models under a permissive license",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "First publicly documented GPT-3-sized model following Chinchilla scaling recommendations",
+     "page": 2,
+     "quote": "Falcon-180B is the first publicly documented GPT-3-sized model to follow the updated scaling law recommendations of Hoffmann et al. (2022),",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "RefinedWeb: 5T-token filtered and deduplicated web dataset, largest publicly documented",
+     "page": 2,
+     "quote": "we developed RefinedWeb (Penedo et al., 2023), a 5 trillion tokens high-quality filtered and deduplicated web dataset\u2013the largest publicly documented.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "PaLM-based architecture with independently validated decisions resulting in minor tweaks (multigroup, no GLU, no biases, etc.)",
+     "page": 2,
+     "quote": "The architecture of the models is based on PaLM (Chowdhery et al., 2022), although we independently validated each decision, ultimately resulting in some minor tweaks",
+     "ablation_quote": "In Table 11, training 1B models on 30B tokens of The Pile, we find no clear benefits from adopting SwiGLU for zero-shot performance",
+     "ablation_page": 15
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Extensive public documentation of pretraining of a large-scale model",
+     "page": 2,
+     "quote": "At variance with these works, we extensively document the pretraining of the Falcon series.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "VAR",
+   "seeds_evidence": {
+    "quote": "We independently quantified variance and average performance on over 50 tasks across 5 runs with a different seed (we use this \u03c3 for architecture experiments)",
+    "page": 7
+   },
+   "rerun": "NO",
+   "rerun_evidence": {
+    "quote": "For all these tasks we take results for other models from the papers outlined above.",
+    "page": 34
+   },
+   "scores_copied": "YES",
+   "scores_copied_evidence": {
+    "quote": "For all these tasks we take results for other models from the papers outlined above.",
+    "page": 34
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "The final Falcon mixture is presented in Table 15. We designed the mixture based on a 3,500B tokens pretraining dataset",
+    "page": 19
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "with a total pretraining length of 3,500 billion tokens, without any upsampling.",
+    "page": 2
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "which we attribute to smaller pretraining compute: 2,800PF-days for Falcon-40B against 4,700PF-days for LLaMA-2 34B",
+    "page": 34
+   },
+   "renames": [
+    {
+     "new_name": "monolayer",
+     "existing_technique": "selective activation recomputation (Li et al., 2021)",
+     "quote": "we create a single custom autograd function for the entire decoder block\u2013we dub this idea the monolayer.",
+     "page": 28
+    },
+    {
+     "new_name": "multigroup",
+     "existing_technique": "grouped query attention (Ainslie et al., 2023)",
+     "quote": "Ainslie et al. (2023) also proposed this modification; we refer to this variant of attention as grouped query attention or multigroup.",
+     "page": 13
+    }
+   ]
+  },
+  "2312.00752": {
+   "model": "mamba",
+   "is_release_report": true,
+   "comparators": [
+    "Hybrid H3",
+    "Pythia",
+    "GPT-Neo",
+    "OPT",
+    "RWKV",
+    "GPT-J"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Selection mechanism: making SSM parameters (\u0394, B, C) input-dependent (selective SSM / S6)",
+     "page": 1,
+     "quote": "simply letting the SSM parameters be functions of the input addresses their weakness with discrete modalities",
+     "ablation_quote": "Replacing any of these with a selective SSM (S6) significantly improves performance, validating the motivation of Section 3.",
+     "ablation_page": 32
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Hardware-aware parallel scan algorithm (kernel fusion, recomputation) for selective SSMs",
+     "page": 1,
+     "quote": "we design a hardware-aware parallel algorithm in recurrent mode",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Simplified homogeneous Mamba block architecture without attention or MLP blocks",
+     "page": 1,
+     "quote": "We integrate these selective SSMs into a simplified end-to-end neural network architecture without attention or even MLP blocks (Mamba)",
+     "ablation_quote": "The Mamba architecture performs similarly to the H3 architecture (and seems slightly better when using a selective layer).",
+     "ablation_page": 33
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Fast inference (5x throughput) and linear scaling in sequence length",
+     "page": 1,
+     "quote": "Mamba enjoys fast inference (5\u00d7 higher throughput than Transformers) and linear scaling in sequence length",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Performance improves with context up to million-length sequences",
+     "page": 1,
+     "quote": "its performance improves on real data up to million-length sequences",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "First linear-time sequence model achieving Transformer-quality language modeling performance",
+     "page": 2,
+     "quote": "Mamba is the first linear-time sequence model that truly achieves Transformer-quality performance",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Mamba-3B outperforms same-size Transformers and matches Transformers twice its size",
+     "page": 1,
+     "quote": "our Mamba-3B model outperforms Transformers of the same size and matches Transformers twice its size",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State of the art on audio and genomics modeling",
+     "page": 2,
+     "quote": "Mamba out-performs prior state-of-the-art models such as SaShiMi, Hyena, and Transformers",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "FULL",
+   "data_disclosure_evidence": {
+    "quote": "We use the Pile dataset (L. Gao, Biderman, et al. 2020), and follow the training recipe described in Brown et al. (2020).",
+    "page": 17
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "which were trained with the same tokenizer, dataset, and training length (300B tokens) as our models",
+    "page": 18
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": [
+    {
+     "new_name": "selection",
+     "existing_technique": "RNN gating",
+     "quote": "We also eschew the term \u201cgating\u201d in favor of selection to clarify the overloaded use of former.",
+     "page": 41
+    }
+   ]
+  },
+  "2402.00838": {
+   "model": "olmo",
+   "is_release_report": true,
+   "comparators": [
+    "StableLM 1.6B",
+    "Pythia 1B",
+    "TinyLlama 1.1B",
+    "Falcon-7B",
+    "LLaMA 7B",
+    "Llama 2 7B",
+    "MPT-7B",
+    "Pythia 6.9B",
+    "RPJ-INCITE-7B"
+   ],
+   "failed": [
+    {
+     "field": "claim0",
+     "quote": "Unlike most prior efforts that have only released model weights and inference code, we release OLMo alongside open train",
+     "page": 1
+    },
+    {
+     "field": "claim1",
+     "quote": "the full training data used for these models is openly available (Dolma; Soldaini et al., 2024), including code that pro",
+     "page": 2
+    },
+    {
+     "field": "claim2",
+     "quote": "includes four variants of our language model at the 7B scale corresponding to different architectures, optimizers, and t",
+     "page": 2
+    },
+    {
+     "field": "claim3",
+     "quote": "We also release hundreds of intermediate checkpoints available as revisions on HuggingFace.",
+     "page": 2
+    },
+    {
+     "field": "seeds",
+     "quote": "Despite minor differences in batch size to optimize for training throughput, both runs resulted in nearly identical perf",
+     "page": 5
+    },
+    {
+     "field": "rerun",
+     "quote": "For both downstream and perplexity evaluation, we use our fixed evaluation pipeline to compare results against publicly ",
+     "page": 4
+    },
+    {
+     "field": "scores_copied",
+     "quote": "",
+     "page": 0
+    },
+    {
+     "field": "data_disclosure",
+     "quote": "The data order and exact composition of each training batch can be reconstructed from the artifacts we release.",
+     "page": 5
+    },
+    {
+     "field": "tokens_disclosed",
+     "quote": "The checkpoint used for evaluating OLMo-7B is trained until 2.46T tokens on the Dolma (Soldaini et al., 2024) dataset",
+     "page": 5
+    }
+   ],
+   "claims": [],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "NONE",
+   "data_disclosure_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2402.16819": {
+   "model": "nemotron",
+   "is_release_report": true,
+   "comparators": [
+    "LLaMA-2 13B",
+    "LLaMA-2 34B",
+    "Baichuan-2 13B",
+    "QWEN 14B",
+    "Mistral 7B",
+    "Gemma 7B",
+    "Starcoder 15B",
+    "PaLM 62B",
+    "PaLM 62B-cont",
+    "XGLM 7.5B",
+    "mGPT 13B",
+    "BLOOM 176B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Nemotron-4 15B, a 15B-parameter multilingual LLM trained on 8 trillion text tokens",
+     "page": 1,
+     "quote": "We introduce Nemotron-4 15B, a 15-billion-parameter large multilingual language model trained on 8 trillion text tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Outperforms all similarly-sized open models on 4 of 7 evaluation areas and is competitive on the rest",
+     "page": 1,
+     "quote": "it outperforms all existing similarly-sized open models on 4 out of 7 downstream evaluation areas and achieves competitive performance to the leading open models in the remaining ones",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Best multilingual capabilities among similarly-sized models, attributed to significant multilingual training data",
+     "page": 2,
+     "quote": "As Nemotron-4 15B was trained on significant amount of multilingual data, it is currently the state-of-the-art general purpose model in its size class on all multilingual benchmarks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Designed to be the best general-purpose LLM that fits on a single A100 or H100 GPU",
+     "page": 2,
+     "quote": "was developed to be the best general-purpose large language model (LLM) that can fit on a single NVIDIA A100 or H100 GPU",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Better average accuracy across programming languages than Starcoder and Mistral 7B, especially on low-resource languages",
+     "page": 2,
+     "quote": "we find that Nemotron-4 15B achieves better average accuracy, and in particular on low-resource programming languages, than Starcoder (Li et al., 2023), a code-specific model, and Mistral 7B.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "Results for Mistral are from our runs of Mistral in the same setting as Nemotron-4.",
+    "page": 8
+   },
+   "scores_copied": "YES",
+   "scores_copied_evidence": {
+    "quote": "we compare against a number of external decoder-only transformer language models and unless otherwise stated we use the numbers published in the reports of the corresponding models",
+    "page": 6
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "the data blend is split into three different types of data: English natural language data (70%), multilingual natural language data (15%), and source-code data (15%).",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We train Nemotron-4 15B on a pre-training dataset consisting of 8 trillion tokens.",
+    "page": 3
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "Training was completed in approximately 13 calendar days.",
+    "page": 4
+   },
+   "renames": []
+  },
+  "2403.08295": {
+   "model": "gemma",
+   "is_release_report": true,
+   "comparators": [
+    "LLaMA-2 7B",
+    "LLaMA-2 13B",
+    "Mistral 7B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Release of a family of open models in two sizes (2B and 7B), with both pretrained and fine-tuned checkpoints",
+     "page": 1,
+     "quote": "(2 billion and 7 billion parameters), and provide both pretrained and fine-tuned checkpoints.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Gemma outperforms similarly sized open models on 11 of 18 text-based tasks",
+     "page": 1,
+     "quote": "outperforms similarly sized open models on 11 out of 18 text-based tasks, and we present comprehensive",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Comprehensive safety and responsibility evaluations of the models",
+     "page": 1,
+     "quote": "evaluations of safety and responsibility aspects of the models, alongside a detailed description of model",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Models trained on up to 6T tokens of text",
+     "page": 1,
+     "quote": "We trained Gemma models on up to 6T tokens",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "our 7B model achieves 54.5. \u2217 evaluations run by us. Note that due to restrictive licensing, we were",
+    "page": 6
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "Note that due to restrictive licensing, we were unable to run evals on LLaMA-2; all values above were previously reported",
+    "page": 6
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "evaluations were run by HuggingFace.  orized, hence it is omitted from the figure.",
+    "page": 7
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "tokens respectively of primarily-English data from web documents, mathematics, and code.",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Gemma 2B and 7B are trained on 3T and 6T",
+    "page": 3
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2404.07839": {
+   "model": "recurrent_gemma",
+   "is_release_report": true,
+   "comparators": [
+    "Gemma-2B",
+    "Gemma-7B",
+    "Mistral 7B v0.2 Instruct"
+   ],
+   "failed": [
+    {
+     "field": "claim3",
+     "quote": "RecurrentGemma compresses input sequences into a fixed-size state without sacrificing performance. This reduces memory u",
+     "page": 1
+    },
+    {
+     "field": "claim4",
+     "quote": "including a specialized Pallas kernel to perform the linear recurrence on TPUs. We provide a reference PyTorch implement",
+     "page": 1
+    },
+    {
+     "field": "data_disclosure",
+     "quote": "We use the same pre-training data as the Gemma models, which comprises primarily English data from web documents, mathem",
+     "page": 1
+    }
+   ],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "RecurrentGemma uses the Griffin architecture, which combines linear recurrences with local attention and has a fixed-size state",
+     "page": 1,
+     "quote": "Griffin combines linear recurrences with local attention to achieve excellent performance on language. It has a fixed-sized state, which reduces memory use and enables efficient inference on long sequences.",
+     "ablation_quote": "Gemma-2B was trained on 3T tokens and Gemma-7B was trained on 6T tokens, while both RecurrentGemma-2B and RecurrentGemma-9B were trained on 2T tokens.",
+     "ablation_page": 2
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Release of 2B and 9B models, each with pre-trained and instruction-tuned variants",
+     "page": 1,
+     "quote": "We provide two sizes of models, containing 2B and 9B parameters, and provide pre-trained and instruction tuned variants for both.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Performance comparable to Gemma despite being trained on fewer tokens",
+     "page": 1,
+     "quote": "Our models achieve comparable performance to similarly-sized Gemma baselines despite being trained on fewer tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "NONE",
+   "data_disclosure_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We provide two sizes of RecurrentGemma, with 2B and 9B parameters, both trained on 2T tokens.",
+    "page": 1
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2404.14219": {
+   "model": "phi3",
+   "is_release_report": true,
+   "comparators": [
+    "Phi-2",
+    "Mistral-7b-v0.1",
+    "Gemma 7B",
+    "Llama-3-instruct-8b",
+    "Mixtral-8x7b",
+    "GPT-3.5"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "phi-3-mini, a 3.8B model trained on 3.3T tokens, rivals Mixtral 8x7B and GPT-3.5",
+     "page": 1,
+     "quote": "We introduce phi-3-mini, a 3.8 billion parameter language model trained on 3.3 trillion tokens,",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Training data is a scaled-up phi-2 dataset of heavily filtered web data and synthetic data",
+     "page": 1,
+     "quote": "Our training dataset is a scaled-up version of the one used for phi-2, composed of heavily filtered publicly available web data and synthetic data.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Small enough to be deployed on a phone",
+     "page": 1,
+     "quote": "despite being small enough to be deployed on a phone",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Model aligned for robustness, safety and chat format",
+     "page": 1,
+     "quote": "The model is also further aligned for robustness, safety, and chat format.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Parameter-scaling results with 7B and 14B models trained on 4.8T tokens",
+     "page": 1,
+     "quote": "We also provide parameter-scaling results with a 7B, 14B models trained for 4.8T tokens",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "phi-3.5 series improves multilingual, multimodal and long-context capabilities",
+     "page": 1,
+     "quote": "To enhance multilingual, multimodal, and long-context capabilities, we introduce three models in the phi-3.5 series:",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "phi-3.5-MoE (16x3.8B, 6.6B active) outperforms similar-scale open models",
+     "page": 1,
+     "quote": "The phi-3.5-MoE, a 16 x 3.8B MoE model with 6.6 billion active parameters, achieves superior performance in language reasoning, math, and code tasks",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "phi-3.5-Vision 4.2B multimodal model handles single- and multi-image prompts",
+     "page": 1,
+     "quote": "excels in reasoning tasks and is adept at handling both single-image and text prompts, as well as multi-image and text prompts",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "All the reported numbers are produced with the exact same pipeline to ensure that the numbers are comparable.",
+    "page": 5
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "We just copied and pasted their published numbers since the model is not publicly available.",
+    "page": 12
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Our training data of consists of heavily filtered publicly available web data (according to the \"educational level\") from various open internet sources, as well as synthetic LLM-generated data.",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We trained using bfloat16 for a total of 3.3T tokens.",
+    "page": 2
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2405.21060": {
+   "model": "mamba2",
+   "is_release_report": true,
+   "comparators": [
+    "Pythia-1B",
+    "Pythia-1.4B",
+    "Pythia-2.8B",
+    "Pythia-6.9B",
+    "Mamba-790M",
+    "Mamba-1.4B",
+    "Mamba-2.8B",
+    "Hybrid H3-1.3B",
+    "Hybrid H3-2.7B",
+    "RWKV4-1.5B",
+    "RWKV4-3B",
+    "GPT-Neo 2.7B",
+    "OPT-2.7B",
+    "GPT-J-6B",
+    "Transformer++"
+   ],
+   "failed": [
+    {
+     "field": "rename1",
+     "quote": "While we call this \u201cstate-passing\u201d to refer to how states are passed from one local segment to another, this is related ",
+     "page": 44
+    }
+   ],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Theoretical state space duality (SSD) framework connecting SSMs and attention variants via semiseparable matrices",
+     "page": 1,
+     "quote": "develop a rich framework of theoretical connections between SSMs and variants of attention, connected through various decompositions of a well-studied class of structured semiseparable matrices",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Generalization of linear attention to structured masked attention (SMA)",
+     "page": 2,
+     "quote": "and then generalize it to a new family of structured masked attention (SMA)",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Proof that any kernel attention with a fast recurrent form must be an SSM",
+     "page": 2,
+     "quote": "We also prove that any kernel attention method possessing a fast recurrent form must be an SSM.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "New hardware-efficient SSD algorithm, faster than Mamba scan and competitive with FlashAttention-2",
+     "page": 2,
+     "quote": "SSD is highly competitive with optimized implementations of softmax attention (FlashAttention-2 (Dao 2024)), crossing over at sequence length 2K and 6\u00d7 faster at sequence length 16K.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Introduce heads from multi-head attention to SSMs (head structure design, MVA/MIS pattern)",
+     "page": 2,
+     "quote": "For example, we introduce the analog of heads from multi-head attention (MHA) to SSMs.",
+     "ablation_quote": "Table 5 ablates choices of the multi-head structure for the Mamba-2 architecture.",
+     "ablation_page": 35
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Modified Mamba block with grouped-value head structure and parallel data-dependent projections at block start",
+     "page": 2,
+     "quote": "The main ideas include introducing grouped-value attention (GVA) head structure, and moving all data-dependent projections to occur in parallel at the beginning of the block.",
+     "ablation_quote": "Table 4 ablates these architecture changes to the block, which occur outside of the core SSM layer.",
+     "ablation_page": 35
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Mamba-2 architecture combining parallel block with SSD as inner SSM layer",
+     "page": 2,
+     "quote": "The combination of the modified parallel Mamba block, together with using SSD as the inner SSM layer, results in the Mamba-2 architecture.",
+     "ablation_quote": "Surprisingly, it is significantly better than Mamba-1 even when the state sizes are controlled (N = 16).",
+     "ablation_page": 33
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Mamba-2 Pareto dominates Mamba and Transformer++ in Chinchilla scaling laws",
+     "page": 2,
+     "quote": "finding that it Pareto dominates Mamba and Transformer++ in both perplexity and wall-clock time",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Mamba-2 2.7B outperforms Mamba-2.8B, Pythia-2.8B and Pythia-6.9B on downstream evaluations",
+     "page": 3,
+     "quote": "Mamba-2 with 2.7B parameters trained on 300B tokens on the Pile outperforms Mamba-2.8B, Pythia-2.8B and even Pythia-6.9B trained on the same dataset.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Tensor-parallel-friendly design halving synchronization points per block",
+     "page": 3,
+     "quote": "We design Mamba-2 to be TP-friendly, reducing the number of synchronization point per block by half.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Sequence parallelism for SSMs by passing recurrent states between devices",
+     "page": 3,
+     "quote": "We describe how to train SSMs in general and Mamba-2 in particular with sequence parallelism, by passing the recurrent states between devices.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Efficient variable-length training without padding tokens",
+     "page": 3,
+     "quote": "We show how Mamba-2 can be trained with variable sequence lengths efficiently, requiring no padding tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "FULL",
+   "data_disclosure_evidence": {
+    "quote": "we train Mamba-2 on 300B tokens on the Pile, using the GPT-NeoX (Black et al. 2022) tokenizer.",
+    "page": 54
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "we train Mamba-2 on 300B tokens on the Pile, using the GPT-NeoX (Black et al. 2022) tokenizer.",
+    "page": 54
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": [
+    {
+     "new_name": "multi-contract SSM (MCS)",
+     "existing_technique": "multi-query attention (MQA, Shazeer 2019)",
+     "quote": "Using the state space duality, we can define an equivalent SSM version of MQA as equation (18).",
+     "page": 24
+    }
+   ]
+  },
+  "2408.00118": {
+   "model": "gemma2",
+   "is_release_report": true,
+   "comparators": [
+    "Gemma-1 2B",
+    "Mistral 7B",
+    "LLaMA-3 8B",
+    "Gemma-1 7B",
+    "LLaMA-3 70B",
+    "Qwen1.5 32B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Interleaving local sliding-window and global attention layers (known technique applied)",
+     "page": 1,
+     "quote": "several known technical modifications to the Transformer architecture, such as interleaving local-global attentions (Beltagy et al., 2020a)",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Grouped-query attention (known technique applied)",
+     "page": 1,
+     "quote": "attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023). We also train the 2B",
+     "ablation_quote": "GQA versus MHA. In Table 8, we compare two instances of our 9B with MHA or GQA.",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Training 2B and 9B models with knowledge distillation instead of next-token prediction",
+     "page": 1,
+     "quote": "and 9B models with knowledge distillation (Hinton et al., 2015) instead of next token prediction.",
+     "ablation_quote": "In Table 6, we show that distilling from a larger model improves",
+     "ablation_page": 5
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Models deliver best performance for their size, competitive with models 2-3x bigger",
+     "page": 1,
+     "quote": "resulting models deliver the best performance for their size, and even offer competitive alternatives to models that are 2-3\u00d7 bigger.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Release of all models to the community",
+     "page": 1,
+     "quote": "models that are 2-3\u00d7 bigger. We release all our models to the community.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "these are evaluations run by us for Gemma 1 (Gemma Team, 2024).",
+    "page": 7
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "The numbers for LLaMA-3 8B are either from the HuggingFace leaderboard or their blogpost.",
+    "page": 7
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "Evaluation of Gemma 2 Instruction Tuned models on the Chatbot Arena (Chiang et al., 2024). The models are evaluated against each other through blind side by side evaluations by human",
+    "page": 8
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "tokens come from a variety of data sources,",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "primarily-English data, the 9B model on 8 trillion tokens, and the 2B on 2 trillion tokens.",
+    "page": 3
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2409.02060": {
+   "model": "olmoe",
+   "is_release_report": true,
+   "comparators": [
+    "Llama2-7B",
+    "OLMo-7B (0724)",
+    "Mistral-7B",
+    "DCLM-7B",
+    "Llama3.1-8B",
+    "Gemma2-9B",
+    "OpenMoE-3B-9B",
+    "StableLM-2B",
+    "DeepSeek-3B-16B",
+    "JetMoE-2B-9B",
+    "Gemma2-3B",
+    "Qwen1.5-3B-14B",
+    "Pythia-1B",
+    "OLMo-1B (0724)",
+    "TinyLlama-1B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "OLMoE: a fully open, state-of-the-art sparse MoE language model (1B active / 7B total)",
+     "page": 1,
+     "quote": "We introduce OLM O E, a fully open, state-of-the-art language model leveraging",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Pretrained on 5 trillion tokens",
+     "page": 1,
+     "quote": "We pretrain it on 5 trillion tokens and further adapt it to create OLM O E-1B-7B-I NSTRUCT.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Instruction/preference-tuned OLMoE-1B-7B-Instruct exceeds larger instruct models",
+     "page": 3,
+     "quote": "find exceeds various larger instruct models including Llama2-13B-Chat [183], OLMo-7B-Instruct",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "MoEs train ~2x faster than dense LMs with equivalent active parameters",
+     "page": 3,
+     "quote": "Our experiments show that MoEs train \u223c2\u00d7 faster than dense LMs",
+     "ablation_quote": "Apart from MoE-related changes, we train both with the same configuration for 130B tokens.",
+     "ablation_page": 9
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Fine-grained routing with 64 small experts, 8 active, is critical",
+     "page": 3,
+     "quote": "One critical design decision for making MoEs performant is the use of fine-grained routing with granular experts [42]: we employ 64 small experts in each layer",
+     "ablation_quote": "We vary the number of experts in tandem with the FFN dimension to ensure that active and total parameters and thus compute cost remain the same.",
+     "ablation_page": 10
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Dropless token-choice routing outperforms expert-choice routing",
+     "page": 3,
+     "quote": "we find dropless [58] token-based routing [154] outperforms expert-based routing [219]",
+     "ablation_quote": "Both models have an 8-expert MoE in every 2nd layer. For TC, 2 experts are activated per token",
+     "ablation_page": 11
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Shared experts are ineffective",
+     "page": 3,
+     "quote": "Our findings also include those that challenge prior work, such as the ineffectiveness of shared experts",
+     "ablation_quote": "While both settings lead to similar performance, sharing an expert performs slightly worse.",
+     "ablation_page": 10
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Sparse upcycling from a dense model has limited benefits except at small compute budgets",
+     "page": 3,
+     "quote": "challenge prior work, such as the ineffectiveness of shared experts [42] and the limited benefits of sparsely",
+     "ablation_quote": "We find that after 500B tokens, an otherwise equivalent MoE trained from scratch already catches up with the upcycled model",
+     "ablation_page": 12
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Routing analysis: early router saturation, rare co-activation, domain and vocabulary specialization",
+     "page": 3,
+     "quote": "analyze the routing behavior in OLM O E-1B-7B, finding that routing saturates early in pretraining, experts are rarely co-activated",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Open release of code, intermediate checkpoints, logs and training data",
+     "page": 3,
+     "quote": "We release training code, intermediate checkpoints (every 5000 steps), training logs, and training data under open-source licenses",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "We run all evaluations ourselves with 5 few-shots, see Appendix C for details.",
+    "page": 7
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "We run all evaluations ourselves with 5 few-shots, see Appendix C for details.",
+    "page": 7
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "FULL",
+   "data_disclosure_evidence": {
+    "quote": "Composition of the pretraining data for OLM O E-1B-7B. StarCoder, peS2o, and Wikipedia parts come from Dolma 1.7 [163].",
+    "page": 5
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We shuffle all samples randomly at the beginning of each epoch and train for a total of 5.133T tokens",
+    "page": 6
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "We pretrain OLM O E-1B-7B on 256 H100 GPUs for approximately 10 days",
+    "page": 45
+   },
+   "renames": []
+  },
+  "2409.18869": {
+   "model": "emu3",
+   "is_release_report": true,
+   "comparators": [
+    "SDv1.5",
+    "DALL-E 2",
+    "SDv2.1",
+    "SDXL",
+    "PixArt-alpha",
+    "DALL-E 3",
+    "SD3",
+    "Emu",
+    "Show-o",
+    "Transfusion",
+    "Chameleon",
+    "LlamaGen",
+    "LLaVA-1.6"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Emu3: multimodal models trained solely with next-token prediction; a single transformer trained from scratch on mixed image/text/video token sequences, without diffusion or compositional architectures",
+     "page": 1,
+     "quote": "By tokenizing images, text, and videos into a discrete space, we train a single transformer from scratch on a mixture of multimodal sequences.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Emu3 outperforms well-established task-specific models such as SDXL and LLaVA-1.6 in generation and perception",
+     "page": 1,
+     "quote": "Emu3 outperforms several well-established task-specific models in both generation and perception tasks, surpassing flagship models such as SDXL and LLaVA-1.6",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Emu3 generates high-fidelity video and extends videos by predicting the next token",
+     "page": 1,
+     "quote": "Emu3 is also capable of generating high-fidelity video via predicting the next token in a video sequence.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TOK",
+     "ablation": "NA",
+     "claim": "Open-source robust vision tokenizer converting videos and images into discrete tokens",
+     "page": 3,
+     "quote": "Notably, we provide a robust vision tokenizer, enabling the transformation of videos and images into discrete tokens, which was previously publicly unavailable.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "DPO can be seamlessly applied to autoregressive vision generation to align with human preferences",
+     "page": 3,
+     "quote": "showing that direct preference optimization (DPO) [68] can be seamlessly applied to autoregressive vision generation, aligning the model with human preferences.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "We conduct a human evaluation comparing the text-to-image generation capabilities of different models. A set of 100 diverse user prompts is collected, and each is evaluated by three independent voters.",
+    "page": 8
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "The results of other methods in the GenEval are sourced from [26, 92, 108, 22].",
+    "page": 20
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "We curate a large-scale image-text dataset comprising open-source web data, AI- generated data, and high-quality in-house data.",
+    "page": 4
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2410.00037": {
+   "model": "moshi",
+   "is_release_report": true,
+   "comparators": [
+    "MPT",
+    "Falcon",
+    "Llama 2",
+    "OLMo",
+    "Mistral",
+    "Gemma 1",
+    "GSLM",
+    "AudioLM",
+    "TWIST",
+    "VoxtLM",
+    "Spirit-LM",
+    "SpeechGPT",
+    "Spectron",
+    "dGSLM"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Helium, a 7B text LLM pretrained on 2.1T tokens of public English data",
+     "page": 3,
+     "quote": "We present Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TOK",
+     "ablation": "NA",
+     "claim": "Mimi neural audio codec distilling semantic information into first level of acoustic tokens with improved training tricks",
+     "page": 3,
+     "quote": "We rather extend the approach of Zhang et al. (2024b) by distilling semantic information into the first level of acoustic tokens and introduce improved training tricks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "New hierarchical streaming architecture (Helium + small Depth Transformer, RQ-Transformer) for audio tokens",
+     "page": 3,
+     "quote": "a new architecture for audio language modeling, which combines Helium with a smaller Transformer (Vaswani et al., 2017) model to predict audio",
+     "ablation_quote": "In that context, modeling RVQ tokens with an RQ-Transformer significantly improves perplexity over using separate classification heads.",
+     "ablation_page": 26
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "First multi-stream audio language model for full-duplex dialogue",
+     "page": 2,
+     "quote": "We furthermore introduce the first multi-stream audio language model, i.e. a model that explicitly processes the input and output audio streams jointly into two autoregressive token streams.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Inner Monologue: predicting time-aligned text tokens as prefix to audio tokens",
+     "page": 3,
+     "quote": "we introduce Inner Monologue, a new training and inference setup for audio language models that significantly improves the factuality and linguistic quality of generated speech",
+     "ablation_quote": "Finally, the most drastic improvement to the quality and length of generated speech comes from enabling Inner Monologue.",
+     "ablation_page": 26
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Delay between text and audio tokens yields streaming ASR and TTS",
+     "page": 3,
+     "quote": "forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from a Moshi model.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "First real-time full-duplex spoken LLM with 160ms theoretical latency",
+     "page": 1,
+     "quote": "model is the first real-time full-duplex spoken large language model, with a",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State of the art among speech-text models for speech modeling and spoken QA",
+     "page": 3,
+     "quote": "show that our model is state of the art among existing speech-text models for speech modeling and spoken question answering",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "We keep its first 3 RVQ levels to obtain a 1.5kbps bitrate.",
+    "page": 23
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "For the first two, we use the number reported by (Nachmani et al., 2024).",
+    "page": 29
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "More specifically, 12.5% of our dataset is from the following curated sources",
+    "page": 17
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "compared to the 2.1T tokens that are used to train Helium",
+    "page": 22
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2410.05355": {
+   "model": "falcon_mamba",
+   "is_release_report": true,
+   "comparators": [
+    "RWKV-v6-Finch-7B",
+    "RWKV-v6-Finch-14B",
+    "Falcon2-11B",
+    "Meta-llama-3-8B",
+    "Meta-llama-3.1-8B",
+    "Mistral-7B-v0.1",
+    "Mistral-Nemo-Base-2407 (12B)",
+    "Gemma-7B",
+    "RecurrentGemma-9b",
+    "Zyphra/Zamba-7B-v1",
+    "TRI-ML/mamba-7b-rw"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Falcon Mamba 7B is a new base LLM with a pure Mamba (attention-free) architecture and the first SSLM in the Falcon series, presented as the first competitive attention-free 7B model",
+     "page": 2,
+     "quote": "We introduce Falcon Mamba 7B \u2014 a base (pre-trained) model with pure mamba architecture design, and the first State Space Language Model (SSLM) in the FalconLLM series.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "A pure Mamba design can match or beat Transformer and hybrid designs",
+     "page": 1,
+     "quote": "we demonstrate that even the pure Mamba design can achieve similar, even superior results compared to the Transformer and hybrid designs.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Trained on 5.8T tokens with carefully selected data mixtures",
+     "page": 1,
+     "quote": "Falcon Mamba 7B is trained on 5.8 trillion tokens with carefully selected data mixtures.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Outperforms leading open-weight Transformer models of similar scale",
+     "page": 1,
+     "quote": "Falcon Mamba 7B surpasses leading open-weight models based on Transformers, such as Mistral 7B, Llama3.1 8B, and Falcon2 11B.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Significantly faster inference and less memory for long sequence generation; constant memory regardless of context length",
+     "page": 1,
+     "quote": "Due to its architecture, Falcon Mamba 7B is significantly faster at inference and requires substantially less memory for long sequence generation.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Weights released publicly under a permissive license",
+     "page": 1,
+     "quote": "We make the weights of our implementation of Falcon Mamba 7B publicly available on",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "When leaderboard results were unavailable, we used the best available results, either from reported findings or our internal evaluations.",
+    "page": 5
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "we extracted results for competitor models from the HF Leaderboards v1(Beeching et al., 2023) and v2(Fourrier et al., 2024), ensuring an unbiased comparison.",
+    "page": 5
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "Benchmarks were selected where results are publicly available and independently conducted by HuggingFace, which span a broad range of top-level categories",
+    "page": 5
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Following the curriculum learning concept, we carefully selected data mixtures throughout the training stages as shown in Fig. 1, considering both data diversity and complexity.",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Falcon Mamba 7B is trained on 5.8 trillion tokens with carefully selected data mixtures.",
+    "page": 1
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "Falcon-Mamba-7B was trained on 256 H100 80GB GPUs for the majority of the training, using only Data Parallelism (DP=256).",
+    "page": 3
+   },
+   "renames": [
+    {
+     "new_name": "Parallel Prefill",
+     "existing_technique": "standard parallel prompt processing (prefill)",
+     "quote": "The standard method for prefill is processing the entire prompt in parallel, maximizing GPU uti- lization, referred to here as Parallel Prefill.",
+     "page": 6
+    }
+   ]
+  },
+  "2410.05993": {
+   "model": "aria",
+   "is_release_report": true,
+   "comparators": [
+    "Pixtral-12B",
+    "Llama3.2-11B",
+    "GPT-4o mini",
+    "Gemini-1.5 Flash",
+    "GPT-4V",
+    "Gemini-1.5 Pro",
+    "GPT-4o"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "First open mixture-of-experts model that is multimodal native",
+     "page": 1,
+     "quote": "In this report, we present A RIA, the first open mixture-of-experts (MoE) model that is multimodal native.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Fine-grained MoE decoder gives faster training and inference than dense decoders through expert specialization",
+     "page": 1,
+     "quote": "The core of our model is a fine-grained mixture-of-experts decoder, which enables faster training and inference speed over dense decoders, due to more efficient parameter utilization through expert specialization.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Lightweight 438M visual encoder handles variable-length, variable-size and variable-aspect visual input",
+     "page": 1,
+     "quote": "Visual input of variable length, size, and aspect is encoded as visual tokens using a",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Long multimodal context window of 64k tokens",
+     "page": 2,
+     "quote": "lightweight visual encoder of 438M parameters. A RIA has a long multimodal context window of 64k tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Pre-trained on 6.4T language tokens and 400B multimodal tokens using a rigorous curation procedure",
+     "page": 2,
+     "quote": "A RIA is pre-trained on 6.4T language tokens and 400B multimodal tokens. We develop a rigorous procedure to curate high-quality data from a diverse set of sources.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "4-stage training pipeline that progressively adds capabilities",
+     "page": 2,
+     "quote": "We design a 4-stage training pipeline, including language pre-training, multimodal pre-training, multimodal long-context pre-training, and multimodal post-training.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Best-in-class performance; outperforms Pixtral-12B and Llama3.2-11B and is competitive with proprietary models",
+     "page": 1,
+     "quote": "It out- performs Pixtral-12B and Llama3.2-11B, and is competitive against the best proprietary models on various multimodal tasks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Open-source weights under Apache 2.0 plus a fine-tuning codebase",
+     "page": 2,
+     "quote": "We release A RIA under the Apache 2.0 license, free for both academic and commercial use.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "Results of competing models are collected from verified official sources or reruned with official settings.",
+    "page": 2
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "Results of competing models are collected from verified official sources or reruned with official settings.",
+    "page": 2
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "The multimodal pre-train data includes four major categories: interleaved image-text sequence from common crawl, synthetic image captions, documents transcriptions and question-answering pairs, synthetic video captions and question- answering pairs.",
+    "page": 2
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Our language pre-training data contains 6.4T tokens in total, curated from a variety of data sources containing knowledge until May 2024.",
+    "page": 4
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2411.15242": {
+   "model": "zamba2",
+   "is_release_report": true,
+   "comparators": [
+    "Gemma2-2B",
+    "Llama3.2-1.2B",
+    "StableLM-1.6B",
+    "SmolLM-1.7B",
+    "Llama3.2-3B",
+    "Gemma2-2.6B",
+    "StableLM-3B",
+    "Llama3.2-8B",
+    "Mistral-7B",
+    "Gemma-7B",
+    "FalconMamba-7B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Switched from a Mamba1 to a Mamba2 backbone, which allows a larger state size at the same throughput",
+     "page": 2,
+     "quote": "for a larger state-size than is possible in Mamba1, which",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Two alternating shared attention blocks instead of a single shared block, which improves performance against parameter-matched baselines",
+     "page": 2,
+     "quote": "We use two alternating shared attention blocks instead",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Non-shared LoRAs applied to the shared transformer blocks",
+     "page": 2,
+     "quote": "et al., 2021) to the shared transformer blocks (Attention,",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Rotary position embeddings in the shared attention blocks improve performance",
+     "page": 2,
+     "quote": "We apply Rotary Position Embeddings (Su et al., 2023)",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Hybrid Mamba2-transformer suite with state-of-the-art performance among open-weight models of its class",
+     "page": 1,
+     "quote": "range of language modeling evaluations in addition to leading",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "30-50% reduction in time-to-first-token and 6x reduction in KV cache memory compared with transformers",
+     "page": 1,
+     "quote": "reduction as well as a 6x reduction in KV cache memory",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Training for up to three trillion tokens",
+     "page": 1,
+     "quote": "annealing datasets, and training for up to three trillion tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Release of instruction-tuned variants that are competitive with comparable instruct models",
+     "page": 1,
+     "quote": "series as well as instruction-tuned variants that are strongly",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Open-source release of the Zyda-2 pretraining dataset, unlike prior leading open-weight models",
+     "page": 2,
+     "quote": "unlike prior leading open-weights models, we also release our",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Weights released under the Apache 2.0 license",
+     "page": 2,
+     "quote": "under a highly permissive Apache 2.0 license. Moreover,",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "et al., 2024), a dataset of 5 trillion tokens consisting of",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "The 1.2B and 2.7B models were trained for 3T tokens.",
+    "page": 2
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "model took approximately 20 days to train. The 2.7B model",
+    "page": 3
+   },
+   "renames": []
+  },
+  "2412.19437": {
+   "model": "deepseek_v3",
+   "is_release_report": true,
+   "comparators": [
+    "DeepSeek-V2-Base",
+    "Qwen2.5 72B Base",
+    "LLaMA-3.1 405B Base",
+    "DeepSeek-V2-0506",
+    "DeepSeek-V2.5-0905",
+    "Qwen2.5 72B Instruct",
+    "LLaMA-3.1 405B Instruct",
+    "Claude-Sonnet-3.5-1022",
+    "GPT-4o-0513"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Pioneers an auxiliary-loss-free load balancing strategy for MoE that minimizes performance degradation from load balancing",
+     "page": 5,
+     "quote": "we pioneer an auxiliary-loss-free strategy for load balancing, which minimizes the performance degradation that arises from encouraging load balancing.",
+     "ablation_quote": "On top of these two baseline models, keeping the training data and the other architectures the same, we remove all auxiliary losses and introduce the auxiliary-loss-free balancing strategy for comparison.",
+     "ablation_page": 27
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "YES",
+     "claim": "Multi-Token Prediction training objective improves model performance and enables speculative decoding",
+     "page": 5,
+     "quote": "We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model performance. It can also be used for speculative decoding for inference acceleration.",
+     "ablation_quote": "On top of them, keeping the training data and the other architectures the same, we append a 1-depth MTP module onto them and train two models with the MTP strategy for comparison.",
+     "ablation_page": 26
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "FP8 mixed precision training framework validated for the first time on an extremely large-scale model",
+     "page": 5,
+     "quote": "We design an FP8 mixed precision training framework and, for the first time, validate the feasibility and effectiveness of FP8 training on an extremely large-scale model.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Co-design of algorithms, frameworks and hardware (DualPipe, all-to-all kernels) achieving near-full computation-communication overlap in cross-node MoE training",
+     "page": 5,
+     "quote": "Through the co-design of algorithms, frameworks, and hardware, we overcome the communication bottleneck in cross-node MoE training, achieving near-full computation- communication overlap.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Economical pre-training on 14.8T tokens at 2.664M H800 GPU hours producing the strongest open-source base model",
+     "page": 5,
+     "quote": "At an economical cost of only 2.664M H800 GPU hours, we complete the pre-training of DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Innovative methodology to distill reasoning capability from long-CoT DeepSeek-R1 models into standard LLMs",
+     "page": 5,
+     "quote": "We introduce an innovative methodology to distill reasoning capabilities from the long- Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models, into standard LLMs",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Remarkably stable training with no irrecoverable loss spikes or rollbacks",
+     "page": 1,
+     "quote": "In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "We evaluate all these models with our internal evaluation framework, and ensure that they share the same evaluation setting.",
+    "page": 24
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "For closed-source models, evaluations are performed through their respective APIs.",
+    "page": 30
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "we optimize the pre-training corpus by enhancing the ratio of mathematical and programming samples, while expanding multilingual coverage beyond",
+    "page": 21
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We set the maximum sequence length to 4K during pre-training, and pre-train DeepSeek-V3 on 14.8T tokens.",
+    "page": 22
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "During the pre-training stage, training DeepSeek-V3 on each trillion tokens requires only 180K H800 GPU hours, i.e., 3.7 days on our cluster with 2048 H800 GPUs.",
+    "page": 5
+   },
+   "renames": []
+  },
+  "2501.08313": {
+   "model": "minimax",
+   "is_release_report": true,
+   "comparators": [
+    "GPT-4o (11-20)",
+    "Claude-3.5-Sonnet (10-22)",
+    "Gemini-1.5-Pro (002)",
+    "Gemini-2.0-Flash (exp)",
+    "Qwen2.5-72B-Inst.",
+    "DeepSeek-V3",
+    "Llama-3.1-405B-Inst."
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Hybrid architecture: one softmax-attention block after every seven lightning-attention (transnormer) blocks",
+     "page": 2,
+     "quote": "In the architecture, one transformer block with softmax attention follows every seven transnormer blocks (Qin et al., 2022a) with lightning attention.",
+     "ablation_quote": "For every 8 consecutive layers in the base model, we systematically replace softmax attention with lightning attention in the first 7 layers.",
+     "ablation_page": 12
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "MoE with 32 experts, 456B total / 45.9B activated parameters",
+     "page": 1,
+     "quote": "creating a model with 32 experts and 456 billion total parameters, of which 45.9 billion are activated for each token",
+     "ablation_quote": "a dense model with 7 billion parameters and an MoE model with 2 billion activation parameters out of a total of 24 billion parameters",
+     "ablation_page": 5
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Novel global router load-balancing strategy for MoE training stability",
+     "page": 4,
+     "quote": "To ensure load balancing in the MoE blocks, we propose a novel load balancing strategy inspired by GShard (Lepikhin et al., 2021), which we refer to the global router.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "First successful large-scale implementation of linear attention",
+     "page": 3,
+     "quote": "We demonstrate the first successful large-scale implementation of linear attention.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Context window of 1M tokens in training, extrapolating to 4M at inference",
+     "page": 1,
+     "quote": "The context window of MiniMax-Text-01 can reach up to 1 million tokens during training and extrapolate to 4 million tokens during inference",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Distributed training framework: EP/ETP, varlen ring attention, improved LASP (LASP+)",
+     "page": 2,
+     "quote": "we design varlen ring attention to reduce the redundancy in computation and the improved version of Linear Attention Sequence Parallelism (LASP)",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "CUDA kernels for lightning attention inference reaching over 75% MFU on H20",
+     "page": 3,
+     "quote": "a comprehensive set of CUDA kernels tailored for lightning attention inference, achieving over 75%",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Pre-training corpus curation with reward-based quality enhancement and mixture balancing",
+     "page": 3,
+     "quote": "rigorous data cleaning, reward-based quality enhancement, and better data mixture balancing",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Practical experimental methodology for exploring models, datasets, evaluations, algorithms",
+     "page": 3,
+     "quote": "We outline a practical approach and experimental methodology for the exploration of various models, datasets, evaluations, and algorithms",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Vision-language model MiniMax-VL-01 via continued training on 512B VL tokens",
+     "page": 1,
+     "quote": "Our vision-language model, MiniMax-VL-01 is built through continued training with 512 billion vision-language tokens.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Public release of weights and cost-effective API",
+     "page": 3,
+     "quote": "We publicly release the weights and offer a cost-effective API, aiming to help others develop",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "We compare with other leading and open-source LLMs, which we evaluate under the same setting, if not reported.",
+    "page": 29
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "We compare with other leading and open-source LLMs, which we evaluate under the same setting, if not reported.",
+    "page": 29
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "incorporating diverse sources including academic literature, books, web content, and",
+    "page": 21
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "The training sequence length is 8192, and the batch size is progressively scaled from an initial size of 16M to 32M at 69B",
+    "page": 24
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2503.01743": {
+   "model": "phi4_multimodal",
+   "is_release_report": true,
+   "comparators": [
+    "Phi-3.5-Mini",
+    "Llama-3.2-3B-Instruct",
+    "Ministral-3B",
+    "Qwen2.5-3B-Instruct",
+    "Qwen2.5-7B-Instruct",
+    "Ministral-2410-8B",
+    "Llama-3.1-8B",
+    "Llama-3.1-Tulu-3-8B",
+    "Gemma2-9B-It",
+    "Phi-3.5-Vision",
+    "Qwen2.5-VL-3B",
+    "InternVL2.5-4B",
+    "Gemini-2.0-Flash",
+    "Claude-3.5-Sonnet",
+    "GPT-4o"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Novel mixture-of-LoRAs modality extension with modality-specific LoRAs and routers on a frozen base LM, unifying text, vision and speech in one model",
+     "page": 1,
+     "quote": "Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow multiple inference modes combining various modalities without interference.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TOK",
+     "ablation": "NA",
+     "claim": "Expanded 200K-token vocabulary to better support multilingual applications",
+     "page": 1,
+     "quote": "features an expanded vocabulary size of 200K tokens to better support multilingual applications",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Group query attention for more efficient long-sequence generation",
+     "page": 1,
+     "quote": "as well as group query attention for more efficient long-sequence generation",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Carefully curated synthetic data recipe emphasizing high-quality math and coding data drives performance",
+     "page": 1,
+     "quote": "This achievement is driven by a carefully curated synthetic data recipe emphasizing high- quality math and coding datasets.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State-of-the-art language performance for its size, matching models twice its size on math and coding",
+     "page": 2,
+     "quote": "The language models achieve state-of- the-art performance in natural language understanding and generation for its size category.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State-of-the-art code understanding and generation for its size",
+     "page": 2,
+     "quote": "The language models achieve state-of-the-art performance on code-related tasks within its size category.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "State-of-the-art multimodal performance for its size",
+     "page": 2,
+     "quote": "The model delivers state-of-the-art perfor- mance across multi-modal tasks for its size category, demonstrating robust integration of diverse data types.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Strong speech performance: ranks first on OpenASR leaderboard and is the first open-sourced model with speech summarization",
+     "page": 2,
+     "quote": "is the first open-sourced model with speech summarization capability",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Reasoning-enhanced Phi-4-Mini (distillation pretraining, fine-tuning, roll-out DPO) matches or surpasses larger 7B/8B reasoning models",
+     "page": 2,
+     "quote": "The reasoning-optimized version of Phi-4-Mini demon- strates superior reasoning abilities for a model in its size category.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "For benchmarks (e.g., DocVQA and InfoVQA) requiring submission to an evaluation server, we directly utilized results reported in previous papers for baseline methods",
+    "page": 9
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "An asterisk (*) indicates results taken directly from the published reports, while the remaining results were reproduced in our work.",
+    "page": 20
+   },
+   "third_party": "YES",
+   "third_party_evidence": {
+    "quote": "Phi-4-Multimodal is 5.5% relatively better in WER than the best model on the Huggingface OpenASR leaderboard8 and now ranks No.1 on the leaderboard as of 1/14/2025.",
+    "page": 12
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "encompassing interleaved image-text documents, image-text pairs, image grounding data, synthetic datasets from OCR of PDFs and realistic images, and synthesized datasets for chart comprehension.",
+    "page": 7
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "With these techniques, we built the 5 trillion pre-training data corpus, which is larger and in higher quality compared to the Phi-3.5-Mini.",
+    "page": 6
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2504.12285": {
+   "model": "bitnet",
+   "is_release_report": true,
+   "comparators": [
+    "LLaMA 3.2 1B",
+    "Gemma-3 1B",
+    "Qwen2.5 1.5B",
+    "SmolLM2 1.7B",
+    "MiniCPM 2B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "First open-source, native 1-bit LLM at the 2-billion parameter scale, trained on 4T tokens",
+     "page": 1,
+     "quote": "We introduce BitNet b1.58 2B4T, the first open-source, native 1-bit Large Lan- guage Model (LLM) at the 2-billion parameter scale.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Native 1-bit LLM trained at scale achieves performance comparable to leading full-precision open-weight models of similar size",
+     "page": 2,
+     "quote": "The core contribution of this work is to demonstrate that a native 1-bit LLM, when trained effectively at scale, can achieve performance comparable",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Significant efficiency advantages: reduced memory footprint, energy consumption and decoding latency",
+     "page": 1,
+     "quote": "while offering significant advantages in computational efficiency, including sub- stantially reduced memory footprint, energy consumption, and decoding latency.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Release of weights plus open-source inference implementations for GPU and CPU (custom CUDA kernel, bitnet.cpp)",
+     "page": 1,
+     "quote": "the model weights are released via Hugging Face along with open-source inference implementations for both GPU and CPU architectures.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Architectural innovations specific to the 1-bit paradigm (BitLinear layers with ternary absmean weights, 8-bit activations, subln, ReLU2)",
+     "page": 2,
+     "quote": "trained from scratch on a substantial dataset of 4 trillion tokens, leveraging architectural and training innovations specific to the 1-bit paradigm.",
+     "ablation_quote": "BitNet b1.58 2B4T maintains stronger overall performance than the INT4 quantized versions of Qwen2.5-1.5B on the evaluated benchmarks.",
+     "ablation_page": 6
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Training innovations specific to 1-bit training (two-stage high-LR/cooldown schedule, two-stage weight decay, summed SFT loss)",
+     "page": 2,
+     "quote": "trained from scratch on a substantial dataset of 4 trillion tokens, leveraging architectural and training innovations specific to the 1-bit paradigm.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "All models are instruction-tuned versions. We re-run all benchmarks with a public evaluation pipeline for a fair comparison.",
+    "page": 5
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "We re-run all benchmarks with a public evaluation pipeline for a fair comparison.",
+    "page": 5
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "The pre-training corpus comprised a mixture of publicly available text and code datasets, including large web crawls like DCLM (Li et al., 2024b) and educational web pages like FineWeb-EDU",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Trained on a corpus of 4 trillion tokens, the model has been rigorously evaluated across benchmarks",
+    "page": 1
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2506.05767": {
+   "model": "dots1",
+   "is_release_report": true,
+   "comparators": [
+    "Qwen2.5-32B Base",
+    "Qwen2.5-72B Base",
+    "DeepSeek-V2 Base",
+    "DeepSeek-V3 Base",
+    "Qwen2.5-32B Instruct",
+    "Qwen2.5-72B Instruct",
+    "Qwen3-32B",
+    "Qwen3-235B-A22B",
+    "DeepSeek-V2 Chat",
+    "DeepSeek-V3",
+    "GPT-4o-0806"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Scalable, fine-grained three-stage data processing framework (document preparation, rule-based, model-based) for high-quality, diverse pretraining data",
+     "page": 2,
+     "quote": "We propose a scalable and fine-grained three-stage data processing framework designed to generate large-scale, high-quality and diverse data for pretraining.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "No synthetic data is used during pretraining",
+     "page": 1,
+     "quote": "Notably, no synthetic data is used during pretraining.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "142B-total/14B-active MoE model achieving performance comparable to Qwen2.5-72B at reduced training and inference cost",
+     "page": 2,
+     "quote": "We introduce dots.llm1, an open-source model that activates only 14B parameters during inference while delivering comprehensive and computationally efficient performance.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Innovative MoE all-to-all communication/computation overlap based on interleaved 1F1B pipeline scheduling and an efficient grouped GEMM implementation",
+     "page": 2,
+     "quote": "we introduce an innovative MoE all-to-all communication and computation overlapping recipe based on 1F1B pipeline scheduling and an efficient grouped GEMM implementation to boost computational efficiency.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Open-sourcing intermediate training checkpoints every one trillion tokens",
+     "page": 1,
+     "quote": "we open-source intermediate training checkpoints at every one trillion tokens, providing valuable insights into the learning dynamics of large language models.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "All models were evaluated within our internal framework under identical conditions.",
+    "page": 10
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "All models were evaluated within our internal framework under identical conditions.",
+    "page": 10
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "During pre-training, we maintain a balanced 1:1 ratio of Chinese to English data, and no synthetic data is used.",
+    "page": 5
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We set the maximum sequence length to 8K during pre-training and train dots.llm1 on 11.2T tokens.",
+    "page": 5
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "if we consider the entire pretraining process, dots.llm1 requires only 1.46 million GPU hours, whereas Qwen2.5 72B consumes 6.12 million GPU hours",
+    "page": 7
+   },
+   "renames": []
+  },
+  "2506.21734": {
+   "model": "hrm_text",
+   "is_release_report": true,
+   "comparators": [
+    "o3-mini-high",
+    "Claude 3.7 8K",
+    "Deepseek R1",
+    "Direct pred (Transformer)"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Hierarchical Reasoning Model: a new recurrent architecture with two coupled modules, a slow high-level module and a fast low-level module",
+     "page": 1,
+     "quote": "we propose the Hierarchical Reasoning Model (HRM), a novel recurrent architecture that attains significant computational depth",
+     "ablation_quote": "retains the exact training setup of HRM but swaps in a Transformer architecture",
+     "ablation_page": 12
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Hierarchical convergence avoids the premature convergence of standard recurrent models",
+     "page": 3,
+     "quote": "avoids the rapid convergence of standard recurrent models through a process we term",
+     "ablation_quote": "Standard architectures saturates, failing to benefit from increased depth. HRM overcomes this fundamental limitation",
+     "ablation_page": 3
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "One-step gradient approximation removes the need for BPTT and uses O(1) memory",
+     "page": 3,
+     "quote": "we propose a one-step gradient approximation for training HRM, which offers",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Deep supervision across segments, with the hidden state detached between segments",
+     "page": 7,
+     "quote": "we incorporate a deep supervision mechanism into HRM, as detailed next.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Adaptive computation time (halting learned with Q-learning), which also gives inference-time scaling",
+     "page": 7,
+     "quote": "Inspired by the above mechanism, we incorporate an adaptive halting strategy into HRM that",
+     "ablation_quote": "Figure 5 presents a performance comparison between two HRM variants: one incorporating ACT and another employing a fixed computational step count",
+     "ablation_page": 8
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "With 27M parameters and about 1000 training samples, and no pre-training, HRM achieves strong results on Sudoku, Maze and ARC",
+     "page": 1,
+     "quote": "With only 27 million parameters, HRM achieves exceptional performance on complex reasoning tasks using only 1000 training samples.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Introduces the Sudoku-Extreme benchmark dataset",
+     "page": 11,
+     "quote": "We introduce Sudoku-Extreme, a more challenging dataset that is compiled from the",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "while for Sudoku and Maze, the scores are obtained by evaluating through the corresponding API.",
+    "page": 12
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "the scores of the CoT models are taken from the official leaderboard",
+    "page": 12
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Easy puzzles compiled from Kaggle, 17-clue, plus unbiased samples from the Sudoku puzzle",
+    "page": 11
+   },
+   "tokens_disclosed": "N",
+   "tokens_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2507.11407": {
+   "model": "exaone4",
+   "is_release_report": true,
+   "comparators": [
+    "Phi 4 reasoning-plus",
+    "Magistral Small-2506",
+    "Qwen 3 32B",
+    "Qwen 3 235B",
+    "DeepSeek R1-0528",
+    "Phi 4",
+    "Mistral Small-2506",
+    "Gemma 3 27B",
+    "Llama 4 Maverick",
+    "DeepSeek V3-0324",
+    "EXAONE Deep 2.4B",
+    "Qwen 3 0.6B",
+    "Qwen 3 1.7B",
+    "SmolLM 3 3B",
+    "Gemma 3 1B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Unifies non-reasoning and reasoning modes in a single model",
+     "page": 1,
+     "quote": "into a single model, allowing users to experience both modes within one model.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Introduces agentic tool use capability",
+     "page": 1,
+     "quote": "With the upcoming era of agentic AI in mind, EXAONE 4.0 introduces agentic tool use\u2014a core capability for this paradigm\u2014and further advances reasoning abilities.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Adds Spanish language support alongside English and Korean",
+     "page": 1,
+     "quote": "the EXAONE 4.0 officially add Spanish to its supported languages, expanding beyond its previous bilingual support for English and Korean.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Significantly more pretraining tokens to bolster world knowledge",
+     "page": 1,
+     "quote": "Compared to previous versions of EXAONE, the number of tokens used during pretraining is significantly increased to bolster world knowledge.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Curation of specialized STEM-domain training data",
+     "page": 1,
+     "quote": "curating training data from specialized domains such as STEM (Science, Technology, Engineering, and Mathematics) fields plays important role on downstream tasks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Context length extended to 128K tokens",
+     "page": 1,
+     "quote": "the extension of maximum context length of the model to 128K tokens enables handling of various tasks based on significantly longer contexts",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Hybrid global/local (sliding window) attention to reduce compute with minimal degradation",
+     "page": 1,
+     "quote": "a hybrid architecture combining global attention and local attention is adopted. This approach minimizes performance degradation while reducing computational costs",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "SCALE",
+     "ablation": "NA",
+     "claim": "Two model sizes: 32B and on-device 1.2B",
+     "page": 1,
+     "quote": "two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Superior performance vs open-weight models in class, competitive with frontier models",
+     "page": 1,
+     "quote": "demonstrates superior performance compared to open-weight models in its class and remains competitive even against frontier-class models.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "If not, we reproduce the results in our evaluation environment, following the recommended settings when they are explicitly stated7",
+    "page": 10
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "For baseline models, we borrow scores reported in each model\u2019s official technical report, blog, or leaderboard6 if available.",
+    "page": 10
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "NONE",
+   "data_disclosure_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "In comparison, the EXAONE 4.0 32B model doubles this amount, utilizing 14 trillion tokens for pretraining.",
+    "page": 4
+   },
+   "compute_disclosed": "Y",
+   "compute_disclosed_evidence": {
+    "quote": "Table 2: Pretraining data size and computational resources used for EXAONE 4.0 language models.",
+    "page": 4
+   },
+   "renames": []
+  },
+  "2508.06471": {
+   "model": "glm4_moe",
+   "is_release_report": true,
+   "comparators": [
+    "o3",
+    "o4-mini",
+    "GPT-4.1",
+    "Claude Opus 4",
+    "Claude Sonnet 4",
+    "Gemini 2.5 Pro",
+    "Grok 4",
+    "Kimi K2",
+    "DeepSeek-R1-0528",
+    "DeepSeek-V3-0324",
+    "Qwen3-235B-A22B-Thinking-2507"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "GLM-4.5 is an open-source MoE LLM with 355B total parameters and 32B activated parameters",
+     "page": 1,
+     "quote": "We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language model with 355B total parameters and 32B activated parameters",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Hybrid reasoning method supporting both thinking and direct response modes",
+     "page": 2,
+     "quote": "GLM-4.5 and GLM- 4.5-Air both feature hybrid reasoning modes: thinking mode for complex reasoning and agentic tasks, and non-thinking mode for instant responses.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Multi-stage pre-/mid-training on 23T tokens",
+     "page": 1,
+     "quote": "Through multi-stage training on 23T tokens and comprehensive post-training with expert model iteration and reinforcement learning",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Comprehensive post-training with expert model iteration and reinforcement learning",
+     "page": 1,
+     "quote": "comprehensive post-training with expert model iteration and reinforcement learning, GLM-4.5 achieves strong performance across agentic, reasoning, and coding (ARC) tasks",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Strong ARC performance; ranks 3rd overall and 2nd on agentic benchmarks with fewer parameters than competitors",
+     "page": 1,
+     "quote": "With much fewer parameters than several competitors, GLM-4.5 ranks 3rd overall among all evaluated models and 2nd on agentic benchmarks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Release of a compact GLM-4.5-Air (106B) model",
+     "page": 1,
+     "quote": "We release both GLM-4.5 (355B parameters) and a compact version, GLM-4.5-Air (106B parameters), to advance research in reasoning and agentic AI systems.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Parameter efficiency: lies on Pareto frontier of SWE-bench Verified vs parameters",
+     "page": 2,
+     "quote": "where GLM-4.5 and GLM-4.5-Air lie on the Pareto Frontier",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Open-sourced evaluation toolkit for reproducibility",
+     "page": 2,
+     "quote": "We also open-sourced an evaluation toolkit at https://github.com/zai-org/glm-simple-evals to ensure the reproducibility of our benchmark results.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "Our pre-training corpus includes documents from webpages, social media, books, papers, and code repositories.",
+    "page": 3
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Through multi-stage training on 23T tokens and comprehensive post-training with expert model iteration and reinforcement learning",
+    "page": 1
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2509.01322": {
+   "model": "longcat_flash",
+   "is_release_report": true,
+   "comparators": [
+    "DeepSeek-V3.1",
+    "Qwen3-235B-A22B-2507",
+    "Kimi-K2",
+    "GPT-4.1",
+    "Claude4-Sonnet",
+    "Gemini2.5-Flash",
+    "DeepSeek-V3.1 Base",
+    "Llama-4-Maverick Base",
+    "Kimi-K2 Base"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Zero-computation experts for dynamic per-token computation budget (18.6B-31.3B active)",
+     "page": 4,
+     "quote": "we introduce the zero-computation experts mechanism in MoE blocks to allocate a dynamic computation budget to important tokens based on their significance",
+     "ablation_quote": "Validation loss curve comparing models with/without zero-computation experts under matched computation",
+     "ablation_page": 7
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Shortcut-connected MoE (ScMoE) to expand computation-communication overlap",
+     "page": 4,
+     "quote": "we incorporate the Shortcut-connected MoE (ScMoE) [Cai et al., 2024] design to expand the computation-communication overlap window",
+     "ablation_quote": "Training loss curves comparing baseline models (without ScMoE) against their ScMoE-enhanced counterparts across four different model configurations",
+     "ablation_page": 8
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Hyperparameter transfer from smaller proxy models",
+     "page": 4,
+     "quote": "We successfully apply a hyperparameter transfer strategy to such a large model, predicting optimal hyperparameter configurations by leveraging results from smaller proxy models",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Model-growth initialization from half-scale checkpoint",
+     "page": 4,
+     "quote": "We initialize the model using a model-growth mechanism based on a refined half-scale checkpoint, achieving improved performance compared to conventional initialization methods",
+     "ablation_quote": "Validataion loss curve of a 6B activated MoE model in model growth experiments",
+     "ablation_page": 10
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Multi-pronged stability suite: router-gradient balancing, hidden z-loss, optimizer configuration",
+     "page": 4,
+     "quote": "A multi-pronged stability suite incorporates principled router-gradient balancing, a hidden z-loss to suppress massive activations, and fine-tuned optimizer configurations",
+     "ablation_quote": "The introduction of a negligible-coefficient hidden z-loss stabilizes the norm curve without degrading training loss.",
+     "ablation_page": 15
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Deterministic computation for reproducibility and SDC detection",
+     "page": 4,
+     "quote": "To enhance the reliability of large-scale cluster training, we introduce deterministic computation",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Pre-training 560B model on 20T tokens in 30 days with 98.48% availability",
+     "page": 4,
+     "quote": "we complete the pre-training of our 560B model over 20T tokens within 30 days and achieve 98.48% time availability",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Inference over 100 TPS at $0.7 per million output tokens",
+     "page": 4,
+     "quote": "large-scale deployment efficiency exceeds 100 tokens per second (TPS) on H800, with a cost of $0.7 per million output tokens",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Two-stage pretraining data fusion strategy concentrating reasoning-intensive data",
+     "page": 4,
+     "quote": "we design a two-stage pretraining data fusion strategy to concentrate reasoning-intensive domain data",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Mid-training extending context to 128k",
+     "page": 4,
+     "quote": "we enhance reasoning and coding capabilities while extending the context length to 128k to meet agentic post-training requirements",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Multi-agent synthesis framework for agentic training tasks",
+     "page": 4,
+     "quote": "we design a multi-agent synthesis framework that defines task difficulty across three axes",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "New benchmarks Meeseeks and VitaBench",
+     "page": 5,
+     "quote": "we meticulously constructed two new benchmarks: Meeseeks [Wang et al., 2025a] and VitaBench",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Competitive performance as non-thinking model with strengths in agentic tasks",
+     "page": 4,
+     "quote": "As a non-thinking model, LongCat-Flash achieves performance comparable to state-of-the-art non-thinking models",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "To ensure fairness, all models are evaluated under identical pipelines and configurations.",
+    "page": 17
+   },
+   "scores_copied": "MIXED",
+   "scores_copied_evidence": {
+    "quote": "For minority results that cannot be reproduced, we directly adopt metrics from public reports and explicitly annotate them in Table 2.",
+    "page": 17
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "We prioritize reasoning-intensive domains in this phase, with STEM and code comprising 70% of the final",
+    "page": 16
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "We train the model on approximately 20 trillion tokens with 8192 sequence length to establish a robust base model.",
+    "page": 11
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2510.26692": {
+   "model": "kimi_linear",
+   "is_release_report": true,
+   "comparators": [
+    "MLA",
+    "GDN-H",
+    "Kimi Linear (RoPE)",
+    "Moonlight"
+   ],
+   "failed": [
+    {
+     "field": "scores_copied",
+     "quote": "",
+     "page": 0
+    }
+   ],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Kimi Delta Attention (KDA): linear attention refining gated delta rule with fine-grained channel-wise gating",
+     "page": 2,
+     "quote": "Kimi Delta Attention (KDA): a linear attention mechanism that refines the gated delta rule with improved recurrent",
+     "ablation_quote": "hybrid Gated DeltaNet (GDN-H) baseline, all of which share the same architecture, parameter count, and training setup",
+     "ablation_page": 9
+    },
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Kimi Linear hybrid architecture with 3:1 KDA-to-global attention ratio",
+     "page": 2,
+     "quote": "The Kimi Linear architecture: a hybrid design adopting a 3:1 KDA-to-global attention ratio, reducing memory",
+     "ablation_quote": "All models were trained with the same FLOPs budget and hyperparameters for a fair comparison.",
+     "ablation_page": 8
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Bespoke chunkwise-parallel algorithm via constrained DPLR variant reducing computation",
+     "page": 2,
+     "quote": "enabling a bespoke chunkwise-parallel algorithm that substantially reduces computation relative to",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Up to 6x higher decoding throughput at 1M context and 75% KV cache reduction",
+     "page": 2,
+     "quote": "tasks\u2014while achieving up to 6\u00d7 higher decoding throughput at 1M context length.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EVAL",
+     "ablation": "NA",
+     "claim": "Fair empirical validation at 1.4T tokens showing Kimi Linear outperforms full attention in short/long context and RL",
+     "page": 2,
+     "quote": "Fair empirical validation at scale: through 1.4T token training runs, Kimi Linear outperforms full attention and",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Open-source KDA kernels, vLLM integration and checkpoints",
+     "page": 2,
+     "quote": "To facilitate further research, we release open-source KDA kernels with vLLM integration, as well as pre-trained",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "internal framework derived from LM-Harness-Evaluation [10], ensuring consistent settings across all models.",
+    "page": 10
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "NONE",
+   "data_disclosure_evidence": {
+    "quote": "WSD learning rate schedule, processing a shared total of 1.4 trillion tokens sampled from the K2 pretraining corpus",
+    "page": 10
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Our final released Kimi Linear checkpoint is pretrained using the same procedure, but with an expanded total of 5.7",
+    "page": 10
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2512.24618": {
+   "model": "youtu",
+   "is_release_report": true,
+   "comparators": [
+    "Qwen3 1.7B",
+    "SmolLM3 3B",
+    "Gemma3 4B",
+    "Qwen3 4B",
+    "Llama3.1 8B",
+    "DeepSeek-R1-Distill-Qwen 1.5B",
+    "DeepSeek-R1-Distill-Llama 8B"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "YES",
+     "claim": "Dense Multi-Latent Attention (MLA) architecture for a lightweight 1.96B model",
+     "page": 1,
+     "quote": "Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+     "ablation_quote": "We compared GQA and MLA by pre-training 1B-parameter models from scratch on 500B tokens.",
+     "ablation_page": 16
+    },
+    {
+     "category": "TOK",
+     "ablation": "NA",
+     "claim": "Novel STEM-oriented vocabulary / multi-stage tokenizer",
+     "page": 1,
+     "quote": "Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary, Youtu-LLM supports a 128k context window.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "128k context window support for long-horizon agent tasks",
+     "page": 1,
+     "quote": "This design enables robust long-context reasoning and state tracking within a minimal memory footprint, making it ideal for long-horizon agent and reasoning tasks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Commonsense-STEM-Agent multi-stage curriculum progressively shifting data distribution",
+     "page": 1,
+     "quote": "By progressively shifting the pre-training data distribution from general commonsense to complex STEM and agentic tasks, we ensure the model acquires deep cognitive abilities",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Pre-trained from scratch rather than relying on distillation",
+     "page": 1,
+     "quote": "Unlike typical small models that rely on distillation, Youtu-LLM (1.96B) is pre-trained from scratch to systematically cultivate reasoning and planning capabilities.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Curated ~11T token pre-training corpus",
+     "page": 1,
+     "quote": "We curated a massive corpus of approximately 11T tokens and implemented a multi-stage training strategy.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "PARTIAL",
+     "claim": "Principled agent-centric training paradigm (agentic mid-training) inducing native agentic capabilities",
+     "page": 3,
+     "quote": "We propose a principled training paradigm that enhances native agentic capabilities through innovations in tokenizer design, data allocation, and multi-stage learning, guided by an agent-centric philosophy.",
+     "ablation_quote": "Table 14. Performance of post-trained models with and without agentic mid-training (AMT).",
+     "ablation_page": 29
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Scalable frameworks for constructing agentic trajectory data (200B tokens) across math, code, deep research, tool use",
+     "page": 3,
+     "quote": "We present a series of scalable frameworks for constructing high-quality agentic trajectory data, spanning reasoning, reflection and planning abilities",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "Lightweight open-source agentic LLM outperforming SOTA models of similar or larger size on agent benchmarks",
+     "page": 3,
+     "quote": "We introduce Youtu-LLM, a lightweight open-source language model that significantly outperforms state-of-the-art models of similar or even larger size in agent benchmarks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "First systematic analysis of agentic pre-training in lightweight LLMs, revealing scalable growth",
+     "page": 3,
+     "quote": "We provide the first systematic analysis of agentic pre-training in lightweight LLMs, revealing the scalable growth of agentic abilities.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "YES",
+   "rerun_evidence": {
+    "quote": "For all listed models, they are evaluated in a thinking mode (generating explicit thought processes).",
+    "page": 25
+   },
+   "scores_copied": "NO",
+   "scores_copied_evidence": {
+    "quote": "We utilized a sampling temperature of 1.0, a top-p value of 0.95, a top-k value of 20, and a presence penalty of 1.5.",
+    "page": 25
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "we compiled 700B tokens of Chinese and English STEM corpora, covering key disciplines such as mathematics, physics, chemistry, biology, and medicine",
+    "page": 4
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "Considering the training scale of 2B parameters and 10.84T tokens of data, we adopt an optimal global batch size of 12M tokens and a learning rate of 4e-4.",
+    "page": 16
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2601.07022": {
+   "model": "solar_open",
+   "is_release_report": true,
+   "comparators": [
+    "gpt-oss-120b (high)",
+    "gpt-oss-120b (medium)",
+    "GLM-4.5-Air"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Synthesize 4.5T tokens of high-quality, domain-specific, RL-oriented synthetic data to address data scarcity for underserved languages",
+     "page": 1,
+     "quote": "to train effectively despite data scarcity for un- derserved languages, we synthesize 4.5T tokens of high-quality, domain-specific, and RL-oriented data",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Progressive bilingual curriculum jointly optimizing composition, quality thresholds and domain coverage across 20T tokens",
+     "page": 1,
+     "quote": "we coordinate this data through a progressive curriculum jointly optimizing composi- tion, quality thresholds, and domain coverage across 20 trillion tokens",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "SnapPO, a cyclic off-policy RL framework decoupling generation, reward computation and training for scalable multi-domain RL",
+     "page": 3,
+     "quote": "We address this through SnapPO (Section 6), a cyclic off-policy framework that decouples these three stages into independent processes with cached intermediate results.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "PARTIAL",
+     "claim": "Solar Open: 102B total / 12B active MoE model trained on 20T tokens",
+     "page": 2,
+     "quote": "Solar Open is built on a Mixture-of-Experts (MoE) architecture with 102 billion total parameters and 12 billion active parameters per token",
+     "ablation_quote": "Training stability guides our remaining architectural decisions through comparative experi- ments between our 10B-A1B MoE prototype and a 3B dense baseline across 50B\u2013100B training tokens.",
+     "ablation_page": 7
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "NR",
+   "rerun_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "19.7T token corpus comprises: English General (13.0T), Math & Code (3.7T), Korean General (1.1T), Japanese (0.8T), Multilingual (0.8T), and Domain-Specific content",
+    "page": 9
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "we prepare about 19.7 trillion tokens for the pre-training stage with two key innovations",
+    "page": 9
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  },
+  "2606.19348": {
+   "model": "deepseek_v4",
+   "is_release_report": true,
+   "comparators": [
+    "Claude Opus 4.6 Max",
+    "GPT-5.4 xHigh",
+    "Gemini-3.1-Pro High",
+    "Kimi K2.6 Thinking",
+    "GLM-5.1 Thinking",
+    "DeepSeek-V3.2"
+   ],
+   "failed": [],
+   "claims": [
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Hybrid attention architecture combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) for long-context efficiency",
+     "page": 1,
+     "quote": "a hybrid attention architecture that combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to improve long-context efficiency",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "ARCH",
+     "ablation": "NO",
+     "claim": "Manifold-Constrained Hyper-Connections (mHC) replacing/upgrading conventional residual connections",
+     "page": 4,
+     "quote": "To strengthen modeling capability, we incorporate Manifold-Constrained Hyper-Connections (mHC) (Xie et al., 2026) that upgrade conventional residual connections.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "TRAIN",
+     "ablation": "NO",
+     "claim": "Muon optimizer for faster convergence and training stability",
+     "page": 4,
+     "quote": "we introduce the Muon (Jordan et al., 2024; Liu et al., 2025) optimizer to the training of DeepSeek-V4 series, leading to faster convergence and improved training stability.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "CTX",
+     "ablation": "NA",
+     "claim": "Efficient native support for one-million-token context",
+     "page": 4,
+     "quote": "This breakthrough enables efficient support for a context length of one million tokens, ushering in a new era of million-length contexts for next-generation LLMs.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "DATA",
+     "ablation": "NA",
+     "claim": "Pre-training on more than 32T diverse, high-quality tokens",
+     "page": 1,
+     "quote": "We pre-train both models on more than 32T diverse and high-quality tokens, followed by a comprehensive post-training pipeline",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "POST",
+     "ablation": "NA",
+     "claim": "Two-stage post-training: specialist SFT+RL experts consolidated via on-policy distillation",
+     "page": 5,
+     "quote": "followed by unified model consolidation via on-policy distillation (Gu et al., 2024; Lu and Lab, 2025).",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Large reduction in inference FLOPs and KV cache vs DeepSeek-V3.2 at 1M context",
+     "page": 5,
+     "quote": "even DeepSeek-V4-Pro, which has a larger number of activated parameters, attains only 27% of the single-token FLOPs (measured in equivalent FP8 FLOPs) and 10% of the KV cache",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Single fused MoE kernel overlapping computation, communication and memory access",
+     "page": 4,
+     "quote": "we design and implement a single fused kernel for MoE modules that fully overlaps computation, communication, and memory access.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Use of TileLang DSL for kernel development",
+     "page": 4,
+     "quote": "we employ TileLang (Wang et al., 2026), a Domain-Specific Language (DSL) to balance development productivity and runtime efficiency.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Batch-invariant and deterministic kernel libraries for bitwise reproducibility",
+     "page": 4,
+     "quote": "we provide efficient batch-invariant and deterministic kernel libraries to ensure bitwise reproducibility across",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Training framework extensions: tensor-level checkpointing, hybrid ZeRO for Muon, mHC implementations, two-stage contextual parallelism",
+     "page": 4,
+     "quote": "we extend the autograd framework with tensor-level checkpointing for fine-grained recomputation control",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "Heterogeneous KV cache structure with on-disk storage for shared-prefix reuse",
+     "page": 4,
+     "quote": "we design a heterogeneous KV cache structure with on-disk storage strategies to enable efficient shared-prefix reuse.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "EFF",
+     "ablation": "NA",
+     "claim": "FP4 quantization-aware training for MoE expert weights and indexer QK path in post-training",
+     "page": 4,
+     "quote": "we incorporate FP4 quantization-aware training for MoE expert weights and the indexer QK path to reduce memory and computation.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    },
+    {
+     "category": "OTHER",
+     "ablation": "NA",
+     "claim": "DeepSeek-V4-Pro-Max redefines state of the art for open models",
+     "page": 1,
+     "quote": "Max, the maximum reasoning effort mode of DeepSeek-V4-Pro, redefines the state-of-the-art for open models, outperforming its predecessors in core tasks.",
+     "ablation_quote": "",
+     "ablation_page": 0
+    }
+   ],
+   "seeds": "NR",
+   "seeds_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "rerun": "MIXED",
+   "rerun_evidence": {
+    "quote": "We re-evaluate Claude Opus 4.6 and Gemini 3.1 Pro on these tasks with the goal of standardizing the configuration across all models.",
+    "page": 37
+   },
+   "scores_copied": "NR",
+   "scores_copied_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "third_party": "NO",
+   "third_party_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "data_disclosure": "PARTIAL",
+   "data_disclosure_evidence": {
+    "quote": "our pre-training corpus comprises more than 32T tokens, containing mathematical contents, codes, web pages, long documents, and other high-quality categories.",
+    "page": 24
+   },
+   "tokens_disclosed": "Y",
+   "tokens_disclosed_evidence": {
+    "quote": "we train DeepSeek-V4-Flash on 32T tokens and DeepSeek-V4-Pro on 33T tokens, respectively.",
+    "page": 5
+   },
+   "compute_disclosed": "N",
+   "compute_disclosed_evidence": {
+    "quote": "",
+    "page": 0
+   },
+   "renames": []
+  }
+ }
+}

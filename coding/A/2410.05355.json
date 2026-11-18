@@ -1,0 +1,130 @@
+{
+ "arxiv": "2410.05355",
+ "model": "falcon_mamba",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Falcon Mamba 7B is a new base LLM with a pure Mamba (attention-free) architecture and the first SSLM in the Falcon series, presented as the first competitive attention-free 7B model",
+    "category": "ARCH",
+    "quote": "We introduce Falcon Mamba 7B — a base (pre-trained) model with pure mamba architecture design, and the first State Space Language Model (SSLM) in the FalconLLM series.",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "A pure Mamba design can match or beat Transformer and hybrid designs",
+    "category": "ARCH",
+    "quote": "we demonstrate that even the pure Mamba design can achieve similar, even superior results compared to the Transformer and hybrid designs.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Trained on 5.8T tokens with carefully selected data mixtures",
+    "category": "DATA",
+    "quote": "Falcon Mamba 7B is trained on 5.8 trillion tokens with carefully selected data mixtures.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Outperforms leading open-weight Transformer models of similar scale",
+    "category": "OTHER",
+    "quote": "Falcon Mamba 7B surpasses leading open-weight models based on Transformers, such as Mistral 7B, Llama3.1 8B, and Falcon2 11B.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Significantly faster inference and less memory for long sequence generation; constant memory regardless of context length",
+    "category": "EFF",
+    "quote": "Due to its architecture, Falcon Mamba 7B is significantly faster at inference and requires substantially less memory for long sequence generation.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Weights released publicly under a permissive license",
+    "category": "OTHER",
+    "quote": "We make the weights of our implementation of Falcon Mamba 7B publicly available on",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "RWKV-v6-Finch-7B",
+   "RWKV-v6-Finch-14B",
+   "Falcon2-11B",
+   "Meta-llama-3-8B",
+   "Meta-llama-3.1-8B",
+   "Mistral-7B-v0.1",
+   "Mistral-Nemo-Base-2407 (12B)",
+   "Gemma-7B",
+   "RecurrentGemma-9b",
+   "Zyphra/Zamba-7B-v1",
+   "TRI-ML/mamba-7b-rw"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "When leaderboard results were unavailable, we used the best available results, either from reported findings or our internal evaluations.",
+   "page": 5
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "we extracted results for competitor models from the HF Leaderboards v1(Beeching et al., 2023) and v2(Fourrier et al., 2024), ensuring an unbiased comparison.",
+   "page": 5
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "Benchmarks were selected where results are publicly available and independently conducted by HuggingFace, which span a broad range of top-level categories",
+   "page": 5
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Following the curriculum learning concept, we carefully selected data mixtures throughout the training stages as shown in Fig. 1, considering both data diversity and complexity.",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Falcon Mamba 7B is trained on 5.8 trillion tokens with carefully selected data mixtures.",
+   "page": 1
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "Falcon-Mamba-7B was trained on 256 H100 80GB GPUs for the majority of the training, using only Data Parallelism (DP=256).",
+   "page": 3
+  },
+  "renames": [
+   {
+    "new_name": "Parallel Prefill",
+    "existing_technique": "standard parallel prompt processing (prefill)",
+    "quote": "The standard method for prefill is processing the entire prompt in parallel, maximizing GPU uti- lization, referred to here as Parallel Prefill.",
+    "page": 6
+   }
+  ],
+  "note": "No controlled ablations reported for the pure-Mamba vs hybrid design. Untied embeddings, RMSNorm after B/C/Δ and batch scaling are mentioned only as findings from the authors' experiments, with no tables, and they do not appear among the abstract/intro claims. I coded data disclosure as PARTIAL rather than FULL: Fig. 1 gives per-stage category percentages, but not enough to reconstruct the data. I coded compute as N because the GPU count is given without a training duration. The 'Parallel Prefill' rename is borderline because it is a label for the standard method. Its quote crosses a hyphenated line break ('uti- lization'), so it may fail the verbatim check. 'Sequential Prefill' (likened to sequence parallelism) was not counted, since the text does not call it an existing technique. In the table, asterisks mark scores the authors evaluated themselves; the remaining scores come from the leaderboard, so rerun and copied are both MIXED."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "768a033571b4a10cb3b5810e47619afd6ae8ef26e942462ccb55c05ef14f8c6f",
+  "session_id": "f9d0ef46-edf2-4f7a-9c08-d60158c5df7e",
+  "cost_usd": 0.22026619999999997,
+  "timestamp": "2026-11-14T12:12:54+00:00"
+ }
+}

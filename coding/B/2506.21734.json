@@ -1,0 +1,113 @@
+{
+ "arxiv": "2506.21734",
+ "model": "hrm_text",
+ "coding": {
+  "note": "HRM is a trained, code-released reasoning model, although not a pretrained natural-language LM. Main results are in Figure 1 rather than a table. Hierarchical architecture comparisons are coded PARTIAL because the text combines the architecture change with ACT; no isolated matched ablation of hierarchical convergence or the gradient approximation is established. Contribution scope is restricted to abstract/introduction, excluding dataset and ACT introductions in later sections. External evaluation evidence concerns comparator leaderboard results, not an independent HRM evaluation. Dataset sources and procedures are described, but exact source mixtures and selected samples are insufficient to reconstruct all training sets. No pre-training token count or training compute budget is reported; no pre-training is performed.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "For ARC-AGI, the scores of the CoT models are taken from the official leaderboard 29 , while for\nSudoku and Maze, the scores are obtained by evaluating through the corresponding API.",
+   "page": 12
+  },
+  "claims": [
+   {
+    "quote": "It features two coupled recurrent modules: a high-level (H) module for abstract,\ndeliberate reasoning, and a low-level (L) module for fast, detailed computations.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "By substituting the Transformer architecture with HRM’s hierarchical framework and\nimplementing ACT, we achieve more than a twofold performance improvement.",
+    "claim": "Introduces a two-module hierarchical recurrent architecture with distinct computational timescales for deep latent reasoning.",
+    "page": 2,
+    "category": "ARCH",
+    "ablation_page": 12
+   },
+   {
+    "quote": "HRM is explicitly designed to counteract this premature convergence through a process we term\nhierarchical convergence.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "HRM shows hierarchical conver-\ngence: the H-module steadily converges, while the L-module repeatedly converges within cycles\nbefore being reset by H, resulting in residual spikes.",
+    "claim": "Hierarchical convergence preserves computational activity by repeatedly restarting low-level convergence under high-level updates.",
+    "page": 5,
+    "category": "ARCH",
+    "ablation_page": 5
+   },
+   {
+    "quote": "Furthermore, we propose a one-step gradient approximation for training HRM, which offers im-\nproved efficiency and eliminates the requirement for BPTT.",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Proposes one-step gradient approximation for HRM training, eliminating BPTT and providing constant-memory backpropagation.",
+    "page": 3,
+    "category": "TRAIN",
+    "ablation_page": 0
+   },
+   {
+    "quote": "With only 27 million parameters, HRM achieves\nexceptional performance on complex reasoning tasks using only 1000 training samples.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Demonstrates small-model, small-sample reasoning without pretraining or intermediate CoT supervision, including Sudoku and optimal maze pathfinding.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Furthermore, HRM outperforms much larger models with significantly longer context windows\non the Abstraction and Reasoning Corpus (ARC), a key benchmark for measuring artificial\ngeneral intelligence capabilities.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Demonstrates ARC performance exceeding substantially larger, longer-context models.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Easy puzzles compiled from Kaggle, 17-clue, plus unbiased samples from the Sudoku puzzle\ndistribution 67 : totaling 1 149 158 puzzles.",
+   "page": 11
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "For ARC-AGI, the scores of the CoT models are taken from the official leaderboard 29 , while for",
+   "page": 12
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "For ARC-AGI, the scores of the CoT models are taken from the official leaderboard 29 , while for\nSudoku and Maze, the scores are obtained by evaluating through the corresponding API.",
+   "page": 12
+  },
+  "renames": [],
+  "comparators": [
+   "Direct pred",
+   "o3-mini-high",
+   "Claude 3.7 8K",
+   "Deepseek R1"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "830ee5654da19fbe84eb9812db140240f89e7dd40ddb33b29d46e46df01b105e",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1187,
+   "totalTokens": 22613,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 21294
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:11+00:00"
+ }
+}

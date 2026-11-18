@@ -1,0 +1,137 @@
+{
+ "arxiv": "2508.06471",
+ "model": "glm4_moe",
+ "coding": {
+  "note": "C1 is restricted to the abstract/introduction; novelty statements appearing only in later sections (e.g., function-call template, RL techniques, Slime, CC-Bench) are excluded. The new model-family release is separated from its first-MoE architecture, hybrid response modes, training recipe, post-training method, parameter efficiency, and evaluation toolkit. Main-result comparator score provenance and same-harness rerunning are not explicitly stated, so both are NR; author-run human comparisons later in the report do not establish provenance for the ARC tables. Evaluation response samples (Avg@32/Avg@8) are not independent training runs. Data sources and stage token counts are disclosed, but reconstructible source mixture proportions and total training compute are absent. References to BFCL and the Artificial Analysis index alone do not establish independent third-party evaluation.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "quote": "This paper introduces two new models: GLM-4.5 and GLM-4.5-Air, toward the goal of unifying all\nthe different capabilities.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Introduce and release the GLM-4.5 and GLM-4.5-Air model family unifying agentic, reasoning, and coding capabilities.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "GLM-4.5 is our first MoE model, with 355B\ntotal parameters and 32B activated parameters.",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Introduce the team's first mixture-of-experts model, with 355B total and 32B activated parameters.",
+    "page": 2,
+    "category": "ARCH",
+    "ablation_page": 0
+   },
+   {
+    "quote": "featuring a\n  hybrid reasoning method that supports both thinking and direct response modes.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Hybrid reasoning supports thinking and immediate/direct-response modes.",
+    "page": 1,
+    "category": "POST",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Through multi-stage training on 23T tokens and comprehensive post-training\n  with expert model iteration and reinforcement learning,",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Multi-stage training recipe on 23T tokens develops unified ARC capabilities.",
+    "page": 1,
+    "category": "TRAIN",
+    "ablation_page": 0
+   },
+   {
+    "quote": "comprehensive post-training\n  with expert model iteration and reinforcement learning, GLM-4.5 achieves strong\n  performance across agentic, reasoning, and coding (ARC) tasks,",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Expert model iteration and reinforcement learning in post-training produce strong unified ARC performance.",
+    "page": 1,
+    "category": "POST",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Note that GLM-4.5 is highly\nparameter-efficient, with only half the parameters of DeepSeek-R1 [13] and one-third those of Kimi\nK2 [34].",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Achieve competitive ARC performance with substantially fewer parameters, including a SWE-bench parameter-performance Pareto frontier.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   },
+   {
+    "quote": "We also open-sourced an evaluation\ntoolkit at https://github.com/zai-org/glm-simple-evals to ensure the reproducibility of\nour benchmark results.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Release an open-source evaluation toolkit for benchmark reproducibility.",
+    "page": 2,
+    "category": "EVAL",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "Our pre-training corpus includes documents from webpages, social media, books, papers, and code\nrepositories.",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Through multi-stage training on 23T tokens and comprehensive post-training\n  with expert model iteration and reinforcement learning,",
+   "page": 1
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "o3",
+   "o4-mini",
+   "GPT-4.1",
+   "Claude Opus 4",
+   "Claude Sonnet 4",
+   "Gemini 2.5 Pro",
+   "Kimi K2",
+   "Grok 4",
+   "DeepSeek-R1-0528",
+   "Qwen3-235B-2507"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "64d0577a14ba939fedb9ea7161eefb9aca5e1944a01738a1fec65249b7ba1063",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1108,
+   "totalTokens": 26713,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 25473
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:25:33+00:00"
+ }
+}

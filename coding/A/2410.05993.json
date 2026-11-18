@@ -1,0 +1,137 @@
+{
+ "arxiv": "2410.05993",
+ "model": "aria",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "First open mixture-of-experts model that is multimodal native",
+    "category": "ARCH",
+    "quote": "In this report, we present A RIA, the first open mixture-of-experts (MoE) model that is multimodal native.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Fine-grained MoE decoder gives faster training and inference than dense decoders through expert specialization",
+    "category": "ARCH",
+    "quote": "The core of our model is a fine-grained mixture-of-experts decoder, which enables faster training and inference speed over dense decoders, due to more efficient parameter utilization through expert specialization.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Lightweight 438M visual encoder handles variable-length, variable-size and variable-aspect visual input",
+    "category": "ARCH",
+    "quote": "Visual input of variable length, size, and aspect is encoded as visual tokens using a",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Long multimodal context window of 64k tokens",
+    "category": "CTX",
+    "quote": "lightweight visual encoder of 438M parameters. A RIA has a long multimodal context window of 64k tokens.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Pre-trained on 6.4T language tokens and 400B multimodal tokens using a rigorous curation procedure",
+    "category": "DATA",
+    "quote": "A RIA is pre-trained on 6.4T language tokens and 400B multimodal tokens. We develop a rigorous procedure to curate high-quality data from a diverse set of sources.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "4-stage training pipeline that progressively adds capabilities",
+    "category": "TRAIN",
+    "quote": "We design a 4-stage training pipeline, including language pre-training, multimodal pre-training, multimodal long-context pre-training, and multimodal post-training.",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Best-in-class performance; outperforms Pixtral-12B and Llama3.2-11B and is competitive with proprietary models",
+    "category": "OTHER",
+    "quote": "It out- performs Pixtral-12B and Llama3.2-11B, and is competitive against the best proprietary models on various multimodal tasks.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-source weights under Apache 2.0 plus a fine-tuning codebase",
+    "category": "OTHER",
+    "quote": "We release A RIA under the Apache 2.0 license, free for both academic and commercial use.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Pixtral-12B",
+   "Llama3.2-11B",
+   "GPT-4o mini",
+   "Gemini-1.5 Flash",
+   "GPT-4V",
+   "Gemini-1.5 Pro",
+   "GPT-4o"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Results of competing models are collected from verified official sources or reruned with official settings.",
+   "page": 2
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "Results of competing models are collected from verified official sources or reruned with official settings.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "The multimodal pre-train data includes four major categories: interleaved image-text sequence from common crawl, synthetic image captions, documents transcriptions and question-answering pairs, synthetic video captions and question- answering pairs.",
+   "page": 2
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "Our language pre-training data contains 6.4T tokens in total, curated from a variety of data sources containing knowledge until May 2024.",
+   "page": 4
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "There are no ablations at all. The expert-specialisation analysis (Sec 4.2) only describes the trained model. It does not compare with and without an element. The MST clustering claim ('noticeable performance gain') appears in Section 3, not in the abstract or introduction, so it is not coded and has no table. Multimodal data is broken down by category with token counts (190B/70B/102B/35B), but the language data sources are not given, so data disclosure is PARTIAL. Table 1 says scores were collected or rerun without saying which, so rerun and scores_copied are MIXED. Table 4 scores are copied. Official leaderboards were used only as a source for comparator scores, not as an independent evaluation of Aria, so third_party is NO. Group-level load balancing is described as a relaxation, not a new name for a technique, so no renames are listed."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "5949558e74743009795605eed1619e91e96c8352b3bda9dd0677cdb71f632b5e",
+  "session_id": "7dff0d0e-13b0-4703-bb1f-49af2d716fa4",
+  "cost_usd": 0.2086582,
+  "timestamp": "2026-11-14T12:14:00+00:00"
+ }
+}

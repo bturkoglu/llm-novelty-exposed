@@ -1,0 +1,362 @@
+[
+ {
+  "arxiv": "2001.08210",
+  "model": "mbart",
+  "pdf_ok": true,
+  "pages": 17,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2007.14062",
+  "model": "big_bird",
+  "pdf_ok": true,
+  "pages": 42,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2204.06745",
+  "model": "gpt_neox",
+  "pdf_ok": true,
+  "pages": 42,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2205.01068",
+  "model": "opt",
+  "pdf_ok": true,
+  "pages": 30,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2203.13474",
+  "model": "codegen",
+  "pdf_ok": true,
+  "pages": 25,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2206.12131",
+  "model": "mvp",
+  "pdf_ok": true,
+  "pages": 35,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2003.10555",
+  "model": "electra",
+  "pdf_ok": true,
+  "pages": 18,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2205.06266",
+  "model": "xmod",
+  "pdf_ok": true,
+  "pages": 17,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2001.04063",
+  "model": "prophetnet",
+  "pdf_ok": true,
+  "pages": 10,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2311.16867",
+  "model": "falcon",
+  "pdf_ok": true,
+  "pages": 57,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2312.00752",
+  "model": "mamba",
+  "pdf_ok": true,
+  "pages": 63,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2309.11419",
+  "model": "kosmos2_5",
+  "pdf_ok": true,
+  "pages": 24,
+  "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2310.06825",
+  "model": "mistral",
+  "pdf_ok": true,
+  "pages": 9,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2306.11644",
+  "model": "phi",
+  "pdf_ok": true,
+  "pages": 26,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2404.14219",
+  "model": "phi3",
+  "pdf_ok": true,
+  "pages": 24,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2408.00118",
+  "model": "gemma2",
+  "pdf_ok": true,
+  "pages": 21,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2403.08295",
+  "model": "gemma",
+  "pdf_ok": true,
+  "pages": 17,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2409.18869",
+  "model": "emu3",
+  "pdf_ok": true,
+  "pages": 23,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2410.05355",
+  "model": "falcon_mamba",
+  "pdf_ok": true,
+  "pages": 12,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2404.07839",
+  "model": "recurrent_gemma",
+  "pdf_ok": true,
+  "pages": 5,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2405.21060",
+  "model": "mamba2",
+  "pdf_ok": true,
+  "pages": 55,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2410.00037",
+  "model": "moshi",
+  "pdf_ok": true,
+  "pages": 67,
+  "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2409.02060",
+  "model": "olmoe",
+  "pdf_ok": true,
+  "pages": 63,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2412.19437",
+  "model": "deepseek_v3",
+  "pdf_ok": true,
+  "pages": 53,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2411.15242",
+  "model": "zamba2",
+  "pdf_ok": true,
+  "pages": 11,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2410.05993",
+  "model": "aria",
+  "pdf_ok": true,
+  "pages": 24,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2402.00838",
+  "model": "olmo",
+  "pdf_ok": true,
+  "pages": 21,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2402.16819",
+  "model": "nemotron",
+  "pdf_ok": true,
+  "pages": 16,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2504.12285",
+  "model": "bitnet",
+  "pdf_ok": true,
+  "pages": 14,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2501.08313",
+  "model": "minimax",
+  "pdf_ok": true,
+  "pages": 68,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2512.24618",
+  "model": "youtu",
+  "pdf_ok": true,
+  "pages": 57,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2506.21734",
+  "model": "hrm_text",
+  "pdf_ok": true,
+  "pages": 24,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2503.01743",
+  "model": "phi4_multimodal",
+  "pdf_ok": true,
+  "pages": 39,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2507.11407",
+  "model": "exaone4",
+  "pdf_ok": true,
+  "pages": 30,
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2510.26692",
+  "model": "kimi_linear",
+  "pdf_ok": true,
+  "pages": 28,
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2508.06471",
+  "model": "glm4_moe",
+  "pdf_ok": true,
+  "pages": 26,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2506.05767",
+  "model": "dots1",
+  "pdf_ok": true,
+  "pages": 21,
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2509.01322",
+  "model": "longcat_flash",
+  "pdf_ok": true,
+  "pages": 39,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2601.07022",
+  "model": "solar_open",
+  "pdf_ok": true,
+  "pages": 33,
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ },
+ {
+  "arxiv": "2606.19348",
+  "model": "deepseek_v4",
+  "pdf_ok": true,
+  "pages": 58,
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "access_class": "OPEN",
+  "source": "arxiv"
+ }
+]

@@ -1,0 +1,156 @@
+{
+ "arxiv": "2411.15242",
+ "model": "zamba2",
+ "coding": {
+  "note": "Release report for the Zamba2 family. Architecture improvements are included from the explicit contribution-style list on page 2. The report asserts architecture ablations and parameter/FLOP matching, but supplies no element-specific controlled results or loss curves in the provided text; these claims are conservatively coded NO rather than treating assertions as demonstrated ablations. Data sources are disclosed, but component proportions and the full annealing mixture are not. Compute disclosure combines the 16-node, 8xH100 hardware description on page 2 with approximately 20/40/60-day training durations on page 3. Comparator names follow Table I literally, including potentially inconsistent model labels. Comparator evaluation provenance and training seed counts are not stated.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "claim": "Release a state-of-the-art small-model family at 1.2B, 2.7B and 7.4B scales.",
+    "category": "OTHER",
+    "quote": "series – a suite of 1.2B, 2.7B, and 7.4B parameter hybrid Mamba2-",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Achieve improved inference latency, throughput and memory efficiency relative to comparable transformers.",
+    "category": "EFF",
+    "quote": "can achieve a peak speedup of 30-50% time-to-first-token",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Train the family for up to three trillion tokens.",
+    "category": "SCALE",
+    "quote": "annealing datasets, and training for up to three trillion tokens.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release competitive instruction-tuned variants alongside the base models.",
+    "category": "POST",
+    "quote": "series as well as instruction-tuned variants that are strongly",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-source the Zyda-2 pretraining dataset used for the model family.",
+    "category": "DATA",
+    "quote": "We additionally open-source the pretraining dataset, which",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Replace the Mamba1 backbone with Mamba2, exploiting higher throughput to increase state size and improve performance.",
+    "category": "ARCH",
+    "quote": "that Mamba2 has significantly higher throughput than\n  an equivalently sized Mamba1, with approximately the",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Use two alternating shared attention blocks instead of one, improving performance per parameter and reducing FLOPs.",
+    "category": "ARCH",
+    "quote": "We use two alternating shared attention blocks instead",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Add non-shared low-rank adapters to shared transformer blocks to increase layer-specific expressivity.",
+    "category": "ARCH",
+    "quote": "MLP, or both) – this offers each shared attention block",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Apply rotary position embeddings to shared attention blocks to improve performance.",
+    "category": "ARCH",
+    "quote": "We apply Rotary Position Embeddings (Su et al., 2023)",
+    "page": 2,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "of 16 nodes, each consisting of 8xH100 SXM nodes with",
+   "page": 2
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "comprises four component datasets: Zyda-1, DCLM, FineWeb,\nand Dolma. We cross-deduplicated all dataests against each",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "The 1.2B and 2.7B models were trained for 3T tokens.",
+   "page": 2
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "Gemma2-2B",
+   "Llama3.2-1.2B",
+   "StableLM-1.6B",
+   "SmolLM-1.7B",
+   "Llama3.2-3B",
+   "Gemma2-2.6B",
+   "StableLM-3B",
+   "Llama3.2-8B",
+   "Mistral-7B",
+   "Gemma-7B",
+   "FalconMamba-7B"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "3adc9ddc23f10011c3f8f17362d137fa8883d856e8ee7e38079c8104214114eb",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1498,
+   "totalTokens": 16228,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 14598
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:24:23+00:00"
+ }
+}

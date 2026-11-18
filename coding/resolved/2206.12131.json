@@ -1,0 +1,60 @@
+{
+ "arxiv": "2206.12131",
+ "resolution": {
+  "fields": [
+   {
+    "field": "rerun",
+    "value": "MIXED",
+    "quote": "Besides these variants, we further include the best-reported results from original papers in the literature for comparison (denoted as SOTA).",
+    "page": 6,
+    "reason": "SOTA and many BART cells are best-reported numbers from prior papers (table superscripts), while Flan-T5 and T0 appear without source citations in the same harness. That is neither a full re-run nor unreported."
+   },
+   {
+    "field": "scores_copied",
+    "value": "MIXED",
+    "quote": "We utilize the large versions of T5.1.1 and ExT5, and all the results of them are from Aribandi et al. (2022).",
+    "page": 26,
+    "reason": "T5.1.1/ExT5 scores are explicitly taken from Aribandi et al., and SOTA/BART cells cite original papers, but Flan-T5 and T0 numbers have no such attribution, so copying is only partial."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "For the second stage that integrates single-task pre-trained prompts (denoted as MVP+S), we compare it with two variants using different prompts",
+    "page": 6,
+    "reason": "Authors claim task-specific prefix-prompt pre-training as their method. MVP+S vs MVP+R (same backbone and layer-wise prompts, prompts randomly initialized without pre-training) and vs MVP+M is a matched with/without comparison, with results in Table 2, so ablation is YES not merely a confounded table."
+   },
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "supervised pre-training models (i.e., MVP, Flan-T5, and Single) achieve better performance than the unsupervised pre-trained model BART",
+    "page": 6,
+    "reason": "They state supervised pre-training for NLG as their own gap-filling TRAIN contribution. The MVP/Single vs BART contrast exists at the same 406M size, but MVP is BART further trained on extra labeled data, so data and tokens are not matched: PARTIAL."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ],
+  [
+   "A_only0",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 14932,
+   "outputTokens": 8918,
+   "totalTokens": 23850,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

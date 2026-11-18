@@ -1,0 +1,106 @@
+{
+ "arxiv": "2404.07839",
+ "model": "recurrent_gemma",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "RecurrentGemma uses the Griffin architecture, which combines linear recurrences with local attention and has a fixed-size state",
+    "category": "ARCH",
+    "quote": "Griffin combines linear recurrences with local attention to achieve excellent performance on language. It has a fixed-sized state, which reduces memory use and enables efficient inference on long sequences.",
+    "page": 1,
+    "ablation": "PARTIAL",
+    "ablation_quote": "Gemma-2B was trained on 3T tokens and Gemma-7B was trained on 6T tokens, while both RecurrentGemma-2B and RecurrentGemma-9B were trained on 2T tokens.",
+    "ablation_page": 2
+   },
+   {
+    "claim": "Release of 2B and 9B models, each with pre-trained and instruction-tuned variants",
+    "category": "SCALE",
+    "quote": "We provide two sizes of models, containing 2B and 9B parameters, and provide pre-trained and instruction tuned variants for both.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Performance comparable to Gemma despite being trained on fewer tokens",
+    "category": "OTHER",
+    "quote": "Our models achieve comparable performance to similarly-sized Gemma baselines despite being trained on fewer tokens.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Faster inference than Gemma models because the state is compressed to a fixed size",
+    "category": "EFF",
+    "quote": "RecurrentGemma compresses input sequences into a fixed-size state without sacrificing performance. This reduces memory use and enables efficient inference on long sequences.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release of efficient JAX code, including a specialized Pallas kernel for the linear recurrence on TPUs, plus a PyTorch reference implementation",
+    "category": "EFF",
+    "quote": "including a specialized Pallas kernel to perform the linear recurrence on TPUs. We provide a reference PyTorch implementation as well.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Gemma-2B",
+   "Gemma-7B",
+   "Mistral 7B v0.2 Instruct"
+  ],
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We use the same pre-training data as the Gemma models, which comprises primarily English data from web documents, mathematics and code.",
+   "page": 1
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We provide two sizes of RecurrentGemma, with 2B and 9B parameters, both trained on 2T tokens.",
+   "page": 1
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Ablation for the Griffin architecture is coded PARTIAL, not YES. The only comparison is against Gemma, and it is confounded: the token counts differ (2T vs 3T/6T) and the architecture differs in more than one way. Two items were left out of the claims because they appear outside the abstract and introduction: the 'novel RLHF algorithm' (Instruction tuning section) and the sqrt(width) embedding scaling (Model architecture section). The paper does not say whether the Gemma scores were re-run or copied, so rerun and scores_copied are NR. The human evaluation and the 'independent team' safety review were both run internally, so third_party is NO. Compute is N because hardware is reported only for inference benchmarks, not for training."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "dc19a2b4a9d285b3469a85b3d8a1848f9bd65147bcd03672d20a0500313820ee",
+  "session_id": "82304832-c6ec-438a-8498-214d796b4444",
+  "cost_usd": 0.1139942,
+  "timestamp": "2026-11-14T12:12:51+00:00"
+ }
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper."
+title: "The novelty exposed: data, coding and scripts"
+authors:
+  - family-names: "Türkoğlu"
+    given-names: "Bahaeddin"
+    orcid: "https://orcid.org/0000-0003-0255-8422"
+    affiliation: "Ankara University"
+license: MIT
+repository-code: "https://github.com/bturkoglu/llm-novelty-exposed"
+preferred-citation:
+  type: article
+  title: "The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs)"
+  authors:
+    - family-names: "Türkoğlu"
+      given-names: "Bahaeddin"
+      orcid: "https://orcid.org/0000-0003-0255-8422"
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2611.20003"
+  url: "https://arxiv.org/abs/2611.20003"

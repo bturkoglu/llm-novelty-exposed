@@ -1,0 +1,154 @@
+{
+ "arxiv": "2503.01743",
+ "model": "phi4_multimodal",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Novel mixture-of-LoRAs modality extension with modality-specific LoRAs and routers on a frozen base LM, unifying text, vision and speech in one model",
+    "category": "ARCH",
+    "quote": "Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow multiple inference modes combining various modalities without interference.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Expanded 200K-token vocabulary to better support multilingual applications",
+    "category": "TOK",
+    "quote": "features an expanded vocabulary size of 200K tokens to better support multilingual applications",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Group query attention for more efficient long-sequence generation",
+    "category": "ARCH",
+    "quote": "as well as group query attention for more efficient long-sequence generation",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Carefully curated synthetic data recipe emphasizing high-quality math and coding data drives performance",
+    "category": "DATA",
+    "quote": "This achievement is driven by a carefully curated synthetic data recipe emphasizing high- quality math and coding datasets.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art language performance for its size, matching models twice its size on math and coding",
+    "category": "OTHER",
+    "quote": "The language models achieve state-of- the-art performance in natural language understanding and generation for its size category.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art code understanding and generation for its size",
+    "category": "OTHER",
+    "quote": "The language models achieve state-of-the-art performance on code-related tasks within its size category.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "State-of-the-art multimodal performance for its size",
+    "category": "OTHER",
+    "quote": "The model delivers state-of-the-art perfor- mance across multi-modal tasks for its size category, demonstrating robust integration of diverse data types.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Strong speech performance: ranks first on OpenASR leaderboard and is the first open-sourced model with speech summarization",
+    "category": "OTHER",
+    "quote": "is the first open-sourced model with speech summarization capability",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Reasoning-enhanced Phi-4-Mini (distillation pretraining, fine-tuning, roll-out DPO) matches or surpasses larger 7B/8B reasoning models",
+    "category": "POST",
+    "quote": "The reasoning-optimized version of Phi-4-Mini demon- strates superior reasoning abilities for a model in its size category.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "Phi-3.5-Mini",
+   "Llama-3.2-3B-Instruct",
+   "Ministral-3B",
+   "Qwen2.5-3B-Instruct",
+   "Qwen2.5-7B-Instruct",
+   "Ministral-2410-8B",
+   "Llama-3.1-8B",
+   "Llama-3.1-Tulu-3-8B",
+   "Gemma2-9B-It",
+   "Phi-3.5-Vision",
+   "Qwen2.5-VL-3B",
+   "InternVL2.5-4B",
+   "Gemini-2.0-Flash",
+   "Claude-3.5-Sonnet",
+   "GPT-4o"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "For benchmarks (e.g., DocVQA and InfoVQA) requiring submission to an evaluation server, we directly utilized results reported in previous papers for baseline methods",
+   "page": 9
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "An asterisk (*) indicates results taken directly from the published reports, while the remaining results were reproduced in our work.",
+   "page": 20
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "Phi-4-Multimodal is 5.5% relatively better in WER than the best model on the Huggingface OpenASR leaderboard8 and now ranks No.1 on the leaderboard as of 1/14/2025.",
+   "page": 12
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "encompassing interleaved image-text documents, image-text pairs, image grounding data, synthetic datasets from OCR of PDFs and realistic images, and synthesized datasets for chart comprehension.",
+   "page": 7
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "With these techniques, we built the 5 trillion pre-training data corpus, which is larger and in higher quality compared to the Phi-3.5-Mini.",
+   "page": 6
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Main comparators combined from the language table (Table 7) and the vision table (Table 1), capped at 15. Most comparators were evaluated with the internal pipeline, but some scores were copied: DocVQA/InfoVQA baselines, canary/WhisperV3 in Table 4 and the starred models in Table 9, so rerun and scores_copied are MIXED. Table 9 has a stage-wise reasoning ablation, but that is a POST claim, so ablation is NA. No ablation backs the mixture-of-LoRAs claim beyond the assertion that it beats cross-attention; GQA has none either. 'Roll-Out DPO' looks like a new name for standard DPO on rejection-sampled pairs, but the text does not say it is an existing technique, so renames is left empty. 'Mixture of LoRAs' cites the LoRA paper but is presented as novel, so it is not counted as a rename either. Dynamic multi-crop and the reasoning pretraining paradigm are claimed outside the abstract and introduction, so they are not coded. third_party=YES rests on the external HF OpenASR leaderboard ranking."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "df56ab135c7134ef93cf0deb3fe76179ae320414cde437abbcc41a80d366cb18",
+  "session_id": "6a80a007-6b20-4366-b655-754e5ef780dc",
+  "cost_usd": 0.4869582,
+  "timestamp": "2026-11-14T12:15:47+00:00"
+ }
+}

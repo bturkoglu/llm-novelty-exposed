@@ -1,0 +1,115 @@
+{
+ "arxiv": "2402.16819",
+ "model": "nemotron",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Nemotron-4 15B, a 15B-parameter multilingual LLM trained on 8 trillion text tokens",
+    "category": "SCALE",
+    "quote": "We introduce Nemotron-4 15B, a 15-billion-parameter large multilingual language model trained on 8 trillion text tokens.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Outperforms all similarly-sized open models on 4 of 7 evaluation areas and is competitive on the rest",
+    "category": "OTHER",
+    "quote": "it outperforms all existing similarly-sized open models on 4 out of 7 downstream evaluation areas and achieves competitive performance to the leading open models in the remaining ones",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Best multilingual capabilities among similarly-sized models, attributed to significant multilingual training data",
+    "category": "DATA",
+    "quote": "As Nemotron-4 15B was trained on significant amount of multilingual data, it is currently the state-of-the-art general purpose model in its size class on all multilingual benchmarks.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Designed to be the best general-purpose LLM that fits on a single A100 or H100 GPU",
+    "category": "EFF",
+    "quote": "was developed to be the best general-purpose large language model (LLM) that can fit on a single NVIDIA A100 or H100 GPU",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Better average accuracy across programming languages than Starcoder and Mistral 7B, especially on low-resource languages",
+    "category": "OTHER",
+    "quote": "we find that Nemotron-4 15B achieves better average accuracy, and in particular on low-resource programming languages, than Starcoder (Li et al., 2023), a code-specific model, and Mistral 7B.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "LLaMA-2 13B",
+   "LLaMA-2 34B",
+   "Baichuan-2 13B",
+   "QWEN 14B",
+   "Mistral 7B",
+   "Gemma 7B",
+   "Starcoder 15B",
+   "PaLM 62B",
+   "PaLM 62B-cont",
+   "XGLM 7.5B",
+   "mGPT 13B",
+   "BLOOM 176B"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "Results for Mistral are from our runs of Mistral in the same setting as Nemotron-4.",
+   "page": 8
+  },
+  "scores_copied": {
+   "value": "YES",
+   "quote": "we compare against a number of external decoder-only transformer language models and unless otherwise stated we use the numbers published in the reports of the corresponding models",
+   "page": 6
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "the data blend is split into three different types of data: English natural language data (70%), multilingual natural language data (15%), and source-code data (15%).",
+   "page": 3
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "We train Nemotron-4 15B on a pre-training dataset consisting of 8 trillion tokens.",
+   "page": 3
+  },
+  "compute_disclosed": {
+   "value": "Y",
+   "quote": "Training was completed in approximately 13 calendar days.",
+   "page": 4
+  },
+  "renames": [],
+  "note": "There are no ARCH or TRAIN claims in the abstract or introduction, so no ablations are coded. The architecture uses standard components: RoPE, GQA and squared ReLU. Continued training is described on p.5 but is not presented as a contribution, and no ablation is shown for it. rerun is MIXED: the authors ran Mistral themselves for Tables 6 and 9, but most other scores are copied from published reports. scores_copied is coded YES even though a few Mistral runs were the authors' own, because most scores are copied; MIXED would also be defensible. Compute: 384 DGX H100 nodes (3,072 H100 GPUs) for about 13 days. Data disclosure is PARTIAL: the paper gives the high-level 70/15/15 split and language distributions only as figures."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "c45b6e8c4d694ad55997501faf81f0c4dcfdc3a3f27def38dfb465a0454d5024",
+  "session_id": "d8aa026a-60d0-4816-af4d-016b32967d29",
+  "cost_usd": 0.2411422,
+  "timestamp": "2026-11-14T12:14:25+00:00"
+ }
+}

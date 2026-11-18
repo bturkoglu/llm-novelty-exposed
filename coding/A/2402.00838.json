@@ -1,0 +1,103 @@
+{
+ "arxiv": "2402.00838",
+ "model": "olmo",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "OLMo is a truly open LM released with open training data and training and evaluation code, unlike prior efforts that released only weights and inference code",
+    "category": "OTHER",
+    "quote": "Unlike most prior efforts that have only released model weights and inference code, we release OLMo alongside open training data and training and evaluation code.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Full pretraining data (Dolma) is openly released, along with the code that produces it and tools for analysing it",
+    "category": "DATA",
+    "quote": "the full training data used for these models is openly available (Dolma; Soldaini et al., 2024), including code that produces the training data, and tools for analyzing pretraining data",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "The release includes four 7B variants and one 1B model, all trained on at least 2T tokens",
+    "category": "SCALE",
+    "quote": "includes four variants of our language model at the 7B scale corresponding to different architectures, optimizers, and training hardware, and one model at the 1B scale, all trained on at least 2T tokens",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Release of hundreds of intermediate checkpoints, training logs and the whole framework under Apache 2.0",
+    "category": "OTHER",
+    "quote": "We also release hundreds of intermediate checkpoints available as revisions on HuggingFace.",
+    "page": 2,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "MULTI",
+   "quote": "Despite minor differences in batch size to optimize for training throughput, both runs resulted in nearly identical performance on our evaluation suite by 2T tokens.",
+   "page": 5
+  },
+  "comparators": [
+   "StableLM 1.6B",
+   "Pythia 1B",
+   "TinyLlama 1.1B",
+   "Falcon-7B",
+   "LLaMA 7B",
+   "Llama 2 7B",
+   "MPT-7B",
+   "Pythia 6.9B",
+   "RPJ-INCITE-7B"
+  ],
+  "rerun": {
+   "value": "YES",
+   "quote": "For both downstream and perplexity evaluation, we use our fixed evaluation pipeline to compare results against publicly available models.",
+   "page": 4
+  },
+  "scores_copied": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "The data order and exact composition of each training batch can be reconstructed from the artifacts we release.",
+   "page": 5
+  },
+  "tokens_disclosed": {
+   "value": "Y",
+   "quote": "The checkpoint used for evaluating OLMo-7B is trained until 2.46T tokens on the Dolma (Soldaini et al., 2024) dataset",
+   "page": 5
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Architecture choices (no biases, non-parametric LN, SwiGLU, RoPE) appear in Sec 2.1, not in the abstract or introduction, and are explicitly adopted from prior models, so I did not code them as claims. The paper mentions in-loop ablations but reports no ablation table. Seeds coded MULTI because the paper states two 7B runs (LUMI and MosaicML hardware) that gave nearly identical results. These runs had different batch sizes and no variance is reported, so ONE/NR would be a defensible lower code. Compute coded N: the paper gives energy (239 MWh) and node counts but no GPU-hours, FLOPs or training duration. Data coded FULL because Dolma is released with per-source token counts, and the paper says the exact batch composition and order can be reconstructed. The proportions of the 2T-token sample are not tabulated, so PARTIAL would be the conservative alternative. The carbon numbers for other models in Table 6 are copied from their papers, but those are not benchmark scores."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "598df7f5ba21e122eaba983852046b6c06bd7f84afa105dd3232340b09deb994",
+  "session_id": "995c536c-eefb-4506-bea9-4748735f4dcb",
+  "cost_usd": 0.3830422,
+  "timestamp": "2026-11-14T12:14:31+00:00"
+ }
+}

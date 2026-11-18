@@ -1,0 +1,81 @@
+{
+ "arxiv": "2410.00037",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "In that context, modeling RVQ tokens with an RQ-Transformer significantly improves perplexity over using separate classification heads.",
+    "page": 26,
+    "reason": "Authors explicitly propose a new hierarchical streaming audio LM (Helium plus a smaller Transformer / RQ-Transformer). Table 5 holds delay fixed and toggles only the RQ-Transformer versus separate heads, with all models initialized from Helium and pretrained on audio, so the ablation is controlled (YES), not partial."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Page 2 states they introduce the first multi-stream audio LM that jointly models input and output streams; this is a distinct ARCH novelty from the hierarchical tokenizer model. No matched with-vs-without multi-stream comparison is reported (single-stream vs multi-stream rows in Table 7 confound pretraining with instruction tuning)."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "Both Mimi codecs are trained with distillation, and either with the same combination of reconstruction and adversarial losses as Encodec (see Section 3.3) or adversarial losses only.",
+    "page": 24,
+    "reason": "The contribution list says they introduce improved training tricks for the codec (TRAIN objective). Table 4 compares two Mimi models that both use distillation and differ in the loss mix, with MUSHRA 81.0 vs 58.8, so this is a matched ablation (YES)."
+   },
+   {
+    "item_id": "B_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Same contribution bullet as A_only0 (new hierarchical streaming Moshi architecture). Not a separate claim; the RQ-Transformer ablation is already coded YES on A_only0. PARTIAL is too low: within each delay the only change is RQ-Transformer vs independent heads."
+   },
+   {
+    "item_id": "B_only2",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Same multi-stream / full-duplex contribution already kept as A_only1 (page 2 'first multi-stream' and page 3 'model several audio streams in parallel'). Not a second ARCH claim; ablation remains NO."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ],
+  [
+   "B_only1",
+   "B_only"
+  ],
+  [
+   "B_only2",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9672,
+   "outputTokens": 9837,
+   "totalTokens": 19509,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

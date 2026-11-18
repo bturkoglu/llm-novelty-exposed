@@ -1,0 +1,93 @@
+{
+ "arxiv": "2003.10555",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "To provide a fair comparison, we also train a BERT-Small model using the same hyperparameters. We train BERT-Small for 1.5M steps, so it uses the same training FLOPs as ELECTRA-Small",
+    "page": 6,
+    "reason": "Abstract and introduction explicitly propose replaced token detection as their new pre-training task. BERT-Small is retrained with the same hyperparameters and matched FLOPs, a controlled with-vs-without comparison of the objective, so ablation is YES."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": true,
+    "ablation": "YES",
+    "quote": "First, we find that ELECTRA is greatly benefiting from having a loss defined over all input tokens rather than just a subset: ELECTRA 15% performs much worse than ELECTRA.",
+    "page": 8,
+    "reason": "Introduction states as a key advantage that the discriminator learns from all tokens rather than the masked subset. ELECTRA 15% is identical except the loss is restricted to 15% of tokens, a matched ablation, so YES."
+   },
+   {
+    "item_id": "A_only2",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Weight tying is a Section 3.2 experimental extension, not a contribution stated in the abstract, contribution list, or introduction. Not a distinct headline ARCH claim under the location rule."
+   },
+   {
+    "item_id": "A_only3",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Generator-size 1/4–1/2 is an empirical hyperparameter finding in Section 3.2 (‘we find’), not a novel ARCH contribution claimed in the abstract or introduction."
+   },
+   {
+    "item_id": "A_only4",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Joint MLE vs two-stage/adversarial is a negative experimental comparison in Section 3.2, not a separate novelty claim in the abstract or introduction; the MLE generator is part of the main RTD method already covered."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "Same TRAIN contribution as A_only0 (replaced token detection, including learning at all positions). Not a distinct additional claim; all-token loss is already isolated as A_only1."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ],
+  [
+   "A_only2",
+   "A_only"
+  ],
+  [
+   "A_only3",
+   "A_only"
+  ],
+  [
+   "A_only4",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 10750,
+   "outputTokens": 9556,
+   "totalTokens": 21411,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

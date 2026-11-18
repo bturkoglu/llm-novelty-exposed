@@ -1,0 +1,34 @@
+{
+ "arxiv": "2205.01068",
+ "resolution": {
+  "fields": [
+   {
+    "field": "scores_copied",
+    "value": "YES",
+    "quote": "Full evaluations on all 16 NLP tasks, with comparisons to the GPT-3 reported performance.",
+    "page": 18,
+    "reason": "NR is unsupported: the caption explicitly compares against GPT-3's reported (previously published) performance, i.e. scores taken from another report. MIXED is not supported on these pages because nothing states that any comparator was re-scored by the authors; the available wording only documents use of reported comparator numbers."
+   },
+   {
+    "field": "compute_disclosed",
+    "value": "N",
+    "quote": "",
+    "page": 0,
+    "reason": "Page 1 gives hardware count (992 80GB A100 GPUs) and per-GPU throughput (147 TFLOP/s) plus a 1/7th carbon ratio, but not GPU/TPU-hours, total FLOPs, or hardware times duration. That does not meet the field definition, so the lower value N is correct."
+   }
+  ],
+  "claims": []
+ },
+ "items": [],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 6134,
+   "outputTokens": 5330,
+   "totalTokens": 11464,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "arxiv": "2007.14062",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "pair0",
+    "keep": true,
+    "ablation": "PARTIAL",
+    "quote": "We found that random blocks and local window were insufficient in capturing all the context necessary to compete with the performance of BERT.",
+    "page": 4,
+    "reason": "ARCH contribution (sparse R+W+global attention). Page 4 Table 1 is a building-block comparison of Random, Window, and R+W vs BERT-base at length 512, so a comparison exists. It is not YES: the full mechanism including global tokens is absent from that table, so the claimed element is not isolated with vs without at matched settings."
+   },
+   {
+    "item_id": "pair1",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "",
+    "page": 0,
+    "reason": "ARCH claim that global tokens are critical. ITC vs ETC (Table 2) both include global tokens (existing vs added), so that comparison does not remove the element. No matched with-vs-without global-token result is reported; criticality is asserted from theory, not ablated."
+   }
+  ]
+ },
+ "items": [
+  [
+   "pair0",
+   "pair"
+  ],
+  [
+   "pair1",
+   "pair"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 10302,
+   "outputTokens": 4421,
+   "totalTokens": 14723,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

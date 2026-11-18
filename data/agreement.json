@@ -1,0 +1,44 @@
+{
+ "seeds": {
+  "kappa": 0.781,
+  "n": 40,
+  "agree": 0.95
+ },
+ "rerun": {
+  "kappa": 0.765,
+  "n": 40,
+  "agree": 0.85
+ },
+ "scores_copied": {
+  "kappa": 0.734,
+  "n": 40,
+  "agree": 0.825
+ },
+ "third_party": {
+  "kappa": 0.754,
+  "n": 40,
+  "agree": 0.925
+ },
+ "data_disclosure": {
+  "kappa": 0.299,
+  "n": 40,
+  "agree": 0.75
+ },
+ "tokens_disclosed": {
+  "kappa": 0.806,
+  "n": 40,
+  "agree": 0.925
+ },
+ "compute_disclosed": {
+  "kappa": 0.881,
+  "n": 40,
+  "agree": 0.95
+ },
+ "C2_ablation_aligned": {
+  "kappa": 0.669,
+  "n": 51,
+  "agree": 0.784,
+  "A_only": 33,
+  "B_only": 20
+ }
+}

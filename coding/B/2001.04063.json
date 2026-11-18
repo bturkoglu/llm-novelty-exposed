@@ -1,0 +1,115 @@
+{
+ "arxiv": "2001.04063",
+ "model": "prophetnet",
+ "coding": {
+  "note": "This is a trained-model report. Extraction interleaves columns; quoted spans preserve that text literally. Future n-gram training has a matched 1-gram versus 2-gram comparison (Table 6; Section 3.6 specifies shared size, data and steps). No isolated ablation of n-stream attention is identified, so ARCH is NO. Comparator citations alone do not establish copied scores or author reruns; both are NR. Hardware and epochs are given, but no hardware-times-duration, FLOPs or GPU-hours; pre-training token count is not reported. Data sources/categories lack reconstructible mixture proportions. Comparator list is capped at 15, prioritizing summarization tables. Extending XLNet's two-stream attention is not treated as renaming an unchanged existing technique.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "claims": [
+   {
+    "quote": "fications: (a) The novel self-supervised objective\npredict the future n-gram at each time step in an  called future n-gram prediction as described in",
+    "ablation": "YES",
+    "ablation_quote": "ProphetNetbase -1gram  42.21  19.54  39.06\n  ProphetNetbase -2gram  42.52  19.78  39.59",
+    "claim": "Novel future n-gram prediction objective predicts multiple future tokens simultaneously to encourage future planning and reduce local-correlation overfitting.",
+    "page": 2,
+    "category": "TRAIN",
+    "ablation_page": 8
+   },
+   {
+    "quote": "To achieve that, we extend the  tecture of ProphetNet. Before we describe our\ntwo-stream self-attention proposed in XLNet (Yang  model in detail, we first introduce the notations\net al., 2019) to n-stream self-attention.",
+    "ablation": "NO",
+    "ablation_quote": "",
+    "claim": "Proposed n-stream self-attention extends two-stream attention with shared-parameter future-token predicting streams.",
+    "page": 2,
+    "category": "ARCH",
+    "ablation_page": 0
+   },
+   {
+    "quote": "Net achieves new state-of-the-art results on all  that is, the local token combinations’ modeling is\n  these datasets compared to the models using  overfitting, but the global coherence and long-term\n  the same scale pre-training corpus.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "ProphetNet achieves new state-of-the-art summarization and question-generation results against models using the same scale of pre-training corpus.",
+    "page": 1,
+    "category": "OTHER",
+    "ablation_page": 0
+   },
+   {
+    "quote": "1/3 pre-training epochs of BART and about 1/5  stream self-attention mechanism. Given a source\npre-training corpus of T5 (Raffel et al., 2019) and  sequence x = (x1 , . . . , xM ), ProphetNet encodes\nPEGASUS (Zhang et al., 2019).",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Large-scale ProphetNet obtains state-of-the-art summarization results using about one-third of BART's pre-training epochs and one-fifth of T5/PEGASUS pre-training corpus.",
+    "page": 2,
+    "category": "EFF",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "language corpora of news, books, stories, and",
+   "page": 7
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "rerun": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "comparators": [
+   "LEAD-3",
+   "PTGEN",
+   "PTGEN+Coverage",
+   "S2S-ELMo",
+   "Bottom-Up",
+   "BERTSUMABS",
+   "BERTSUMEXTABS",
+   "MASS",
+   "UniLM",
+   "OpenNMT",
+   "Re3Sum",
+   "T5",
+   "PEGASUSLARGE (C4)",
+   "PEGASUSLARGE (HugeNews)",
+   "BART"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "569d847c64908529e27796959fef55d2b20b12c1ba4d3b0982f404441cb00f58",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1896,
+   "totalTokens": 15246,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 13218
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:42+00:00"
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "arxiv": "2601.07022",
+ "resolution": {
+  "fields": [],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "Our design prioritizes eﬀiciency within resource constraints while minimizing risk through proven architectural patterns.",
+    "page": 6,
+    "reason": "The 102B/12B MoE and 20T-token budget are a release specification, not an ARCH novelty. MoE is attributed to Shazeer et al. 2017, and the authors say they follow proven patterns (gpt-oss/GLM-style top-8 of 128 plus one shared expert). The 10B-A1B vs 3B dense run is a confounded prototype study of other choices, not a matched ablation of this element, so it is not kept."
+   },
+   {
+    "item_id": "B_only0",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "Second, we coordinate this data through a progressive curriculum jointly optimizing composition, quality thresholds, and domain coverage across 20 trillion tokens.",
+    "page": 1,
+    "reason": "Authors present a data curriculum (composition, language-aware quality thresholds, domain coverage), which is DATA, not a TRAIN novelty (optimizer, LR schedule, stability, or objective). They do not claim a new training algorithm. The GLM-4.5-Base trajectory comparison is a different model/data/token budget, not a with-vs-without ablation of the curriculum, so ablation is NO and the claim is not kept."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "B_only0",
+   "B_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 7120,
+   "outputTokens": 7819,
+   "totalTokens": 16044,
+   "cacheReadInputTokens": 1105,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

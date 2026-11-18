@@ -1,0 +1,60 @@
+{
+ "arxiv": "2309.11419",
+ "resolution": {
+  "fields": [
+   {
+    "field": "data_disclosure",
+    "value": "PARTIAL",
+    "quote": "Summary of data used to pre-train KOSMOS -2.5, including descriptions of each document category, the number of pages, and their respective sampling ratios in the training data.",
+    "page": 4,
+    "reason": "Table 2 names categories, some sources, page counts, and sampling ratios, but several corpora are only web crawls or self-constructed sets, so the mixture cannot be reconstructed. That is PARTIAL, not NONE or FULL."
+   },
+   {
+    "field": "tokens_disclosed",
+    "value": "Y",
+    "quote": "We then combined the two datasets for an additional 140k steps of training. The total training involved approximately 260 billion tokens.",
+    "page": 5,
+    "reason": "The pre-training section explicitly states the total training token count (about 260 billion), so tokens_disclosed is Y."
+   }
+  ],
+  "claims": [
+   {
+    "item_id": "A_only0",
+    "keep": true,
+    "ablation": "NO",
+    "quote": "We propose two distinct yet cooperative document reading tasks for pre-training a foundational document model capable of machine reading and understanding the order and structure of text-intensive documents.",
+    "page": 2,
+    "reason": "Authors explicitly list the two complementary pre-training tasks (spatially-aware text recognition and image-to-markdown) as their own contribution, which is a TRAIN/objective claim. No controlled with-vs-without task comparison at matched settings is reported, so ablation is NO."
+   },
+   {
+    "item_id": "A_only1",
+    "keep": false,
+    "ablation": "NO",
+    "quote": "The model architecture of KOSMOS -2.5 leverages a shared Transformer architecture that combines a ViT-based vision encoder and a Transformer-based language decoder connected by a resampler module.",
+    "page": 3,
+    "reason": "The shared ViT-plus-resampler-plus-decoder design is described as leveraging known components (ViT/Pix2Struct, Flamingo resampler) and is not in the contribution list. It is not an author-stated ARCH novelty, so keep is false."
+   }
+  ]
+ },
+ "items": [
+  [
+   "A_only0",
+   "A_only"
+  ],
+  [
+   "A_only1",
+   "A_only"
+  ]
+ ],
+ "run_info": {
+  "model": "us.xai.grok-4.7",
+  "usage": {
+   "inputTokens": 9897,
+   "outputTokens": 6479,
+   "totalTokens": 16376,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 0
+  },
+  "stop_reason": "tool_use"
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "arxiv": "2409.18869",
+ "model": "emu3",
+ "coding": {
+  "is_release_report": true,
+  "claims": [
+   {
+    "claim": "Emu3: multimodal models trained solely with next-token prediction; a single transformer trained from scratch on mixed image/text/video token sequences, without diffusion or compositional architectures",
+    "category": "ARCH",
+    "quote": "By tokenizing images, text, and videos into a discrete space, we train a single transformer from scratch on a mixture of multimodal sequences.",
+    "page": 1,
+    "ablation": "NO",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Emu3 outperforms well-established task-specific models such as SDXL and LLaVA-1.6 in generation and perception",
+    "category": "OTHER",
+    "quote": "Emu3 outperforms several well-established task-specific models in both generation and perception tasks, surpassing flagship models such as SDXL and LLaVA-1.6",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Emu3 generates high-fidelity video and extends videos by predicting the next token",
+    "category": "OTHER",
+    "quote": "Emu3 is also capable of generating high-fidelity video via predicting the next token in a video sequence.",
+    "page": 1,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "Open-source robust vision tokenizer converting videos and images into discrete tokens",
+    "category": "TOK",
+    "quote": "Notably, we provide a robust vision tokenizer, enabling the transformation of videos and images into discrete tokens, which was previously publicly unavailable.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   },
+   {
+    "claim": "DPO can be seamlessly applied to autoregressive vision generation to align with human preferences",
+    "category": "POST",
+    "quote": "showing that direct preference optimization (DPO) [68] can be seamlessly applied to autoregressive vision generation, aligning the model with human preferences.",
+    "page": 3,
+    "ablation": "NA",
+    "ablation_quote": "",
+    "ablation_page": 0
+   }
+  ],
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "comparators": [
+   "SDv1.5",
+   "DALL-E 2",
+   "SDv2.1",
+   "SDXL",
+   "PixArt-alpha",
+   "DALL-E 3",
+   "SD3",
+   "Emu",
+   "Show-o",
+   "Transfusion",
+   "Chameleon",
+   "LlamaGen",
+   "LLaVA-1.6"
+  ],
+  "rerun": {
+   "value": "MIXED",
+   "quote": "We conduct a human evaluation comparing the text-to-image generation capabilities of different models. A set of 100 diverse user prompts is collected, and each is evaluated by three independent voters.",
+   "page": 8
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "The results of other methods in the GenEval are sourced from [26, 92, 108, 22].",
+   "page": 20
+  },
+  "third_party": {
+   "value": "NO",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "PARTIAL",
+   "quote": "We curate a large-scale image-text dataset comprising open-source web data, AI- generated data, and high-quality in-house data.",
+   "page": 4
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "renames": [],
+  "note": "Main comparators are taken from Table 4 (text-to-image), plus LLaVA-1.6 from the abstract. Rerun and scores_copied are both coded MIXED: Appendix B says the comparator scores in the automated text-to-image tables are sourced from earlier papers, while the authors' own human evaluation compared other models directly (the paper does not state outright that the authors generated their outputs). The vision-language and video tables (Tables 6 and 5) do not say where the comparator scores come from. The DPO with/without comparison (Fig. 6) exists but is coded NA because DPO is a POST claim. The only ARCH claim has no matched ablation. No seeds or runs are reported. Data sources and filtering are described without mixture proportions, and neither token count nor compute is given. Some quotes may be affected by hyphenation in the PDF text extraction."
+ },
+ "run_info": {
+  "backend": "claude_cli",
+  "model": "claude-opus-5-5",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "b54010cf3cea37c912cc9cfed5119be2478d05c09d76e65ee1ad64081fc1b96c",
+  "session_id": "0072361d-e974-4be4-8734-1a0a91b8bf06",
+  "cost_usd": 0.33149019999999996,
+  "timestamp": "2026-11-14T12:12:26+00:00"
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "arxiv": "2206.12131",
+ "model": "mvp",
+ "coding": {
+  "note": "MVP is a released 406M BART-initialized model, not a novel backbone architecture. Claims consolidate repeated abstract/introduction statements. Supervised pre-training and prompt pre-training are coded TRAIN as the report's training contributions. Their comparisons are PARTIAL: backbone comparisons change training data/tokens, and pretrained versus random prompts changes training exposure. Dataset sources and cleaned sizes (Table 9), together with the disclosed temperature mixing rate T=2, support FULL disclosure. No total pre-training token count or hardware duration is reported; GPU count alone does not meet compute disclosure. Comparator provenance is mixed: cited BART/SOTA scores coexist with author-run baselines. Official GLUE website scoring is counted as external evaluation. No explicit technique renaming is identified.",
+  "is_release_report": true,
+  "seeds": {
+   "value": "NR",
+   "quote": "",
+   "page": 0
+  },
+  "scores_copied": {
+   "value": "MIXED",
+   "quote": "best-reported results from original papers in the\n  literature for comparison (denoted as SOTA).",
+   "page": 6
+  },
+  "claims": [
+   {
+    "quote": "To the best of our knowledge, MVP-\n  Corpus is the largest collection of NLG datasets.",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Collect MVPCorpus, a claimed largest NLG dataset collection, comprising 77 datasets over 11 tasks.",
+    "page": 2,
+    "category": "DATA",
+    "ablation_page": 0
+   },
+   {
+    "quote": "work presents a simple yet general approach for\n  pre-training a more capable NLG model by lever-\n  aging various labeled NLG datasets.",
+    "ablation": "PARTIAL",
+    "ablation_quote": "We individ-\n  ually train a single model for each task using\n  intra-task datasets under the same pre-training\n  settings in multi-task training.",
+    "claim": "Develop NLG-oriented multi-task supervised pre-training by unifying labeled tasks in an instruction-based text-to-text format.",
+    "page": 2,
+    "category": "TRAIN",
+    "ablation_page": 6
+   },
+   {
+    "quote": "For each task, we further pre-train specific soft",
+    "ablation": "PARTIAL",
+    "ablation_quote": "MVP+R  44.14  21.45  40.72  67.61  47.65  76.70  25.71  27.03  53.09  85.95  77.22",
+    "claim": "Pre-train task-specific soft prompts to retain specialized knowledge and stimulate task-specific generation capacity.",
+    "page": 1,
+    "category": "TRAIN",
+    "ablation_page": 5
+   },
+   {
+    "quote": "Can supervised pre-trained NLG models be both\n  effective and general? Extensive experiments",
+    "ablation": "NA",
+    "ablation_quote": "",
+    "claim": "Demonstrate effectiveness and generality across NLG and unseen tasks, including state-of-the-art results on 13 of 17 datasets.",
+    "page": 2,
+    "category": "OTHER",
+    "ablation_page": 0
+   }
+  ],
+  "compute_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "data_disclosure": {
+   "value": "FULL",
+   "quote": "Table 9: The statistics and licenses of datasets for pre-training our MVP model. The #Train, #Valid, and #Test\ndenote the number of examples",
+   "page": 23
+  },
+  "tokens_disclosed": {
+   "value": "N",
+   "quote": "",
+   "page": 0
+  },
+  "third_party": {
+   "value": "YES",
+   "quote": "The evaluation\n  is computed by the official website16 .",
+   "page": 26
+  },
+  "rerun": {
+   "value": "MIXED",
+   "quote": "best-reported results from original papers in the\n  literature for comparison (denoted as SOTA).",
+   "page": 6
+  },
+  "renames": [],
+  "comparators": [
+   "BART",
+   "Flan-T5",
+   "Single"
+  ]
+ },
+ "run_info": {
+  "backend": "bedrock_converse",
+  "model": "us.openai.gpt-6.1-sol",
+  "agent": "novelty-coder",
+  "agent_version": "b23c9bc5d877",
+  "prompt_sha256": "2053ef87066c8d57b4542ad30f6a143ed1a47f37d0d0038d38419ae03bdd10c4",
+  "usage": {
+   "inputTokens": 132,
+   "outputTokens": 1598,
+   "totalTokens": 44995,
+   "cacheReadInputTokens": 0,
+   "cacheWriteInputTokens": 43265
+  },
+  "stop_reason": "tool_use",
+  "timestamp": "2026-11-14T12:22:17+00:00"
+ }
+}
