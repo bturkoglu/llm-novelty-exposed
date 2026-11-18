@@ -1,6 +1,7 @@
 # The novelty exposed — data, coding and scripts
 
 [![arXiv](https://img.shields.io/badge/arXiv-2611.20003-b31b1b.svg)](https://arxiv.org/abs/2611.20003)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24340455.svg)](https://doi.org/10.5281/zenodo.24340455)
 [![Dataset on HF](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/bturkoglu/llm-novelty-exposed)
 
 Supplementary material for
@@ -10,7 +11,7 @@ Supplementary material for
 
 The repository has everything needed to check or repeat the analysis: the sampling frame, the coding protocol
 (written before any report was read), the raw and verified outputs of both coders and the resolver, and the scripts.
-It is the same material as the arXiv ancillary files. See [`README_S1.md`](README_S1.md) for a file-by-file guide.
+It is the same material as the arXiv ancillary files. Archived on Zenodo: https://doi.org/10.5281/zenodo.24340455. See [`README_S1.md`](README_S1.md) for a file-by-file guide.
 
 ## What is in it
 
